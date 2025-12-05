@@ -61,14 +61,44 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://quarantinezonegames.com/guides/complete-beginners-guide</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://quarantinezonegames.com/guides/quarantine-zone-the-last-check-rookie-survival-manual</loc>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://quarantinezonegames.com/games/quarantine-zone-demo</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://quarantinezonegames.com/guides/quarantine-zone-the-last-check-combat-base-defense-guide</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/guides/campaign-guide-special-events-moral-choices</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/games/the-freak-circus</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/games/granny-horror</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/games/five-nights-at-freddy's</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/games/tung-sahur-horro</loc>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
