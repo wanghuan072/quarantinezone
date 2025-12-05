@@ -1,19 +1,19 @@
 export const games = [
   {
     id: 1,
-    title: "The Freak Circus",
-    iframeUrl: "https://html-classic.itch.zone/html/14081436/index.html",
-    description: "Enter The Freak Circus of Horrors, where Pierrot and Harlequin vie for your affection in a deadly game! Work at a cafe, encounter the obsessive Pierrot, and navigate a twisted love triangle. Mature themes, dark elements, and open endings await! Available in English, Portuguese (BR), and Chinese.",
-    tags: ["yandere","horror","visual novel","freak circus","romance"],
+    title: "Quarantine Zone",
+    iframeUrl: "https://quarantinezonegame.com/gg/quarantine-zone-unblocked/",
+    description: "Survive the infected streets in Quarantine Zone: The Last Check! Test your driving skills in this thrilling game. Experience intense moments and fight for survival. Are you ready for the challenge?",
+    tags: ["quarantine","zone","driving game","survival game","zombie apocalypse"],
     publishDate: "2025-12-05",
+    isHome: true,
     imageUrl: "/images/game/game01.webp",
-    imageAlt: "A promotional image for The Freak Circus visual novel, featuring Pierrot and Harlequin.",
+    imageAlt: "Quarantine Zone game screenshot featuring a car driving through an infected zone.",
     seo: {
-      title: "The Freak Circus - A Yandere Horror Visual Novel",
-      description: "Uncover the secrets of The Freak Circus in this dark visual novel! Navigate a twisted love triangle with Pierrot and Harlequin. Mature themes & open endings await!",
-      keywords: "the freak circus, yandere game, horror game, visual novel, romance, pierrot, harlequin, dark romance"
+      title: "Quarantine Zone - The Last Check Game - Thrilling Survival!",
+      description: "Experience the ultimate driving survival in Quarantine Zone: The Last Check. Navigate infected areas and test your skills. Get ready for the challenge!",
+      keywords: "quarantine, zone, driving, survival, game, infected, apocalypse, last check, action game, car game",
     },
-    isHome: false,
     comments: [
       {
         id: 1,
@@ -23,70 +23,55 @@ export const games = [
         text: 'Amazing game! The decision-making mechanics are really engaging.'
       }
     ],
-    addressBar: "the-freak-circus",
+    addressBar: "quarantine-zone",
     detailsHtml: `<div>
-    <h2>The Freak Circus</h2>
-    <p>Dare to step into the twisted world of <strong>The Freak Circus</strong>, a horror visual novel where obsession and rivalry collide! Prepare to be captivated – and perhaps terrified – by Pierrot, the silent yandere, and Harlequin, his seductive rival, as they compete for your attention in a deadly game of love and madness.</p>
-    
-    <h3>Story and Setting</h3>
-    <p>You are an ordinary individual working at a café, leading a relatively normal life. However, fate takes a sinister turn one day when you cross paths with Pierrot on your way to work. This seemingly chance encounter sparks an intense obsession within him, drawing you into the chaotic world of <strong>The Freak Circus</strong>. But Pierrot isn't alone in his desires; his stage rival, Harlequin, decides to join the game, transforming a simple infatuation into a perilous competition where you become the ultimate prize. Brace yourself for a descent into darkness as you navigate their twisted affections and uncover the horrifying secrets hidden within the circus tents. If you enjoy decision-making games like this, check out our <a href="/" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">homepage</a> for more similar games.</p>
+    <h2>Quarantine Zone: The Last Check</h2>
+    <p>Dive into the heart-pounding world of Quarantine Zone: The Last Check, where survival depends on your driving skills! Navigate treacherous streets teeming with danger in this adrenaline-fueled game. Every turn could be your last, so buckle up and prepare for the ride of your life. Feel the rumble of the engine, hear the screams in the distance, and see the decay of a world gone mad. Are you ready to face the challenge?</p>
   
-    <h3>Key Features</h3>
+    <h3>Overview</h3>
+    <p>Quarantine Zone: The Last Check plunges you into a desperate battle for survival within the confines of a deadly quarantine. With limited resources and constant threats, you'll need to master your driving abilities to evade the infected and secure your future. The game offers a thrilling blend of high-speed chases and strategic decision-making. The key to survival lies not only in your reflexes but in your ability to adapt and overcome.</p>
+  
+    <h3>Gameplay Experience</h3>
+    <p>Imagine the weight of responsibility as you navigate through narrow streets, the growls of the infected echoing around you. The tension is palpable, and every decision carries consequences. The fate of humanity might just rest on your shoulders in this pulse-pounding experience. The controls are intuitive, making it easy to pick up but difficult to master. Expect close calls, near misses, and moments where you'll question your choices. But remember, hesitation can be deadly.</p>
+  
+    <h3>Highlights of Quarantine Zone</h3>
     <ul>
-      <li><strong>Original Artwork and Backgrounds:</strong> Immerse yourself in a visually stunning world with unique and captivating art.</li>
-      <li><strong>Two Entrancing Characters:</strong> Encounter Pierrot and Harlequin, each with their own distinct personalities and dark secrets.</li>
-      <li><strong>Multiple Endings:</strong> Explore the consequences of your choices with one bad ending and three open endings currently available.</li>
-      <li><strong>Language Support:</strong> Enjoy the game in English, Portuguese (BR), and Chinese.</li>
+      <li><strong>Intense Driving Action:</strong> Experience thrilling chases and adrenaline-pumping escapes as you navigate through infected zones.</li>
+      <li><strong>Strategic Decision-Making:</strong> Every choice matters. Plan your routes carefully and use your resources wisely to survive.</li>
+      <li><strong>Immersive Environment:</strong> Explore a detailed and atmospheric world, filled with danger and despair.</li>
+      <li><strong>Test Your Skills:</strong> Challenge your driving skills in the face of overwhelming odds.</li>
     </ul>
   
-    <h3>Planned Content</h3>
-    <p>The development team has exciting plans for future updates, including:</p>
-    <ul>
-      <li>Pierrot's Ending</li>
-      <li>Harlequin's Ending</li>
-      <li>Protagonist's Ending</li>
-      <li>A "All Together" ending</li>
-    </ul>
-  
-    <h3>Content Warnings</h3>
-    <p>Please be aware that <strong>The Freak Circus</strong> contains mature themes and potentially disturbing content. This game is recommended for ages 18+ due to the following:</p>
-    <ul>
-      <li>Screen Shaking</li>
-      <li>Blood, Death, Murder, and (light) Gore</li>
-      <li>Allusions to Cannibalism</li>
-      <li>Abuse</li>
-      <li>Strong Language</li>
-      <li>Kidnapping</li>
-      <li>Non-Consensual Use of Drugs</li>
-    </ul>
+    <h3>How to Play</h3>
+    <p>Quarantine Zone is a driving-based survival game where your primary objective is to navigate through dangerous areas while avoiding or outmaneuvering the infected. Be mindful of your surroundings and manage your resources effectively. Speed and precision are vital to your survival. Keep a steady hand, trust your instincts, and never give up!</p>
   
     <h3>FAQ</h3>
     <ol>
-      <li><strong>What type of game is The Freak Circus?</strong><br><strong>The Freak Circus</strong> is a visual novel with a yandere theme, focusing on story and character interaction with choices that influence the ending.</li>
-      <li><strong>How many characters are available to interact with?</strong><br>Currently, there are two main characters, Pierrot and Harlequin, who are both competing for the protagonist's affection.</li>
-      <li><strong>How many endings does the game have?</strong><br>The current version of the game features one bad ending and three open endings. More endings are planned for future updates.</li>
-      <li><strong>What languages are available in The Freak Circus?</strong><br>The game is currently available in English, Portuguese (BR), and Chinese.</li>
-      <li><strong>Is The Freak Circus suitable for all ages?</strong><br>No, <strong>The Freak Circus</strong> is recommended for ages 18+ due to its mature themes and potentially disturbing content, including strong language, violence, and allusions to sensitive topics.</li>
-      <li><strong>What content is planned for future updates?</strong><br>Future updates will include dedicated endings for Pierrot and Harlequin, as well as an ending focused on the protagonist. A "All Together" ending is also planned.</li>
+      <li><strong>What is the objective of Quarantine Zone: The Last Check?</strong><br>The main objective is to survive by driving through the infected zones, avoiding or outmaneuvering the infected and securing resources.</li>
+      <li><strong>What kind of game is Quarantine Zone: The Last Check?</strong><br>It's a driving-based survival game, where your skills behind the wheel determine your fate.</li>
+      <li><strong>How do I control the vehicle in Quarantine Zone: The Last Check?</strong><br> The control scheme is intuitive, designed for easy pickup but with a skill ceiling for mastering precise maneuvers. (The user description didn't provide specific control details).</li>
+      <li><strong>What makes Quarantine Zone: The Last Check unique?</strong><br>The combination of intense driving action, strategic decision-making, and an immersive environment creates a truly unique survival experience.</li>
+      <li><strong>Is Quarantine Zone: The Last Check difficult?</strong><br>The game is designed to be challenging, but rewarding. Skill and strategy are equally important for survival.</li>
+      <li><strong>Where can I play Quarantine Zone: The Last Check?</strong><br>You can play it at <a href="https://quarantinezonegame.com/gg/quarantine-zone-unblocked/">quarantinezonegame.com</a></li>
     </ol>
   
-    <p>Step right up, if you dare! <strong>The Freak Circus</strong> awaits those brave enough to confront its horrors and navigate its twisted romance. Will you survive the circus of horrors, or will you become another victim of its dark allure?</p>
+    <p>Quarantine Zone: The Last Check is not just a game; it's a test of your resilience, your courage, and your driving prowess. Are you ready to enter the quarantine zone and face the ultimate challenge? Start your engine, the infected are waiting!</p>
   </div>`,
   },
 
   {
     id: 2,
-    title: "Granny Horror",
-    iframeUrl: "https://1games.io/game/granny-horror/",
-    description: "Dare to enter Granny's terrifying house! You have five days to escape her clutches. Stay silent, solve puzzles, and use stealth to survive. Choose your difficulty, find the tools, and unlock the secrets to freedom. Can you outsmart Granny?",
-    tags: ["granny","horror game","survival horror","puzzle solving","escape game"],
+    title: "Resident Zombies: Horror Shooter",
+    iframeUrl: "https://quarantinezonegame.com/gg/resident-zombies-horror-shooter/",
+    description: "Dive into Resident Zombies: Horror Shooter, a thrilling third-person survival experience in a city overrun by the undead. Explore the infected zones, uncover the outbreak's cause, and battle relentless threats. Survival depends on your wits and firepower!",
+    tags: ["resident","zombies","horror","shooter","survival"],
     publishDate: "2025-12-05",
     imageUrl: "/images/game/game02.webp",
-    imageAlt: "A tense scene from the Granny Horror game, featuring a dimly lit hallway and a shadowy figure.",
+    imageAlt: "A lone survivor stands amidst a zombie-infested city in Resident Zombies: Horror Shooter.",
     seo: {
-      title: "Granny Horror - Escape the Nightmare! Play Free Now",
-      description: "Enter Granny's house in Granny Horror and fight for survival! Silent steps, puzzle solving, and strategic hiding are key. Can you escape in five days?",
-      keywords: "granny, horror, survival horror, puzzle, escape, scary game, old lady, haunted house, stealth, Granny Horror game"
+      title: "Resident Zombies: Horror Shooter - Survive the Zombie Apocalypse!",
+      description: "Enter a quarantined city in Resident Zombies: Horror Shooter. Uncover the cause of the zombie outbreak and fight for survival against hordes of the undead. Download now!",
+      keywords: "resident zombies, horror shooter, survival game, zombie outbreak, third-person shooter, infected city, post-apocalyptic, quarantine zone",
     },
     isHome: false,
     comments: [
@@ -98,59 +83,62 @@ export const games = [
         text: 'Amazing game! The decision-making mechanics are really engaging.'
       }
     ],
-    addressBar: "granny-horror",
+    addressBar: "resident-zombies-horror-shooter",
     detailsHtml: `<div>
-    <h2>Granny Horror: Can You Survive the Five-Day Nightmare?</h2>
-    <p>Imagine waking up in a dimly lit room, an eerie silence broken only by the creaks of an old house. You've been kidnapped and imprisoned by Granny, a seemingly frail old woman with deceptively sharp hearing. Every rustle, every creak, could be your last. You have five days to escape her terrifying house in Granny Horror. Are you brave enough to take on the challenge?</p>
+    <h2>Resident Zombies: Horror Shooter</h2>
+    <p>Imagine waking up to silence... a chilling, unsettling silence in a city that once bustled with life. Now, only destruction and the shuffling moans of the undead echo through the streets. This is the reality in <strong>Resident Zombies: Horror Shooter</strong>, a third-person survival shooter that plunges you into the heart of a quarantined city, teeming with the living dead.</p>
   
-    <h3>The Horror Game Story: Trapped in Granny's House</h3>
-    <p>The game plunges you into a nightmare scenario. Kidnapped and disoriented, you find yourself in a dilapidated house, the captive of Granny. She might seem slow, but her hearing is incredibly sensitive. Any noise will draw her attention, and her wrath is swift and deadly. The clock is ticking – you have only five days to find a way out, or you'll be trapped forever!</p>
+    <h3>A Fight for Survival Begins</h3>
+    <p>Your journey begins in an abandoned building, a temporary sanctuary amidst the chaos. Armed with only basic supplies, you must venture out into the infected zones. Every shadow holds a potential threat, every corner could be your last. This is not just about mindless shooting; it’s about strategic survival, resource management, and uncovering the dark secrets behind the outbreak.</p>
   
-    <h3>How to Escape Granny's House: A Guide to Survival</h3>
-    <p>Granny Horror blends exploration, puzzle-solving, and stealth-based survival. Here's how to increase your chances of escaping. For more survival strategies and tips, visit our <a href="/guides" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">survival guides</a>.</p>
+    <h3>Unraveling the Mystery of the Outbreak</h3>
+    <p>As you navigate the devastated cityscape, you will piece together the events that led to this horrifying transformation. Through scattered documents, cryptic messages, and environmental storytelling, you'll delve deeper into the mystery, uncovering the truth behind the <strong>resident zombies</strong> and the forces responsible for unleashing them. Expect to face moral dilemmas and make tough choices that will impact your survival and the fate of the city.</p>
+  
+    <h3>Constant Pressure, Relentless Threats</h3>
+    <p>The core of <strong>Resident Zombies: Horror Shooter</strong> lies in its blend of exploration and relentless action. While you are searching for clues and resources, the undead are constantly on the prowl. They can appear at any moment, turning a quiet exploration into a desperate fight for your life. This constant pressure keeps you on edge, forcing you to adapt and react to the ever-present danger.</p>
+  
+    <h3>Key Features of Resident Zombies: Horror Shooter</h3>
     <ul>
-      <li><strong>Choose Your Game Mode Wisely:</strong> The game offers five game modes, ranging from practice to extreme. Start with an easier mode to learn the layout and Granny's patterns.</li>
-      <li><strong>Search for Vital Items:</strong> Keys, hammers, pliers – these are your lifelines. Scour the house for tools that can unlock doors, disable traps, and ultimately lead you to freedom.</li>
-      <li><strong>Master the Art of Stealth:</strong> Silence is your greatest weapon. Walk quietly, avoid dropping items, and steer clear of noisy areas. Granny's hearing is your biggest threat.</li>
-      <li><strong>Explore Every Nook and Cranny:</strong> Open cabinets, drawers, and check every dark corner for clues. The house is full of secrets, and even the smallest detail could be the key to your escape.</li>
-      <li><strong>Solve Survival Puzzles:</strong> The house is filled with intricate puzzles that require cunning and resourcefulness to solve. Find ways to unlock doors, disable security systems, and complete objectives before time runs out.</li>
-      <li><strong>Use the Environment to Your Advantage:</strong> Hide under beds, in closets, or behind objects to evade Granny's watchful eyes. Utilize the environment to stay hidden and out of her reach.</li>
+      <li><strong>Third-Person Perspective:</strong> Offers a clear view of your surroundings, crucial for spotting approaching threats and planning your movements.</li>
+      <li><strong>Intense Survival Gameplay:</strong> Manage limited resources, scavenge for supplies, and craft essential items to stay alive.</li>
+      <li><strong>Exploration and Discovery:</strong> Uncover the secrets of the outbreak by exploring the infected zones and finding clues.</li>
+      <li><strong>Dynamic Zombie Encounters:</strong> Face hordes of zombies that can appear at any time, keeping you constantly on guard.</li>
     </ul>
   
-    <h3>Game Controls: Your Lifeline to Freedom</h3>
-    <ul>
-     <li><strong>Mouse:</strong> Look around and survey your surroundings.</li>
-     <li><strong>WASD:</strong> Move through the house, navigating the treacherous hallways and rooms.</li>
-     <li><strong>E:</strong> Interact with objects, picking up tools, opening doors, and solving puzzles.</li>
-    </ul>
-  
-    <h3>FAQ: Your Questions Answered</h3>
+    <h3>Tips for Surviving the Zombie Apocalypse</h3>
     <ol>
-      <li><strong>What happens if Granny catches me?</strong><br>If Granny catches you, you will lose one day. You only have five days to escape, so avoid her at all costs.</li>
-      <li><strong>What are the different game modes in Granny Horror?</strong><br>Granny Horror features five game modes: Practice, Easy, Normal, Hard, and Extreme. Each mode increases the difficulty and Granny's sensitivity to sound.</li>
-      <li><strong>What kind of items can I find in the house?</strong><br>You can find various items such as keys, hammers, pliers, and other tools necessary to open escape doors and solve puzzles.</li>
-      <li><strong>How can I avoid Granny's attention?</strong><br>Walk quietly, don't drop items, and avoid making loud noises. Hiding is also crucial; try crawling under beds or hiding in closets.</li>
-      <li><strong>How long do I have to escape Granny's house?</strong><br>You have exactly five days to escape Granny's house before you are trapped forever.</li>
-      <li><strong>What should I do if I make a noise?</strong><br>Immediately find a hiding spot, such as under a bed or inside a closet. Granny will investigate the noise, so you need to stay hidden until she leaves.</li>
+      <li><strong>Conserve Ammunition:</strong> Every bullet counts. Aim for headshots to maximize damage and minimize waste.</li>
+      <li><strong>Scavenge Thoroughly:</strong> Search every nook and cranny for valuable supplies, including food, medicine, and crafting materials.</li>
+      <li><strong>Use Stealth When Possible:</strong> Avoid unnecessary confrontations by using stealth to navigate through zombie-infested areas.</li>
+      <li><strong>Craft Essential Items:</strong> Combine scavenged materials to create weapons, medicine, and other vital resources.</li>
     </ol>
   
-    <p>Granny Horror is a thrilling test of your courage, stealth, and puzzle-solving skills. Can you outsmart Granny and escape her terrifying clutches? Download the game now and face your fears!</p>
+    <h3>FAQ</h3>
+    <ol>
+      <li><strong>What type of game is Resident Zombies: Horror Shooter?</strong><br>It's a third-person survival shooter set in a quarantined city overrun by zombies. The core gameplay focuses on exploration, resource management, and combat.</li>
+      <li><strong>Where does the game begin?</strong><br>The game starts with your character waking up in an abandoned building, surrounded by the eerie silence and destruction of the infected city.</li>
+      <li><strong>What resources do I have available at the start of the game?</strong><br>You begin with only basic supplies. Finding additional resources is a crucial part of the gameplay.</li>
+      <li><strong>What is the main goal of the game?</strong><br>Your primary objectives are to explore the infected zones, uncover the cause of the zombie outbreak, and survive the constant threat of the undead.</li>
+      <li><strong>How does the game create a sense of urgency and danger?</strong><br>The game blends exploration with constant pressure from enemies that can appear at any moment, creating a thrilling and unpredictable survival experience.</li>
+    </ol>
+  
+    <p><strong>Resident Zombies: Horror Shooter</strong> offers a gripping and immersive survival experience in a world consumed by the undead. Prepare to face your fears, test your limits, and fight for your survival in this terrifying new reality.</p>
   </div>`,
   },
 
   {
     id: 3,
-    title: "Five Nights at Freddy's",
-    iframeUrl: "https://1games.io/game/fnaf-1/",
-    description: "Brave the ultimate test of nerve in Five Nights at Freddy's! As a night security guard at Freddy Fazbear's Pizza, survive against awakened animatronics. Manage electricity, utilize cameras, and strategically close doors to endure five terrifying nights. Are you ready for the horror?",
-    tags: ["horror game","survival","animatronics","five nights","freddy fazbear"],
+    title: "One Among Zombies",
+    iframeUrl: "https://one-among-zombies.game-files.crazygames.com/unity/unity2020/one-among-zombies.html",
+    description: "Navigate a city overrun by the infected in One Among Zombies. This survival game emphasizes tension, suspicion, and crucial decision-making. Scavenge scarce resources, cautiously interact with other survivors, and fight to stay alive in a world where trust is a luxury.",
+    tags: ["zombie survival","tension game","decision making","resource scarcity","one among zombies"],
     publishDate: "2025-12-05",
     imageUrl: "/images/game/game03.webp",
-    imageAlt: "A terrifying animatronic bear from Five Nights at Freddy's looming in the dark.",
+    imageAlt: "A lone survivor cautiously navigates a zombie-infested city street in One Among Zombies.",
     seo: {
-      title: "Five Nights at Freddy's - The Ultimate Horror Survival Game",
-      description: "Test your nerve in Five Nights at Freddy's! Survive five nights against terrifying animatronics. Use strategy, manage resources, and face your fears to make it through!",
-      keywords: "five nights at freddy's, fnaf, horror game, survival game, animatronics, freddy fazbear, jump scare, night security"
+      title: "One Among Zombies - Survival Horror Game Online",
+      description: "Survive the zombie apocalypse in One Among Zombies. Face scarce resources, untrustworthy survivors, and constant tension. Can you make the right choices to live?",
+      keywords: "one among zombies, zombie game, survival game, horror game, resource management, decision-making game, online game, apocalypse, infected, survivor",
     },
     isHome: false,
     comments: [
@@ -162,61 +150,60 @@ export const games = [
         text: 'Amazing game! The decision-making mechanics are really engaging.'
       }
     ],
-    addressBar: "five-nights-at-freddy's",
+    addressBar: "one-among-zombies",
     detailsHtml: `<div>
-    <h2>Five Nights at Freddy's: The Ultimate Test of Nerve!</h2>
-    <p>Welcome to a chilling part-time job where fun turns into a nightmare! Five Nights at Freddy's plunges you into the spooky environment of Freddy Fazbear's Pizza. By day, it's a paradise for kids, but as night falls, the animatronics awaken. Your mission: survive five nights as a security guard against these relentless creatures. Can you endure the suspense and conquer this famous horror game?</p>
-  
-    <h3>The Five Nights: A Gradual Descent into Madness</h3>
-    <p>Each night intensifies the terror, testing your limits and pushing you to the brink. Be prepared for a relentless assault on your senses and nerves. The animatronics grow increasingly aggressive, and your survival depends on quick thinking and strategic resource management.</p>
-  
-    <h3>Detailed Nightly Breakdown</h3>
+    <h2>One Among Zombies</h2>
+    <p>Imagine a world teetering on the brink, where the familiar cityscapes are now haunting labyrinths teeming with the infected. Welcome to One Among Zombies, a gripping survival game that thrusts you into the heart of an apocalypse. Unlike the typical run-and-gun zombie games, One Among Zombies focuses on the raw tension, the gnawing suspicion, and the agonizing choices that define survival. Every shadow could conceal a threat, every encounter a potential betrayal.</p>
+    
+    <h3>Scarcity and Suspicion: The Cornerstones of Survival</h3>
+    <p>Resources are critically scarce. Every bullet, every bandage, every morsel of food is a treasure to be guarded jealously. The ravaged city becomes your hunting ground, but be warned: you're not the only one scavenging. Other survivors are scattered throughout the map, each with their own agenda, their own secrets, and their own desperation. Trust is a dangerous luxury. Who can you rely on? Who has already succumbed to the darkness?</p>
+    
+    <h3>High-Stakes Encounters</h3>
+    <p>Each encounter with another survivor is a gamble. Will they offer aid, a temporary alliance against the encroaching hordes? Or are they already lost, their humanity consumed by the primal need to survive at any cost? The decisions you make in these moments will determine not only your own fate but potentially the fate of others as well.</p>
+    
+    <h3>Gameplay Highlights</h3>
     <ul>
-      <li><strong>Night 1:</strong> Suspicious movements begin. The animatronics are awakening, testing the waters. Observe carefully.</li>
-      <li><strong>Night 2:</strong> Freddy and his animatronic friends become more active. Showcase your best defensive skills to stay safe and anticipate their movements.</li>
-      <li><strong>Night 3:</strong> The animatronics' movement rate increases dramatically. Their attacks are faster and more unpredictable, requiring heightened awareness.</li>
-      <li><strong>Night 4:</strong> Things escalate to extreme levels. A single mistake could be fatal. Stay vigilant and conserve your precious resources.</li>
-      <li><strong>Night 5:</strong> The height of fear! The animatronics seem to be everywhere simultaneously. Focus all your concentration to survive the final, terrifying night.</li>
+      <li><strong>Tense Atmosphere:</strong> Experience the constant dread of being outnumbered and outgunned.</li>
+      <li><strong>Strategic Decision-Making:</strong> Every choice matters. Conserve resources, assess risks, and choose your allies wisely.</li>
+      <li><strong>Unpredictable Encounters:</strong> Never know what to expect from other survivors. Trust is a rare and precious commodity.</li>
+      <li><strong>Resource Management:</strong> Scavenge for essential supplies and learn to make every item count.</li>
     </ul>
-  
-    <h3>Core Gameplay Mechanics</h3>
-    <p>Electricity is your lifeline in Five Nights at Freddy's. It powers the lights and security doors, your primary defenses against the animatronic onslaught. However, overuse will lead to a game over. Prudent management is crucial for survival. The security camera is your eye and ear, allowing you to monitor the animatronics' movements. Utilize it strategically, but be mindful of its electricity consumption. Closing the doors provides immediate protection but drains a significant amount of energy. Open them when safe to conserve power for later threats. Resource management is key - learn more strategies in our <a href="/wiki" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">resource management guide</a>.</p>
-  
-    <h3>Essential Survival Tips</h3>
+    
+    <h3>How to Survive in One Among Zombies: A Quick Guide</h3>
     <ol>
-      <li><strong>Conserve Electricity:</strong> Every action consumes power. Strategically manage lights, cameras, and doors to maximize your survival time.</li>
-      <li><strong>Monitor Camera Feeds:</strong> Track the animatronics' movements to anticipate their attacks and prepare your defenses.</li>
-      <li><strong>Listen Carefully:</strong> Pay attention to audio cues that may indicate an animatronic's presence or approach.</li>
-      <li><strong>Prioritize Threats:</strong> Focus on the animatronics that pose the most immediate danger.</li>
-      <li><strong>Stay Calm:</strong> Panic can lead to mistakes. Maintain composure under pressure to make rational decisions.</li>
+      <li><strong>Stay Alert:</strong> The infected are everywhere. Always be aware of your surroundings.</li>
+      <li><strong>Conserve Resources:</strong> Ammunition and supplies are limited. Use them wisely.</li>
+      <li><strong>Assess Risks:</strong> Before engaging, evaluate the potential rewards versus the potential dangers.</li>
+      <li><strong>Trust Sparingly:</strong> Not everyone is your friend. Be wary of other survivors.</li>
+      <li><strong>Make Tough Choices:</strong> Sometimes, the only way to survive is to make difficult decisions.</li>
     </ol>
-  
-    <h3>FAQ: Your Burning Questions Answered</h3>
+    
+    <h3>FAQ</h3>
     <ol>
-      <li><strong>What is the main objective of Five Nights at Freddy's?</strong><br>The main objective is to survive five nights (each lasting approximately 8 minutes in real-time) while avoiding being caught by the animatronic characters.</li>
-      <li><strong>How do I protect myself from the animatronics?</strong><br>You can protect yourself by monitoring the animatronics' movements via security cameras and closing the security doors to your office. However, both actions consume electricity, which is a limited resource.</li>
-      <li><strong>What happens if I run out of electricity?</strong><br>If you run out of electricity, the doors will open, and Freddy Fazbear will eventually attack you, resulting in a game over.</li>
-      <li><strong>Are there any patterns to the animatronics' movements?</strong><br>While their movements may seem random, the animatronics generally follow predictable paths. Learning these patterns can help you anticipate their attacks and plan your defenses.</li>
-      <li><strong>Is there any way to win Five Nights at Freddy's?</strong><br>Yes, surviving all five nights is considered winning the game. There are also additional challenges and secrets to uncover for experienced players.</li>
+      <li><strong>What is the main focus of One Among Zombies?</strong><br>One Among Zombies emphasizes tension, suspicion, and decision-making in a zombie-infested world where resources are scarce.</li>
+      <li><strong>Are there other survivors in the game?</strong><br>Yes, there are other survivors scattered across the map. Each encounter is a risk – some might help, others may be hostile.</li>
+      <li><strong>What makes this game different from other zombie games?</strong><br>Unlike many zombie games focused on constant combat, One Among Zombies leans into tension, suspicion, and the strategic use of limited resources.</li>
+      <li><strong>Is trust important in the game?</strong><br>Trust is very hard to find. You must carefully assess the intentions of other survivors before deciding to cooperate.</li>
+      <li><strong>What should I prioritize when playing One Among Zombies?</strong><br>Prioritize resource management, situational awareness, and careful decision-making in every encounter.</li>
     </ol>
-  
-    <p>Prepare yourself for a heart-pounding experience that will test your courage and strategic thinking. Five Nights at Freddy's delivers a unique blend of suspense, jump scares, and resource management, solidifying its place as a modern horror classic. Are you brave enough to face the animatronics?</p>
+    
+    <p>One Among Zombies is more than just a zombie game; it's a test of your ability to survive in a world stripped bare of its humanity. Can you make the right choices? Can you trust the right people? Your survival depends on it.</p>
   </div>`,
   },
 
   {
     id: 4,
-    title: "Tung Sahur Horro",
-    iframeUrl: "https://game.azgame.io/tung-sahur-horror/",
-    description: "Dare to enter Tung Sahur's eerie house in this survival horror game! Escape within 5 days by solving puzzles, finding keys, and avoiding the terrifying Tung Sahur. Use stealth, distractions, and found weapons to survive. Play now on Azgames.io!",
-    tags: ["tung sahur","horror game","survival horror","azgames","brainrot meme"],
+    title: "Call of Duty: Zombies (Demake)",
+    iframeUrl: "https://quarantinezonegame.com/gg/call-of-duty-zombies-demake/",
+    description: "Dive into a retro-inspired take on Call of Duty Zombies! This demake delivers tense, arcade-style zombie survival in pixel-art glory. Experience the thrill of wave progression and resource management with a nostalgic 90s vibe. Survive the horde!",
+    tags: ["call of duty","zombies","demake","retro gaming","pixel art"],
     publishDate: "2025-12-05",
     imageUrl: "/images/game/game04.webp",
-    imageAlt: "A screenshot from Tung Sahur Horror game featuring the Tung Sahur character in a spooky setting.",
+    imageAlt: "Pixel-art screenshot of Call of Duty Zombies (Demake) featuring zombie horde and player character.",
     seo: {
-      title: "Tung Sahur Horror - Escape the Haunted House!",
-      description: "Escape the terrifying Tung Sahur in this intense survival horror game! Solve puzzles, find keys, and use stealth to survive 5 days. Play Tung Sahur Horror on Azgames.io now!",
-      keywords: "tung, sahur, horror, survival horror, escape game, azgames, brainrot meme, puzzle game, haunted house"
+      title: "Call of Duty Zombies Demake - Retro Pixel-Art Zombie Survival",
+      description: "Experience Call of Duty Zombies in a nostalgic, pixel-art demake. Enjoy fast-paced arcade action, wave progression, and intense zombie survival gameplay.",
+      keywords: "call of duty, zombies, demake, retro, pixel art, zombie survival, arcade, quarantine zone",
     },
     isHome: false,
     comments: [
@@ -228,56 +215,44 @@ export const games = [
         text: 'Amazing game! The decision-making mechanics are really engaging.'
       }
     ],
-    addressBar: "tung-sahur-horro",
+    addressBar: "call-of-duty-zombies-demake",
     detailsHtml: `<div>
-    <h2>Tung Sahur Horro: Can You Survive the Night?</h2>
-    <p>Step into a chilling nightmare with Tung Sahur Horro, a survival horror game that will test your wits and bravery. Waking up trapped within the unsettling confines of Tung Tung Tung Sahur's house, your primary objective is clear: escape. However, survival is far from guaranteed.</p>
+    <h2>Call of Duty: Zombies (Demake)</h2>
+    <p>Step back in time with <em>Call of Duty: Zombies (Demake)</em>, a loving reimagining of the classic zombie mode from the Call of Duty franchise. Instead of photorealistic graphics, prepare for a low-resolution, pixel-art experience that harkens back to the golden age of arcade gaming. The shambling undead have never looked so… blocky!</p>
   
-    <h3>The Five-Day Gauntlet</h3>
-    <p>You have a mere five days – or, more accurately, five chances – to break free from this terrifying prison. Each day that passes brings you closer to your doom as Tung Sahur relentlessly hunts you. If caught, the day ends immediately, leaving you with one less opportunity to escape. Use your time wisely, for every second counts.</p>
+    <h3>Nostalgic Visuals, Modern Thrills</h3>
+    <p>Forget high-end graphics and cinematic cutscenes. This demake strips away the visual fluff and delivers a pure, unadulterated zombie survival experience. Imagine playing this on your old 90s console, fighting for your life against hordes of the undead. The atmosphere remains tense and darkly compelling, despite the charmingly retro presentation. Expect challenging gameplay where every pixelated bullet counts.</p>
   
-    <h3>Stealth is Your Ally</h3>
-    <p>Tung Sahur is drawn to noise. Moving silently and strategically is paramount to your survival. Utilize the environment to your advantage. Seek refuge in wardrobes, under beds, and behind furniture. Crouching allows you to move with greater stealth, significantly reducing the chance of being detected. Remember, silence is your greatest weapon. For more stealth and survival tips, check our <a href="/guides" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">survival guides</a>.</p>
+    <h3>Core Mechanics Intact</h3>
+    <p>Don't let the visual downgrade fool you; the heart of Call of Duty Zombies remains. The core mechanics are meticulously preserved, ensuring a familiar and addictive experience for veterans and newcomers alike. Focus on strategic survival, managing your resources carefully, and progressing through increasingly difficult waves of relentless zombies. Teamwork and quick reflexes are essential for making it through the night.</p>
   
-    <h3>Unraveling the Mystery: Puzzles and Items</h3>
-    <p>Escape is not merely a matter of finding an open door. The house is filled with intricate puzzles and locked pathways. To progress, you must bravely explore every nook and cranny, searching for essential items. Keys, tools, and even makeshift weapons are scattered throughout the house, hidden within cupboards, drawers, cabinets, shelves, and dressers. Each item holds a specific purpose, providing a piece of the puzzle required for your ultimate escape.</p>
-  
-    <h3>Fight or Flight: Engaging Tung Sahur</h3>
-    <p>While stealth is your primary defense, sometimes confrontation is unavoidable. Should you find a weapon, use it strategically to temporarily incapacitate Tung Sahur. This buys you precious time to explore, solve puzzles, and distance yourself from the immediate threat. However, be warned: Tung Sahur recovers quickly. Use your weapon wisely and plan your escape route accordingly.</p>
-  
-    <h3>Game Controls</h3>
+    <h3>Key Features: A Retro Revival</h3>
     <ul>
-      <li><strong>Movement:</strong> Use WASD or the arrow keys.</li>
-      <li><strong>Navigation:</strong> Use your mouse to control the character's view.</li>
+      <li><strong>Pixel-Art Aesthetics:</strong> Experience the zombie apocalypse in charmingly low-resolution.</li>
+      <li><strong>Arcade-Style Gameplay:</strong> Fast-paced, action-packed zombie slaying at its finest.</li>
+      <li><strong>Tense Atmosphere:</strong> Despite the retro visuals, the horror and tension are still palpable.</li>
+      <li><strong>Wave Progression:</strong> Survive increasingly challenging waves of relentless zombies.</li>
+      <li><strong>Resource Management:</strong> Scavenge for weapons, ammo, and upgrades to stay alive.</li>
     </ul>
   
-    <h3>Key Game Features</h3>
-    <ul>
-      <li><strong>Survival Horror Gameplay:</strong> Experience classic survival horror mechanics infused with the comedic terror of Tung Tung Tung Sahur.</li>
-      <li><strong>Multiple Escape Routes:</strong> Discover various ways to escape, including unlocking the main door, each requiring different tools and items.</li>
-      <li><strong>Puzzle Solving and Item Collection:</strong> Find keys, unlock doors, and solve intricate puzzles to progress.</li>
-      <li><strong>Limited Time:</strong> You have only five days (or chances) to escape.</li>
-      </ul>
-      
-    <h3>How to Survive</h3>
+    <h3>Tips for Survival</h3>
     <ol>
-      <li><strong>Prioritize Stealth:</strong> Move quietly and utilize hiding spots.</li>
-      <li><strong>Explore Thoroughly:</strong> Search every corner for essential items.</li>
-      <li><strong>Plan Your Escape:</strong> Identify and work towards your chosen escape route.</li>
-      <li><strong>Conserve Resources:</strong> Use weapons strategically and avoid unnecessary conflict.</li>
+      <li><strong>Conserve Ammo:</strong> Every bullet counts, especially in the early rounds.</li>
+      <li><strong>Prioritize Upgrades:</strong> Invest in weapons and perks that suit your playstyle.</li>
+      <li><strong>Work Together:</strong> Coordinate with your teammates to maximize your survival chances.</li>
+      <li><strong>Learn the Map:</strong> Knowing the layout can give you a critical advantage.</li>
     </ol>
   
     <h3>FAQ</h3>
     <ol>
-      <li><strong>What is the objective of Tung Sahur Horror?</strong><br>The main objective is to escape Tung Sahur's house within five days by solving puzzles and finding necessary items.</li>
-      <li><strong>How do I avoid Tung Sahur?</strong><br>Avoid being caught by moving quietly, crouching, and hiding in wardrobes, under beds, or behind furniture.</li>
-      <li><strong>Where can I find items to help me escape?</strong><br>Search in cupboards, drawers, cabinets, shelves, and dressers throughout the house for keys, tools, and weapons.</li>
-      <li><strong>Can I fight Tung Sahur?</strong><br>Yes, if you find weapons, you can use them to temporarily knock out Tung Sahur, giving you more time to escape.</li>
-      <li><strong>How many chances do I have to escape?</strong><br>You only have five days or five chances to escape. Each time you are caught, a day ends instantly.</li>
-      <li><strong>Where can I play Tung Sahur Horror?</strong><br>You can enjoy the game on Azgames.io.</li>
+      <li><strong>What exactly is a 'demake'?</strong><br>A demake is a game created to resemble an older generation of video games, typically with lower resolution graphics and simpler gameplay. Think of it as a modern game reimagined for a classic console.</li>
+      <li><strong>Does this demake include all the features of the original Call of Duty Zombies?</strong><br>While the core mechanics of survival, wave progression, and resource management are preserved, certain graphical and cinematic elements are simplified or omitted to maintain the retro aesthetic.</li>
+      <li><strong>Is this game free to play?</strong><br>Please refer to the official website linked for details on pricing and availability.</li>
+      <li><strong>What kind of experience should I expect from this demake?</strong><br>Expect a challenging, arcade-style zombie survival experience with a nostalgic 90s vibe. The focus is on fast-paced gameplay, strategic resource management, and intense, wave-based combat.</li>
+      <li><strong>Is there multiplayer support?</strong><br>Information regarding multiplayer functionality can be found on the developer's official website.</li>
     </ol>
   
-    <p>Tung Sahur Horro offers a unique blend of survival horror and internet meme humor, promising a terrifying and unforgettable experience. Do you have what it takes to escape Tung Sahur's clutches?</p>
+    <p><em>Call of Duty: Zombies (Demake)</em> offers a unique and refreshing take on a beloved game mode. By stripping away the graphical bells and whistles, it focuses on the core gameplay elements that made Call of Duty Zombies so addictive in the first place. If you're a fan of retro gaming, zombie survival, or just looking for a challenging and rewarding experience, this demake is definitely worth checking out. Prepare to relive the zombie apocalypse in glorious pixelated form!</p>
   </div>`,
   }
 

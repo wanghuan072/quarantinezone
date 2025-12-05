@@ -45,7 +45,7 @@ const routes = [
     }
   },
   {
-    path: '/games',
+    path: '/zombie-games',
     name: 'games',
     component: () => import('../views/GamesView.vue'),
     meta: {
@@ -57,7 +57,7 @@ const routes = [
     }
   },
   {
-    path: '/games/:id',
+    path: '/zombie-games/:id',
     name: 'game-detail',
     component: () => import('../views/GameDetailView.vue')
     // 详情页的 TDK 从数据中的 seo 字段读取，不在路由中设置

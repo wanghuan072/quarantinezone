@@ -4,9 +4,9 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">News</h1>
+          <h1 class="page-title">Quarantine Zone: The Last Check News</h1>
           <p class="page-subtitle">
-            Latest news and updates about Quarantine Zone: The Last Check
+            Stay updated with the latest Quarantine Zone: The Last Check news, patch notes, developer announcements, Discord Q&A sessions, release date updates, and upcoming features. Get all the latest information directly from the development team.
           </p>
         </div>
       </div>

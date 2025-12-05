@@ -35,8 +35,8 @@
     <meta name="googlebot" content="index, follow">
     <meta name="theme-color" content="#39ff14">
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
+    <!-- Structured Data - Default Value (保留作为默认值) -->
+    <script type="application/ld+json" data-seo-default="true">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -65,38 +65,35 @@
       }
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoGame",
-      "name": "Quarantine Zone: The Last Check",
-      "description": "A deep and atmospheric simulation game where players are placed in the role of a frontline officer in a collapsing world. Screen survivors, manage resources, and make life-or-death decisions.",
-      "genre": "Survival Simulation",
-      "gamePlatform": ["PC", "Windows"],
-      "operatingSystem": "Windows",
-      "applicationCategory": "Game",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.5",
-        "ratingCount": "100"
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/PreOrder",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Devolver Digital"
-      },
-      "developer": {
-        "@type": "Organization",
-        "name": "Brigada Games"
-      },
-      "releaseDate": "2025"
-    }
-    </script>
+
+  <!-- 延迟加载第三方脚本 -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        // 延迟加载Google Analytics
+        const gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.defer = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5G9W4J9HEE';
+        document.head.appendChild(gtagScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5G9W4J9HEE');
+
+
+        // 延迟加载广告
+        // const adsScript = document.createElement('script');
+        // adsScript.async = true;
+        // adsScript.defer = true;
+        // adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2318352950196721';
+        // adsScript.crossOrigin = 'anonymous';
+        // document.head.appendChild(adsScript);
+      }, 3000);
+    });
+  </script>
+
   </head>
   <body>
     <div id="app"></div>

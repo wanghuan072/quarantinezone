@@ -4,9 +4,9 @@
     <section class="wiki-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Game Wiki</h1>
+          <h1 class="page-title">Quarantine Zone: The Last Check Wiki</h1>
           <p class="page-subtitle">
-            Complete information about Quarantine Zone: The Last Check
+            Comprehensive database covering all tools, resources, upgrades, personnel roles, events, and strategies in Quarantine Zone: The Last Check. Find detailed information about inspection tools, resource management, decision-making scenarios, and survival mechanics.
           </p>
         </div>
       </div>

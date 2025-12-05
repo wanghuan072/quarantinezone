@@ -5,7 +5,7 @@
       <div class="container">
         <h1>Game Not Found</h1>
         <p>The game you're looking for doesn't exist or has been removed.</p>
-        <router-link to="/games" class="btn btn-primary">Back to Games</router-link>
+        <router-link to="/zombie-games" class="btn btn-primary">Back to Games</router-link>
       </div>
     </div>
 

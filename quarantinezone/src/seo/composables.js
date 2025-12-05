@@ -148,15 +148,14 @@ export function useSEO() {
   const addStructuredData = (data) => {
     if (typeof document === 'undefined') return
 
-    // 移除现有的结构化数据
-    const existingScript = document.querySelector('script[type="application/ld+json"]')
-    if (existingScript) {
-      existingScript.remove()
-    }
+    // 只移除动态添加的结构化数据（不包含 data-seo-default 属性的），保留 index.html 中的默认值
+    const dynamicScripts = document.querySelectorAll('script[type="application/ld+json"]:not([data-seo-default])')
+    dynamicScripts.forEach(script => script.remove())
 
-    // 添加新的结构化数据
+    // 添加新的结构化数据（标记为动态添加）
     const script = document.createElement('script')
     script.type = 'application/ld+json'
+    script.setAttribute('data-seo-dynamic', 'true')
     script.textContent = JSON.stringify(data)
     document.head.appendChild(script)
   }

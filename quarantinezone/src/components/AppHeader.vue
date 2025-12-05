@@ -15,7 +15,7 @@
           <router-link to="/" @click="closeMenu">Home</router-link>
           <router-link to="/guides" @click="closeMenu">Guides</router-link>
           <router-link to="/wiki" @click="closeMenu">Wiki</router-link>
-          <router-link to="/games" @click="closeMenu">Games</router-link>
+          <router-link to="/zombie-games" @click="closeMenu">Zombie Games</router-link>
           <router-link to="/news" @click="closeMenu">News</router-link>
         </nav>
       </div>

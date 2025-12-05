@@ -4,9 +4,9 @@
     <section class="games-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Games</h1>
+          <h1 class="page-title">Zombie Games</h1>
           <p class="page-subtitle">
-            Play Quarantine Zone: The Last Check and other related games
+            Discover free browser-based zombie survival games that share similar themes, mechanics, and gameplay styles with Quarantine Zone: The Last Check. Play instantly without downloads, featuring decision-making, resource management, and survival challenges.
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@
           <router-link
             v-for="game in allGames"
             :key="game.id"
-            :to="`/games/${game.addressBar}`"
+            :to="`/zombie-games/${game.addressBar}`"
             class="game-card"
           >
             <div class="game-image-wrapper">

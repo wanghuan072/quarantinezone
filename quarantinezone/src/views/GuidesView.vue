@@ -4,9 +4,9 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">Game Guides</h1>
+          <h1 class="page-title">Quarantine Zone: The Last Check Guides</h1>
           <p class="page-subtitle">
-            Comprehensive guides to help you master Quarantine Zone: The Last Check
+            Expert survival guides, combat strategies, base management tips, and walkthroughs to help you master every aspect of Quarantine Zone: The Last Check. From beginner basics to advanced tactics, learn how to survive the outbreak and command your checkpoint effectively.
           </p>
         </div>
       </div>

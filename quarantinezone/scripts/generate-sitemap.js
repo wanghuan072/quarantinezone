@@ -15,7 +15,7 @@ const baseRoutes = [
   { path: '/', name: 'home', priority: 1.0, changefreq: 'weekly' },
   { path: '/guides', name: 'guides', priority: 0.9, changefreq: 'weekly' },
   { path: '/wiki', name: 'wiki', priority: 0.8, changefreq: 'weekly' },
-  { path: '/games', name: 'games', priority: 0.9, changefreq: 'weekly' },
+  { path: '/zombie-games', name: 'games', priority: 0.9, changefreq: 'weekly' },
   { path: '/news', name: 'news', priority: 0.9, changefreq: 'daily' },
   { path: '/privacy-policy', name: 'privacy-policy', priority: 0.5, changefreq: 'monthly' },
   { path: '/terms-of-service', name: 'terms-of-service', priority: 0.5, changefreq: 'monthly' },
@@ -100,7 +100,7 @@ async function generateSitemap() {
   const games = data.games || []
   games.forEach(game => {
     if (!game || !game.addressBar) return
-    const gamePath = `/games/${game.addressBar}`
+    const gamePath = `/zombie-games/${game.addressBar}`
     sitemapXml += `\n${generateUrlXml(gamePath, game.publishDate || lastmod, 0.8, 'monthly')}`
   })
 
@@ -147,7 +147,7 @@ async function main() {
     
     // 统计各类URL数量
     const guidesCount = (sitemapContent.match(/\/guides\//g) || []).length
-    const gamesCount = (sitemapContent.match(/\/games\//g) || []).length
+    const gamesCount = (sitemapContent.match(/\/zombie-games\//g) || []).length
     const newsCount = (sitemapContent.match(/\/news\//g) || []).length
     
     console.log('\n📊 URLs by category:')

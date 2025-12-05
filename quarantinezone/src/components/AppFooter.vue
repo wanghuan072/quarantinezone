@@ -16,7 +16,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/guides">Guides</a></li>
             <li><a href="/wiki">Wiki</a></li>
-            <li><a href="/games">Games</a></li>
+            <li><a href="/zombie-games">Zombie Games</a></li>
             <li><a href="/news">News</a></li>
           </ul>
         </div>
