@@ -13,9 +13,11 @@
         <div class="link-column">
           <h2>Navigate</h2>
           <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/guides">Guides</router-link></li>
-            <li><router-link to="/wiki">Wiki</router-link></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/guides">Guides</a></li>
+            <li><a href="/wiki">Wiki</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/news">News</a></li>
           </ul>
         </div>
         <div class="link-column">

@@ -59,6 +59,97 @@
         </div>
       </div>
     </section>
+
+    <!-- Why Choose Our Guide Section -->
+    <section class="why-choose-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-heading">Why Choose Our Guide?</h2>
+          <p class="section-lead">
+            Our comprehensive guides are crafted by experienced players who understand every aspect of Quarantine Zone: The Last Check.
+          </p>
+        </div>
+        <div class="why-choose-grid">
+          <div class="why-choose-card">
+            <div class="why-choose-icon">📚</div>
+            <h3>Comprehensive Coverage</h3>
+            <p>
+              From beginner survival tips to advanced strategies, our guides cover everything you need to master Quarantine Zone: The Last Check. We provide detailed walkthroughs for inspection mechanics, resource management, base upgrades, and moral decision-making. Whether you're learning the basics of visual observation or exploring advanced interrogation techniques, our guides have you covered. For complete reference materials, check out our <router-link to="/wiki" class="inline-link">complete wiki</router-link> with detailed information about all tools, resources, and game mechanics.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <div class="why-choose-icon">✅</div>
+            <h3>Expertly Written</h3>
+            <p>
+              All guides are written by experienced players who have mastered every aspect of the game. Our team has spent countless hours perfecting inspection techniques, optimizing resource allocation, and understanding the complex decision-making systems. We've tested every strategy, analyzed every tool, and documented every mechanic to bring you the most accurate and effective guides possible. Learn from players who understand the nuances of infection detection, base management, and crisis handling.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <div class="why-choose-icon">🔄</div>
+            <h3>Regularly Updated</h3>
+            <p>
+              We keep our guides up-to-date with the latest game changes, patches, and community-discovered strategies. Our team actively monitors game updates, developer announcements, and player feedback to ensure all information remains accurate and relevant. When new features are added or mechanics change, we update our guides immediately. Stay informed with our <router-link to="/news" class="inline-link">latest news</router-link> section to track game updates and ensure you're always using the most current strategies and information.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <div class="why-choose-icon">🎯</div>
+            <h3>Practical Tips</h3>
+            <p>
+              Every guide includes actionable tips and strategies you can apply immediately in your gameplay. We focus on practical techniques that will make a real difference, from efficient tool usage patterns to resource management strategies that maximize your survival chances. Our guides break down complex mechanics into easy-to-understand steps, with clear examples and visual explanations. Whether you're learning to spot infected individuals or managing your base during emergencies, our practical approach ensures you can implement these strategies right away. Check out our <router-link to="/" class="inline-link">homepage</router-link> for more game insights and strategies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+          <article class="faq-item">
+            <h3>How often are the guides updated?</h3>
+            <p>
+              Our guides are regularly updated to reflect the latest game changes, patches, and community-discovered strategies. We monitor all game updates, developer announcements, and player feedback to ensure accuracy. Major updates typically happen within 24-48 hours of game patches, while minor corrections and improvements are made continuously. We also review and update guides based on community feedback and new discoveries. Check our <router-link to="/news" class="inline-link">news section</router-link> for the latest updates and announcements about guide revisions.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Are these guides suitable for beginners?</h3>
+            <p>
+              Absolutely! We have guides specifically designed for beginners, covering everything from basic inspection techniques to resource management fundamentals. Our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> is perfect for new players, walking you through visual observation, tool usage, and decision-making basics. We start with the fundamentals and gradually introduce more advanced concepts, making it easy to learn at your own pace. Even experienced players can benefit from reviewing beginner guides to refresh their knowledge or discover new techniques.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Do I need to follow the guides exactly?</h3>
+            <p>
+              Not necessarily. Our guides provide proven strategies and tips based on extensive testing and analysis, but every playthrough is unique. Use them as a reference and adapt the strategies to your playstyle, difficulty level, and personal preferences. The guides are designed to be flexible frameworks rather than rigid rules. Experiment with different approaches, combine strategies from multiple guides, and find what works best for you. The <router-link to="/wiki" class="inline-link">wiki</router-link> also provides detailed information about tools and mechanics to help you make informed decisions.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I suggest topics for new guides?</h3>
+            <p>
+              Absolutely! We welcome suggestions from the community and actively consider player requests when planning new guides. If you have ideas for guides, want to see coverage of specific topics, or have questions that aren't addressed in existing guides, we'd love to hear from you. Your feedback helps us create content that truly serves the community's needs. Visit our <router-link to="/" class="inline-link">homepage</router-link> to learn more about the game and find contact information to share your suggestions and feedback.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>What topics do the guides cover?</h3>
+            <p>
+              Our guides cover a wide range of topics essential for mastering Quarantine Zone: The Last Check. This includes inspection techniques and tool usage (see our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link>), resource management and base operations, decision-making strategies and moral choices (check our <router-link to="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</router-link>), crisis handling and emergency management, upgrade paths and optimization strategies, and advanced tactics for experienced players. For combat and defense strategies, explore our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>. Each guide focuses on specific aspects of gameplay, providing detailed explanations, step-by-step instructions, and practical examples to help you improve your skills.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Are there video guides or just written content?</h3>
+            <p>
+              Currently, our guides are primarily written content with detailed explanations, screenshots, and step-by-step instructions. Written guides allow you to reference specific sections quickly, search for information easily, and learn at your own pace. However, we're always exploring new formats and may add video content in the future. For now, our comprehensive written guides provide all the information you need, with clear organization and detailed explanations that make complex mechanics easy to understand.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -145,7 +236,7 @@ const formatDate = (dateString) => {
 }
 
 .guide-categories {
-  padding: 0 0 80px;
+  padding: 0 0 40px;
   position: relative;
   z-index: 1;
 }
@@ -392,6 +483,283 @@ const formatDate = (dateString) => {
   .loading-state,
   .error-state {
     padding: 40px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Why Choose Section */
+.why-choose-section {
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.why-choose-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(0, 168, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(57, 255, 20, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(10, 15, 20, 0.8), rgba(20, 30, 40, 0.75));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.why-choose-section .section-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.why-choose-section .section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(57, 255, 20, 0.15);
+  border-left: 3px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+.why-choose-section .section-heading {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 20px 0;
+  text-shadow: 
+    0 0 15px var(--accent),
+    0 0 30px var(--neon-glow),
+    0 0 45px rgba(57, 255, 20, 0.5);
+  line-height: 1.2;
+}
+
+.why-choose-section .section-lead {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.why-choose-card {
+  background: rgba(20, 30, 40, 0.7);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-choose-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(57, 255, 20, 0.4);
+  box-shadow: 0 15px 35px rgba(57, 255, 20, 0.2);
+}
+
+.why-choose-card:hover::before {
+  opacity: 1;
+}
+
+.why-choose-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.why-choose-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 12px 0;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
+}
+
+.why-choose-card p {
+  color: var(--text);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(0, 168, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(57, 255, 20, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(10, 15, 20, 0.8), rgba(20, 30, 40, 0.75));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.faq-section .section-intro {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-section .section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(57, 255, 20, 0.15);
+  border-left: 3px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+.faq-section .section-heading {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  text-shadow: 
+    0 0 15px var(--accent),
+    0 0 30px var(--neon-glow),
+    0 0 45px rgba(57, 255, 20, 0.5);
+  line-height: 1.2;
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-item {
+  background: rgba(20, 30, 40, 0.7);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.faq-item:hover {
+  border-color: rgba(57, 255, 20, 0.4);
+  box-shadow: 0 10px 25px rgba(57, 255, 20, 0.15);
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 12px 0;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
+}
+
+.faq-item p {
+  color: var(--text);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Inline Links */
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.3);
+  transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+}
+
+/* Responsive Design for new sections */
+@media (max-width: 1024px) {
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .faq-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-section,
+  .faq-section {
+    padding: 60px 0;
+  }
+
+  .why-choose-section .section-intro,
+  .faq-section .section-intro {
+    margin-bottom: 40px;
+  }
+
+  .why-choose-card {
+    padding: 24px;
+  }
+
+  .why-choose-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .why-choose-card p {
+    font-size: 0.9rem;
+  }
+
+  .faq-item {
+    padding: 20px;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+
+  .faq-item p {
     font-size: 0.9rem;
   }
 }

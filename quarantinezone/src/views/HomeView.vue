@@ -13,9 +13,9 @@
                 Screen survivors, manage scarce resources, and hold back the undead. Every choice matters and one mistake could unleash the plague beyond your walls.
               </p>
               <div class="hero-cta">
-                <a href="https://store.steampowered.com/app/" class="btn-primary" target="_blank" rel="noreferrer">
-                  Get on Steam
-                </a>
+                <router-link to="/wiki" class="btn-primary">
+                  View Wiki
+                </router-link>
                 <a href="/guides" class="btn-secondary">View Guides</a>
               </div>
               <div class="hero-info">
@@ -79,7 +79,7 @@
                   At the heart of Quarantine Zone: The Last Check lies your responsibility to decide who gets in and who doesn't. Each day, new individuals appear—some desperate, some suspicious, and some possibly infected.
                 </p>
                 <p>
-                  You are given tools like thermometers, infection detectors, and UV lights to inspect their health. However, not all symptoms are visible, and not every lie is easy to catch. You will have to make judgment calls without full information, knowing that a single wrong decision could allow an outbreak inside the zone.
+                  You are given tools like thermometers, infection detectors, and UV lights to inspect their health. However, not all symptoms are visible, and not every lie is easy to catch. You will have to make judgment calls without full information, knowing that a single wrong decision could allow an outbreak inside the zone. Learn more about these <router-link to="/wiki" class="inline-link">inspection tools</router-link> and how to use them effectively.
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@
               </div>
               <div class="block-body">
                 <p>
-                  Beyond the inspection booth, you are also in charge of maintaining and upgrading the facilities. You'll need to manage food, medical supplies, security forces, and energy.
+                  Beyond the inspection booth, you are also in charge of maintaining and upgrading the facilities. You'll need to manage food, medical supplies, security forces, and energy. Check out our <router-link to="/guides" class="inline-link">survival guides</router-link> for tips on efficient resource management.
                 </p>
                 <p>
                   Events like power failures, food shortages, and external attacks will test your ability to keep the base operational.
@@ -157,7 +157,7 @@
               <div class="mechanic-icon">🔍</div>
               <h3>SEE IT? SORT IT</h3>
               <p>
-                Use high-tech tools to uncover signs of infection among terrified survivors. Identify contraband, forbidden items, and even rare collectables as you work to keep your checkpoint secure.
+                Use high-tech tools to uncover signs of infection among terrified survivors. Identify contraband, forbidden items, and even rare collectables as you work to keep your checkpoint secure. Explore our comprehensive <router-link to="/wiki" class="inline-link">tools guide</router-link> to master every inspection instrument.
               </p>
               <ul class="mechanic-list">
                 <li>Send suspicious cases to quarantine for observation</li>
@@ -312,7 +312,7 @@
           <div class="section-intro">
             <span class="section-tag">Community</span>
             <h2 class="section-heading">Player Reviews</h2>
-            <p class="section-lead">See what players are saying about Quarantine Zone: The Last Check</p>
+            <p class="section-lead">See what players are saying about Quarantine Zone: The Last Check. Stay updated with the latest <router-link to="/news" class="inline-link">game news and developer updates</router-link>.</p>
           </div>
           <div class="reviews-container">
             <article class="review-card">
@@ -331,7 +331,7 @@
               <div class="reviewer">
                 <span class="avatar">C</span>
                 <div>
-                  <h4>Checkpoint_Commander</h4>
+                  <span>Checkpoint_Commander</span>
                   <p>★★★★★</p>
                 </div>
               </div>
@@ -343,7 +343,7 @@
               <div class="reviewer">
                 <span class="avatar">Z</span>
                 <div>
-                  <h4>Zone_Guard</h4>
+                  <span>Zone_Guard</span>
                   <p>★★★★☆</p>
                 </div>
               </div>
@@ -355,7 +355,7 @@
               <div class="reviewer">
                 <span class="avatar">M</span>
                 <div>
-                  <h4>Moral_Choice</h4>
+                  <span>Moral_Choice</span>
                   <p>★★★★★</p>
                 </div>
               </div>
@@ -363,6 +363,78 @@
                 "A game of responsibility, not action. It challenges you to slow down, observe, and decide with care. The branching narrative based on your choices is excellent."
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Screenshots Section -->
+      <section class="screenshots-section">
+        <div class="container">
+          <div class="section-intro">
+            <span class="section-tag">Gallery</span>
+            <h2 class="section-heading">Game Screenshots</h2>
+          </div>
+          <div class="screenshots-grid">
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img 
+                  src="/images/gallery-01.webp" 
+                  alt="Quarantine Zone checkpoint inspection scene" 
+                  class="screenshot-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img 
+                  src="/images/gallery-02.webp" 
+                  alt="Base management interface in Quarantine Zone" 
+                  class="screenshot-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img 
+                  src="/images/gallery-03.webp" 
+                  alt="Night defense scene with turrets and infected" 
+                  class="screenshot-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img 
+                  src="/images/gallery-04.webp" 
+                  alt="Decision-making dialogue in Quarantine Zone" 
+                  class="screenshot-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img 
+                  src="/images/gallery-05.webp" 
+                  alt="Resource management screen showing supplies" 
+                  class="screenshot-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img 
+                  src="/images/gallery-06.webp" 
+                  alt="Quarantine zone facility overview" 
+                  class="screenshot-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -390,7 +462,7 @@
             <article class="faq-item">
               <h3>How does the inspection system work?</h3>
               <p>
-                You use tools like scanners, UV lights, and thermometers to evaluate each person. You must also observe behavior and question their story to catch inconsistencies.
+                You use tools like scanners, UV lights, and thermometers to evaluate each person. You must also observe behavior and question their story to catch inconsistencies. Our detailed <router-link to="/guides" class="inline-link">inspection guides</router-link> cover everything from visual observation to advanced interrogation techniques. Start with our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> for beginners.
               </p>
             </article>
             <article class="faq-item">
@@ -402,13 +474,13 @@
             <article class="faq-item">
               <h3>Is there a storyline or campaign mode?</h3>
               <p>
-                Yes, the game has a branching narrative with multiple possible outcomes. Your choices shape the events and relationships within the quarantine.
+                Yes, the game has a branching narrative with multiple possible outcomes. Your choices shape the events and relationships within the quarantine. Navigate moral dilemmas and special events with our <router-link to="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</router-link>.
               </p>
             </article>
             <article class="faq-item">
               <h3>Can you upgrade your base?</h3>
               <p>
-                Yes, you can invest in medical stations, better scanners, defenses, and quarantine cells. Each upgrade affects how efficiently your base runs.
+                Yes, you can invest in medical stations, better scanners, defenses, and quarantine cells. Each upgrade affects how efficiently your base runs. Discover the best upgrade strategies in our <router-link to="/guides" class="inline-link">base management guides</router-link>. Learn combat and defense strategies in our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>.
               </p>
             </article>
             <article class="faq-item">
@@ -423,6 +495,25 @@
                 Sessions vary, but a full run through the campaign may take 6–12 hours. Replayability is high due to different choices and outcomes.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Steam CTA Section -->
+      <section class="steam-cta-section">
+        <div class="container">
+          <div class="steam-cta-content">
+            <div class="steam-cta-text">
+              <h2 class="steam-cta-title">Ready to Command the Checkpoint?</h2>
+              <p class="steam-cta-description">
+                Experience the intense decision-making and resource management of Quarantine Zone: The Last Check on Steam.
+              </p>
+            </div>
+            <div class="steam-cta-button">
+              <a href="https://store.steampowered.com/app/" class="btn-primary btn-steam" target="_blank" rel="noreferrer nofollow" >
+                Get on Steam
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -446,7 +537,7 @@ const closeVideo = () => {
 
 <style scoped>
 section {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   z-index: 1;
 }
@@ -470,7 +561,7 @@ section::before {
 
 /* Hero Section - 紧凑布局 */
 .hero {
-  padding: 60px 0;
+  padding: 40px 0;
   min-height: auto;
   display: flex;
   align-items: center;
@@ -753,15 +844,9 @@ section::before {
   }
 }
 
-/* About Section - 全新布局 */
-.about-section {
-  padding: 120px 0;
-}
-
 .section-intro {
   text-align: center;
-  margin-bottom: 80px;
-  max-width: 800px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -770,23 +855,23 @@ section::before {
 
 .section-tag {
   display: inline-block;
-  padding: 6px 16px;
+  padding: 5px 10px;
   background: rgba(57, 255, 20, 0.15);
   border-left: 3px solid var(--accent);
   color: var(--accent);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
 }
 
 .section-heading {
-  font-size: clamp(36px, 5vw, 56px);
+  font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
   color: var(--text);
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   text-shadow: 
     0 0 15px var(--accent),
     0 0 30px var(--neon-glow),
@@ -795,10 +880,9 @@ section::before {
 }
 
 .section-lead {
-  font-size: 1.15rem;
+  font-size: 14px;
   color: var(--text-muted);
-  line-height: 1.7;
-  margin: 0;
+  line-height: 1.2;
 }
 
 .content-blocks {
@@ -813,7 +897,7 @@ section::before {
   background: rgba(20, 30, 40, 0.7);
   border: 1px solid var(--accent);
   border-radius: 16px;
-  padding: 40px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -853,8 +937,8 @@ section::before {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 24px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
   border-bottom: 1px solid rgba(57, 255, 20, 0.2);
 }
 
@@ -937,16 +1021,10 @@ section::before {
   line-height: 1.5;
 }
 
-/* Gameplay Mechanics Section */
-.mechanics-section {
-  padding: 120px 0;
-}
-
 .mechanics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  margin-top: 60px;
+  gap: 20px;
   position: relative;
   z-index: 1;
 }
@@ -955,7 +1033,7 @@ section::before {
   background: rgba(20, 30, 40, 0.7);
   border: 1px solid var(--accent);
   border-radius: 16px;
-  padding: 40px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -987,10 +1065,10 @@ section::before {
 }
 
 .mechanic-card h3 {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 16px 0;
+  margin-bottom: 15px;
   text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -998,23 +1076,23 @@ section::before {
 
 .mechanic-card > p {
   color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 24px;
-  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .mechanic-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin-bottom: 10px;
 }
 
 .mechanic-list li {
   color: var(--text);
-  padding: 10px 0;
+  padding: 5px 0;
   padding-left: 24px;
   position: relative;
-  font-size: 0.95rem;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -1030,31 +1108,25 @@ section::before {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .tool-tag {
-  padding: 6px 14px;
+  padding: 5px 10px;
   background: rgba(57, 255, 20, 0.15);
   border: 1px solid rgba(57, 255, 20, 0.3);
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 12px;
   color: var(--accent);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-/* System Requirements Section */
-.requirements-section {
-  padding: 120px 0;
-}
 
 .requirements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
+  gap: 20px;
   position: relative;
   z-index: 1;
 }
@@ -1095,7 +1167,7 @@ section::before {
 }
 
 .requirement-header {
-  padding: 30px 40px;
+  padding: 20px;
   border-bottom: 1px solid rgba(57, 255, 20, 0.2);
   display: flex;
   justify-content: space-between;
@@ -1103,10 +1175,9 @@ section::before {
 }
 
 .requirement-header h3 {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text);
-  margin: 0;
   text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
 }
 
@@ -1129,14 +1200,14 @@ section::before {
 }
 
 .requirement-body {
-  padding: 30px 40px;
+  padding: 5px 20px;
 }
 
 .requirement-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 15px 0;
   border-bottom: 1px solid rgba(57, 255, 20, 0.1);
 }
 
@@ -1145,7 +1216,7 @@ section::before {
 }
 
 .req-label {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1153,7 +1224,7 @@ section::before {
 }
 
 .req-value {
-  font-size: 0.95rem;
+  font-size: 14px;
   color: var(--text);
   font-weight: 600;
   text-align: right;
@@ -1161,8 +1232,8 @@ section::before {
 }
 
 .requirements-note {
-  margin-top: 40px;
-  padding: 30px;
+  margin-top: 20px;
+  padding: 20px;
   background: rgba(20, 30, 40, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
@@ -1172,7 +1243,7 @@ section::before {
 }
 
 .requirements-note p {
-  margin: 8px 0;
+  margin: 5px 0;
   color: var(--text-muted);
   font-size: 0.95rem;
 }
@@ -1183,15 +1254,10 @@ section::before {
 }
 
 /* Reviews Section */
-.reviews-section {
-  padding: 120px 0;
-}
-
 .reviews-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 60px;
+  gap: 20px;
   position: relative;
   z-index: 1;
 }
@@ -1200,7 +1266,7 @@ section::before {
   background: rgba(20, 30, 40, 0.7);
   border: 1px solid var(--accent);
   border-radius: 16px;
-  padding: 32px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -1226,9 +1292,9 @@ section::before {
 .reviewer {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(57, 255, 20, 0.2);
 }
 
@@ -1248,15 +1314,15 @@ section::before {
 }
 
 .reviewer h4 {
-  font-size: 1.1rem;
+  font-size: 18px;
   color: var(--text);
-  margin: 0 0 4px 0;
+  margin-bottom: 4px;
   font-weight: 700;
 }
 
 .reviewer p {
   color: #ffd700;
-  font-size: 0.9rem;
+  font-size: 14px;
   margin: 0;
   text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
 }
@@ -1269,18 +1335,12 @@ section::before {
 }
 
 /* FAQ Section */
-.faq-section {
-  padding: 120px 0;
-}
-
 .faq-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
-  margin-top: 60px;
+  gap: 20px;
   position: relative;
   z-index: 1;
-  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1344,7 +1404,104 @@ section::before {
   font-size: 0.95rem;
 }
 
-/* 响应式设计 - 平板端 1024px */
+/* Screenshots Section */
+.screenshots-section {
+  position: relative;
+  z-index: 1;
+}
+
+.screenshots-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 168, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(57, 255, 20, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(10, 15, 20, 0.8), rgba(20, 30, 40, 0.75));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.screenshots-section .section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(57, 255, 20, 0.15);
+  border-left: 3px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+.screenshots-section .section-heading {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 20px 0;
+  text-shadow:
+    0 0 15px var(--accent),
+    0 0 30px var(--neon-glow),
+    0 0 45px rgba(57, 255, 20, 0.5);
+  line-height: 1.2;
+}
+
+.screenshots-section .section-lead {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.screenshot-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: rgba(20, 30, 40, 0.7);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.screenshot-item:hover {
+  transform: translateY(-8px);
+  border-color: rgba(57, 255, 20, 0.4);
+  box-shadow: 0 15px 35px rgba(57, 255, 20, 0.2);
+}
+
+.screenshot-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.screenshot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.screenshot-item:hover .screenshot-image {
+  transform: scale(1.1);
+}
+
+/* 响应式设计 - 1024px */
 @media (max-width: 1024px) {
   .hero-layout {
     grid-template-columns: 1fr;
@@ -1375,9 +1532,14 @@ section::before {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
+  .screenshots-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
-/* 响应式设计 - 移动端 768px */
+/* 响应式设计 - 768px */
 @media (max-width: 768px) {
   section {
     padding: 40px 0;
@@ -1428,14 +1590,6 @@ section::before {
 
   .info-value {
     font-size: 0.85rem;
-  }
-
-  .about-section,
-  .mechanics-section,
-  .requirements-section,
-  .reviews-section,
-  .faq-section {
-    padding: 60px 0;
   }
 
   .section-intro {
@@ -1697,6 +1851,105 @@ section::before {
     height: 32px;
     font-size: 1rem;
   }
+
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .steam-cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .steam-cta-title {
+    font-size: clamp(24px, 5vw, 32px);
+  }
+
+  .steam-cta-description {
+    font-size: 1rem;
+  }
+
+  .btn-steam {
+    width: 100%;
+    padding: 14px 32px;
+  }
+}
+
+/* Steam CTA Section */
+.steam-cta-section {
+  padding: 60px 0;
+  background: 
+    radial-gradient(circle at 50% 50%, rgba(0, 168, 255, 0.1) 0%, transparent 70%),
+    linear-gradient(180deg, rgba(10, 15, 20, 0.9), rgba(20, 30, 40, 0.85));
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  position: relative;
+  z-index: 1;
+}
+
+.steam-cta-section::before {
+  background: none;
+}
+
+.steam-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.steam-cta-text {
+  flex: 1;
+}
+
+.steam-cta-title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 16px 0;
+  text-shadow: 
+    0 0 15px var(--accent),
+    0 0 30px var(--neon-glow),
+    0 0 45px rgba(57, 255, 20, 0.5);
+  line-height: 1.3;
+}
+
+.steam-cta-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.steam-cta-button {
+  flex-shrink: 0;
+}
+
+  .btn-steam {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+
+/* Inline Links */
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.3);
+  transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
 }
 </style>
  

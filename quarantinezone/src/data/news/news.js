@@ -15,7 +15,7 @@ export const news = [
     },
     addressBar: "discord-qa-6",
     detailsHtml: `
-    <p>The developers of <strong>Quarantine Zone: The Last Check</strong> recently held their sixth Discord text Q&A session, answering community questions about the game's development, features, and future plans. Here are the highlights from the session.</p>
+    <p>The developers of <strong>Quarantine Zone: The Last Check</strong> recently held their sixth Discord text Q&A session, answering community questions about the game's development, features, and future plans. Here are the highlights from the session. For comprehensive guides on game mechanics mentioned in this Q&A, visit our <a href="/guides" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">guides section</a>.</p>
 
     <h2><strong>Development Challenges</strong></h2>
 
@@ -28,7 +28,7 @@ export const news = [
     <h2><strong>Game Modes & Difficulty</strong></h2>
 
     <p><strong>Q: Will there be different difficulties for the endless game mode? Like less symptoms being visible or measurable?</strong></p>
-    <p><strong>A:</strong> Not on release (the main focus would be on the campaign). But we want to focus some of our content updates on the endless mode, and then who knows what we will come up with.</p>
+    <p><strong>A:</strong> Not on release (the main focus would be on the campaign). But we want to focus some of our content updates on the endless mode, and then who knows what we will come up with. Learn about inspection tools and symptom detection in our <a href="/wiki" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">wiki</a>.</p>
 
     <h2><strong>Cut Features & Future Content</strong></h2>
 
@@ -44,7 +44,7 @@ export const news = [
     <p><strong>A:</strong> We actually thought about including guard dogs as some kind of "1 extra life" upgrade. The dog would kill the infected that you missed in camp, but would die from contact with infected blood. We even thought about giving an achievement for keeping your starting dog alive until the end of the game, but it was very late in development, and we didn't have time to think about it more and implement it. Maybe it will evolve into something in content updates.</p>
 
     <p><strong>Q: Are each person's symptoms randomized or are they all pre-programmed symptoms?</strong></p>
-    <p><strong>A:</strong> Some survivors are preconfigured, like the ones that teach you about new tools or have some references/story building behind them, but most of them are randomized with some kind of logic based on game progression.</p>
+    <p><strong>A:</strong> Some survivors are preconfigured, like the ones that teach you about new tools or have some references/story building behind them, but most of them are randomized with some kind of logic based on game progression. Master inspection techniques with our <a href="/guides" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">inspection guides</a>.</p>
 
     <h2><strong>Weapons & Combat</strong></h2>
 
@@ -100,12 +100,12 @@ export const news = [
     },
     addressBar: "discord-qa-5",
     detailsHtml: `
-    <p>The developers of <strong>Quarantine Zone: The Last Check</strong> recently held their fifth Discord text Q&A session, sharing insights about the game's development progress, story mode, and answering community questions about various gameplay features.</p>
+    <p>The developers of <strong>Quarantine Zone: The Last Check</strong> recently held their fifth Discord text Q&A session, sharing insights about the game's development progress, story mode, and answering community questions about various gameplay features. Stay updated with all game news and updates on our <a href="/news" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">news page</a>.</p>
 
     <h2><strong>Game Origin & Development</strong></h2>
 
     <p><strong>Q: What was the reason this game was made in the first place?</strong></p>
-    <p><strong>A:</strong> The game began with a simple but unique idea inside our team - focusing on inspection and tough, consequential decisions rather than typical zombie action. It felt fresh and unexplored, so we built the entire project around that core concept.</p>
+    <p><strong>A:</strong> The game began with a simple but unique idea inside our team - focusing on inspection and tough, consequential decisions rather than typical zombie action. It felt fresh and unexplored, so we built the entire project around that core concept. Learn more about the game's core mechanics on our <a href="/" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">homepage</a>.</p>
 
     <p><strong>Q: At what percentage are you guys at now with the overall game to release timeline?</strong></p>
     <p><strong>A:</strong> Most of the release mechanics are ready, we're polishing and bugfixing at the moment.</p>
@@ -212,7 +212,7 @@ export const news = [
     },
     addressBar: "discord-qa-4",
     detailsHtml: `
-    <p>The developers of <strong>Quarantine Zone: The Last Check</strong> recently held their fourth Discord text Q&A session, sharing insights about development tools, game assets, future plans, and answering various community questions about gameplay features.</p>
+    <p>The developers of <strong>Quarantine Zone: The Last Check</strong> recently held their fourth Discord text Q&A session, sharing insights about development tools, game assets, future plans, and answering various community questions about gameplay features. For detailed information about game features discussed here, check our <a href="/wiki" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">wiki</a>.</p>
 
     <h2><strong>Development Tools & Assets</strong></h2>
 
@@ -295,7 +295,7 @@ export const news = [
 
     <p>Some of you have seen that info on our Steam page was first changed from November to simply 2025.</p>
 
-    <p>Currently we are running a closed playtest and while it is ongoing - us (the developer team) and the publisher will determine the exact release date but as of yesterday we're still working toward a 2025 release. We might require some extra time to polish the game, thanks to the copius amount of feedback we are receiving and processing at the moment.</p>
+    <p>Currently we are running a closed playtest and while it is ongoing - us (the developer team) and the publisher will determine the exact release date but as of yesterday we're still working toward a 2025 release. We might require some extra time to polish the game, thanks to the copius amount of feedback we are receiving and processing at the moment. While waiting for the release, check out our <a href="/guides" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">survival guides</a> to prepare for the game.</p>
 
     <p>The decision on the exact release date and price will be made soon, and we will update everyone the moment it is made.</p>
 

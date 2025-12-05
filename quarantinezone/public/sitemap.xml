@@ -2,33 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://quarantinezonegames.com/</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://quarantinezonegames.com/guides</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://quarantinezonegames.com/wiki</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quarantinezonegames.com/games</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://quarantinezonegames.com/news</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/privacy-policy</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/terms-of-service</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/copyright</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/about-us</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/contact-us</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/guides/complete-beginners-guide</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quarantinezonegames.com/games/quarantine-zone-demo</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quarantinezonegames.com/news/discord-qa-6</loc>

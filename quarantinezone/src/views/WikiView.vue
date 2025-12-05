@@ -26,8 +26,10 @@
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Master the use of inspection tools to accurately identify infected individuals and make informed decisions. Each tool provides different information, and combining them is key to success.
+                  Master the use of inspection tools to accurately identify infected individuals and make informed decisions. Each tool provides different information, and combining them is key to success. For detailed walkthroughs on using these tools effectively, check out our comprehensive <router-link to="/guides" class="inline-link">inspection guides</router-link>, especially our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> for beginners.
                 </p>
+
+                <img src="/images/wiki/wiki-01.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
                 <div class="tool-guide-cards">
                   <div class="tool-guide-card">
@@ -106,8 +108,10 @@
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Effective resource management is crucial for maintaining your checkpoint. Learn how to balance consumption, production, and allocation to keep your base operational.
+                  Effective resource management is crucial for maintaining your checkpoint. Learn how to balance consumption, production, and allocation to keep your base operational. Our detailed <router-link to="/guides" class="inline-link">resource management guides</router-link> provide step-by-step strategies for optimizing your operations. For combat-focused resource management, see our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>.
                 </p>
+
+                <img src="/images/wiki/wiki-02.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
                 <div class="resource-cards">
                   <div class="resource-card">
@@ -185,7 +189,7 @@
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Every decision has consequences. Learn how to evaluate situations, weigh risks, and make informed choices that balance safety, resources, and morality.
+                  Every decision has consequences. Learn how to evaluate situations, weigh risks, and make informed choices that balance safety, resources, and morality. Understanding the game's core mechanics is essential - visit our <router-link to="/" class="inline-link">homepage</router-link> to learn more about the decision-making systems in Quarantine Zone: The Last Check.
                 </p>
 
                 <div class="decision-guide">
@@ -258,8 +262,10 @@
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Strategic upgrades can significantly improve your checkpoint's efficiency and survival chances. Plan your upgrade path carefully based on your playstyle and current challenges.
+                  Strategic upgrades can significantly improve your checkpoint's efficiency and survival chances. Plan your upgrade path carefully based on your playstyle and current challenges. Our <router-link to="/guides" class="inline-link">upgrade strategy guides</router-link> help you prioritize investments and maximize your base's potential. Learn about base management in our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link>.
                 </p>
+
+                <img src="/images/wiki/wiki-03.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
                 <div class="upgrade-categories">
                   <div class="upgrade-category">
@@ -408,7 +414,7 @@
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Unexpected events will test your checkpoint. Learn how to respond to emergencies, manage crises, and minimize damage when things go wrong.
+                  Unexpected events will test your checkpoint. Learn how to respond to emergencies, manage crises, and minimize damage when things go wrong. Stay updated with the latest <router-link to="/news" class="inline-link">game news and updates</router-link> to learn about new events and how the community handles them.
                 </p>
 
                 <div class="event-types">
@@ -483,7 +489,7 @@
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Master advanced strategies to optimize your checkpoint operations, maximize efficiency, and achieve better outcomes.
+                  Master advanced strategies to optimize your checkpoint operations, maximize efficiency, and achieve better outcomes. Combine these strategies with our comprehensive <router-link to="/guides" class="inline-link">survival guides</router-link> for the best results.
                 </p>
 
                 <div class="strategy-sections">
@@ -577,7 +583,7 @@ const strategiesRef = ref(null)
 
 /* Header */
 .wiki-header {
-  padding: 80px 0 40px;
+  padding: 40px 0;
   position: relative;
   z-index: 1;
 }
@@ -601,10 +607,10 @@ const strategiesRef = ref(null)
 }
 
 .page-title {
-  font-size: clamp(36px, 5vw, 56px);
+  font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
   color: var(--text);
-  margin: 0 0 16px 0;
+  margin-bottom: 20px;
   text-shadow: 
     0 0 15px var(--accent),
     0 0 30px var(--neon-glow),
@@ -612,14 +618,15 @@ const strategiesRef = ref(null)
 }
 
 .page-subtitle {
-  font-size: 1.15rem;
+  font-size: 14px;
   color: var(--text-muted);
   margin: 0;
+  line-height: 1.2;
 }
 
 /* Content Layout */
 .wiki-content {
-  padding: 40px 0 80px;
+  padding: 0 0 40px;
   position: relative;
   z-index: 1;
 }
@@ -636,6 +643,13 @@ const strategiesRef = ref(null)
   pointer-events: none;
 }
 
+.wiki-content img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .content-layout {
   position: relative;
   z-index: 1;
@@ -646,12 +660,12 @@ const strategiesRef = ref(null)
   background: rgba(20, 30, 40, 0.7);
   border: 1px solid var(--accent);
   border-radius: 16px;
-  padding: 40px;
+  padding: 20px;
   backdrop-filter: blur(10px);
 }
 
 .wiki-section {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   scroll-margin-top: 100px;
 }
 
@@ -660,14 +674,14 @@ const strategiesRef = ref(null)
 }
 
 .section-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .section-title {
-  font-size: clamp(28px, 4vw, 36px);
+  font-size: clamp(28px, 4vw, 42px);
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 16px 0;
+  margin-bottom: 15px;
   text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
 }
 
@@ -684,14 +698,16 @@ const strategiesRef = ref(null)
 }
 
 .lead-text {
-  font-size: 1.1rem;
+  font-size: 14px;
   color: var(--text);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .section-content p {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 
 .section-content p:last-child {
@@ -786,10 +802,10 @@ const strategiesRef = ref(null)
 
 /* Feature List */
 .subsection-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text);
-  margin: 32px 0 16px 0;
+  margin: 20px 0 15px 0;
 }
 
 .feature-list {
@@ -978,7 +994,7 @@ const strategiesRef = ref(null)
   background: rgba(10, 15, 20, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
   transition: all 0.3s ease;
 }
 
@@ -1003,7 +1019,7 @@ const strategiesRef = ref(null)
 }
 
 .tool-guide-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
   margin: 0;
@@ -1011,7 +1027,8 @@ const strategiesRef = ref(null)
 }
 
 .tool-guide-body p {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .tool-guide-body p:last-child {
@@ -1034,19 +1051,20 @@ const strategiesRef = ref(null)
   background: rgba(10, 15, 20, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
 }
 
 .resource-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
 }
 
 .resource-details p {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .resource-details ul {
@@ -1082,6 +1100,7 @@ const strategiesRef = ref(null)
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
   padding: 20px;
+  margin-bottom: 15px;
 }
 
 .step-number {
@@ -1101,7 +1120,7 @@ const strategiesRef = ref(null)
 }
 
 .step-content h4 {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text);
   margin: 0 0 8px 0;
@@ -1110,6 +1129,7 @@ const strategiesRef = ref(null)
 .step-content p {
   color: var(--text-muted);
   margin: 0;
+  font-size: 14px;
 }
 
 .scenario-cards {
@@ -1127,7 +1147,7 @@ const strategiesRef = ref(null)
 }
 
 .scenario-card h4 {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--accent);
   margin: 0 0 12px 0;
@@ -1136,6 +1156,7 @@ const strategiesRef = ref(null)
 .scenario-card p {
   margin-bottom: 8px;
   color: var(--text-muted);
+  font-size: 14px;
 }
 
 .scenario-card strong {
@@ -1154,14 +1175,14 @@ const strategiesRef = ref(null)
   background: rgba(10, 15, 20, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
 }
 
 .category-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
 }
 
@@ -1172,14 +1193,15 @@ const strategiesRef = ref(null)
 }
 
 .upgrade-item {
-  padding: 16px;
+  padding: 15px;
   background: rgba(20, 30, 40, 0.5);
   border-left: 3px solid var(--accent);
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .upgrade-item h4 {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text);
   margin: 0 0 8px 0;
@@ -1188,7 +1210,7 @@ const strategiesRef = ref(null)
 .upgrade-item p {
   margin-bottom: 4px;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 .upgrade-item strong {
@@ -1215,7 +1237,7 @@ const strategiesRef = ref(null)
 }
 
 .role-card h4 {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--accent);
   margin: 0 0 12px 0;
@@ -1225,6 +1247,7 @@ const strategiesRef = ref(null)
 .role-card p {
   margin-bottom: 8px;
   color: var(--text-muted);
+  font-size: 14px;
 }
 
 .role-card strong {
@@ -1262,20 +1285,22 @@ const strategiesRef = ref(null)
   background: rgba(10, 15, 20, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .event-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
 }
 
 .event-details p {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--text-muted);
+  font-size: 14px;
 }
 
 .event-details strong {
@@ -1304,20 +1329,22 @@ const strategiesRef = ref(null)
   background: rgba(10, 15, 20, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .strategy-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
 }
 
 .strategy-content p {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--text-muted);
+  font-size: 14px;
 }
 
 .strategy-content strong {
@@ -1340,11 +1367,12 @@ const strategiesRef = ref(null)
 }
 
 .pro-tips-list li {
-  padding: 12px 0;
+  padding: 10px 0;
   padding-left: 24px;
   position: relative;
   color: var(--text-muted);
   border-bottom: 1px solid rgba(57, 255, 20, 0.1);
+  font-size: 14px;
 }
 
 .pro-tips-list li:last-child {
@@ -1367,7 +1395,7 @@ const strategiesRef = ref(null)
 /* Responsive Design - 1024px */
 @media (max-width: 1024px) {
   .wiki-main {
-    padding: 30px;
+    padding: 20px;
   }
 
   .resource-cards {
@@ -1390,32 +1418,51 @@ const strategiesRef = ref(null)
 /* Responsive Design - 768px */
 @media (max-width: 768px) {
   .wiki-header {
-    padding: 60px 0 30px;
+    padding: 40px 0;
   }
 
   .page-title {
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px);
   }
 
   .page-subtitle {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
+  .wiki-content {
+    padding: 0 0 40px;
+  }
 
   .wiki-main {
-    padding: 24px;
+    padding: 20px;
   }
 
   .wiki-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .section-header {
+    margin-bottom: 15px;
   }
 
   .section-title {
-    font-size: 24px;
+    font-size: clamp(24px, 5vw, 32px);
+    margin-bottom: 12px;
   }
 
   .subsection-title {
-    font-size: 1.25rem;
+    font-size: 18px;
+    margin: 15px 0 12px 0;
+  }
+
+  .lead-text {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .section-content p {
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 
   .tools-grid {
@@ -1424,7 +1471,7 @@ const strategiesRef = ref(null)
   }
 
   .tool-item {
-    padding: 16px;
+    padding: 15px;
   }
 
   .tool-icon {
@@ -1432,7 +1479,7 @@ const strategiesRef = ref(null)
   }
 
   .tool-name {
-    font-size: 0.85rem;
+    font-size: 12px;
   }
 
   .tool-guide-card,
@@ -1442,7 +1489,7 @@ const strategiesRef = ref(null)
   .role-card,
   .event-type,
   .strategy-section {
-    padding: 20px;
+    padding: 18px;
   }
 
   .tool-guide-title,
@@ -1450,7 +1497,17 @@ const strategiesRef = ref(null)
   .category-title,
   .event-title,
   .strategy-title {
-    font-size: 1.25rem;
+    font-size: 18px;
+  }
+
+  .tool-guide-body p,
+  .resource-details p,
+  .scenario-card p,
+  .upgrade-item p,
+  .role-card p,
+  .event-details p,
+  .strategy-content p {
+    font-size: 13px;
   }
 
   .resource-cards {
@@ -1460,12 +1517,21 @@ const strategiesRef = ref(null)
   .decision-step {
     flex-direction: column;
     gap: 12px;
+    padding: 18px;
   }
 
   .step-number {
     width: 32px;
     height: 32px;
     font-size: 1rem;
+  }
+
+  .step-content h4 {
+    font-size: 16px;
+  }
+
+  .step-content p {
+    font-size: 13px;
   }
 
   .scenario-cards {
@@ -1479,5 +1545,25 @@ const strategiesRef = ref(null)
   .morale-tips {
     grid-template-columns: 1fr;
   }
+
+  .pro-tips-list li {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+}
+
+/* Inline Links */
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.3);
+  transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
 }
 </style>
