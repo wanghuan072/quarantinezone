@@ -43,7 +43,7 @@
                 </div>
                 <div class="video-iframe" v-else>
                   <iframe
-                    src="https://www.youtube.com/embed/qjLDbxB-Xt4"
+                    src="https://www.youtube.com/embed/izrs0wg_30Y"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
