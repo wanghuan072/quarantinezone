@@ -16,6 +16,41 @@
     <section class="wiki-content">
       <div class="container">
         <div class="content-layout">
+          <!-- Sidebar Table of Contents -->
+          <aside class="wiki-sidebar">
+            <div class="toc-section">
+              <div class="toc-header">
+                <h2 class="toc-title">Table of Contents</h2>
+                <div class="section-divider"></div>
+              </div>
+              <nav class="toc-nav">
+                <ul class="toc-list">
+                  <li>
+                    <a @click.prevent="scrollToSection('tools')" class="toc-link">Inspection Tools Guide</a>
+                    <ul class="toc-sublist">
+                      <li><a @click.prevent="scrollToSection('tool-reflex-hammer')" class="toc-sublink">Reflex Hammer</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-flashlight')" class="toc-sublink">Flashlight</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-document-scanner')" class="toc-sublink">Documents / ID</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-thermometer')" class="toc-sublink">Temperature & Pulse Monitor</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-stethoscope')" class="toc-sublink">Stethoscope</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-uv-scanner')" class="toc-sublink">UV Light Scanner</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-body-scanner')" class="toc-sublink">Body Scanner</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-blood-test')" class="toc-sublink">Blood Test Kit</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-weapon')" class="toc-sublink">Pistol / Weapon</a></li>
+                    </ul>
+                  </li>
+                  <li><a @click.prevent="scrollToSection('resources')" class="toc-link">Resource Management System</a></li>
+                  <li><a @click.prevent="scrollToSection('decisions')" class="toc-link">Decision-Making Strategies</a></li>
+                  <li><a @click.prevent="scrollToSection('upgrades')" class="toc-link">Base Upgrade System</a></li>
+                  <li><a @click.prevent="scrollToSection('personnel')" class="toc-link">Personnel Management</a></li>
+                  <li><a @click.prevent="scrollToSection('events')" class="toc-link">Event & Crisis Management</a></li>
+                  <li><a @click.prevent="scrollToSection('zombie-farming')" class="toc-link">Zombie Containment & Farming</a></li>
+                  <li><a @click.prevent="scrollToSection('strategies')" class="toc-link">Advanced Strategies</a></li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+
           <!-- Main Content -->
           <main class="wiki-main">
             <!-- Tools Guide -->
@@ -32,70 +67,226 @@
                 <img src="/images/wiki/wiki-01.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
                 <div class="tool-guide-cards">
-                  <div class="tool-guide-card">
-                    <div class="tool-guide-header">
-                      <span class="tool-guide-icon">🌡️</span>
-                      <h3 class="tool-guide-title">Digital Thermometer</h3>
-                    </div>
-                    <div class="tool-guide-body">
-                      <p><strong>Function:</strong> Measures body temperature to detect fever, a common early symptom of infection.</p>
-                      <p><strong>Usage:</strong> Place on forehead or under tongue. Normal range: 36.5-37.5°C. Readings above 38°C indicate possible infection.</p>
-                      <p><strong>Limitations:</strong> Some infected individuals may not show fever immediately. Stress and physical exertion can also raise temperature.</p>
-                      <p><strong>Tip:</strong> Combine with other tools for accurate diagnosis. False positives are common.</p>
-                    </div>
-                  </div>
-
-                  <div class="tool-guide-card">
-                    <div class="tool-guide-header">
-                      <span class="tool-guide-icon">🔬</span>
-                      <h3 class="tool-guide-title">Virus Detector</h3>
-                    </div>
-                    <div class="tool-guide-body">
-                      <p><strong>Function:</strong> Scans for viral particles in blood samples or saliva swabs.</p>
-                      <p><strong>Usage:</strong> Requires a sample from the individual. Processing time: 2-5 minutes. High accuracy rate when used correctly.</p>
-                      <p><strong>Limitations:</strong> Early-stage infections may not be detected. Requires proper sample collection technique.</p>
-                      <p><strong>Tip:</strong> Most reliable tool, but time-consuming. Use for high-priority cases or when other tools show conflicting results.</p>
+                  <div id="tool-reflex-hammer" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">🔨</span>
+                          <h3 class="tool-guide-title">Reflex Hammer</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Used to tap joints or limbs to test neurological reflexes.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li>Infected individuals typically show <strong>hyperreflexia</strong> (exaggerated reflexes)</li>
+                            <li>Watch for <strong>cross-reference</strong> reactions (tapping the left side causes movement on the right side)</li>
+                            <li>These abnormal reflexes indicate that the virus has affected the nervous system</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Cross-reference reactions are a clear sign of neurological damage from infection. This is a reliable indicator of advanced infection.</p>
+                        </div>
+                      </div>
+                      <div class="tool-guide-image">
+                        <img src="/images/wiki/wiki-img-01.webp" alt="Reflex Hammer tool in use" class="tool-image" />
+                      </div>
                     </div>
                   </div>
 
-                  <div class="tool-guide-card">
-                    <div class="tool-guide-header">
-                      <span class="tool-guide-icon">💡</span>
-                      <h3 class="tool-guide-title">UV Light Scanner</h3>
-                    </div>
-                    <div class="tool-guide-body">
-                      <p><strong>Function:</strong> Reveals hidden symptoms like skin discoloration, rashes, or unusual markings that indicate infection.</p>
-                      <p><strong>Usage:</strong> Scan exposed skin areas. Infected tissue often shows abnormal fluorescence patterns.</p>
-                      <p><strong>Limitations:</strong> Requires good lighting conditions. Some symptoms may be missed if covered by clothing.</p>
-                      <p><strong>Tip:</strong> Best used in combination with visual inspection. Look for patterns, not just single marks.</p>
-                    </div>
-                  </div>
-
-                  <div class="tool-guide-card">
-                    <div class="tool-guide-header">
-                      <span class="tool-guide-icon">📄</span>
-                      <h3 class="tool-guide-title">Document Scanner</h3>
-                    </div>
-                    <div class="tool-guide-body">
-                      <p><strong>Function:</strong> Verifies identity documents, travel permits, and medical records for authenticity.</p>
-                      <p><strong>Usage:</strong> Scan documents to check for forgeries, inconsistencies, or suspicious travel patterns.</p>
-                      <p><strong>Limitations:</strong> Well-made forgeries may pass initial inspection. Requires knowledge of document security features.</p>
-                      <p><strong>Tip:</strong> Cross-reference with interview transcripts. Look for mismatched dates or locations.</p>
+                  <div id="tool-flashlight" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">🔦</span>
+                          <h3 class="tool-guide-title">Flashlight</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Used to illuminate the survivor's face and body to observe visible symptoms that can be detected with the naked eye.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li><strong>Eye Color:</strong> Red eyes, yellow eyes, conjunctivitis</li>
+                            <li><strong>Skin Color:</strong> Pale complexion, darkened skin, discoloration</li>
+                            <li><strong>Visible Wounds or Rashes:</strong> Obvious injuries, skin lesions, or abnormal markings</li>
+                          </ul>
+                          <p><strong>Tip:</strong> This is your first line of visual inspection. Always start with the flashlight to identify obvious symptoms before using more advanced tools.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="tool-guide-card">
-                    <div class="tool-guide-header">
-                      <span class="tool-guide-icon">🎤</span>
-                      <h3 class="tool-guide-title">Voice Stress Analyzer</h3>
-                    </div>
-                    <div class="tool-guide-body">
-                      <p><strong>Function:</strong> Detects stress patterns in speech that may indicate deception or nervousness.</p>
-                      <p><strong>Usage:</strong> Analyze responses during interviews. High stress levels may indicate lying or hiding information.</p>
-                      <p><strong>Limitations:</strong> Innocent people may also show stress due to fear or anxiety. Not definitive proof of infection.</p>
-                      <p><strong>Tip:</strong> Use as supplementary evidence. Combine with behavioral observation for better accuracy.</p>
+                  <div id="tool-document-scanner" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">📄</span>
+                          <h3 class="tool-guide-title">Documents / ID</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Critical for verifying the survivor's identity information.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li>Check if the photo matches the actual person</li>
+                            <li>Verify if the ID photo is authentic</li>
+                            <li>Compare current appearance with ID photo - infected individuals may show significant facial changes that don't match their ID photo</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Facial changes due to infection can be a major red flag. Always compare the person's current appearance with their ID photo carefully.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
+
+                  <div id="tool-thermometer" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">🌡️</span>
+                          <h3 class="tool-guide-title">Thermopulsometer</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Measures the survivor's body temperature and heart rate/pulse.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li><strong>Temperature:</strong> Above 38°C is suspicious, above 41°C usually confirms infection</li>
+                            <li><strong>Pulse:</strong> Abnormally high pulse rate (such as >120 BPM or even >180 BPM) indicates active virus infection</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Combine temperature and pulse readings for more accurate diagnosis. High temperature with elevated pulse is a strong indicator of infection.</p>
+                        </div>
+                      </div>
+                      <div class="tool-guide-image">
+                        <img src="/images/wiki/wiki-img-04.webp" alt="Temperature & Pulse Monitor tool in use" class="tool-image" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tool-stethoscope" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">🩺</span>
+                          <h3 class="tool-guide-title">Stethoscope</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Used to listen to lung and heart sounds.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li>Check for breathing difficulties</li>
+                            <li>Listen for lung abnormalities (such as "viral breathing sounds" - wet rales)</li>
+                            <li>Detect irregular heart rhythms (arrhythmia)</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Abnormal lung sounds, especially wet rales, are strong indicators of respiratory infection. Combine with temperature readings for confirmation.</p>
+                        </div>
+                      </div>
+                      <div class="tool-guide-image">
+                        <img src="/images/wiki/wiki-img-05.webp" alt="Stethoscope tool in use" class="tool-image" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tool-uv-scanner" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">💡</span>
+                          <h3 class="tool-guide-title">SCANNER</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Uses ultraviolet/bio-light to scan the body. This is one of the most important tools available.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li>Reveals scratches or bite marks invisible to the naked eye</li>
+                            <li>Shows subcutaneous blood vessel fluorescence (double-layer effect indicating virus flowing in blood vessels)</li>
+                            <li>Detects wounds hidden by clothing</li>
+                          </ul>
+                          <p><strong>Tip:</strong> The UV scanner is essential for detecting hidden infection signs. Always use it to check for invisible bite marks or wounds that clothing might conceal.</p>
+                        </div>
+                      </div>
+                      <div class="tool-guide-image">
+                        <img src="/images/wiki/wiki-img-06.webp" alt="UV Light Scanner tool in use" class="tool-image" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tool-body-scanner" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">📡</span>
+                          <h3 class="tool-guide-title">Body Scanner</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Provides X-ray/transparent inspection of the body.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li>Check for foreign objects inside the body (such as contraband, bombs)</li>
+                            <li>Detect if internal organs have mutated or become enlarged</li>
+                            <li>Identify structural abnormalities that indicate infection</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Essential for security checks and detecting internal organ changes. Use when you suspect hidden contraband or need to verify internal health status.</p>
+                        </div>
+                      </div>
+                      <div class="tool-guide-image">
+                        <img src="/images/wiki/wiki-img-07.webp" alt="Body Scanner tool in use" class="tool-image" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tool-blood-test" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">💉</span>
+                          <h3 class="tool-guide-title">Blood Test Kit / Syringe Scanner</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Draws blood samples for laboratory testing.</p>
+                          <p><strong>Detection Targets:</strong></p>
+                          <ul>
+                            <li>Provides <strong>100% accuracy</strong> for final confirmation</li>
+                            <li>Definitive test for infection status</li>
+                          </ul>
+                          <p><strong>Important Notes:</strong></p>
+                          <ul>
+                            <li>Usually a <strong>consumable item</strong> - limited quantity and expensive</li>
+                            <li>Recommended to use only when other tools show ambiguous results (e.g., normal heart rate but suspicious appearance)</li>
+                            <li>Use as a <strong>last resort</strong> due to limited supply and high cost</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Save blood test kits for critical cases where other tools cannot provide a clear answer. Don't waste them on obvious cases.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tool-weapon" class="tool-guide-card">
+                    <div class="tool-guide-content">
+                      <div class="tool-guide-text">
+                        <div class="tool-guide-header">
+                          <span class="tool-guide-icon">🔫</span>
+                          <h3 class="tool-guide-title">Pistol / Weapon</h3>
+                        </div>
+                        <div class="tool-guide-body">
+                          <p><strong>Function:</strong> Emergency/execution tool. While not a detection tool, this is the only "handling" tool when detecting red-level threats (mutated/extremely dangerous) or when facing forced checkpoint breaches.</p>
+                          <p><strong>Usage:</strong></p>
+                          <ul>
+                            <li>Use when an infected individual is confirmed and poses immediate danger</li>
+                            <li>Deploy when survivors attempt to force their way through the checkpoint</li>
+                            <li>Last resort for maintaining checkpoint security</li>
+                          </ul>
+                          <p><strong>Warning:</strong> This is a lethal tool. Use only when absolutely necessary to protect the checkpoint and other survivors. Every use has consequences.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laboratory Inspection System -->
+                <div class="info-box" style="margin-top: 32px;">
+                  <h3 class="subsection-title">Laboratory Inspection System</h3>
+                  <p><strong>New Feature:</strong> The full release introduces a comprehensive laboratory system within your base that allows for in-depth analysis of survivors with unclear symptoms.</p>
+                  <ul>
+                    <li><strong>Deep Analysis:</strong> Send individuals with unknown or conflicting symptoms to the laboratory for comprehensive testing</li>
+                    <li><strong>Advanced Detection:</strong> Laboratory equipment can detect new virus strains and mutations that standard tools might miss</li>
+                    <li><strong>Research Benefits:</strong> Laboratory findings contribute to your understanding of the virus and may unlock new detection methods</li>
+                    <li><strong>Resource Management:</strong> Laboratory operations consume medical supplies but provide valuable intelligence for future inspections</li>
+                  </ul>
+                  <p><strong>Strategy:</strong> Use the laboratory for high-priority cases where standard inspection tools show conflicting results. The time investment is worth it for potentially saving lives and preventing outbreaks.</p>
                 </div>
               </div>
             </section>
@@ -110,6 +301,18 @@
                 <p class="lead-text">
                   Effective resource management is crucial for maintaining your checkpoint. Learn how to balance consumption, production, and allocation to keep your base operational. Our detailed <router-link to="/guides" class="inline-link">resource management guides</router-link> provide step-by-step strategies for optimizing your operations. For combat-focused resource management, see our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>.
                 </p>
+
+                <div class="info-box" style="margin-bottom: 24px;">
+                  <h3 class="subsection-title">New: Bird's Eye View Interface</h3>
+                  <p><strong>Enhanced Management:</strong> The full release introduces a revolutionary bird's eye view interface that provides a comprehensive overview of your entire base.</p>
+                  <ul>
+                    <li><strong>Unified Control:</strong> Manage all resources, facilities, and personnel from a single overhead perspective</li>
+                    <li><strong>Visual Clarity:</strong> See resource distribution, facility status, and personnel assignments at a glance</li>
+                    <li><strong>Streamlined Operations:</strong> Simplified workflow reduces time spent navigating between different management screens</li>
+                    <li><strong>Strategic Planning:</strong> The overview helps identify bottlenecks and optimize resource allocation more effectively</li>
+                  </ul>
+                  <p><strong>Tip:</strong> Use the bird's eye view to quickly assess your base's overall status before making critical decisions. It's especially useful during emergencies when time is limited.</p>
+                </div>
 
                 <img src="/images/wiki/wiki-02.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
@@ -464,6 +667,23 @@
                   </div>
 
                   <div class="event-type">
+                    <h3 class="event-title">Roof Infiltration (New Threat)</h3>
+                    <div class="event-details">
+                      <p><strong>New Defense Challenge:</strong> The full release introduces a new threat where zombies can drop from rooftops, requiring constant vigilance.</p>
+                      <p><strong>Warning Signs:</strong> Sounds from above, shadows moving on roofs, structural damage to upper levels</p>
+                      <p><strong>Immediate Actions:</strong></p>
+                      <ul>
+                        <li>Always keep your weapon ready - zombies can drop at any moment</li>
+                        <li>Scan rooftops regularly during inspections</li>
+                        <li>Position security forces to cover overhead angles</li>
+                        <li>Upgrade roof defenses and install overhead protection</li>
+                      </ul>
+                      <p><strong>Prevention:</strong> Install roof-mounted turrets, reinforce upper structures, maintain constant awareness of vertical threats</p>
+                      <p><strong>Strategy:</strong> This new mechanic adds vertical dimension to defense. Never focus solely on ground-level threats - always watch the skies.</p>
+                    </div>
+                  </div>
+
+                  <div class="event-type">
                     <h3 class="event-title">Resource Shortage</h3>
                     <div class="event-details">
                       <p><strong>Warning Signs:</strong> Low stock levels, increased consumption, supply delays</p>
@@ -475,6 +695,68 @@
                         <li>Reduce non-essential operations</li>
                       </ul>
                       <p><strong>Prevention:</strong> Stockpiling, resource monitoring, diversified supply sources</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Zombie Containment & Farming -->
+            <section id="zombie-farming" class="wiki-section" ref="zombieFarmingRef">
+              <div class="section-header">
+                <h2 class="section-title">Zombie Containment & Farming System</h2>
+                <div class="section-divider"></div>
+              </div>
+              <div class="section-content">
+                <p class="lead-text">
+                  <strong>New Feature:</strong> The full release introduces a controversial but profitable zombie containment system. Learn how to safely contain and maintain zombies for government research contracts.
+                </p>
+
+                <div class="info-box" style="margin-top: 24px;">
+                  <h3 class="subsection-title">Zombie Containment Mechanics</h3>
+                  <p><strong>Overview:</strong> This new system allows you to capture and contain zombies in specialized cages, feeding them with corpses to keep them alive for research purposes.</p>
+                  
+                  <div class="resource-cards" style="margin-top: 20px;">
+                    <div class="resource-card">
+                      <h3 class="resource-title">Containment Process</h3>
+                      <div class="resource-details">
+                        <p><strong>Step 1 - Capture:</strong> Successfully contain infected individuals before they fully transform, or capture zombies during defense events</p>
+                        <p><strong>Step 2 - Containment:</strong> Transfer to specialized containment cages designed to hold zombies safely</p>
+                        <p><strong>Step 3 - Maintenance:</strong> Feed contained zombies with corpses to keep them alive and stable</p>
+                        <p><strong>Step 4 - Research:</strong> Government researchers study the contained zombies, providing you with payment</p>
+                      </div>
+                    </div>
+
+                    <div class="resource-card">
+                      <h3 class="resource-title">Economic Benefits</h3>
+                      <div class="resource-details">
+                        <p><strong>Government Contracts:</strong> Receive regular payments from government research programs</p>
+                        <p><strong>Resource Income:</strong> Provides a steady source of income to fund base operations</p>
+                        <p><strong>Research Data:</strong> Contained zombies may provide valuable information about virus mutations</p>
+                        <p><strong>Risk vs Reward:</strong> Balance the moral implications with the economic benefits</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 class="subsection-title" style="margin-top: 32px;">Strategic Considerations</h3>
+                  <ul style="margin-top: 16px;">
+                    <li><strong>Safety First:</strong> Containment cages must be properly maintained. A breach could be catastrophic</li>
+                    <li><strong>Resource Management:</strong> Feeding zombies requires corpses, which must be obtained from liquidations or defense events</li>
+                    <li><strong>Moral Choices:</strong> This system presents ethical dilemmas - decide if the economic benefits justify the practice</li>
+                    <li><strong>Upgrade Priority:</strong> Invest in containment facility upgrades to increase capacity and safety</li>
+                    <li><strong>Emergency Protocols:</strong> Have a plan for containment breaches - they can spread infection rapidly</li>
+                  </ul>
+
+                  <div class="scenario-cards" style="margin-top: 24px;">
+                    <div class="scenario-card">
+                      <h4>Scenario: Containment Breach</h4>
+                      <p><strong>Situation:</strong> A containment cage fails, releasing zombies into your base.</p>
+                      <p><strong>Recommendation:</strong> Immediately activate emergency protocols, deploy security forces, and isolate the breach area. Containment facilities should be located away from critical infrastructure.</p>
+                    </div>
+                    <div class="scenario-card">
+                      <h4>Scenario: Corpse Shortage</h4>
+                      <p><strong>Situation:</strong> You have contained zombies but no corpses to feed them.</p>
+                      <p><strong>Recommendation:</strong> Plan ahead - maintain a supply of corpses from liquidations. Consider the economic viability before expanding containment capacity.</p>
                     </div>
                   </div>
                 </div>
@@ -572,7 +854,22 @@ const decisionsRef = ref(null)
 const upgradesRef = ref(null)
 const personnelRef = ref(null)
 const eventsRef = ref(null)
+const zombieFarmingRef = ref(null)
 const strategiesRef = ref(null)
+
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId)
+  if (element) {
+    const headerOffset = 100 // 考虑header的高度
+    const elementPosition = element.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
 </script>
 
 <style scoped>
@@ -644,15 +941,48 @@ const strategiesRef = ref(null)
 }
 
 .wiki-content img {
-  max-width: 50%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .content-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
   position: relative;
   z-index: 1;
+  align-items: start;
+}
+
+/* Sidebar */
+.wiki-sidebar {
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  align-self: start;
+  will-change: transform;
+  z-index: 10;
+}
+
+.wiki-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wiki-sidebar::-webkit-scrollbar-track {
+  background: rgba(10, 15, 20, 0.5);
+  border-radius: 3px;
+}
+
+.wiki-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(57, 255, 20, 0.3);
+  border-radius: 3px;
+}
+
+.wiki-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(57, 255, 20, 0.5);
 }
 
 /* Main Content */
@@ -982,6 +1312,110 @@ const strategiesRef = ref(null)
   margin-bottom: 0;
 }
 
+/* Table of Contents */
+.toc-section {
+  background: rgba(20, 30, 40, 0.7);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.toc-header {
+  margin-bottom: 20px;
+}
+
+.toc-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 12px;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
+}
+
+.toc-nav {
+  margin-top: 16px;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toc-list li {
+  margin: 0;
+}
+
+.toc-link {
+  display: block;
+  padding: 10px 14px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  border-left: 3px solid transparent;
+  position: relative;
+}
+
+.toc-link:hover {
+  color: var(--accent);
+  background: rgba(57, 255, 20, 0.1);
+  border-left-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.toc-link:active {
+  color: var(--accent);
+  background: rgba(57, 255, 20, 0.15);
+  border-left-color: var(--accent);
+}
+
+.toc-sublist {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.toc-sublist li {
+  margin: 0;
+}
+
+.toc-sublink {
+  display: block;
+  padding: 8px 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  border-left: 2px solid transparent;
+  position: relative;
+  opacity: 0.8;
+}
+
+.toc-sublink:hover {
+  color: var(--accent);
+  background: rgba(57, 255, 20, 0.08);
+  border-left-color: rgba(57, 255, 20, 0.5);
+  transform: translateX(3px);
+  opacity: 1;
+}
+
+.toc-sublink:active {
+  color: var(--accent);
+  background: rgba(57, 255, 20, 0.12);
+  border-left-color: var(--accent);
+  opacity: 1;
+}
+
 /* Tool Guide Cards */
 .tool-guide-cards {
   display: flex;
@@ -996,12 +1430,23 @@ const strategiesRef = ref(null)
   border-radius: 12px;
   padding: 20px;
   transition: all 0.3s ease;
+  scroll-margin-top: 100px;
 }
 
 .tool-guide-card:hover {
   border-color: var(--accent);
   box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
   transform: translateY(-2px);
+}
+
+.tool-guide-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.tool-guide-text {
+  flex: 1;
 }
 
 .tool-guide-header {
@@ -1037,6 +1482,26 @@ const strategiesRef = ref(null)
 
 .tool-guide-body strong {
   color: var(--text);
+}
+
+.tool-guide-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(57, 255, 20, 0.2);
+}
+
+.tool-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tool-guide-card:hover .tool-image {
+  transform: scale(1.05);
 }
 
 /* Resource Cards */
@@ -1394,8 +1859,27 @@ const strategiesRef = ref(null)
 
 /* Responsive Design - 1024px */
 @media (max-width: 1024px) {
+  .content-layout {
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+  }
+
+  .wiki-sidebar {
+    top: 70px;
+    max-height: calc(100vh - 90px);
+  }
+
   .wiki-main {
     padding: 20px;
+  }
+
+  .tool-guide-content {
+    flex-direction: column;
+  }
+
+  .tool-guide-image {
+    width: 100%;
+    height: 200px;
   }
 
   .resource-cards {
@@ -1417,6 +1901,23 @@ const strategiesRef = ref(null)
 
 /* Responsive Design - 768px */
 @media (max-width: 768px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .wiki-sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+    margin-bottom: 20px;
+    order: -1;
+  }
+
+  .toc-section {
+    border-radius: 12px;
+  }
+
   .wiki-header {
     padding: 40px 0;
   }
@@ -1480,6 +1981,19 @@ const strategiesRef = ref(null)
 
   .tool-name {
     font-size: 12px;
+  }
+
+  .toc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-guide-content {
+    flex-direction: column;
+  }
+
+  .tool-guide-image {
+    width: 100%;
+    height: 180px;
   }
 
   .tool-guide-card,

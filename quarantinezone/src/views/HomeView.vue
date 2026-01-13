@@ -31,6 +31,20 @@
                   <span class="info-label">Platform</span>
                   <span class="info-value">Steam (PC)</span>
                 </div>
+                <div class="info-item">
+                  <span class="info-label">Release</span>
+                  <span class="info-value">Jan 13, 2026</span>
+                </div>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-card">
+                  <span class="stat-value">1.3M+</span>
+                  <span class="stat-label">Steam Wishlists</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-value">~2M</span>
+                  <span class="stat-label">Demo players since May 2025 reveal</span>
+                </div>
               </div>
             </div>
             <div class="hero-video">
@@ -64,7 +78,7 @@
             <span class="section-tag">About the Game</span>
             <h2 class="section-heading">What is Quarantine Zone: The Last Check?</h2>
             <p class="section-lead">
-              A deep and atmospheric simulation game where you command a critical checkpoint during a zombie outbreak.
+              A deep quarantine checkpoint management sim about screening survivors, managing scarce resources, and making hard moral calls under a looming outbreak.
             </p>
           </div>
 
@@ -300,7 +314,7 @@
               <strong>Platform:</strong> Windows PC (Steam) · Single-player · Partial controller support
             </p>
             <p>
-              <strong>Release:</strong> Coming soon in 2025
+              <strong>Release:</strong> Jan 13, 2026 (Steam)
             </p>
           </div>
         </div>
@@ -696,6 +710,37 @@ section::before {
   gap: 24px;
   flex-wrap: wrap;
   margin-top: 10px;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.stat-card {
+  background: rgba(20, 30, 40, 0.8);
+  border: 1px solid rgba(57, 255, 20, 0.25);
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-width: 220px;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.6);
+}
+
+.stat-label {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
 }
 
 .info-item {
@@ -1582,6 +1627,25 @@ section::before {
   .hero-info {
     gap: 16px;
     justify-content: center;
+  }
+
+  .hero-stats {
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .stat-card {
+    min-width: 180px;
+    padding: 12px 14px;
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
   }
 
   .info-label {

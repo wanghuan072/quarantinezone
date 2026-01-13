@@ -214,6 +214,103 @@ export const guides = [
       </ul>
   
       <p><strong>Conclusion:</strong> In <em>Quarantine Zone</em>, you are writing the story of your camp's demise or survival. Every stamp is a choice between resources, reputation, and safety. Don't be a hero—be a survivor.</p>`,
+  },
+
+  {
+    id: 4,
+    title: "Quarantine Zone: The Last Check \"Ask Your Mom\" Guide & All Poem Locations",
+    description: "Quarantine Zone: The Last Check has captivated players with its intense management mechanics, but one specific objective is causing widespread confusion: the cryptic instruction to \"Ask Your Mom.\"",
+    tags: ["quarantine","zone","last","check","\"ask"],
+    publishDate: "2026-01-13",
+    imageUrl: "/images/guide/guide04.webp",
+    imageAlt: "Quarantine Zone Ask Your Mom quest",
+    seo: {
+      title: "Quarantine Zone: The Last Check \"Ask Your Mom\" Guide & All Poem Locations",
+      description: "Stuck on the \"Ask Your Mom\" objective in Quarantine Zone? Here is the complete walkthrough to find all 6 graffiti poems, solve the red footprints puzzle, and fix the invisible paint bug.",
+      keywords: "Quarantine Zone: The Last Check ;Ask Your Mom Guide",
+    },
+    addressBar: "/Quarantine-Zone-The-Last-Check-Ask-Your-Mom-Guide",
+    detailsHtml: `
+<p><strong>Quarantine Zone: The Last Check</strong> has captivated players with its intense management mechanics, but one specific objective is causing widespread confusion: the cryptic instruction to <strong>"Ask Your Mom."</strong></p>
+
+<p>If you are wandering the camp aimlessly, you aren't alone. This objective is not about finding a character named "Mom," but is actually a linear scavenger hunt for hidden <strong>Quarantine Zone poems</strong> (graffiti). This comprehensive guide will help you decipher the clue, solve the red footprints puzzle, locate the mysterious survivor with paint on their clothes, and fix common progression bugs.</p>
+
+<iframe src="https://www.youtube.com/embed/GxFOBOqkO3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2><strong>How to Start the "Ask Your Mom" Quarantine Zone Quest</strong></h2>
+
+<p>To complete the <strong>"Ask Your Mom"</strong> quest in <strong>Quarantine Zone: The Last Check</strong>, you need to understand the hidden mechanics:</p>
+
+<ol>
+<li><strong>Sequential Spawning:</strong> You cannot find all 6 graffiti locations at once. They trigger one by one. You must find the first <strong>Quarantine Zone poem</strong> to make the second one appear.</li>
+<li><strong>The Red Footprints:</strong> Once you interact with a poem, look immediately at the ground. You will see a trail of bloody red footprints leading to the next location.</li>
+<li><strong>Flashlight is Mandatory:</strong> Many players report getting stuck because the footprints are invisible in the dark. <strong>Keep your torch (flashlight) ON at all times</strong> during this quest to see the trail.</li>
+<li>
+<img src="/images/guide/guide04-02.webp" alt="Quarantine Zone Ask Your Mom guide" width="50%">
+</li>
+</ol>
+
+<h2><strong>All 6 Quarantine Zone Poems Locations (Graffiti Walkthrough)</strong></h2>
+
+<p>Here is the exact step-by-step sequence to find every piece of graffiti. You must visit them in this specific order to progress:</p>
+
+<h3><strong>1. Outside the Sleeping Quarters</strong></h3>
+<p>Start at your command center (the silver container where your bed is). Walk out of the room and look immediately at the concrete wall straight ahead, just to the right of the gate. This is the starting point of the trail.</p>
+
+<h3><strong>2. The Blue Potty (Storage Area)</strong></h3>
+<p>Follow the red footprints along the path towards the Storage area. Look all the way to the far left side. You will see a blue portable toilet (potty). The second poem is scrawled on the wall right next to it.</p>
+
+<h3><strong>3. The Lab White Box</strong></h3>
+<p>Proceed to the Laboratory area. Walk to the far right side of the room. The graffiti is located on the side of a large white box/machine.</p>
+
+<h3><strong>4. Behind the Blue Container</strong></h3>
+<p>Head back towards your sleeping area (Command Center). Identify your own container (it is silver). Walk around behind your container to find a <strong>blue storage container</strong> tucked in the back. The fourth poem is painted on the back wall of that blue container.</p>
+
+<h3><strong>5. The Green Tower</strong></h3>
+<p>Make your way to the Liquidation area. Look for the tall green tower structure on the left-hand side. The fifth poem is located up on that tower.</p>
+
+<h3><strong>6. Inspection Area Wall</strong></h3>
+<p>Go to the central area where you perform your daily inspections. Turn around (facing back towards your bed) and walk through the gate. Look at the concrete wall at roughly the "1 o'clock" position. You will see the word "Laboratory" stenciled on the wall—the final graffiti is right below it.</p>
+
+<p>
+<img src="/images/guide/guide04-01.webp" alt="Quarantine Zone Poems" width="50%">
+</p>
+
+<h2><strong>How to Complete "Tag the Unknown Symptoms" (The Paint Puzzle)</strong></h2>
+
+<p>After finding all <strong>Quarantine Zone poems</strong>, your objective may update to "Tag the Unknown Symptoms." This is another vague puzzle that has frustrated many players.</p>
+
+<ol>
+<li><strong>The Target:</strong> You are looking for a male survivor with <strong>blond hair</strong> wearing a <strong>blue shirt</strong>.</li>
+<li><strong>The Visual Cue:</strong> His clothes should have <strong>red paint (or blood)</strong> on them.</li>
+<li><strong>Location:</strong> He is usually found sitting and reading on a bench near the gate in the Survival Block.</li>
+<li><strong>The Trigger:</strong> Walk up to him and initiate a conversation. He will mention "teaching someone a lesson" and then walk away towards the tents.</li>
+</ol>
+
+<p><strong>Bug Warning:</strong> Some players have reported a visual glitch where the red paint does not render on his clothes, or is hidden by a jacket. If you cannot find the visual cue, <strong>talk to every survivor in the area</strong>. The dialogue will eventually trigger the quest completion even if the paint texture is missing.</p>
+
+<h2><strong>Troubleshooting Common Bugs (X-Ray & Inspection Ratings)</strong></h2>
+
+<h3><strong>The Day 13 X-Ray Scanner Bug</strong></h3>
+<p>Many players report that the X-ray scanner stops showing contraband items visually.</p>
+<p><strong>The Fix:</strong> Even if the screen is blank, pay attention to your UI. The <strong>"E" prompt</strong> to mark an object will still light up when your cursor hovers over a hidden item. Trust the UI prompt, press 'E', and then talk to the survivor to confiscate the invisible item.</p>
+
+<h3><strong>"Poor" Inspection Ratings Spike</strong></h3>
+<p>Around Day 11, it becomes very difficult to get a "Good" rating. This may be due to eye-based symptoms that are hard to detect before unlocking the Eye Scanner upgrade. Be extra thorough with your visual checks during these days.</p>
+
+<h2><strong>Summary</strong></h2>
+<p>The Ask Your Mom quest in Quarantine Zone The Last Check is a guided trail puzzle disguised as exploration. It is not about searching everywhere, but about paying attention to the footprints the game leaves for you. Follow the trail, keep your torch on, and the quest finishes cleanly without bugs or guesswork.</p>
+
+<h2><strong>Frequently Asked Questions (FAQ)</strong></h2>
+
+<p><strong>Is the Ask Your Mom quest bugged?</strong><br>No. The quest is linear and works correctly when completed in order.</p>
+<p><strong>Why am I stuck at 3 out of 6 graffiti?</strong><br>You missed the next set of bloody footprints or skipped a previous graffiti.</p>
+<p><strong>Do I need to use the torch?</strong><br>Yes. The torch makes the footprints visible and prevents missed steps.</p>
+<p><strong>Can I complete the graffiti out of order?</strong><br>No. Only the next graffiti in the sequence will count.</p>
+
+<p><em>This guide is part of the larger Quarantine Zone The Last Check guides collection.</em></p>
+
+    `,
   }
 
 
