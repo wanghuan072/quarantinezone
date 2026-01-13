@@ -57,7 +57,7 @@
                 </div>
                 <div class="video-iframe" v-else>
                   <iframe
-                    src="https://www.youtube.com/embed/izrs0wg_30Y"
+                    src="https://www.youtube.com/embed/GxFOBOqkO3w"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -65,6 +65,9 @@
                   ></iframe>
                   <button class="close-video" @click="closeVideo">×</button>
                 </div>
+              </div>
+              <div class="video-description">
+                <h2>Quarantine Zone: The Last Check "Ask Your Mom" Guide</h2>
               </div>
             </div>
           </div>
@@ -872,6 +875,22 @@ section::before {
   background: rgba(57, 255, 20, 0.2);
   color: var(--accent);
   box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+}
+
+.video-description {
+  margin-top: 20px;
+}
+
+.video-description h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 20px;
+  text-shadow: 
+    0 0 15px var(--accent),
+    0 0 30px var(--neon-glow),
+    0 0 45px rgba(57, 255, 20, 0.5);
+  line-height: 1.5;
 }
 
 @media (max-width: 968px) {
