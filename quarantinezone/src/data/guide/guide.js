@@ -1,18 +1,397 @@
 export const guides = [
   {
-    id: 1,
-    title: "Quarantine Zone: The Last Check - Rookie Survival Manual",
-    description: "Survive your first days in Quarantine Zone! Become the ultimate gatekeeper by mastering visual observation and efficient tool usage. Learn to spot the infected, manage resources, and avoid deadly mistakes. Your decisions determine life and death.",
-    tags: ["quarantine","zone survival","inspection guide","rookie tips","infected detection"],
-    publishDate: "2025-12-05",
-    imageUrl: "/images/guide/guide01.webp",
-    imageAlt: "A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage.",
+    id: 6,
+    title:
+      'Quarantine Zone: The Last Check Contraband Guide - Fixing the Invisible Internal Item Bug',
+    description:
+      "Frustrated with 'Quarantine Zone: The Last Check' due to invisible internal contraband? This guide unveils the intended mechanics and provides workarounds for the frustrating bug where contraband items don't appear on the X-ray scanner, leading to unfair inspection ratings.",
+    tags: [
+      'Quarantine Zone',
+      'The Last Check',
+      'Contraband Bug',
+      'Invisible Item',
+      'X-Ray Scanner',
+    ],
+    publishDate: '2026-01-14',
+    imageUrl: '/images/guide/guide06.webp',
+    imageAlt:
+      'X-ray scan in Quarantine Zone: The Last Check, highlighting the search for invisible contraband.',
     seo: {
-      title: "Quarantine Zone: The Last Check - Rookie Survival Manual | Ultimate Guide",
-      description: "Master the art of inspection in Quarantine Zone! Learn visual cues, efficient tool usage, and interrogation techniques to survive your first days and protect the last line of defense.",
-      keywords: "quarantine, zone, survival, inspection, guide, rookie, infected, detection, observation, tool usage, interrogation, documentation"
+      title:
+        'Quarantine Zone: The Last Check Contraband Guide - Fixing the Invisible Internal Item Bug',
+      description:
+        'Contraband items not appearing in Quarantine Zone: The Last Check? Even with the X-Ray, internal contraband can be invisible. Here is how to fix the bug and find hidden items.',
+      keywords:
+        'quarantine, zone, the, last check, contraband, invisible item, bug fix, x-ray scanner, inspection, guide',
     },
-    addressBar: "/quarantine-zone-the-last-check-rookie-survival-manual",
+    addressBar: '/Quarantine-Zone-The-Last-Check-Contraband-Guide',
+    detailsHtml: `
+        <section>
+    
+      <h1>Quarantine Zone: The Last Check – Internal Contraband Bug Guide</h1>
+    
+      <p>
+        Dealing with <strong>quarantine zone contraband</strong> is a core mechanic of the game,
+        but recently, many players have reported a game-breaking issue:
+        <strong>Internal contraband does not appear</strong> on the X-ray scanner,
+        even when the metal detector is beeping loudly.
+      </p>
+    
+      <p>
+        If you are frustrated by “Poor” inspection ratings because you can’t find the hidden item,
+        you are not alone. This guide explains how the
+        <strong>quarantine zone internal contraband</strong> system is supposed to work
+        and how to deal with the current invisible item bug affecting
+        <strong>Quarantine Zone: The Last Check</strong>.
+      </p>
+    
+      <figure>
+        <img
+          src="/images/guide/guide06-02.webp"
+          alt="Quarantine Zone The Last Check Contraband"
+          style="max-width:50%;"
+        >
+      </figure>
+    
+      <h2>The Problem: “Contraband Items Do Not Appear”</h2>
+    
+      <p>
+        According to numerous reports on the Steam Community,
+        the latest patch appears to have broken the rendering for internal items.
+        The situation usually looks like this:
+      </p>
+    
+      <ul>
+        <li>
+          <strong>The Symptom:</strong>
+          The metal detector beeps, or the survivor behaves nervously,
+          but they have no luggage.
+        </li>
+        <li>
+          <strong>The Expectation:</strong>
+          You use the X-Ray machine to scan body layers (Skin, Muscle, Bone)
+          to locate swallowed items.
+        </li>
+        <li>
+          <strong>The Bug:</strong>
+          The X-Ray screen shows nothing.
+          The item is invisible, but the game still penalizes you for missing it.
+        </li>
+      </ul>
+    
+      <h2>Is There a Fix for the Invisible Contraband?</h2>
+    
+      <p>
+        At the moment, this is a confirmed bug that the developers are aware of.
+        Until a hotfix arrives, players have found a few workarounds.
+      </p>
+    
+      <h3>1. The “Blind Tagging” Method</h3>
+    
+      <p>
+        Some players, such as Steam user <em>Tempesta</em>,
+        reported success by tagging invisible objects.
+        Even if the item is not visible:
+      </p>
+    
+      <ol>
+        <li>
+          Slowly move your cursor over the survivor’s stomach or chest area
+          while in X-Ray view.
+        </li>
+        <li>
+          Watch carefully for the UI prompt (usually <strong>“E” to Tag</strong>)
+          to flicker or light up.
+        </li>
+        <li>
+          If the prompt appears, press it immediately—even if the screen is empty.
+        </li>
+      </ol>
+    
+      <h3>2. The Unfair Unlock Progression Issue</h3>
+    
+      <p>
+        Another issue, reported by user <em>Nurrai</em>,
+        is that the game can spawn survivors with
+        <strong>quarantine zone internal contraband</strong>
+        <em>before</em> the X-Ray machine is unlocked.
+      </p>
+    
+      <p>
+        <strong>Strategy:</strong>
+        During the early game (Days 1–5),
+        if the metal detector triggers on a survivor with no bag
+        and you do not yet have an X-Ray scanner,
+        your only safe option is to <strong>Deny Entry</strong>.
+        You cannot confiscate the item, and letting them in will damage your reputation.
+      </p>
+    
+      <h2>Standard Quarantine Zone Contraband Guide (When It Works)</h2>
+    
+      <p>
+        Once the bug is patched, this is how contraband detection in
+        <strong>Quarantine Zone: The Last Check</strong> is intended to function.
+      </p>
+    
+      <h3>External Luggage</h3>
+    
+      <ul>
+        <li>
+          <strong>Backpacks & Suitcases:</strong>
+          Always click and drag clothing aside.
+          Contraband is often hidden in the deepest layer.
+        </li>
+        <li>
+          <strong>Weapon Permits:</strong>
+          Finding a gun is not automatically a crime.
+          Always check for a valid weapon permit before confiscating it.
+        </li>
+      </ul>
+    
+      <h3>Internal (Body) Smuggling</h3>
+    
+      <ul>
+        <li>
+          <strong>Metal Detector:</strong>
+          Your primary warning system.
+          If it beeps and the survivor has no bag, the contraband is internal.
+        </li>
+        <li>
+          <strong>X-Ray Layers:</strong>
+          Cycle through layers carefully.
+          Most items (knives, vials) are hidden in the
+          <strong>Torso</strong> or <strong>Legs</strong>.
+        </li>
+      </ul>
+    
+      <figure>
+        <img
+          src="/images/guide/guide06-01.webp"
+          alt="Quarantine Zone Internal Contraband X-Ray"
+          style="max-width:50%;"
+        >
+      </figure>
+    
+      <h2>Summary</h2>
+    
+      <p>
+        If you are currently struggling with
+        <strong>quarantine zone internal contraband</strong>,
+        it is very likely not your fault.
+        The invisible item bug affects most players on the latest patch.
+        Until it is fixed, use the “Blind Tagging” workaround
+        or deny entry to suspicious travelers.
+      </p>
+    
+      <p>
+        <em>Check back here for future patch note updates.</em>
+      </p>
+    
+    </section>
+    
+        `,
+  },
+
+  {
+    id: 7,
+    title: 'Quarantine Zone: The Last Check All Symptoms Guide',
+    description:
+      'Looking for a list of Quarantine Zone: The Last Check all symptoms? This guide breaks down every visual, vital, and behavioral sign to help you detect infected survivors and avoid false positives.',
+    tags: ['all', 'quarantine', 'zone', 'last', 'check'],
+    publishDate: '2026-01-14',
+    imageUrl: '/images/guide/guide07.webp',
+    imageAlt:
+      'Professional screenshot of Quarantine Zone: The Last Check All Symptoms Guide - Safe vs. Infected Cheat S',
+    seo: {
+      title: 'Quarantine Zone: The Last Check All Symptoms Guide',
+      description:
+        'Looking for a list of Quarantine Zone: The Last Check all symptoms? This guide breaks down every visual, vital, and behavioral sign to help you detect infected survivors and avoid false positives.',
+      keywords: 'Quarantine Zone All Symptoms',
+    },
+    addressBar: '/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide',
+    detailsHtml: `
+        <section>
+    
+      <h1>Quarantine Zone: The Last Check – All Symptoms Guide</h1>
+    
+      <p>
+        <strong>Quarantine Zone: The Last Check</strong> takes a different approach to the zombie genre.
+        Instead of mowing down hordes with a machine gun, your job is to act as the gatekeeper.
+        You must inspect every survivor entering the camp and determine whether they are hiding the virus.
+      </p>
+    
+      <p>
+        To survive, you need to memorize
+        <strong>Quarantine Zone: The Last Check all symptoms</strong>.
+        Some signs are deadly, while others are harmless traps designed to make you fail.
+        This guide covers everything you need to make the correct decision.
+      </p>
+    
+      <figure>
+        <img
+          src="/images/guide/guide07-02.webp"
+          alt="Quarantine Zone The Last Check Symptoms Overview"
+          style="max-width:50%;"
+        >
+      </figure>
+    
+      <h2>The 3 Categories of Symptoms</h2>
+    
+      <p>
+        Not every ugly mark means infection.
+        All symptoms in the game fall into three categories:
+        <strong>Safe</strong> (Let In),
+        <strong>Suspicious</strong> (Quarantine),
+        and <strong>Infected</strong> (Deny or Kill).
+      </p>
+    
+      <h3>1. “Safe” Symptoms (Do Not Reject)</h3>
+    
+      <p>
+        Many players lose reputation by rejecting survivors who simply look rough.
+        The following visual traits are <strong>normal and safe</strong>:
+      </p>
+    
+      <ul>
+        <li>
+          <strong>Yellow Eyes:</strong>
+          Unlike many zombie games, yellow eyes are safe here.
+          Do not confuse them with red eyes.
+        </li>
+        <li>
+          <strong>Freckles:</strong>
+          Natural skin features. Completely safe.
+        </li>
+        <li>
+          <strong>Bruises:</strong>
+          Blue or purple bruises caused by harsh living conditions.
+          Safe to ignore.
+        </li>
+      </ul>
+    
+      <h3>2. “Possibly Infected” Symptoms (Use Quarantine)</h3>
+    
+      <p>
+        These symptoms are uncertain.
+        The survivor may recover or may turn later.
+        <strong>Do not let them into the main camp.</strong>
+        Send them to the Quarantine Area.
+      </p>
+    
+      <ul>
+        <li><strong>Conjunctivitis:</strong> Pink or irritated eyes.</li>
+        <li><strong>Skin Cuts:</strong> Open wounds that are not bite marks.</li>
+        <li><strong>Fever (Medium):</strong> Temperature between <strong>37°C and 41°C</strong>.</li>
+        <li><strong>Elevated Pulse:</strong> Heart rate between <strong>120 and 180 BPM</strong>.</li>
+        <li><strong>Hyper Reflex:</strong> Abnormally strong reflex test reaction.</li>
+      </ul>
+    
+      <h3>3. “Confirmed Infected” Symptoms (Deny or Kill)</h3>
+    
+      <p>
+        These signs indicate a 100% confirmed infection.
+        There is no cure.
+      </p>
+    
+      <ul>
+        <li><strong>Necrosis:</strong> Black, dead, or rotting tissue.</li>
+        <li><strong>Bite Mark:</strong> The classic zombie bite.</li>
+        <li><strong>Red Eyes:</strong> The most reliable infection indicator.</li>
+        <li><strong>Extreme Fever:</strong> Temperature <strong>above 41°C</strong>.</li>
+        <li><strong>Extreme Pulse:</strong> Heart rate <strong>above 180 BPM</strong>.</li>
+        <li><strong>Cross Reflex:</strong> A specific abnormal reflex test pattern.</li>
+      </ul>
+    
+      <h2>Behavioral Symptoms (Audio Cues)</h2>
+    
+      <p>
+        You do not always need to rely on visuals.
+        Listen carefully while checking documents.
+        The following behaviors are strong warning signs.
+        If detected, send the survivor to <strong>Quarantine</strong>.
+      </p>
+    
+      <ul>
+        <li><strong>Sneezing:</strong> Often linked to a hidden fever.</li>
+        <li><strong>Hiccups:</strong> Frequently associated with heart rate spikes.</li>
+        <li><strong>Coughing:</strong> General sickness indicator.</li>
+        <li>
+          <strong>Sick Breath:</strong>
+          Green fumes or audible cues indicating illness.
+        </li>
+      </ul>
+    
+      <figure>
+        <img
+          src="/images/guide/guide07-01.webp"
+          alt="Quarantine Zone The Last Check All Symptoms"
+          style="max-width:50%;"
+        >
+      </figure>
+    
+      <h2>Summary Cheat Sheet</h2>
+    
+      <p>
+        Use this quick-reference table for
+        <strong>Quarantine Zone: The Last Check all symptoms</strong>:
+      </p>
+    
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Symptom</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Yellow Eyes</td><td>Safe (Let In)</td></tr>
+          <tr><td>Freckles</td><td>Safe (Let In)</td></tr>
+          <tr><td>Bruises</td><td>Safe (Let In)</td></tr>
+    
+          <tr><td>Conjunctivitis</td><td><strong>Check / Quarantine</strong></td></tr>
+          <tr><td>Skin Cuts</td><td><strong>Check / Quarantine</strong></td></tr>
+          <tr><td>Temperature 37°C – 41°C</td><td><strong>Check / Quarantine</strong></td></tr>
+          <tr><td>Pulse 120 – 180 BPM</td><td><strong>Check / Quarantine</strong></td></tr>
+          <tr><td>Hyper Reflex</td><td><strong>Check / Quarantine</strong></td></tr>
+    
+          <tr><td>Necrosis</td><td><strong>INFECTED</strong></td></tr>
+          <tr><td>Bite Mark</td><td><strong>INFECTED</strong></td></tr>
+          <tr><td>Red Eyes</td><td><strong>INFECTED</strong></td></tr>
+          <tr><td>Temperature &gt; 41°C</td><td><strong>INFECTED</strong></td></tr>
+          <tr><td>Pulse &gt; 180 BPM</td><td><strong>INFECTED</strong></td></tr>
+          <tr><td>Cross Reflex</td><td><strong>INFECTED</strong></td></tr>
+        </tbody>
+      </table>
+    
+      <p>
+        Mastering this list is the only reliable way to keep your infection rate at 0%
+        and your reputation high.
+        Good luck, inspector!
+      </p>
+    
+    </section>
+    
+        `,
+  },
+
+  {
+    id: 1,
+    title: 'Quarantine Zone: The Last Check - Rookie Survival Manual',
+    description:
+      'Survive your first days in Quarantine Zone! Become the ultimate gatekeeper by mastering visual observation and efficient tool usage. Learn to spot the infected, manage resources, and avoid deadly mistakes. Your decisions determine life and death.',
+    tags: ['quarantine', 'zone survival', 'inspection guide', 'rookie tips', 'infected detection'],
+    publishDate: '2025-12-05',
+    imageUrl: '/images/guide/guide01.webp',
+    imageAlt:
+      'A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage.',
+    seo: {
+      title: 'Quarantine Zone: The Last Check - Rookie Survival Manual | Ultimate Guide',
+      description:
+        'Master the art of inspection in Quarantine Zone! Learn visual cues, efficient tool usage, and interrogation techniques to survive your first days and protect the last line of defense.',
+      keywords:
+        'quarantine, zone, survival, inspection, guide, rookie, infected, detection, observation, tool usage, interrogation, documentation',
+    },
+    addressBar: '/quarantine-zone-the-last-check-rookie-survival-manual',
     detailsHtml: `
     <p><strong>Introduction:</strong> In <em>Quarantine Zone</em>, you are not just a bureaucrat with a stamp; you are the gatekeeper of the last line of defense. Every oversight or act of excessive force has severe consequences. This guide will teach you how to survive. For comprehensive information about inspection tools and their usage, check out our <a href="/wiki" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete wiki</a>.</p>
   
@@ -65,18 +444,22 @@ export const guides = [
 
   {
     id: 2,
-    title: "Quarantine Zone: The Last Check - Combat & Base Defense Guide",
-    description: "Survive the night in Quarantine Zone! This guide breaks down the combat and base defense mechanics you'll need to master. Learn about firearms, automated defenses, enemy types, and fortification strategies to keep your checkpoint standing against the infected and raiders.",
-    tags: ["quarantine","zone","combat","base defense","tower defense","FPS"],
-    publishDate: "2025-12-05",
-    imageUrl: "/images/guide/guide02.webp",
-    imageAlt: "A heavily fortified checkpoint in the quarantine zone, surrounded by infected and defended by turrets.",
+    title: 'Quarantine Zone: The Last Check - Combat & Base Defense Guide',
+    description:
+      "Survive the night in Quarantine Zone! This guide breaks down the combat and base defense mechanics you'll need to master. Learn about firearms, automated defenses, enemy types, and fortification strategies to keep your checkpoint standing against the infected and raiders.",
+    tags: ['quarantine', 'zone', 'combat', 'base defense', 'tower defense', 'FPS'],
+    publishDate: '2025-12-05',
+    imageUrl: '/images/guide/guide02.webp',
+    imageAlt:
+      'A heavily fortified checkpoint in the quarantine zone, surrounded by infected and defended by turrets.',
     seo: {
-      title: "Quarantine Zone: The Last Check - Combat & Base Defense Guide",
-      description: "Master combat and base defense in Quarantine Zone: The Last Check! This guide covers weapons, defenses, enemy tactics, and fortification for checkpoint survival.",
-      keywords: "quarantine zone, combat guide, base defense, tower defense, FPS, survival, weapons, turrets, raiders, infected"
+      title: 'Quarantine Zone: The Last Check - Combat & Base Defense Guide',
+      description:
+        'Master combat and base defense in Quarantine Zone: The Last Check! This guide covers weapons, defenses, enemy tactics, and fortification for checkpoint survival.',
+      keywords:
+        'quarantine zone, combat guide, base defense, tower defense, FPS, survival, weapons, turrets, raiders, infected',
     },
-    addressBar: "/quarantine-zone-the-last-check-combat-base-defense-guide",
+    addressBar: '/quarantine-zone-the-last-check-combat-base-defense-guide',
     detailsHtml: `
     <p><strong>Introduction:</strong> While checking paperwork is your day job, staying alive is your night job. As the sun sets, the infected become more aggressive, and raiders see your outpost as a loot box. This guide focuses on the FPS and Tower Defense mechanics to keep your checkpoint standing. For more survival strategies, visit our <a href="/guides" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">guides section</a>.</p>
   
@@ -130,18 +513,22 @@ export const guides = [
 
   {
     id: 3,
-    title: "Campaign Guide: Special Events & Moral Choices",
-    description: "Navigate moral dilemmas and unpredictable events in Campaign Mode! Command Center demands, desperate refugees plead, and insurgents scheme. Your choices determine your base's fate: rebellion, starvation, or survival against the final wave. This guide prepares you for the narrative threats and special encounters.",
-    tags: ["campaign guide","moral choices","special events","strategy","survival"],
-    publishDate: "2025-12-05",
-    imageUrl: "/images/guide/guide03.webp",
-    imageAlt: "A tense scene depicting a base under siege during a campaign, emphasizing the special events and moral choices players must make.",
+    title: 'Campaign Guide: Special Events & Moral Choices',
+    description:
+      "Navigate moral dilemmas and unpredictable events in Campaign Mode! Command Center demands, desperate refugees plead, and insurgents scheme. Your choices determine your base's fate: rebellion, starvation, or survival against the final wave. This guide prepares you for the narrative threats and special encounters.",
+    tags: ['campaign guide', 'moral choices', 'special events', 'strategy', 'survival'],
+    publishDate: '2025-12-05',
+    imageUrl: '/images/guide/guide03.webp',
+    imageAlt:
+      'A tense scene depicting a base under siege during a campaign, emphasizing the special events and moral choices players must make.',
     seo: {
-      title: "Campaign Guide: Special Events & Moral Choices - Survive the Apocalypse!",
-      description: "Master the Campaign Mode! Navigate moral dilemmas, manage resources, and face narrative threats. Ensure your base survives. Learn how to make the tough choices.",
-      keywords: "campaign, guide, special events, moral choices, survival strategy, base management, refugees, insurgents, apocalypse"
+      title: 'Campaign Guide: Special Events & Moral Choices - Survive the Apocalypse!',
+      description:
+        'Master the Campaign Mode! Navigate moral dilemmas, manage resources, and face narrative threats. Ensure your base survives. Learn how to make the tough choices.',
+      keywords:
+        'campaign, guide, special events, moral choices, survival strategy, base management, refugees, insurgents, apocalypse',
     },
-    addressBar: "/campaign-guide-special-events-moral-choices",
+    addressBar: '/campaign-guide-special-events-moral-choices',
     detailsHtml: `
     <p><strong>Introduction:</strong> In the Campaign Mode, the infected are not your only problem. You are stuck between a demanding Command Center, desperate refugees, and opportunistic insurgents. Your choices at the window don't just affect your salary—they determine if your base rebels, starves, or survives the final wave. This guide covers the narrative threats and special encounters. Stay updated with the latest <a href="/news" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">game news</a> for updates on campaign features.</p>
   
@@ -218,18 +605,20 @@ export const guides = [
 
   {
     id: 4,
-    title: "Quarantine Zone: The Last Check \"Ask Your Mom\" Guide & All Poem Locations",
-    description: "Quarantine Zone: The Last Check has captivated players with its intense management mechanics, but one specific objective is causing widespread confusion: the cryptic instruction to \"Ask Your Mom.\"",
-    tags: ["quarantine","zone","last","check","\"ask"],
-    publishDate: "2026-01-13",
-    imageUrl: "/images/guide/guide04.webp",
-    imageAlt: "Quarantine Zone Ask Your Mom quest",
+    title: 'Quarantine Zone: The Last Check "Ask Your Mom" Guide & All Poem Locations',
+    description:
+      'Quarantine Zone: The Last Check has captivated players with its intense management mechanics, but one specific objective is causing widespread confusion: the cryptic instruction to "Ask Your Mom."',
+    tags: ['quarantine', 'zone', 'last', 'check', '"ask'],
+    publishDate: '2026-01-13',
+    imageUrl: '/images/guide/guide04.webp',
+    imageAlt: 'Quarantine Zone Ask Your Mom quest',
     seo: {
-      title: "Quarantine Zone: The Last Check \"Ask Your Mom\" Guide & All Poem Locations",
-      description: "Stuck on the \"Ask Your Mom\" objective in Quarantine Zone? Here is the complete walkthrough to find all 6 graffiti poems, solve the red footprints puzzle, and fix the invisible paint bug.",
-      keywords: "Quarantine Zone: The Last Check ;Ask Your Mom Guide",
+      title: 'Quarantine Zone: The Last Check "Ask Your Mom" Guide & All Poem Locations',
+      description:
+        'Stuck on the "Ask Your Mom" objective in Quarantine Zone? Here is the complete walkthrough to find all 6 graffiti poems, solve the red footprints puzzle, and fix the invisible paint bug.',
+      keywords: 'Quarantine Zone: The Last Check ;Ask Your Mom Guide',
     },
-    addressBar: "/Quarantine-Zone-The-Last-Check-Ask-Your-Mom-Guide",
+    addressBar: '/Quarantine-Zone-The-Last-Check-Ask-Your-Mom-Guide',
     detailsHtml: `
 <p><strong>Quarantine Zone: The Last Check</strong> has captivated players with its intense management mechanics, but one specific objective is causing widespread confusion: the cryptic instruction to <strong>"Ask Your Mom."</strong></p>
 
@@ -311,10 +700,7 @@ export const guides = [
 <p><em>This guide is part of the larger Quarantine Zone The Last Check guides collection.</em></p>
 
     `,
-  }
-
-
-
+  },
 
   // {
   //   id: 1,
@@ -334,4 +720,3 @@ export const guides = [
   //   detailsHtml: ``
   // }
 ]
-
