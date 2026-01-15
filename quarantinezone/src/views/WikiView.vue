@@ -28,15 +28,14 @@
                   <li>
                     <a @click.prevent="scrollToSection('tools')" class="toc-link">Inspection Tools Guide</a>
                     <ul class="toc-sublist">
+                      <li><a @click.prevent="scrollToSection('tool-thermopulsometer')" class="toc-sublink">Thermopulsometer</a></li>
                       <li><a @click.prevent="scrollToSection('tool-reflex-hammer')" class="toc-sublink">Reflex Hammer</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-flashlight')" class="toc-sublink">Flashlight</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-document-scanner')" class="toc-sublink">Documents / ID</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-thermometer')" class="toc-sublink">Temperature & Pulse Monitor</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-scanner')" class="toc-sublink">Scanner</a></li>
                       <li><a @click.prevent="scrollToSection('tool-stethoscope')" class="toc-sublink">Stethoscope</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-uv-scanner')" class="toc-sublink">UV Light Scanner</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-body-scanner')" class="toc-sublink">Body Scanner</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-blood-test')" class="toc-sublink">Blood Test Kit</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-weapon')" class="toc-sublink">Pistol / Weapon</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-syringe')" class="toc-sublink">Syringe</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-gun')" class="toc-sublink">Gun</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-xray')" class="toc-sublink">X-Ray</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-matioscope')" class="toc-sublink">Matioscope</a></li>
                     </ul>
                   </li>
                   <li><a @click.prevent="scrollToSection('resources')" class="toc-link">Resource Management System</a></li>
@@ -66,214 +65,92 @@
 
                 <img src="/images/wiki/wiki-01.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
-                <div class="tool-guide-cards">
-                  <div id="tool-reflex-hammer" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">🔨</span>
-                          <h3 class="tool-guide-title">Reflex Hammer</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Used to tap joints or limbs to test neurological reflexes.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li>Infected individuals typically show <strong>hyperreflexia</strong> (exaggerated reflexes)</li>
-                            <li>Watch for <strong>cross-reference</strong> reactions (tapping the left side causes movement on the right side)</li>
-                            <li>These abnormal reflexes indicate that the virus has affected the nervous system</li>
-                          </ul>
-                          <p><strong>Tip:</strong> Cross-reference reactions are a clear sign of neurological damage from infection. This is a reliable indicator of advanced infection.</p>
-                        </div>
-                      </div>
-                      <div class="tool-guide-image">
-                        <img src="/images/wiki/wiki-img-01.webp" alt="Reflex Hammer tool in use" class="tool-image" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-flashlight" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">🔦</span>
-                          <h3 class="tool-guide-title">Flashlight</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Used to illuminate the survivor's face and body to observe visible symptoms that can be detected with the naked eye.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li><strong>Eye Color:</strong> Red eyes, yellow eyes, conjunctivitis</li>
-                            <li><strong>Skin Color:</strong> Pale complexion, darkened skin, discoloration</li>
-                            <li><strong>Visible Wounds or Rashes:</strong> Obvious injuries, skin lesions, or abnormal markings</li>
-                          </ul>
-                          <p><strong>Tip:</strong> This is your first line of visual inspection. Always start with the flashlight to identify obvious symptoms before using more advanced tools.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-document-scanner" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">📄</span>
-                          <h3 class="tool-guide-title">Documents / ID</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Critical for verifying the survivor's identity information.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li>Check if the photo matches the actual person</li>
-                            <li>Verify if the ID photo is authentic</li>
-                            <li>Compare current appearance with ID photo - infected individuals may show significant facial changes that don't match their ID photo</li>
-                          </ul>
-                          <p><strong>Tip:</strong> Facial changes due to infection can be a major red flag. Always compare the person's current appearance with their ID photo carefully.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-thermometer" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">🌡️</span>
-                          <h3 class="tool-guide-title">Thermopulsometer</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Measures the survivor's body temperature and heart rate/pulse.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li><strong>Temperature:</strong> Above 38°C is suspicious, above 41°C usually confirms infection</li>
-                            <li><strong>Pulse:</strong> Abnormally high pulse rate (such as >120 BPM or even >180 BPM) indicates active virus infection</li>
-                          </ul>
-                          <p><strong>Tip:</strong> Combine temperature and pulse readings for more accurate diagnosis. High temperature with elevated pulse is a strong indicator of infection.</p>
-                        </div>
-                      </div>
-                      <div class="tool-guide-image">
-                        <img src="/images/wiki/wiki-img-04.webp" alt="Temperature & Pulse Monitor tool in use" class="tool-image" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-stethoscope" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">🩺</span>
-                          <h3 class="tool-guide-title">Stethoscope</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Used to listen to lung and heart sounds.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li>Check for breathing difficulties</li>
-                            <li>Listen for lung abnormalities (such as "viral breathing sounds" - wet rales)</li>
-                            <li>Detect irregular heart rhythms (arrhythmia)</li>
-                          </ul>
-                          <p><strong>Tip:</strong> Abnormal lung sounds, especially wet rales, are strong indicators of respiratory infection. Combine with temperature readings for confirmation.</p>
-                        </div>
-                      </div>
-                      <div class="tool-guide-image">
-                        <img src="/images/wiki/wiki-img-05.webp" alt="Stethoscope tool in use" class="tool-image" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-uv-scanner" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">💡</span>
-                          <h3 class="tool-guide-title">SCANNER</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Uses ultraviolet/bio-light to scan the body. This is one of the most important tools available.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li>Reveals scratches or bite marks invisible to the naked eye</li>
-                            <li>Shows subcutaneous blood vessel fluorescence (double-layer effect indicating virus flowing in blood vessels)</li>
-                            <li>Detects wounds hidden by clothing</li>
-                          </ul>
-                          <p><strong>Tip:</strong> The UV scanner is essential for detecting hidden infection signs. Always use it to check for invisible bite marks or wounds that clothing might conceal.</p>
-                        </div>
-                      </div>
-                      <div class="tool-guide-image">
-                        <img src="/images/wiki/wiki-img-06.webp" alt="UV Light Scanner tool in use" class="tool-image" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-body-scanner" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">📡</span>
-                          <h3 class="tool-guide-title">Body Scanner</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Provides X-ray/transparent inspection of the body.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li>Check for foreign objects inside the body (such as contraband, bombs)</li>
-                            <li>Detect if internal organs have mutated or become enlarged</li>
-                            <li>Identify structural abnormalities that indicate infection</li>
-                          </ul>
-                          <p><strong>Tip:</strong> Essential for security checks and detecting internal organ changes. Use when you suspect hidden contraband or need to verify internal health status.</p>
-                        </div>
-                      </div>
-                      <div class="tool-guide-image">
-                        <img src="/images/wiki/wiki-img-07.webp" alt="Body Scanner tool in use" class="tool-image" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-blood-test" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">💉</span>
-                          <h3 class="tool-guide-title">Blood Test Kit / Syringe Scanner</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Draws blood samples for laboratory testing.</p>
-                          <p><strong>Detection Targets:</strong></p>
-                          <ul>
-                            <li>Provides <strong>100% accuracy</strong> for final confirmation</li>
-                            <li>Definitive test for infection status</li>
-                          </ul>
-                          <p><strong>Important Notes:</strong></p>
-                          <ul>
-                            <li>Usually a <strong>consumable item</strong> - limited quantity and expensive</li>
-                            <li>Recommended to use only when other tools show ambiguous results (e.g., normal heart rate but suspicious appearance)</li>
-                            <li>Use as a <strong>last resort</strong> due to limited supply and high cost</li>
-                          </ul>
-                          <p><strong>Tip:</strong> Save blood test kits for critical cases where other tools cannot provide a clear answer. Don't waste them on obvious cases.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="tool-weapon" class="tool-guide-card">
-                    <div class="tool-guide-content">
-                      <div class="tool-guide-text">
-                        <div class="tool-guide-header">
-                          <span class="tool-guide-icon">🔫</span>
-                          <h3 class="tool-guide-title">Pistol / Weapon</h3>
-                        </div>
-                        <div class="tool-guide-body">
-                          <p><strong>Function:</strong> Emergency/execution tool. While not a detection tool, this is the only "handling" tool when detecting red-level threats (mutated/extremely dangerous) or when facing forced checkpoint breaches.</p>
-                          <p><strong>Usage:</strong></p>
-                          <ul>
-                            <li>Use when an infected individual is confirmed and poses immediate danger</li>
-                            <li>Deploy when survivors attempt to force their way through the checkpoint</li>
-                            <li>Last resort for maintaining checkpoint security</li>
-                          </ul>
-                          <p><strong>Warning:</strong> This is a lethal tool. Use only when absolutely necessary to protect the checkpoint and other survivors. Every use has consequences.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="tools-table-wrapper">
+                  <table class="tools-table">
+                    <thead>
+                      <tr>
+                        <th class="col-image">Image</th>
+                        <th class="col-item">Item</th>
+                        <th class="col-day">Day</th>
+                        <th class="col-description">Description</th>
+                        <th class="col-function">Function</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="tool-thermopulsometer">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-04.webp" alt="Thermopulsometer" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Thermopulsometer</strong></td>
+                        <td class="col-day">Day two</td>
+                        <td class="col-description">Pulse and temperature can be indicators of infection. Use the thermopulsometer to check a survivor's vital signs. Sneezing or hiccupping may be signs of an elevated temperature or pulse.</td>
+                        <td class="col-function">Measures heart rate and temperature. Higher than 41 degrees and/or a pulse of over 180 indicates infection.</td>
+                      </tr>
+                      <tr id="tool-reflex-hammer">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-01.webp" alt="Reflex Hammer" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Reflex Hammer</strong></td>
+                        <td class="col-day">Day four</td>
+                        <td class="col-description">Slow and dulled reflexes are symptoms of the virus. Use the reflex hammer to test a survivor's muscular response. Only use this on the arms or legs. Hitting a survivor on the head or torso will hurt them. A slack jaw may indicate a potential issue with muscular reflexes.</td>
+                        <td class="col-function">Non-infected will have no reaction to the hammer, while infected will attack you with the arm that didn't get hit. An aggressive reaction with the correct hand points to sickness or infection.</td>
+                      </tr>
+                      <tr id="tool-scanner">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-06.webp" alt="Scanner" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Scanner</strong></td>
+                        <td class="col-day">Day six</td>
+                        <td class="col-description">Some symptoms may be hidden under clothing. Use the scanner to examine survivors without undressing them.</td>
+                        <td class="col-function">Look for bruises, bite marks, and scars to identify signs of infection.</td>
+                      </tr>
+                      <tr id="tool-stethoscope">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-05.webp" alt="Stethoscope" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Stethoscope</strong></td>
+                        <td class="col-day">Day nine</td>
+                        <td class="col-description">The virus can cause respiratory problems. Use the stethoscope to check a survivor's breathing for any irregularities. High amplitude waves are a telltale sign of infection. If no signs of illness or infection are detected, the black zone will disappear.</td>
+                        <td class="col-function">Clear lungs mean healthy, while lungs with spots are signs of being sick or infected. Compare breathing on a stethoscope to symptoms list. Always use multiple tools alongside this to determine if the survivor in Quarantine is sick or is turning into a zombie.</td>
+                      </tr>
+                      <tr id="tool-syringe">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-02.webp" alt="Syringe" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Syringe</strong></td>
+                        <td class="col-day">Day 11</td>
+                        <td class="col-description">Use the syringe analyzer to extract fluid samples from a survivor to detect and determine an infection. To avoid potential cross-contamination, syringes can only be used once. Supplies are limited. The science division will send you more syringes if you send them survivors during an evacuation.</td>
+                        <td class="col-function">Send five survivors onto the Science Truck during an evacuation to get one Syringe. This will be the tool you use the least, but will tell you if the survivor is infected if the fluid turns orange.</td>
+                      </tr>
+                      <tr id="tool-gun">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-01.webp" alt="Gun" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Gun</strong></td>
+                        <td class="col-day">Day 13</td>
+                        <td class="col-description">–</td>
+                        <td class="col-function">Use on zombies that turn in the Survivor Block or Quarantine (during inspection) so they don't kill survivors or attack you. Will result in a game over if you shoot other Checkpoint Alpha staff (resets the day).</td>
+                      </tr>
+                      <tr id="tool-xray">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-07.webp" alt="X-Ray" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>X-Ray</strong></td>
+                        <td class="col-day">Day 13</td>
+                        <td class="col-description">Use the X-ray to inspect a survivor's internal organs for signs of infection. As the virus continues to evolve, you will find that not every symptom is skin deep.</td>
+                        <td class="col-function">Lesions, dark spots, and unnatural coloring appear on organs, showing signs of infection. Filter through layers in the anatomy to find anomalies.</td>
+                      </tr>
+                      <tr id="tool-matioscope">
+                        <td class="col-image">
+                          <img src="/images/wiki/wiki-img-03.webp" alt="Matioscope" class="tool-table-image" />
+                        </td>
+                        <td class="col-item"><strong>Matioscope</strong></td>
+                        <td class="col-day">Day 16</td>
+                        <td class="col-description">A powerful ophthalmological tool for observing the virus. Use the matioscope to zoom in and pan across a survivor's retina. Certain ocular parasites and anomalies indicate infection. Survivors with drooping eyelids may have potential symptoms that require the matioscope for confirmation.</td>
+                        <td class="col-function">Look for clear signs of infection with virus and parasitic imagery inside the retina.</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
 
                 <!-- Laboratory Inspection System -->
@@ -958,7 +835,7 @@ const scrollToSection = (sectionId) => {
 /* Sidebar */
 .wiki-sidebar {
   position: sticky;
-  top: 80px;
+  top: 20px;
   height: fit-content;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
@@ -1378,10 +1255,12 @@ const scrollToSection = (sectionId) => {
 .toc-sublist {
   list-style: none;
   padding: 0;
-  margin: 8px 0 0 16px;
+  margin: 12px 0 8px 24px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  border-left: 2px solid rgba(57, 255, 20, 0.15);
+  padding-left: 12px;
 }
 
 .toc-sublist li {
@@ -1390,23 +1269,39 @@ const scrollToSection = (sectionId) => {
 
 .toc-sublink {
   display: block;
-  padding: 8px 12px;
+  padding: 6px 10px;
   color: var(--text-muted);
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.3s ease;
-  font-size: 12px;
+  font-size: 11px;
   border-left: 2px solid transparent;
   position: relative;
-  opacity: 0.8;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.toc-sublink::before {
+  content: '▸';
+  position: absolute;
+  left: -8px;
+  color: rgba(57, 255, 20, 0.4);
+  font-size: 10px;
+  transition: all 0.3s ease;
 }
 
 .toc-sublink:hover {
   color: var(--accent);
   background: rgba(57, 255, 20, 0.08);
-  border-left-color: rgba(57, 255, 20, 0.5);
-  transform: translateX(3px);
+  border-left-color: rgba(57, 255, 20, 0.4);
+  transform: translateX(2px);
   opacity: 1;
+  font-weight: 500;
+}
+
+.toc-sublink:hover::before {
+  color: rgba(57, 255, 20, 0.6);
+  transform: translateX(2px);
 }
 
 .toc-sublink:active {
@@ -1414,94 +1309,93 @@ const scrollToSection = (sectionId) => {
   background: rgba(57, 255, 20, 0.12);
   border-left-color: var(--accent);
   opacity: 1;
+  font-weight: 500;
 }
 
-/* Tool Guide Cards */
-.tool-guide-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Tools Table */
+.tools-table-wrapper {
   margin-top: 24px;
+  overflow-x: auto;
 }
 
-.tool-guide-card {
+.tools-table {
+  width: 100%;
+  border-collapse: collapse;
   background: rgba(10, 15, 20, 0.5);
   border: 1px solid rgba(57, 255, 20, 0.2);
   border-radius: 12px;
-  padding: 20px;
+  overflow: hidden;
+}
+
+.tools-table thead {
+  background: rgba(57, 255, 20, 0.1);
+}
+
+.tools-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid rgba(57, 255, 20, 0.3);
+}
+
+.tools-table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.1);
+  color: var(--text-muted);
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.tools-table tbody tr {
   transition: all 0.3s ease;
   scroll-margin-top: 100px;
 }
 
-.tool-guide-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
-  transform: translateY(-2px);
+.tools-table tbody tr:hover {
+  background: rgba(57, 255, 20, 0.05);
 }
 
-.tool-guide-content {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
+.tools-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
-.tool-guide-text {
-  flex: 1;
+.tools-table .col-image {
+  width: 120px;
+  padding: 12px;
 }
 
-.tool-guide-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid rgba(57, 255, 20, 0.2);
-}
-
-.tool-guide-icon {
-  font-size: 2rem;
-  filter: drop-shadow(0 0 10px var(--accent));
-}
-
-.tool-guide-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--accent);
-  margin: 0;
-  text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
-}
-
-.tool-guide-body p {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.tool-guide-body p:last-child {
-  margin-bottom: 0;
-}
-
-.tool-guide-body strong {
+.tools-table .col-item {
+  width: 150px;
+  font-weight: 600;
   color: var(--text);
 }
 
-.tool-guide-image {
-  flex-shrink: 0;
-  width: 200px;
-  height: 150px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid rgba(57, 255, 20, 0.2);
+.tools-table .col-day {
+  width: 100px;
+  color: var(--accent);
+  font-weight: 600;
 }
 
-.tool-image {
-  width: 100%;
-  height: 100%;
+.tools-table .col-description {
+  min-width: 300px;
+  line-height: 1.6;
+}
+
+.tools-table .col-function {
+  min-width: 300px;
+  line-height: 1.6;
+}
+
+.tool-table-image {
+  width: 100px;
+  height: 80px;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.tool-guide-card:hover .tool-image {
-  transform: scale(1.05);
+  border-radius: 6px;
+  border: 1px solid rgba(57, 255, 20, 0.2);
 }
 
 /* Resource Cards */
@@ -1873,13 +1767,42 @@ const scrollToSection = (sectionId) => {
     padding: 20px;
   }
 
-  .tool-guide-content {
-    flex-direction: column;
+  .tools-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .tool-guide-image {
-    width: 100%;
-    height: 200px;
+  .tools-table {
+    min-width: 800px;
+    font-size: 12px;
+  }
+
+  .tools-table th,
+  .tools-table td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .tools-table .col-image {
+    width: 80px;
+  }
+
+  .tools-table .col-item {
+    width: 120px;
+  }
+
+  .tools-table .col-day {
+    width: 80px;
+  }
+
+  .tools-table .col-description,
+  .tools-table .col-function {
+    min-width: 200px;
+  }
+
+  .tool-table-image {
+    width: 70px;
+    height: 60px;
   }
 
   .resource-cards {

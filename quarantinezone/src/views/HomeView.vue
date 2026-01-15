@@ -67,7 +67,7 @@
                 </div>
               </div>
               <div class="video-description">
-                <h2>Quarantine Zone: The Last Check "Ask Your Mom" Guide</h2>
+                <h2><a href="/guides/Quarantine-Zone-The-Last-Check-Ask-Your-Mom-Guide">Quarantine Zone: The Last Check "Ask Your Mom" Guide</a></h2>
               </div>
             </div>
           </div>
@@ -881,8 +881,8 @@ section::before {
   margin-top: 20px;
 }
 
-.video-description h2 {
-  font-size: 1.5rem;
+.video-description h2 a {
+  font-size: 1.3rem;
   font-weight: 800;
   color: var(--text);
   margin-bottom: 20px;
@@ -891,6 +891,29 @@ section::before {
     0 0 30px var(--neon-glow),
     0 0 45px rgba(57, 255, 20, 0.5);
   line-height: 1.5;
+  text-decoration: none;
+}
+
+.video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: rgba(57, 255, 20, 0.1);
+}
+
+.video-link:hover {
+  background: rgba(57, 255, 20, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
 }
 
 @media (max-width: 968px) {
