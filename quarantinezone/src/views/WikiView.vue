@@ -45,6 +45,7 @@
                   <li><a @click.prevent="scrollToSection('events')" class="toc-link">Event & Crisis Management</a></li>
                   <li><a @click.prevent="scrollToSection('zombie-farming')" class="toc-link">Zombie Containment & Farming</a></li>
                   <li><a @click.prevent="scrollToSection('strategies')" class="toc-link">Advanced Strategies</a></li>
+                  <li><a @click.prevent="scrollToSection('more-wiki')" class="toc-link">More Wiki Content</a></li>
                 </ul>
               </nav>
             </div>
@@ -711,6 +712,24 @@
                         <li><strong>Long-term thinking:</strong> Short-term gains may lead to long-term problems. Think ahead.</li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- More Wiki Content -->
+            <section id="more-wiki" class="wiki-section more-wiki-section" ref="moreWikiRef">
+              <div class="section-header">
+                <h2 class="section-title">More Wiki Content</h2>
+                <div class="section-divider"></div>
+              </div>
+              <div class="section-content">
+                <div class="more-wiki-list">
+                  <div class="more-wiki-item">
+                    <router-link to="/wiki/symptoms" class="more-wiki-link">
+                      <h3 class="more-wiki-title">All Symptoms And How To Detect Them</h3>
+                      <p class="more-wiki-description">Complete guide to all symptoms in Quarantine Zone: The Last Check, including safe symptoms, quarantine symptoms, and infection symptoms. Learn which tools to use for detection.</p>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -1748,6 +1767,65 @@ const scrollToSection = (sectionId) => {
 }
 
 .pro-tips-list li strong {
+  color: var(--text);
+}
+
+/* More Wiki Content */
+.more-wiki-section {
+  margin-top: 48px;
+}
+
+.more-wiki-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.more-wiki-item {
+  background: rgba(10, 15, 20, 0.5);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.more-wiki-item:hover {
+  border-color: var(--accent);
+  background: rgba(10, 15, 20, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(57, 255, 20, 0.2);
+}
+
+.more-wiki-link {
+  display: block;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.more-wiki-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 12px 0;
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+  transition: color 0.3s ease;
+}
+
+.more-wiki-item:hover .more-wiki-title {
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.8);
+}
+
+.more-wiki-description {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.more-wiki-item:hover .more-wiki-description {
   color: var(--text);
 }
 

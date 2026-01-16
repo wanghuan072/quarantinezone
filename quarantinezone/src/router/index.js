@@ -45,6 +45,18 @@ const routes = [
     }
   },
   {
+    path: '/wiki/symptoms',
+    name: 'symptoms',
+    component: () => import('../views/SymptomsView.vue'),
+    meta: {
+      seo: {
+        title: 'All Symptoms And How To Detect Them | Quarantine Zone: The Last Check Wiki',
+        description: 'Complete guide to all symptoms in Quarantine Zone: The Last Check. Learn how to detect safe symptoms, quarantine symptoms, and infection symptoms using the right tools.',
+        keywords: 'Quarantine Zone symptoms, infection detection, safe symptoms, quarantine symptoms, infection symptoms, symptom guide, detection tools'
+      }
+    }
+  },
+  {
     path: '/zombie-games',
     name: 'games',
     component: () => import('../views/GamesView.vue'),

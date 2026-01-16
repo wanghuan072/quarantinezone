@@ -15,6 +15,7 @@ const baseRoutes = [
   { path: '/', name: 'home', priority: 1.0, changefreq: 'weekly' },
   { path: '/guides', name: 'guides', priority: 0.9, changefreq: 'weekly' },
   { path: '/wiki', name: 'wiki', priority: 0.8, changefreq: 'weekly' },
+  { path: '/wiki/symptoms', name: 'symptoms', priority: 0.8, changefreq: 'monthly' },
   { path: '/zombie-games', name: 'games', priority: 0.9, changefreq: 'weekly' },
   { path: '/news', name: 'news', priority: 0.9, changefreq: 'daily' },
   { path: '/privacy-policy', name: 'privacy-policy', priority: 0.5, changefreq: 'monthly' },
