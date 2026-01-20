@@ -1,5 +1,170 @@
 export const guides = [
   {
+    id: 8,
+    title: 'Quarantine Zone: The Last Check Laboratory & Upgrades Tier List',
+    description:
+      'Struggling with budget and research points? This guide ranks the best checkpoint upgrades and laboratory research paths in Quarantine Zone: The Last Check to help you maximize efficiency and profit.',
+    tags: ['laboratory', 'upgrades', 'tier list', 'research', 'quarantine', 'zone'],
+    publishDate: '2026-01-16',
+    imageUrl: '/images/guide/guide08.webp',
+    imageAlt:
+      'Quarantine Zone: The Last Check Laboratory Interface and Upgrade Menu',
+    seo: {
+      title: 'Quarantine Zone: The Last Check Laboratory & Upgrades Tier List',
+      description:
+        'Struggling with budget and research points? This guide ranks the best checkpoint upgrades and laboratory research paths in Quarantine Zone: The Last Check to help you maximize efficiency and profit.',
+      keywords: 'Quarantine Zone Best Upgrades, Laboratory Guide, Research Tier List',
+    },
+    addressBar: '/Quarantine-Zone-The-Last-Check-Laboratory-Upgrades-Guide',
+    detailsHtml: `
+        <section>
+    
+      <h1>Quarantine Zone: The Last Check – Laboratory & Upgrades Tier List</h1>
+    
+      <p>
+        In <strong>Quarantine Zone: The Last Check</strong>, money and resources are just as scarce as hope.
+        Making the wrong investment early on can lead to a base blackout or being overrun by a horde.
+        Should you buy that new rifle, or upgrade your X-Ray scanner?
+      </p>
+    
+      <p>
+        This guide covers the <strong>Laboratory mechanics</strong>,
+        strategies for <strong>organ harvesting</strong>, and a complete <strong>Tier List</strong>
+        of the best upgrades to prioritize for maximum efficiency.
+      </p>
+    
+      <figure>
+        <img
+          src="/images/guide/guide08-01.webp"
+          alt="Quarantine Zone Laboratory Research Tree"
+          style="max-width:50%;"
+        >
+      </figure>
+    
+      <h2>Part 1: The Laboratory & Organ Harvesting</h2>
+    
+      <p>
+        The Laboratory (unlocked around Day 5) is your primary source of <strong>Research Points (RP)</strong>
+        and a secondary source of income. It allows you to extract organs from infected individuals.
+        For more information about base management and resource strategies, check our <a href="/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">base management guide</a>.
+      </p>
+    
+      <h3>Sell vs. Research: The Golden Rule</h3>
+      <p>
+        You have limited storage space in your freezer. Knowing what to keep is crucial:
+      </p>
+      <ul>
+        <li>
+            <strong>Common Organs (Livers, Kidneys):</strong>
+            <strong>SELL.</strong> These give very low RP but fetch a good price on the Black Market.
+            Use them to fund your daily fuel and ammo costs.
+        </li>
+        <li>
+            <strong>Mutated Organs (Blighted Hearts, Spore Glands):</strong>
+            <strong>RESEARCH.</strong> Never sell these. They are required to unlock high-tier
+            Pathology tech like the "Auto-Scanner." Learn more about identifying symptoms and infections in our <a href="/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms guide</a>.
+        </li>
+      </ul>
+    
+      <h2>Part 2: Checkpoint Upgrades Tier List</h2>
+    
+      <p>
+        Not all tools are created equal. Below is the priority list for spending your cash.
+      </p>
+    
+      <h3>S-Tier (Must-Have Early)</h3>
+      <p>These upgrades fundamentally change how fast you can process survivors.</p>
+      <ul>
+        <li>
+            <strong>UV Light (Level 2):</strong>
+            The base UV light is too dim. Level 2 reveals "Stage 1" spores instantly,
+            saving you from doing a full body search on every person.
+            Master UV light usage techniques in our <a href="/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a> or check the <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms detection wiki</a>.
+        </li>
+        <li>
+            <strong>Auto-Translator:</strong>
+            Foreign refugees take 2x longer to process without this.
+            It pays for itself within two days by allowing you to process more people.
+        </li>
+      </ul>
+    
+      <h3>A-Tier (Get by Mid-Game)</h3>
+      <p>Vital for keeping up with the increasing difficulty.</p>
+      <ul>
+        <li>
+            <strong>X-Ray Scanner Speed Boost:</strong>
+            Later levels require checking stomachs for contraband.
+            The default speed causes long lines; this upgrade fixes the bottleneck.
+            For tips on dealing with invisible contraband bugs, see our <a href="/Quarantine-Zone-The-Last-Check-Contraband-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">contraband detection guide</a>.
+        </li>
+        <li>
+            <strong>Drone Repair Kit:</strong>
+            Automates the repair of your defense drones, freeing you up to focus on shooting during night raids.
+            Learn advanced combat and defense strategies in our <a href="/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">combat & base defense guide</a>.
+        </li>
+      </ul>
+    
+      <h3>C-Tier (Avoid / Late Game Only)</h3>
+      <ul>
+        <li><strong>Aesthetic Upgrades:</strong> Paint jobs or flags do nothing for gameplay.</li>
+        <li><strong>Backup Generator:</strong> If you manage your fuel correctly, you will never need this.</li>
+      </ul>
+    
+      <h2>Part 3: Research Tree Priorities</h2>
+    
+      <p>
+        Once you have harvested enough mutated organs, where should you spend your Research Points?
+      </p>
+    
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Branch</th>
+            <th>Skill Name</th>
+            <th>Why it is Essential</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pathology</strong></td>
+            <td>Rapid Diagnosis</td>
+            <td>
+                <strong>#1 Priority.</strong> It highlights symptoms automatically after 3 seconds of observation.
+                This is the ultimate quality-of-life upgrade. Essential for mastering symptom detection covered in our <a href="/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">all symptoms guide</a>.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Military</strong></td>
+            <td>Turret Ammo Capacity</td>
+            <td>
+                Better than damage upgrades early on. Reloading takes precious time during a swarm;
+                larger magazines save lives. Critical for <a href="/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">night defense strategies</a>.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Logistics</strong></td>
+            <td>Fuel Efficiency</td>
+            <td>
+                Reduces the daily cost of running the base, effectively increasing your daily profit margin.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <h2>Summary</h2>
+    
+      <p>
+        To succeed in <strong>Quarantine Zone</strong>, prioritize speed over firepower in the early game.
+        Upgrade your <strong>UV Light</strong> and <strong>Translator</strong> first to maximize the number of people you check (and pay) per day.
+        Save the combat upgrades for when the hordes start getting bigger around Day 15.
+        For beginners, start with our <a href="/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a>, and for advanced strategies, check out our <a href="/campaign-guide-special-events-moral-choices" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">campaign guide on resource management</a>.
+      </p>
+    
+    </section>
+    `
+  },
+
+  {
     id: 6,
     title:
       'Quarantine Zone: The Last Check Contraband Guide - Fixing the Invisible Internal Item Bug',
