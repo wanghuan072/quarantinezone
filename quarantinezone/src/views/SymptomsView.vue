@@ -9,7 +9,7 @@
             Survivors in Quarantine Zone: The Last Check will attempt to clear the checkpoints and reach the safe area, even if they know they are infected. This makes your job a little harder, as you have to ignore their pleas and go through every check before sending them off to one of three spaces.
           </p>
           <p class="page-subtitle">
-            Before evacuation day, Survivors stay in the safe Survivor Zone, the Quarantine Cell, or the Laboratory. The infectious Survivors are destroyed in liquidation before they can infect anyone else. Here is how to make the right decisions every time by detecting the symptoms first.
+            Before evacuation day, Survivors stay in the safe Survivor Zone, the Quarantine Cell, or the Laboratory. The infectious Survivors are destroyed in liquidation before they can infect anyone else. Here is how to make the right decisions every time by detecting the symptoms first. For a detailed strategy guide with tips and decision-making strategies, check our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms guide</a>.
           </p>
         </div>
       </div>
@@ -27,7 +27,7 @@
               </p>
             </div>
             <p class="lead-text">
-              Each symptom in Quarantine Zone: The Last Check, is detected using a tool or your eyes. In endless mode, all tools are already unlocked, while in campaign mode, they must be unlocked and upgraded as you progress. Below, we have laid out every symptom you will encounter in the game, along with its corresponding infection threat level and the recommended tool for detection.
+              Each symptom in Quarantine Zone: The Last Check, is detected using a tool or your eyes. In endless mode, all tools are already unlocked, while in campaign mode, they must be unlocked and upgraded as you progress. Below, we have laid out every symptom you will encounter in the game, along with its corresponding infection threat level and the recommended tool for detection. Learn efficient tool usage techniques in our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a>.
             </p>
           </div>
 
@@ -39,7 +39,7 @@
             </div>
             <img src="/images/wiki/list/wiki-01-01.webp" alt="Safe Symptoms" class="symptom-image" />
             <p class="category-description">
-              If the survivor shows these symptoms and nothing else, send them straight to the Survivor Zone. If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will be killed in the process. Better to be safe than sorry!
+              If the survivor shows these symptoms and nothing else, send them straight to the Survivor Zone. If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will be killed in the process. Better to be safe than sorry! For more details on safe symptom identification, see our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms strategy guide</a>.
             </p>
             <div class="symptoms-table-container">
               <table class="symptoms-table">
@@ -122,7 +122,7 @@
               These are borderline symptoms, and the survivor could be either just sick or they could be infected. A day or two in Quarantine will reveal the truth. If they get better, they can be sent to the Survivor Zone; if they get worse or they turn into a zombie, they have to be eliminated.
             </p>
             <p class="category-description">
-              If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will die (in the name of science!) while they are there.
+              If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will die (in the name of science!) while they are there. For decision-making strategies when dealing with uncertain symptoms, check our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms guide</a>.
             </p>
             <div class="symptoms-table-container">
               <table class="symptoms-table">
@@ -202,7 +202,7 @@
             </div>
             <img src="/images/wiki/list/wiki-01-03.webp" alt="Infection Symptoms" class="symptom-image" />
             <p class="category-description">
-              If the survivor shows any of these symptoms, they are highly infectious and must be sent to liquidation immediately. If they show a new sign of infection, you can send them to the lab to undergo more analysis.
+              If the survivor shows any of these symptoms, they are highly infectious and must be sent to liquidation immediately. If they show a new sign of infection, you can send them to the lab to undergo more analysis. Learn more about identifying confirmed infections in our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms guide</a>.
             </p>
             <div class="symptoms-table-container">
               <table class="symptoms-table">

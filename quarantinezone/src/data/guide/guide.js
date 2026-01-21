@@ -46,7 +46,7 @@ export const guides = [
       <p>
         The Laboratory (unlocked around Day 5) is your primary source of <strong>Research Points (RP)</strong>
         and a secondary source of income. It allows you to extract organs from infected individuals.
-        For more information about base management and resource strategies, check our <a href="/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">base management guide</a>.
+        For more information about base management and resource strategies, check our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">base management guide</a>.
       </p>
     
       <h3>Sell vs. Research: The Golden Rule</h3>
@@ -79,7 +79,7 @@ export const guides = [
             <strong>UV Light (Level 2):</strong>
             The base UV light is too dim. Level 2 reveals "Stage 1" spores instantly,
             saving you from doing a full body search on every person.
-            Master UV light usage techniques in our <a href="/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a> or check the <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms detection wiki</a>.
+            Master UV light usage techniques in our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a> or check the <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms detection wiki</a>.
         </li>
         <li>
             <strong>Auto-Translator:</strong>
@@ -95,12 +95,12 @@ export const guides = [
             <strong>X-Ray Scanner Speed Boost:</strong>
             Later levels require checking stomachs for contraband.
             The default speed causes long lines; this upgrade fixes the bottleneck.
-            For tips on dealing with invisible contraband bugs, see our <a href="/Quarantine-Zone-The-Last-Check-Contraband-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">contraband detection guide</a>.
+            For tips on dealing with invisible contraband bugs, see our <a href="/guides/Quarantine-Zone-The-Last-Check-Contraband-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">contraband detection guide</a>.
         </li>
         <li>
             <strong>Drone Repair Kit:</strong>
             Automates the repair of your defense drones, freeing you up to focus on shooting during night raids.
-            Learn advanced combat and defense strategies in our <a href="/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">combat & base defense guide</a>.
+            Learn advanced combat and defense strategies in our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">combat & base defense guide</a>.
         </li>
       </ul>
     
@@ -157,7 +157,7 @@ export const guides = [
         To succeed in <strong>Quarantine Zone</strong>, prioritize speed over firepower in the early game.
         Upgrade your <strong>UV Light</strong> and <strong>Translator</strong> first to maximize the number of people you check (and pay) per day.
         Save the combat upgrades for when the hordes start getting bigger around Day 15.
-        For beginners, start with our <a href="/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a>, and for advanced strategies, check out our <a href="/campaign-guide-special-events-moral-choices" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">campaign guide on resource management</a>.
+        For beginners, start with our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a>, and for advanced strategies, check out our <a href="/guides/campaign-guide-special-events-moral-choices" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">campaign guide on resource management</a>.
       </p>
     
     </section>
@@ -167,7 +167,7 @@ export const guides = [
   {
     id: 6,
     title:
-      'Quarantine Zone: The Last Check Contraband Guide - Fixing the Invisible Internal Item Bug',
+      'Quarantine Zone: The Last Check \n Contraband Guide- Fixing the Invisible Internal Item Bug',
     description:
       "Frustrated with 'Quarantine Zone: The Last Check' due to invisible internal contraband? This guide unveils the intended mechanics and provides workarounds for the frustrating bug where contraband items don't appear on the X-ray scanner, leading to unfair inspection ratings.",
     tags: [
@@ -383,6 +383,7 @@ export const guides = [
         <strong>Quarantine Zone: The Last Check</strong> takes a different approach to the zombie genre.
         Instead of mowing down hordes with a machine gun, your job is to act as the gatekeeper.
         You must inspect every survivor entering the camp and determine whether they are hiding the virus.
+        For a comprehensive database of all symptoms with detection tools, check our <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms wiki</a>.
       </p>
     
       <p>
@@ -390,6 +391,7 @@ export const guides = [
         <strong>Quarantine Zone: The Last Check all symptoms</strong>.
         Some signs are deadly, while others are harmless traps designed to make you fail.
         This guide covers everything you need to make the correct decision.
+        For a quick reference table of all symptoms organized by threat level, visit our <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms detection wiki</a>.
       </p>
     
       <figure>
@@ -408,13 +410,15 @@ export const guides = [
         <strong>Safe</strong> (Let In),
         <strong>Suspicious</strong> (Quarantine),
         and <strong>Infected</strong> (Deny or Kill).
+        For a detailed breakdown of all symptoms with their detection tools, see our <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms wiki page</a>.
       </p>
     
       <h3>1. “Safe” Symptoms (Do Not Reject)</h3>
     
       <p>
         Many players lose reputation by rejecting survivors who simply look rough.
-        The following visual traits are <strong>normal and safe</strong>:
+        The following visual traits are <strong>normal and safe</strong>.
+        Learn proper inspection techniques in our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a>.
       </p>
     
       <ul>
@@ -441,6 +445,7 @@ export const guides = [
         The survivor may recover or may turn later.
         <strong>Do not let them into the main camp.</strong>
         Send them to the Quarantine Area.
+        For a complete list of quarantine symptoms with detection tools, check our <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms wiki</a>.
       </p>
     
       <ul>
@@ -456,6 +461,7 @@ export const guides = [
       <p>
         These signs indicate a 100% confirmed infection.
         There is no cure.
+        See all infection symptoms with their detection methods in our <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms database</a>.
       </p>
     
       <ul>
@@ -474,6 +480,7 @@ export const guides = [
         Listen carefully while checking documents.
         The following behaviors are strong warning signs.
         If detected, send the survivor to <strong>Quarantine</strong>.
+        Master inspection and interrogation techniques in our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">survival guide</a>.
       </p>
     
       <ul>
@@ -532,6 +539,7 @@ export const guides = [
         Mastering this list is the only reliable way to keep your infection rate at 0%
         and your reputation high.
         Good luck, inspector!
+        For a comprehensive reference table of all symptoms organized by detection tool and threat level, visit our <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms wiki page</a>.
       </p>
     
     </section>

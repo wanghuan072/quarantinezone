@@ -265,11 +265,12 @@ const formatDate = (dateString) => {
 
 /* Guide Title (H1) */
 .guide-title {
-  font-size: clamp(32px, 5vw, 48px);
+  font-size: 46px;
   font-weight: 700;
   color: var(--text);
   margin: 0 0 24px 0;
   line-height: 1.2;
+  white-space: pre-line;
   text-shadow: 
     0 0 15px var(--accent),
     0 0 30px var(--neon-glow),
@@ -277,7 +278,6 @@ const formatDate = (dateString) => {
 }
 
 .guide-detail-text {
-  max-width: 800px;
   position: relative;
   z-index: 1;
 }

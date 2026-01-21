@@ -52,7 +52,7 @@ export const games = [
       <li><strong>How do I control the vehicle in Quarantine Zone: The Last Check?</strong><br> The control scheme is intuitive, designed for easy pickup but with a skill ceiling for mastering precise maneuvers. (The user description didn't provide specific control details).</li>
       <li><strong>What makes Quarantine Zone: The Last Check unique?</strong><br>The combination of intense driving action, strategic decision-making, and an immersive environment creates a truly unique survival experience.</li>
       <li><strong>Is Quarantine Zone: The Last Check difficult?</strong><br>The game is designed to be challenging, but rewarding. Skill and strategy are equally important for survival.</li>
-      <li><strong>Where can I play Quarantine Zone: The Last Check?</strong><br>You can play it at <a href="/">quarantinezonegame.com</a></li>
+      <li><strong>Where can I play Quarantine Zone: The Last Check?</strong><br>You can play it at <a href="/">quarantinezonegames.com</a></li>
     </ol>
   
     <p>Quarantine Zone: The Last Check is not just a game; it's a test of your resilience, your courage, and your driving prowess. Are you ready to enter the quarantine zone and face the ultimate challenge? Start your engine, the infected are waiting!</p>
