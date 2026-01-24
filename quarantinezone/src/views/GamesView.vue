@@ -30,10 +30,10 @@
 
         <!-- Games Grid -->
         <div class="games-grid" v-if="!loading && !error">
-          <router-link
+          <a
             v-for="game in allGames"
             :key="game.id"
-            :to="`/zombie-games/${game.addressBar}`"
+            :href="`/zombie-games/${game.addressBar}`"
             class="game-card"
           >
             <div class="game-image-wrapper">
@@ -50,7 +50,7 @@
                 <span class="game-link">Play Now →</span>
               </div>
             </div>
-          </router-link>
+          </a>
         </div>
       </div>
     </section>
@@ -70,7 +70,7 @@
             <div class="why-play-icon">🎮</div>
             <h3>Similar Gameplay Mechanics</h3>
             <p>
-              These games feature decision-making, resource management, and survival elements similar to Quarantine Zone. If you enjoy the strategic thinking and moral choices in Quarantine Zone, you'll find familiar challenges here. Learn more about the core mechanics on our <router-link to="/" class="inline-link">homepage</router-link>.
+              These games feature decision-making, resource management, and survival elements similar to Quarantine Zone. If you enjoy the strategic thinking and moral choices in Quarantine Zone, you'll find familiar challenges here. Learn more about the core mechanics on our <a href="/" class="inline-link">homepage</a>.
             </p>
           </div>
           <div class="why-play-card">
@@ -84,14 +84,14 @@
             <div class="why-play-icon">📚</div>
             <h3>Learn and Improve</h3>
             <p>
-              Playing similar games can help you improve your skills in Quarantine Zone. Many of these games share common strategies and decision-making patterns. Check out our <router-link to="/guides" class="inline-link">comprehensive guides</router-link> to master survival strategies that apply across multiple games. Start with our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> for fundamental strategies.
+              Playing similar games can help you improve your skills in Quarantine Zone. Many of these games share common strategies and decision-making patterns. Check out our <a href="/guides" class="inline-link">comprehensive guides</a> to master survival strategies that apply across multiple games. Start with our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> for fundamental strategies.
             </p>
           </div>
           <div class="why-play-card">
             <div class="why-play-icon">🔄</div>
             <h3>Regularly Updated</h3>
             <p>
-              We continuously add new games to our collection based on community recommendations and new releases. Stay updated with the latest additions and game recommendations by following our <router-link to="/news" class="inline-link">news section</router-link> for announcements and updates.
+              We continuously add new games to our collection based on community recommendations and new releases. Stay updated with the latest additions and game recommendations by following our <a href="/news" class="inline-link">news section</a> for announcements and updates.
             </p>
           </div>
         </div>

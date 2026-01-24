@@ -13,9 +13,9 @@
                 Screen survivors, manage scarce resources, and hold back the undead. Every choice matters and one mistake could unleash the plague beyond your walls.
               </p>
               <div class="hero-cta">
-                <router-link to="/wiki" class="btn-primary">
+                <a href="/wiki" class="btn-primary">
                   View Wiki
-                </router-link>
+                </a>
                 <a href="/guides" class="btn-secondary">View Guides</a>
               </div>
               <div class="hero-info">
@@ -96,7 +96,7 @@
                   At the heart of Quarantine Zone: The Last Check lies your responsibility to decide who gets in and who doesn't. Each day, new individuals appear—some desperate, some suspicious, and some possibly infected.
                 </p>
                 <p>
-                  You are given tools like thermometers, infection detectors, and UV lights to inspect their health. However, not all symptoms are visible, and not every lie is easy to catch. You will have to make judgment calls without full information, knowing that a single wrong decision could allow an outbreak inside the zone. Learn more about these <router-link to="/wiki" class="inline-link">inspection tools</router-link> and how to use them effectively.
+                  You are given tools like thermometers, infection detectors, and UV lights to inspect their health. However, not all symptoms are visible, and not every lie is easy to catch. You will have to make judgment calls without full information, knowing that a single wrong decision could allow an outbreak inside the zone. Learn more about these <a href="/wiki" class="inline-link">inspection tools</a> and how to use them effectively.
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@
               </div>
               <div class="block-body">
                 <p>
-                  Beyond the inspection booth, you are also in charge of maintaining and upgrading the facilities. You'll need to manage food, medical supplies, security forces, and energy. Check out our <router-link to="/guides" class="inline-link">survival guides</router-link> for tips on efficient resource management.
+                  Beyond the inspection booth, you are also in charge of maintaining and upgrading the facilities. You'll need to manage food, medical supplies, security forces, and energy. Check out our <a href="/guides" class="inline-link">survival guides</a> for tips on efficient resource management.
                 </p>
                 <p>
                   Events like power failures, food shortages, and external attacks will test your ability to keep the base operational.
@@ -174,7 +174,7 @@
               <div class="mechanic-icon">🔍</div>
               <h3>SEE IT? SORT IT</h3>
               <p>
-                Use high-tech tools to uncover signs of infection among terrified survivors. Identify contraband, forbidden items, and even rare collectables as you work to keep your checkpoint secure. Explore our comprehensive <router-link to="/wiki" class="inline-link">tools guide</router-link> to master every inspection instrument.
+                Use high-tech tools to uncover signs of infection among terrified survivors. Identify contraband, forbidden items, and even rare collectables as you work to keep your checkpoint secure. Explore our comprehensive <a href="/wiki" class="inline-link">tools guide</a> to master every inspection instrument.
               </p>
               <ul class="mechanic-list">
                 <li>Send suspicious cases to quarantine for observation</li>
@@ -329,7 +329,7 @@
           <div class="section-intro">
             <span class="section-tag">Community</span>
             <h2 class="section-heading">Player Reviews</h2>
-            <p class="section-lead">See what players are saying about Quarantine Zone: The Last Check. Stay updated with the latest <router-link to="/news" class="inline-link">game news and developer updates</router-link>.</p>
+            <p class="section-lead">See what players are saying about Quarantine Zone: The Last Check. Stay updated with the latest <a href="/news" class="inline-link">game news and developer updates</a>.</p>
           </div>
           <div class="reviews-container">
             <article class="review-card">
@@ -479,7 +479,7 @@
             <article class="faq-item">
               <h3>How does the inspection system work?</h3>
               <p>
-                You use tools like scanners, UV lights, and thermometers to evaluate each person. You must also observe behavior and question their story to catch inconsistencies. Our detailed <router-link to="/guides" class="inline-link">inspection guides</router-link> cover everything from visual observation to advanced interrogation techniques. Start with our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> for beginners.
+                You use tools like scanners, UV lights, and thermometers to evaluate each person. You must also observe behavior and question their story to catch inconsistencies. Our detailed <a href="/guides" class="inline-link">inspection guides</a> cover everything from visual observation to advanced interrogation techniques. Start with our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> for beginners.
               </p>
             </article>
             <article class="faq-item">
@@ -491,13 +491,13 @@
             <article class="faq-item">
               <h3>Is there a storyline or campaign mode?</h3>
               <p>
-                Yes, the game has a branching narrative with multiple possible outcomes. Your choices shape the events and relationships within the quarantine. Navigate moral dilemmas and special events with our <router-link to="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</router-link>.
+                Yes, the game has a branching narrative with multiple possible outcomes. Your choices shape the events and relationships within the quarantine. Navigate moral dilemmas and special events with our <a href="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</a>.
               </p>
             </article>
             <article class="faq-item">
               <h3>Can you upgrade your base?</h3>
               <p>
-                Yes, you can invest in medical stations, better scanners, defenses, and quarantine cells. Each upgrade affects how efficiently your base runs. Discover the best upgrade strategies in our <router-link to="/guides" class="inline-link">base management guides</router-link>. Learn combat and defense strategies in our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>.
+                Yes, you can invest in medical stations, better scanners, defenses, and quarantine cells. Each upgrade affects how efficiently your base runs. Discover the best upgrade strategies in our <a href="/guides" class="inline-link">base management guides</a>. Learn combat and defense strategies in our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</a>.
               </p>
             </article>
             <article class="faq-item">

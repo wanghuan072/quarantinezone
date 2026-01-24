@@ -4,13 +4,13 @@
     <section class="news-detail-header" v-if="newsItem">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/news" class="breadcrumb-link">
+          <a href="/news" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
             News
-          </router-link>
+          </a>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
           </svg>
@@ -75,9 +75,9 @@
             <div class="news-navigation" v-if="previousNews || nextNews">
               <h4 class="nav-title">Navigation</h4>
               <div class="nav-grid">
-                <router-link
+                <a
                   v-if="previousNews"
-                  :to="`/news/${previousNews.addressBar}`"
+                  :href="`/news/${previousNews.addressBar}`"
                   class="nav-card nav-card-prev"
                 >
                   <div class="nav-card-direction">Previous</div>
@@ -85,10 +85,10 @@
                   <div class="nav-card-meta">
                     <span>{{ formatDate(previousNews.publishDate) }}</span>
                   </div>
-                </router-link>
-                <router-link
+                </a>
+                <a
                   v-if="nextNews"
-                  :to="`/news/${nextNews.addressBar}`"
+                  :href="`/news/${nextNews.addressBar}`"
                   class="nav-card nav-card-next"
                 >
                   <div class="nav-card-direction">Next</div>
@@ -96,7 +96,7 @@
                   <div class="nav-card-meta">
                     <span>{{ formatDate(nextNews.publishDate) }}</span>
                   </div>
-                </router-link>
+                </a>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
         <div class="not-found">
           <h2>News Not Found</h2>
           <p>The news you're looking for doesn't exist.</p>
-          <router-link to="/news" class="btn-secondary">Back to News</router-link>
+          <a href="/news" class="btn-secondary">Back to News</a>
         </div>
       </div>
     </section>

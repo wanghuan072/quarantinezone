@@ -29,11 +29,11 @@
         <div class="category-section" v-if="!loading && !error">
           <h2 class="section-title">All News</h2>
           <div class="news-list">
-            <div 
+            <a 
               v-for="newsItem in allNews" 
               :key="newsItem.id" 
+              :href="`/news/${newsItem.addressBar.startsWith('/') ? newsItem.addressBar.slice(1) : newsItem.addressBar}`"
               class="news-card"
-              @click="goToNews(newsItem.addressBar)"
             >
               <div class="news-image-container" v-if="newsItem.imageUrl">
                 <img 
@@ -54,7 +54,7 @@
                   <span class="view-link">Read More →</span>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -75,28 +75,28 @@
             <div class="stay-updated-icon">📢</div>
             <h3>Latest Updates</h3>
             <p>
-              Get the first news about game patches, new features, and content updates. We cover all major announcements from the developers, including patch notes, feature reveals, and release dates. Stay informed about changes that might affect your gameplay strategies. Check our <router-link to="/guides" class="inline-link">guides section</router-link> to see how updates impact game strategies. Our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> is updated regularly to reflect game changes.
+              Get the first news about game patches, new features, and content updates. We cover all major announcements from the developers, including patch notes, feature reveals, and release dates. Stay informed about changes that might affect your gameplay strategies. Check our <a href="/guides" class="inline-link">guides section</a> to see how updates impact game strategies. Our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> is updated regularly to reflect game changes.
             </p>
           </div>
           <div class="stay-updated-card">
             <div class="stay-updated-icon">💬</div>
             <h3>Developer Insights</h3>
             <p>
-              Read exclusive Q&A sessions, developer interviews, and behind-the-scenes content. Learn about the development process, design decisions, and future plans directly from the creators. Understanding the developers' vision helps you appreciate the game's depth and complexity. Visit our <router-link to="/" class="inline-link">homepage</router-link> to learn more about the game's core concepts.
+              Read exclusive Q&A sessions, developer interviews, and behind-the-scenes content. Learn about the development process, design decisions, and future plans directly from the creators. Understanding the developers' vision helps you appreciate the game's depth and complexity. Visit our <a href="/" class="inline-link">homepage</a> to learn more about the game's core concepts.
             </p>
           </div>
           <div class="stay-updated-card">
             <div class="stay-updated-icon">🎮</div>
             <h3>Community Discussions</h3>
             <p>
-              Discover community strategies, tips, and discussions about gameplay mechanics. Our news includes community highlights, player strategies, and discussions about game mechanics. Learn from other players' experiences and share your own insights. Explore our <router-link to="/wiki" class="inline-link">wiki</router-link> for comprehensive information about game mechanics and tools.
+              Discover community strategies, tips, and discussions about gameplay mechanics. Our news includes community highlights, player strategies, and discussions about game mechanics. Learn from other players' experiences and share your own insights. Explore our <a href="/wiki" class="inline-link">wiki</a> for comprehensive information about game mechanics and tools.
             </p>
           </div>
           <div class="stay-updated-card">
             <div class="stay-updated-icon">🔔</div>
             <h3>Never Miss Important News</h3>
             <p>
-              We regularly update our news section with the latest information. Whether it's a major patch, new feature announcement, or community event, you'll find it here first. Bookmark this page and check back regularly to stay up-to-date with all Quarantine Zone developments. Combine news updates with our <router-link to="/guides" class="inline-link">strategy guides</router-link> to optimize your gameplay.
+              We regularly update our news section with the latest information. Whether it's a major patch, new feature announcement, or community event, you'll find it here first. Bookmark this page and check back regularly to stay up-to-date with all Quarantine Zone developments. Combine news updates with our <a href="/guides" class="inline-link">strategy guides</a> to optimize your gameplay.
             </p>
           </div>
         </div>
@@ -126,13 +126,13 @@
           <article class="faq-item">
             <h3>Can I find older news articles?</h3>
             <p>
-              Yes, all news articles are archived and remain accessible. You can scroll through the news list to find older articles, or use the search function if available. Older articles remain valuable resources for understanding game development history and tracking how the game has evolved. Our <router-link to="/wiki" class="inline-link">wiki</router-link> also contains historical information about game mechanics and features.
+              Yes, all news articles are archived and remain accessible. You can scroll through the news list to find older articles, or use the search function if available. Older articles remain valuable resources for understanding game development history and tracking how the game has evolved. Our <a href="/wiki" class="inline-link">wiki</a> also contains historical information about game mechanics and features.
             </p>
           </article>
           <article class="faq-item">
             <h3>How do news updates affect gameplay?</h3>
             <p>
-              News updates often include information about game changes, new features, or balance adjustments that can impact your strategies. When major updates are announced, we recommend reviewing patch notes carefully and adjusting your approach accordingly. Our <router-link to="/guides" class="inline-link">guides section</router-link> is updated to reflect changes and help you adapt to new game mechanics. For combat-related updates, check our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>.
+              News updates often include information about game changes, new features, or balance adjustments that can impact your strategies. When major updates are announced, we recommend reviewing patch notes carefully and adjusting your approach accordingly. Our <a href="/guides" class="inline-link">guides section</a> is updated to reflect changes and help you adapt to new game mechanics. For combat-related updates, check our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</a>.
             </p>
           </article>
         </div>
@@ -146,7 +146,6 @@ import { computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useNewsData } from '../composables/useNewsData'
 
-const router = useRouter()
 const { news, loading, error, loadData } = useNewsData()
 
 // 初始化加载数据
@@ -158,12 +157,6 @@ onMounted(() => {
 const allNews = computed(() => {
   return news.value || []
 })
-
-const goToNews = (addressBar) => {
-  if (!addressBar) return
-  const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/news${path}`)
-}
 
 const formatDate = (dateString) => {
   if (!dateString) return ''
@@ -280,6 +273,8 @@ const formatDate = (dateString) => {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  text-decoration: none;
+  color: inherit;
 }
 
 .news-image-container {

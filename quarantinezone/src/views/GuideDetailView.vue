@@ -4,13 +4,13 @@
     <section class="guide-detail-header" v-if="guide">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/guides" class="breadcrumb-link">
+          <a href="/guides" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
             Guides
-          </router-link>
+          </a>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
           </svg>
@@ -75,9 +75,9 @@
             <div class="guide-navigation" v-if="previousGuide || nextGuide">
               <h4 class="nav-title">Navigation</h4>
               <div class="nav-grid">
-                <router-link
+                <a
                   v-if="previousGuide"
-                  :to="`/guides${previousGuide.addressBar}`"
+                  :href="`/guides${previousGuide.addressBar}`"
                   class="nav-card nav-card-prev"
                 >
                   <div class="nav-card-direction">Previous</div>
@@ -85,10 +85,10 @@
                   <div class="nav-card-meta">
                     <span>{{ formatDate(previousGuide.publishDate) }}</span>
                   </div>
-                </router-link>
-                <router-link
+                </a>
+                <a
                   v-if="nextGuide"
-                  :to="`/guides${nextGuide.addressBar}`"
+                  :href="`/guides${nextGuide.addressBar}`"
                   class="nav-card nav-card-next"
                 >
                   <div class="nav-card-direction">Next</div>
@@ -96,7 +96,7 @@
                   <div class="nav-card-meta">
                     <span>{{ formatDate(nextGuide.publishDate) }}</span>
                   </div>
-                </router-link>
+                </a>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
         <div class="not-found">
           <h2>Guide Not Found</h2>
           <p>The guide you're looking for doesn't exist.</p>
-          <router-link to="/guides" class="btn-secondary">Back to Guides</router-link>
+          <a href="/guides" class="btn-secondary">Back to Guides</a>
         </div>
       </div>
     </section>

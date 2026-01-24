@@ -29,11 +29,11 @@
         <div class="category-section" v-if="!loading && !error">
           <h2 class="section-title">All Guides</h2>
           <div class="guides-grid">
-            <div 
+            <a 
               v-for="guide in allGuides" 
               :key="guide.id" 
+              :href="`/guides${guide.addressBar.startsWith('/') ? guide.addressBar : '/' + guide.addressBar}`"
               class="guide-card"
-              @click="goToGuide(guide.addressBar)"
             >
               <div class="guide-image-container" v-if="guide.imageUrl">
                 <img 
@@ -54,7 +54,7 @@
                   <span class="view-link">View Guide →</span>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
             <div class="why-choose-icon">📚</div>
             <h3>Comprehensive Coverage</h3>
             <p>
-              From beginner survival tips to advanced strategies, our guides cover everything you need to master Quarantine Zone: The Last Check. We provide detailed walkthroughs for inspection mechanics, resource management, base upgrades, and moral decision-making. Whether you're learning the basics of visual observation or exploring advanced interrogation techniques, our guides have you covered. For complete reference materials, check out our <router-link to="/wiki" class="inline-link">complete wiki</router-link> with detailed information about all tools, resources, and game mechanics.
+              From beginner survival tips to advanced strategies, our guides cover everything you need to master Quarantine Zone: The Last Check. We provide detailed walkthroughs for inspection mechanics, resource management, base upgrades, and moral decision-making. Whether you're learning the basics of visual observation or exploring advanced interrogation techniques, our guides have you covered. For complete reference materials, check out our <a href="/wiki" class="inline-link">complete wiki</a> with detailed information about all tools, resources, and game mechanics.
             </p>
           </div>
           <div class="why-choose-card">
@@ -89,14 +89,14 @@
             <div class="why-choose-icon">🔄</div>
             <h3>Regularly Updated</h3>
             <p>
-              We keep our guides up-to-date with the latest game changes, patches, and community-discovered strategies. Our team actively monitors game updates, developer announcements, and player feedback to ensure all information remains accurate and relevant. When new features are added or mechanics change, we update our guides immediately. Stay informed with our <router-link to="/news" class="inline-link">latest news</router-link> section to track game updates and ensure you're always using the most current strategies and information.
+              We keep our guides up-to-date with the latest game changes, patches, and community-discovered strategies. Our team actively monitors game updates, developer announcements, and player feedback to ensure all information remains accurate and relevant. When new features are added or mechanics change, we update our guides immediately. Stay informed with our <a href="/news" class="inline-link">latest news</a> section to track game updates and ensure you're always using the most current strategies and information.
             </p>
           </div>
           <div class="why-choose-card">
             <div class="why-choose-icon">🎯</div>
             <h3>Practical Tips</h3>
             <p>
-              Every guide includes actionable tips and strategies you can apply immediately in your gameplay. We focus on practical techniques that will make a real difference, from efficient tool usage patterns to resource management strategies that maximize your survival chances. Our guides break down complex mechanics into easy-to-understand steps, with clear examples and visual explanations. Whether you're learning to spot infected individuals or managing your base during emergencies, our practical approach ensures you can implement these strategies right away. Check out our <router-link to="/" class="inline-link">homepage</router-link> for more game insights and strategies.
+              Every guide includes actionable tips and strategies you can apply immediately in your gameplay. We focus on practical techniques that will make a real difference, from efficient tool usage patterns to resource management strategies that maximize your survival chances. Our guides break down complex mechanics into easy-to-understand steps, with clear examples and visual explanations. Whether you're learning to spot infected individuals or managing your base during emergencies, our practical approach ensures you can implement these strategies right away. Check out our <a href="/" class="inline-link">homepage</a> for more game insights and strategies.
             </p>
           </div>
         </div>
@@ -114,31 +114,31 @@
           <article class="faq-item">
             <h3>How often are the guides updated?</h3>
             <p>
-              Our guides are regularly updated to reflect the latest game changes, patches, and community-discovered strategies. We monitor all game updates, developer announcements, and player feedback to ensure accuracy. Major updates typically happen within 24-48 hours of game patches, while minor corrections and improvements are made continuously. We also review and update guides based on community feedback and new discoveries. Check our <router-link to="/news" class="inline-link">news section</router-link> for the latest updates and announcements about guide revisions.
+              Our guides are regularly updated to reflect the latest game changes, patches, and community-discovered strategies. We monitor all game updates, developer announcements, and player feedback to ensure accuracy. Major updates typically happen within 24-48 hours of game patches, while minor corrections and improvements are made continuously. We also review and update guides based on community feedback and new discoveries. Check our <a href="/news" class="inline-link">news section</a> for the latest updates and announcements about guide revisions.
             </p>
           </article>
           <article class="faq-item">
             <h3>Are these guides suitable for beginners?</h3>
             <p>
-              Absolutely! We have guides specifically designed for beginners, covering everything from basic inspection techniques to resource management fundamentals. Our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> is perfect for new players, walking you through visual observation, tool usage, and decision-making basics. We start with the fundamentals and gradually introduce more advanced concepts, making it easy to learn at your own pace. Even experienced players can benefit from reviewing beginner guides to refresh their knowledge or discover new techniques.
+              Absolutely! We have guides specifically designed for beginners, covering everything from basic inspection techniques to resource management fundamentals. Our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> is perfect for new players, walking you through visual observation, tool usage, and decision-making basics. We start with the fundamentals and gradually introduce more advanced concepts, making it easy to learn at your own pace. Even experienced players can benefit from reviewing beginner guides to refresh their knowledge or discover new techniques.
             </p>
           </article>
           <article class="faq-item">
             <h3>Do I need to follow the guides exactly?</h3>
             <p>
-              Not necessarily. Our guides provide proven strategies and tips based on extensive testing and analysis, but every playthrough is unique. Use them as a reference and adapt the strategies to your playstyle, difficulty level, and personal preferences. The guides are designed to be flexible frameworks rather than rigid rules. Experiment with different approaches, combine strategies from multiple guides, and find what works best for you. The <router-link to="/wiki" class="inline-link">wiki</router-link> also provides detailed information about tools and mechanics to help you make informed decisions.
+              Not necessarily. Our guides provide proven strategies and tips based on extensive testing and analysis, but every playthrough is unique. Use them as a reference and adapt the strategies to your playstyle, difficulty level, and personal preferences. The guides are designed to be flexible frameworks rather than rigid rules. Experiment with different approaches, combine strategies from multiple guides, and find what works best for you. The <a href="/wiki" class="inline-link">wiki</a> also provides detailed information about tools and mechanics to help you make informed decisions.
             </p>
           </article>
           <article class="faq-item">
             <h3>Can I suggest topics for new guides?</h3>
             <p>
-              Absolutely! We welcome suggestions from the community and actively consider player requests when planning new guides. If you have ideas for guides, want to see coverage of specific topics, or have questions that aren't addressed in existing guides, we'd love to hear from you. Your feedback helps us create content that truly serves the community's needs. Visit our <router-link to="/" class="inline-link">homepage</router-link> to learn more about the game and find contact information to share your suggestions and feedback.
+              Absolutely! We welcome suggestions from the community and actively consider player requests when planning new guides. If you have ideas for guides, want to see coverage of specific topics, or have questions that aren't addressed in existing guides, we'd love to hear from you. Your feedback helps us create content that truly serves the community's needs. Visit our <a href="/" class="inline-link">homepage</a> to learn more about the game and find contact information to share your suggestions and feedback.
             </p>
           </article>
           <article class="faq-item">
             <h3>What topics do the guides cover?</h3>
             <p>
-              Our guides cover a wide range of topics essential for mastering Quarantine Zone: The Last Check. This includes inspection techniques and tool usage (see our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link>), resource management and base operations, decision-making strategies and moral choices (check our <router-link to="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</router-link>), crisis handling and emergency management, upgrade paths and optimization strategies, and advanced tactics for experienced players. For combat and defense strategies, explore our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>. Each guide focuses on specific aspects of gameplay, providing detailed explanations, step-by-step instructions, and practical examples to help you improve your skills.
+              Our guides cover a wide range of topics essential for mastering Quarantine Zone: The Last Check. This includes inspection techniques and tool usage (see our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a>), resource management and base operations, decision-making strategies and moral choices (check our <a href="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</a>), crisis handling and emergency management, upgrade paths and optimization strategies, and advanced tactics for experienced players. For combat and defense strategies, explore our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</a>. Each guide focuses on specific aspects of gameplay, providing detailed explanations, step-by-step instructions, and practical examples to help you improve your skills.
             </p>
           </article>
           <article class="faq-item">
@@ -158,7 +158,6 @@ import { computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGuideData } from '../composables/useGuideData'
 
-const router = useRouter()
 const { guides, loading, error, loadData } = useGuideData()
 
 // 初始化加载数据
@@ -170,12 +169,6 @@ onMounted(() => {
 const allGuides = computed(() => {
   return guides.value || []
 })
-
-const goToGuide = (addressBar) => {
-  if (!addressBar) return
-  const path = addressBar.startsWith('/') ? addressBar : `/${addressBar}`
-  router.push(`/guides${path}`)
-}
 
 const formatDate = (dateString) => {
   if (!dateString) return ''
@@ -291,6 +284,8 @@ const formatDate = (dateString) => {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 
 .guide-image-container {

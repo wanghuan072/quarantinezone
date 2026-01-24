@@ -2,9 +2,9 @@
   <header class="site-header">
     <div class="container">
       <div class="header-content">
-        <router-link to="/" class="logo" @click="closeMenu">
+        <a href="/" class="logo" @click="closeMenu">
           <span class="logo-text">QUARANTINE ZONE</span>
-        </router-link>
+        </a>
         <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
           <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
           <span class="hamburger-line" :class="{ active: isMenuOpen }"></span>
@@ -12,11 +12,11 @@
         </button>
         <div class="menu-overlay" :class="{ open: isMenuOpen }" @click="closeMenu"></div>
         <nav class="nav-links" :class="{ open: isMenuOpen }">
-          <router-link to="/" @click="closeMenu">Home</router-link>
-          <router-link to="/guides" @click="closeMenu">Guides</router-link>
-          <router-link to="/wiki" @click="closeMenu">Wiki</router-link>
-          <router-link to="/zombie-games" @click="closeMenu">Zombie Games</router-link>
-          <router-link to="/news" @click="closeMenu">News</router-link>
+          <a href="/" :class="{ active: currentPath === '/' }" @click="closeMenu">Home</a>
+          <a href="/guides" :class="{ active: currentPath.startsWith('/guides') }" @click="closeMenu">Guides</a>
+          <a href="/wiki" :class="{ active: currentPath.startsWith('/wiki') }" @click="closeMenu">Wiki</a>
+          <a href="/zombie-games" :class="{ active: currentPath.startsWith('/zombie-games') }" @click="closeMenu">Zombie Games</a>
+          <a href="/news" :class="{ active: currentPath.startsWith('/news') }" @click="closeMenu">News</a>
         </nav>
       </div>
     </div>
@@ -24,9 +24,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const isMenuOpen = ref(false)
+
+const currentPath = computed(() => route.path)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -169,7 +173,7 @@ const closeMenu = () => {
 }
 
 .nav-links a:hover,
-.nav-links a.router-link-active {
+.nav-links a.active {
   color: var(--text);
   border-color: var(--accent);
   background: rgba(57, 255, 20, 0.15);
@@ -240,7 +244,7 @@ const closeMenu = () => {
   }
 
   .nav-links a:hover,
-  .nav-links a.router-link-active {
+  .nav-links a.active {
     background: rgba(57, 255, 20, 0.2);
     border-color: var(--accent);
     box-shadow: 0 0 15px rgba(57, 255, 20, 0.6);
