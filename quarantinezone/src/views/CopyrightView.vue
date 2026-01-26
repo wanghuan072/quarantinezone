@@ -4,8 +4,8 @@
     <section class="page-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Copyright</h1>
-          <p class="page-subtitle">Last updated: December 5, 2025</p>
+          <h1 class="page-title">{{ t('copyrightPage.header.title') }}</h1>
+          <p class="page-subtitle">{{ t('copyrightPage.header.lastUpdated') }}</p>
         </div>
       </div>
     </section>
@@ -16,52 +16,52 @@
         <div class="content-wrapper">
           <div class="legal-text">
             <p>
-              © 2025 Quarantine Zone Guide. All rights reserved.
+              {{ t('copyrightPage.content.intro') }}
             </p>
 
-            <h2>Copyright Notice</h2>
+            <h2>{{ t('copyrightPage.content.section1.title') }}</h2>
             <p>
-              All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Quarantine Zone Guide and is protected by international copyright laws.
+              {{ t('copyrightPage.content.section1.text') }}
             </p>
 
-            <h2>Fair Use</h2>
+            <h2>{{ t('copyrightPage.content.section2.title') }}</h2>
             <p>
-              This website is an independent fan site created for informational and educational purposes only. We use content related to "Quarantine Zone: The Last Check" under the principles of fair use for commentary, criticism, and educational purposes.
+              {{ t('copyrightPage.content.section2.text') }}
             </p>
 
-            <h2>Trademark Notice</h2>
+            <h2>{{ t('copyrightPage.content.section3.title') }}</h2>
             <p>
-              "Quarantine Zone: The Last Check" and all related trademarks, service marks, and trade names are the property of their respective owners. This website is not affiliated with, endorsed by, or sponsored by the game developers or publishers.
+              {{ t('copyrightPage.content.section3.p1') }}
             </p>
             <p>
-              All trademarks and copyrights belong to their respective owners. We do not claim ownership of any game-related intellectual property.
-            </p>
-
-            <h2>Content Usage</h2>
-            <p>
-              You may not reproduce, distribute, modify, or create derivative works from any content on this website without our express written permission. This includes but is not limited to copying text, images, or other materials for commercial purposes.
+              {{ t('copyrightPage.content.section3.p2') }}
             </p>
 
-            <h2>User-Generated Content</h2>
+            <h2>{{ t('copyrightPage.content.section4.title') }}</h2>
             <p>
-              If you submit content to our website, you retain ownership of that content but grant us a license to use, modify, and display it on our website. You represent that you have the right to grant such a license.
+              {{ t('copyrightPage.content.section4.text') }}
             </p>
 
-            <h2>DMCA Policy</h2>
+            <h2>{{ t('copyrightPage.content.section5.title') }}</h2>
             <p>
-              If you believe that any content on our website infringes your copyright, please contact us at wyong@quarantinezonegames.com with the following information:
+              {{ t('copyrightPage.content.section5.text') }}
+            </p>
+
+            <h2>{{ t('copyrightPage.content.section6.title') }}</h2>
+            <p>
+              {{ t('copyrightPage.content.section6.text') }}
             </p>
             <ul>
-              <li>A description of the copyrighted work you claim has been infringed</li>
-              <li>The location of the allegedly infringing material on our website</li>
-              <li>Your contact information</li>
-              <li>A statement that you have a good faith belief that the use is not authorized</li>
-              <li>A statement that the information in your notice is accurate</li>
+              <li>{{ t('copyrightPage.content.section6.list1') }}</li>
+              <li>{{ t('copyrightPage.content.section6.list2') }}</li>
+              <li>{{ t('copyrightPage.content.section6.list3') }}</li>
+              <li>{{ t('copyrightPage.content.section6.list4') }}</li>
+              <li>{{ t('copyrightPage.content.section6.list5') }}</li>
             </ul>
 
-            <h2>Contact Information</h2>
+            <h2>{{ t('copyrightPage.content.section7.title') }}</h2>
             <p>
-              For copyright-related inquiries, please contact us at wyong@quarantinezonegames.com.
+              {{ t('copyrightPage.content.section7.text') }}
             </p>
           </div>
         </div>
@@ -71,18 +71,10 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { useSEO } from '../seo/composables.js'
+import { useI18n } from 'vue-i18n'
 
-const { setSEO } = useSEO()
-
-onMounted(() => {
-  setSEO({
-    title: 'Copyright | Quarantine Zone Guide',
-    description: 'Copyright information for Quarantine Zone Guide. Learn about our copyright policies and intellectual property rights.',
-    keywords: 'copyright, intellectual property, DMCA, fair use, Quarantine Zone Guide'
-  })
-})
+const { t } = useI18n()
+// SEO is handled automatically by useAutoSEO from i18n tdk configuration
 </script>
 
 <style scoped>

@@ -4,9 +4,9 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">Quarantine Zone: The Last Check Guides</h1>
+          <h1 class="page-title">{{ t('guidesPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Expert survival guides, combat strategies, base management tips, and walkthroughs to help you master every aspect of Quarantine Zone: The Last Check. From beginner basics to advanced tactics, learn how to survive the outbreak and command your checkpoint effectively.
+            {{ t('guidesPage.header.subtitle') }}
           </p>
         </div>
       </div>
@@ -17,22 +17,22 @@
       <div class="container">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state">
-          <p>Loading guides...</p>
+          <p>{{ t('guidesPage.loading') }}</p>
         </div>
         
         <!-- Error State -->
         <div v-if="error" class="error-state">
-          <p>Error loading guides: {{ error }}</p>
+          <p>{{ t('guidesPage.error') }} {{ error }}</p>
         </div>
         
         <!-- All Guides -->
         <div class="category-section" v-if="!loading && !error">
-          <h2 class="section-title">All Guides</h2>
+          <h2 class="section-title">{{ t('guidesPage.allGuides') }}</h2>
           <div class="guides-grid">
             <a 
               v-for="guide in allGuides" 
               :key="guide.id" 
-              :href="`/guides${guide.addressBar.startsWith('/') ? guide.addressBar : '/' + guide.addressBar}`"
+              :href="getLocalizedPath(`/guides${guide.addressBar.startsWith('/') ? guide.addressBar : '/' + guide.addressBar}`)"
               class="guide-card"
             >
               <div class="guide-image-container" v-if="guide.imageUrl">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="guide-footer">
                   <span class="update-date">{{ formatDate(guide.publishDate) }}</span>
-                  <span class="view-link">View Guide →</span>
+                  <span class="view-link">{{ t('guidesPage.viewLink') }}</span>
                 </div>
               </div>
             </a>
@@ -64,39 +64,39 @@
     <section class="why-choose-section">
       <div class="container">
         <div class="section-intro">
-          <span class="section-tag">Why Choose Us</span>
-          <h2 class="section-heading">Why Choose Our Guide?</h2>
+          <span class="section-tag">{{ t('guidesPage.whyChoose.tag') }}</span>
+          <h2 class="section-heading">{{ t('guidesPage.whyChoose.title') }}</h2>
           <p class="section-lead">
-            Our comprehensive guides are crafted by experienced players who understand every aspect of Quarantine Zone: The Last Check.
+            {{ t('guidesPage.whyChoose.subtitle') }}
           </p>
         </div>
         <div class="why-choose-grid">
           <div class="why-choose-card">
-            <div class="why-choose-icon">📚</div>
-            <h3>Comprehensive Coverage</h3>
+            <div class="why-choose-icon">{{ t('guidesPage.whyChoose.f1.icon') }}</div>
+            <h3>{{ t('guidesPage.whyChoose.f1.title') }}</h3>
             <p>
-              From beginner survival tips to advanced strategies, our guides cover everything you need to master Quarantine Zone: The Last Check. We provide detailed walkthroughs for inspection mechanics, resource management, base upgrades, and moral decision-making. Whether you're learning the basics of visual observation or exploring advanced interrogation techniques, our guides have you covered. For complete reference materials, check out our <a href="/wiki" class="inline-link">complete wiki</a> with detailed information about all tools, resources, and game mechanics.
+              {{ t('guidesPage.whyChoose.f1.content') }} <a :href="getLocalizedPath('/wiki')" class="inline-link">{{ t('guidesPage.whyChoose.f1.link1') }}</a> {{ t('guidesPage.whyChoose.f1.content2') }}
             </p>
           </div>
           <div class="why-choose-card">
-            <div class="why-choose-icon">✅</div>
-            <h3>Expertly Written</h3>
+            <div class="why-choose-icon">{{ t('guidesPage.whyChoose.f2.icon') }}</div>
+            <h3>{{ t('guidesPage.whyChoose.f2.title') }}</h3>
             <p>
-              All guides are written by experienced players who have mastered every aspect of the game. Our team has spent countless hours perfecting inspection techniques, optimizing resource allocation, and understanding the complex decision-making systems. We've tested every strategy, analyzed every tool, and documented every mechanic to bring you the most accurate and effective guides possible. Learn from players who understand the nuances of infection detection, base management, and crisis handling.
+              {{ t('guidesPage.whyChoose.f2.content') }}
             </p>
           </div>
           <div class="why-choose-card">
-            <div class="why-choose-icon">🔄</div>
-            <h3>Regularly Updated</h3>
+            <div class="why-choose-icon">{{ t('guidesPage.whyChoose.f3.icon') }}</div>
+            <h3>{{ t('guidesPage.whyChoose.f3.title') }}</h3>
             <p>
-              We keep our guides up-to-date with the latest game changes, patches, and community-discovered strategies. Our team actively monitors game updates, developer announcements, and player feedback to ensure all information remains accurate and relevant. When new features are added or mechanics change, we update our guides immediately. Stay informed with our <a href="/news" class="inline-link">latest news</a> section to track game updates and ensure you're always using the most current strategies and information.
+              {{ t('guidesPage.whyChoose.f3.content') }} <a :href="getLocalizedPath('/news')" class="inline-link">{{ t('guidesPage.whyChoose.f3.link1') }}</a> {{ t('guidesPage.whyChoose.f3.content2') }}
             </p>
           </div>
           <div class="why-choose-card">
-            <div class="why-choose-icon">🎯</div>
-            <h3>Practical Tips</h3>
+            <div class="why-choose-icon">{{ t('guidesPage.whyChoose.f4.icon') }}</div>
+            <h3>{{ t('guidesPage.whyChoose.f4.title') }}</h3>
             <p>
-              Every guide includes actionable tips and strategies you can apply immediately in your gameplay. We focus on practical techniques that will make a real difference, from efficient tool usage patterns to resource management strategies that maximize your survival chances. Our guides break down complex mechanics into easy-to-understand steps, with clear examples and visual explanations. Whether you're learning to spot infected individuals or managing your base during emergencies, our practical approach ensures you can implement these strategies right away. Check out our <a href="/" class="inline-link">homepage</a> for more game insights and strategies.
+              {{ t('guidesPage.whyChoose.f4.content') }} <a :href="getLocalizedPath('/')" class="inline-link">{{ t('guidesPage.whyChoose.f4.link1') }}</a> {{ t('guidesPage.whyChoose.f4.content2') }}
             </p>
           </div>
         </div>
@@ -107,44 +107,44 @@
     <section class="faq-section">
       <div class="container">
         <div class="section-intro">
-          <span class="section-tag">FAQ</span>
-          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <span class="section-tag">{{ t('guidesPage.faq.tag') }}</span>
+          <h2 class="section-heading">{{ t('guidesPage.faq.title') }}</h2>
         </div>
         <div class="faq-container">
           <article class="faq-item">
-            <h3>How often are the guides updated?</h3>
+            <h3>{{ t('guidesPage.faq.q1.q') }}</h3>
             <p>
-              Our guides are regularly updated to reflect the latest game changes, patches, and community-discovered strategies. We monitor all game updates, developer announcements, and player feedback to ensure accuracy. Major updates typically happen within 24-48 hours of game patches, while minor corrections and improvements are made continuously. We also review and update guides based on community feedback and new discoveries. Check our <a href="/news" class="inline-link">news section</a> for the latest updates and announcements about guide revisions.
+              {{ t('guidesPage.faq.q1.a') }} <a href="/news" class="inline-link">{{ t('guidesPage.faq.q1.link1') }}</a> {{ t('guidesPage.faq.q1.a2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Are these guides suitable for beginners?</h3>
+            <h3>{{ t('guidesPage.faq.q2.q') }}</h3>
             <p>
-              Absolutely! We have guides specifically designed for beginners, covering everything from basic inspection techniques to resource management fundamentals. Our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> is perfect for new players, walking you through visual observation, tool usage, and decision-making basics. We start with the fundamentals and gradually introduce more advanced concepts, making it easy to learn at your own pace. Even experienced players can benefit from reviewing beginner guides to refresh their knowledge or discover new techniques.
+              {{ t('guidesPage.faq.q2.a1') }} <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">{{ t('guidesPage.faq.q2.link1') }}</a> {{ t('guidesPage.faq.q2.a2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Do I need to follow the guides exactly?</h3>
+            <h3>{{ t('guidesPage.faq.q3.q') }}</h3>
             <p>
-              Not necessarily. Our guides provide proven strategies and tips based on extensive testing and analysis, but every playthrough is unique. Use them as a reference and adapt the strategies to your playstyle, difficulty level, and personal preferences. The guides are designed to be flexible frameworks rather than rigid rules. Experiment with different approaches, combine strategies from multiple guides, and find what works best for you. The <a href="/wiki" class="inline-link">wiki</a> also provides detailed information about tools and mechanics to help you make informed decisions.
+              {{ t('guidesPage.faq.q3.a1') }} <a href="/wiki" class="inline-link">{{ t('guidesPage.faq.q3.link1') }}</a> {{ t('guidesPage.faq.q3.a2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Can I suggest topics for new guides?</h3>
+            <h3>{{ t('guidesPage.faq.q4.q') }}</h3>
             <p>
-              Absolutely! We welcome suggestions from the community and actively consider player requests when planning new guides. If you have ideas for guides, want to see coverage of specific topics, or have questions that aren't addressed in existing guides, we'd love to hear from you. Your feedback helps us create content that truly serves the community's needs. Visit our <a href="/" class="inline-link">homepage</a> to learn more about the game and find contact information to share your suggestions and feedback.
+              {{ t('guidesPage.faq.q4.a1') }} <a href="/" class="inline-link">{{ t('guidesPage.faq.q4.link1') }}</a> {{ t('guidesPage.faq.q4.a2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>What topics do the guides cover?</h3>
+            <h3>{{ t('guidesPage.faq.q5.q') }}</h3>
             <p>
-              Our guides cover a wide range of topics essential for mastering Quarantine Zone: The Last Check. This includes inspection techniques and tool usage (see our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a>), resource management and base operations, decision-making strategies and moral choices (check our <a href="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</a>), crisis handling and emergency management, upgrade paths and optimization strategies, and advanced tactics for experienced players. For combat and defense strategies, explore our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</a>. Each guide focuses on specific aspects of gameplay, providing detailed explanations, step-by-step instructions, and practical examples to help you improve your skills.
+              {{ t('guidesPage.faq.q5.a1') }} <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">{{ t('guidesPage.faq.q5.link1') }}</a> {{ t('guidesPage.faq.q5.a2') }} <a href="/guides/campaign-guide-special-events-moral-choices" class="inline-link">{{ t('guidesPage.faq.q5.link2') }}</a> {{ t('guidesPage.faq.q5.a3') }} <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">{{ t('guidesPage.faq.q5.link3') }}</a> {{ t('guidesPage.faq.q5.a4') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Are there video guides or just written content?</h3>
+            <h3>{{ t('guidesPage.faq.q6.q') }}</h3>
             <p>
-              Currently, our guides are primarily written content with detailed explanations, screenshots, and step-by-step instructions. Written guides allow you to reference specific sections quickly, search for information easily, and learn at your own pace. However, we're always exploring new formats and may add video content in the future. For now, our comprehensive written guides provide all the information you need, with clear organization and detailed explanations that make complex mechanics easy to understand.
+              {{ t('guidesPage.faq.q6.a') }}
             </p>
           </article>
         </div>
@@ -154,14 +154,22 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { computed, onMounted, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { guides, loading, error, loadData } = useGuideData()
 
 // 初始化加载数据
 onMounted(() => {
+  loadData()
+})
+
+// 监听语言变化，重新加载数据
+watch(locale, () => {
   loadData()
 })
 

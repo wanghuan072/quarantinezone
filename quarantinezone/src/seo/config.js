@@ -5,6 +5,23 @@ export const seoConfig = {
   fullDomain: 'https://quarantinezonegames.com',
   protocol: 'https://',
 
+  // 支持的语言列表
+  supportedLocales: ['en', 'de'],
+  
+  // 语言配置
+  locales: {
+    en: {
+      code: 'en',
+      name: 'English',
+      hreflang: 'en'
+    },
+    de: {
+      code: 'de',
+      name: 'Deutsch',
+      hreflang: 'de'
+    }
+  },
+
   // 社交媒体配置
   social: {
     twitter: '@quarantinezonegames',

@@ -4,9 +4,9 @@
     <section class="page-header">
       <div class="container">
         <div class="page-header-content">
-          <h1 class="page-title">Quarantine Zone: The Last Check News</h1>
+          <h1 class="page-title">{{ t('newsPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Stay updated with the latest Quarantine Zone: The Last Check news, patch notes, developer announcements, Discord Q&A sessions, release date updates, and upcoming features. Get all the latest information directly from the development team.
+            {{ t('newsPage.header.subtitle') }}
           </p>
         </div>
       </div>
@@ -17,22 +17,22 @@
       <div class="container">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state">
-          <p>Loading news...</p>
+          <p>{{ t('newsPage.loading') }}</p>
         </div>
         
         <!-- Error State -->
         <div v-if="error" class="error-state">
-          <p>Error loading news: {{ error }}</p>
+          <p>{{ t('newsPage.error') }} {{ error }}</p>
         </div>
         
         <!-- All News -->
         <div class="category-section" v-if="!loading && !error">
-          <h2 class="section-title">All News</h2>
+          <h2 class="section-title">{{ t('newsPage.sectionTitle') }}</h2>
           <div class="news-list">
             <a 
               v-for="newsItem in allNews" 
               :key="newsItem.id" 
-              :href="`/news/${newsItem.addressBar.startsWith('/') ? newsItem.addressBar.slice(1) : newsItem.addressBar}`"
+              :href="getLocalizedPath(`/news/${newsItem.addressBar.startsWith('/') ? newsItem.addressBar.slice(1) : newsItem.addressBar}`)"
               class="news-card"
             >
               <div class="news-image-container" v-if="newsItem.imageUrl">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="news-footer">
                   <span class="update-date">{{ formatDate(newsItem.publishDate) }}</span>
-                  <span class="view-link">Read More →</span>
+                  <span class="view-link">{{ t('newsPage.newsCard.readMore') }}</span>
                 </div>
               </div>
             </a>
@@ -64,39 +64,39 @@
     <section class="stay-updated-section">
       <div class="container">
         <div class="section-intro">
-          <span class="section-tag">Stay Informed</span>
-          <h2 class="section-heading">Why Follow Our News?</h2>
+          <span class="section-tag">{{ t('newsPage.stayUpdated.tag') }}</span>
+          <h2 class="section-heading">{{ t('newsPage.stayUpdated.title') }}</h2>
           <p class="section-lead">
-            Stay ahead of the game with the latest updates, developer insights, and community discussions about Quarantine Zone: The Last Check. Our news section keeps you informed about everything happening in the game's development and community.
+            {{ t('newsPage.stayUpdated.lead') }}
           </p>
         </div>
         <div class="stay-updated-grid">
           <div class="stay-updated-card">
-            <div class="stay-updated-icon">📢</div>
-            <h3>Latest Updates</h3>
+            <div class="stay-updated-icon">{{ t('newsPage.stayUpdated.card1.icon') }}</div>
+            <h3>{{ t('newsPage.stayUpdated.card1.title') }}</h3>
             <p>
-              Get the first news about game patches, new features, and content updates. We cover all major announcements from the developers, including patch notes, feature reveals, and release dates. Stay informed about changes that might affect your gameplay strategies. Check our <a href="/guides" class="inline-link">guides section</a> to see how updates impact game strategies. Our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> is updated regularly to reflect game changes.
+              {{ t('newsPage.stayUpdated.card1.text') }} <a :href="getLocalizedPath('/guides')" class="inline-link">{{ t('newsPage.stayUpdated.card1.link1') }}</a>{{ t('newsPage.stayUpdated.card1.text2') }} <a :href="getLocalizedPath('/guides/quarantine-zone-the-last-check-rookie-survival-manual')" class="inline-link">{{ t('newsPage.stayUpdated.card1.link2') }}</a>{{ t('newsPage.stayUpdated.card1.text3') }}
             </p>
           </div>
           <div class="stay-updated-card">
-            <div class="stay-updated-icon">💬</div>
-            <h3>Developer Insights</h3>
+            <div class="stay-updated-icon">{{ t('newsPage.stayUpdated.card2.icon') }}</div>
+            <h3>{{ t('newsPage.stayUpdated.card2.title') }}</h3>
             <p>
-              Read exclusive Q&A sessions, developer interviews, and behind-the-scenes content. Learn about the development process, design decisions, and future plans directly from the creators. Understanding the developers' vision helps you appreciate the game's depth and complexity. Visit our <a href="/" class="inline-link">homepage</a> to learn more about the game's core concepts.
+              {{ t('newsPage.stayUpdated.card2.text') }} <a :href="getLocalizedPath('/')" class="inline-link">{{ t('newsPage.stayUpdated.card2.link1') }}</a>{{ t('newsPage.stayUpdated.card2.text2') }}
             </p>
           </div>
           <div class="stay-updated-card">
-            <div class="stay-updated-icon">🎮</div>
-            <h3>Community Discussions</h3>
+            <div class="stay-updated-icon">{{ t('newsPage.stayUpdated.card3.icon') }}</div>
+            <h3>{{ t('newsPage.stayUpdated.card3.title') }}</h3>
             <p>
-              Discover community strategies, tips, and discussions about gameplay mechanics. Our news includes community highlights, player strategies, and discussions about game mechanics. Learn from other players' experiences and share your own insights. Explore our <a href="/wiki" class="inline-link">wiki</a> for comprehensive information about game mechanics and tools.
+              {{ t('newsPage.stayUpdated.card3.text') }} <a :href="getLocalizedPath('/wiki')" class="inline-link">{{ t('newsPage.stayUpdated.card3.link1') }}</a>{{ t('newsPage.stayUpdated.card3.text2') }}
             </p>
           </div>
           <div class="stay-updated-card">
-            <div class="stay-updated-icon">🔔</div>
-            <h3>Never Miss Important News</h3>
+            <div class="stay-updated-icon">{{ t('newsPage.stayUpdated.card4.icon') }}</div>
+            <h3>{{ t('newsPage.stayUpdated.card4.title') }}</h3>
             <p>
-              We regularly update our news section with the latest information. Whether it's a major patch, new feature announcement, or community event, you'll find it here first. Bookmark this page and check back regularly to stay up-to-date with all Quarantine Zone developments. Combine news updates with our <a href="/guides" class="inline-link">strategy guides</a> to optimize your gameplay.
+              {{ t('newsPage.stayUpdated.card4.text') }} <a :href="getLocalizedPath('/guides')" class="inline-link">{{ t('newsPage.stayUpdated.card4.link1') }}</a>{{ t('newsPage.stayUpdated.card4.text2') }}
             </p>
           </div>
         </div>
@@ -107,32 +107,32 @@
     <section class="faq-section">
       <div class="container">
         <div class="section-intro">
-          <span class="section-tag">FAQ</span>
-          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <span class="section-tag">{{ t('newsPage.faq.tag') }}</span>
+          <h2 class="section-heading">{{ t('newsPage.faq.title') }}</h2>
         </div>
         <div class="faq-container">
           <article class="faq-item">
-            <h3>How often is the news updated?</h3>
+            <h3>{{ t('newsPage.faq.q1.question') }}</h3>
             <p>
-              We update our news section regularly whenever there are new developments, announcements, or community discussions. Major updates like patches and feature releases are posted immediately, while smaller updates may be batched together. Check back frequently or bookmark this page to stay informed about all Quarantine Zone news and updates.
+              {{ t('newsPage.faq.q1.answer') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Where does the news come from?</h3>
+            <h3>{{ t('newsPage.faq.q2.question') }}</h3>
             <p>
-              Our news comes from official developer announcements, Discord Q&A sessions, community discussions, and verified sources. We compile information from multiple channels to provide comprehensive coverage of all Quarantine Zone developments. All news is verified for accuracy before publication to ensure you receive reliable information.
+              {{ t('newsPage.faq.q2.answer') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Can I find older news articles?</h3>
+            <h3>{{ t('newsPage.faq.q3.question') }}</h3>
             <p>
-              Yes, all news articles are archived and remain accessible. You can scroll through the news list to find older articles, or use the search function if available. Older articles remain valuable resources for understanding game development history and tracking how the game has evolved. Our <a href="/wiki" class="inline-link">wiki</a> also contains historical information about game mechanics and features.
+              {{ t('newsPage.faq.q3.answer') }} <a href="/wiki" class="inline-link">{{ t('newsPage.faq.q3.link1') }}</a>{{ t('newsPage.faq.q3.text2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>How do news updates affect gameplay?</h3>
+            <h3>{{ t('newsPage.faq.q4.question') }}</h3>
             <p>
-              News updates often include information about game changes, new features, or balance adjustments that can impact your strategies. When major updates are announced, we recommend reviewing patch notes carefully and adjusting your approach accordingly. Our <a href="/guides" class="inline-link">guides section</a> is updated to reflect changes and help you adapt to new game mechanics. For combat-related updates, check our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</a>.
+              {{ t('newsPage.faq.q4.answer') }} <a href="/guides" class="inline-link">{{ t('newsPage.faq.q4.link1') }}</a>{{ t('newsPage.faq.q4.text2') }} <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">{{ t('newsPage.faq.q4.link2') }}</a>{{ t('newsPage.faq.q4.text3') }}
             </p>
           </article>
         </div>
@@ -142,14 +142,22 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { computed, onMounted, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useNewsData } from '../composables/useNewsData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { news, loading, error, loadData } = useNewsData()
 
 // 初始化加载数据
 onMounted(() => {
+  loadData()
+})
+
+// 监听语言变化，重新加载数据
+watch(locale, () => {
   loadData()
 })
 

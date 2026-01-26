@@ -4,12 +4,12 @@
     <section class="symptoms-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">All Symptoms And How To Detect Them</h1>
+          <h1 class="page-title">{{ t('symptomsPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Survivors in Quarantine Zone: The Last Check will attempt to clear the checkpoints and reach the safe area, even if they know they are infected. This makes your job a little harder, as you have to ignore their pleas and go through every check before sending them off to one of three spaces.
+            {{ t('symptomsPage.header.subtitle1') }}
           </p>
           <p class="page-subtitle">
-            Before evacuation day, Survivors stay in the safe Survivor Zone, the Quarantine Cell, or the Laboratory. The infectious Survivors are destroyed in liquidation before they can infect anyone else. Here is how to make the right decisions every time by detecting the symptoms first. For a detailed strategy guide with tips and decision-making strategies, check our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms guide</a>.
+            {{ t('symptomsPage.header.subtitle2') }} <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">{{ t('symptomsPage.header.guideLink') }}</a>{{ t('symptomsPage.header.subtitle2End') }}
           </p>
         </div>
       </div>
@@ -23,88 +23,36 @@
           <div class="intro-section">
             <div class="info-box">
               <p class="info-text">
-                <strong>Tip:</strong> Use every tool available to you to make sure you have uncovered every single symptom.
+                <strong>{{ t('symptomsPage.intro.tip') }}</strong> {{ t('symptomsPage.intro.tipText') }}
               </p>
             </div>
             <p class="lead-text">
-              Each symptom in Quarantine Zone: The Last Check, is detected using a tool or your eyes. In endless mode, all tools are already unlocked, while in campaign mode, they must be unlocked and upgraded as you progress. Below, we have laid out every symptom you will encounter in the game, along with its corresponding infection threat level and the recommended tool for detection. Learn efficient tool usage techniques in our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">rookie survival manual</a>.
+              {{ t('symptomsPage.intro.lead') }} <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">{{ t('symptomsPage.intro.rookieLink') }}</a>{{ t('symptomsPage.intro.leadEnd') }}
             </p>
           </div>
 
           <!-- Safe Symptoms -->
           <section class="symptom-category">
             <div class="category-header">
-              <h2 class="category-title">Safe Symptoms</h2>
+              <h2 class="category-title">{{ t('symptomsPage.safeSymptoms.title') }}</h2>
               <div class="section-divider"></div>
             </div>
-            <img src="/images/wiki/list/wiki-01-01.webp" alt="Safe Symptoms" class="symptom-image" />
+            <img src="/images/wiki/list/wiki-01-01.webp" :alt="t('symptomsPage.safeSymptoms.title')" class="symptom-image" />
             <p class="category-description">
-              If the survivor shows these symptoms and nothing else, send them straight to the Survivor Zone. If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will be killed in the process. Better to be safe than sorry! For more details on safe symptom identification, see our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms strategy guide</a>.
+              {{ t('symptomsPage.safeSymptoms.description1') }} <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">{{ t('symptomsPage.safeSymptoms.guideLink') }}</a>{{ t('symptomsPage.safeSymptoms.description1End') }}
             </p>
             <div class="symptoms-table-container">
               <table class="symptoms-table">
                 <thead>
                   <tr>
-                    <th>Symptom</th>
-                    <th>Type/Tool</th>
+                    <th>{{ t('symptomsPage.safeSymptoms.table.header.symptom') }}</th>
+                    <th>{{ t('symptomsPage.safeSymptoms.table.header.typeTool') }}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Yellow Eyes</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Freckles</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Herpes</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Red Skin</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Bruises</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Nose Bleed</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Sickly Breath</td>
-                    <td>Stethoscope</td>
-                  </tr>
-                  <tr>
-                    <td>Absent Reflex</td>
-                    <td>Hammer</td>
-                  </tr>
-                  <tr>
-                    <td>Ocular Spicular Bacterium</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Thread Cluster</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Ocular Helminth</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Adenoviral Body</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Internal Bleeding</td>
-                    <td>X-Ray</td>
-                  </tr>
-                  <tr>
-                    <td>UV Vapor</td>
-                    <td>UV</td>
+                  <tr v-for="(row, index) in tm('symptomsPage.safeSymptoms.table.rows')" :key="index">
+                    <td>{{ row.symptom }}</td>
+                    <td>{{ row.typeTool }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -114,80 +62,28 @@
           <!-- Quarantine Symptoms -->
           <section class="symptom-category">
             <div class="category-header">
-              <h2 class="category-title">Quarantine Symptoms</h2>
+              <h2 class="category-title">{{ t('symptomsPage.quarantineSymptoms.title') }}</h2>
               <div class="section-divider"></div>
             </div>
-            <img src="/images/wiki/list/wiki-01-02.webp" alt="Quarantine Symptoms" class="symptom-image" />
+            <img src="/images/wiki/list/wiki-01-02.webp" :alt="t('symptomsPage.quarantineSymptoms.title')" class="symptom-image" />
             <p class="category-description">
-              These are borderline symptoms, and the survivor could be either just sick or they could be infected. A day or two in Quarantine will reveal the truth. If they get better, they can be sent to the Survivor Zone; if they get worse or they turn into a zombie, they have to be eliminated.
+              {{ t('symptomsPage.quarantineSymptoms.description1') }}
             </p>
             <p class="category-description">
-              If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will die (in the name of science!) while they are there. For decision-making strategies when dealing with uncertain symptoms, check our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms guide</a>.
+              {{ t('symptomsPage.quarantineSymptoms.description2') }} <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">{{ t('symptomsPage.quarantineSymptoms.guideLink') }}</a>{{ t('symptomsPage.quarantineSymptoms.description2End') }}
             </p>
             <div class="symptoms-table-container">
               <table class="symptoms-table">
                 <thead>
                   <tr>
-                    <th>Symptom</th>
-                    <th>Type/Tool</th>
+                    <th>{{ t('symptomsPage.quarantineSymptoms.table.header.symptom') }}</th>
+                    <th>{{ t('symptomsPage.quarantineSymptoms.table.header.typeTool') }}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Conjunctivitis</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Skin Rash</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Pale Skin</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Red Bruise</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Skin Cuts</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Mouth Bleeding</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Aggression</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Elevated Temperature 37–41 C</td>
-                    <td>Thermopulsometer</td>
-                  </tr>
-                  <tr>
-                    <td>Elevated Pulse 120–180 BPM</td>
-                    <td>Thermopulsometer</td>
-                  </tr>
-                  <tr>
-                    <td>Non-Specific Respiration</td>
-                    <td>Stethoscope</td>
-                  </tr>
-                  <tr>
-                    <td>Hyper Aggressive Reflex</td>
-                    <td>Hammer</td>
-                  </tr>
-                  <tr>
-                    <td>Chromatic Staphylococcus</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Phage Complex</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Color Difference</td>
-                    <td>X-Ray</td>
+                  <tr v-for="(row, index) in tm('symptomsPage.quarantineSymptoms.table.rows')" :key="index">
+                    <td>{{ row.symptom }}</td>
+                    <td>{{ row.typeTool }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -197,89 +93,25 @@
           <!-- Infection Symptoms -->
           <section class="symptom-category">
             <div class="category-header">
-              <h2 class="category-title">Infection Symptoms</h2>
+              <h2 class="category-title">{{ t('symptomsPage.infectionSymptoms.title') }}</h2>
               <div class="section-divider"></div>
             </div>
-            <img src="/images/wiki/list/wiki-01-03.webp" alt="Infection Symptoms" class="symptom-image" />
+            <img src="/images/wiki/list/wiki-01-03.webp" :alt="t('symptomsPage.infectionSymptoms.title')" class="symptom-image" />
             <p class="category-description">
-              If the survivor shows any of these symptoms, they are highly infectious and must be sent to liquidation immediately. If they show a new sign of infection, you can send them to the lab to undergo more analysis. Learn more about identifying confirmed infections in our <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">complete symptoms guide</a>.
+              {{ t('symptomsPage.infectionSymptoms.description1') }} <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">{{ t('symptomsPage.infectionSymptoms.guideLink') }}</a>{{ t('symptomsPage.infectionSymptoms.description1End') }}
             </p>
             <div class="symptoms-table-container">
               <table class="symptoms-table">
                 <thead>
                   <tr>
-                    <th>Symptom</th>
-                    <th>Type/Tool</th>
+                    <th>{{ t('symptomsPage.infectionSymptoms.table.header.symptom') }}</th>
+                    <th>{{ t('symptomsPage.infectionSymptoms.table.header.typeTool') }}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Red Eyes</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Green Skin</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Bite Mark</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Necrosis</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Nose Pus</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>Eye Pus</td>
-                    <td>Appearance</td>
-                  </tr>
-                  <tr>
-                    <td>High Temperature 41–45 C</td>
-                    <td>Thermopulsometer</td>
-                  </tr>
-                  <tr>
-                    <td>Extreme Pulse 180–200 BPM</td>
-                    <td>Thermopulsometer</td>
-                  </tr>
-                  <tr>
-                    <td>Infected Breath</td>
-                    <td>Stethoscope</td>
-                  </tr>
-                  <tr>
-                    <td>Contaminated Body Parts</td>
-                    <td>Objects/Search</td>
-                  </tr>
-                  <tr>
-                    <td>Crossed Reflex</td>
-                    <td>Hammer</td>
-                  </tr>
-                  <tr>
-                    <td>Necrotic Plume</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Corneal Infiltrate</td>
-                    <td>Matioscope</td>
-                  </tr>
-                  <tr>
-                    <td>Moldy Organ</td>
-                    <td>X-Ray</td>
-                  </tr>
-                  <tr>
-                    <td>Necrotic Organ</td>
-                    <td>X-Ray</td>
-                  </tr>
-                  <tr>
-                    <td>UV Contraband</td>
-                    <td>UV</td>
-                  </tr>
-                  <tr>
-                    <td>UV Symptom</td>
-                    <td>UV</td>
+                  <tr v-for="(row, index) in tm('symptomsPage.infectionSymptoms.table.rows')" :key="index">
+                    <td>{{ row.symptom }}</td>
+                    <td>{{ row.typeTool }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -292,7 +124,9 @@
 </template>
 
 <script setup>
-// SEO is handled automatically by the router meta configuration
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 </script>
 
 <style scoped>

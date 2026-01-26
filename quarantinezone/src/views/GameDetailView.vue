@@ -3,9 +3,9 @@
     <!-- Game Not Found -->
     <div v-if="!game && !loading" class="game-not-found">
       <div class="container">
-        <h1>Game Not Found</h1>
-        <p>The game you're looking for doesn't exist or has been removed.</p>
-        <a href="/zombie-games" class="btn btn-primary">Back to Games</a>
+        <h1>{{ t('gameDetailPage.notFound.title') }}</h1>
+        <p>{{ t('gameDetailPage.notFound.message') }}</p>
+        <a href="/zombie-games" class="btn btn-primary">{{ t('gameDetailPage.notFound.backButton') }}</a>
       </div>
     </div>
 
@@ -23,7 +23,7 @@
                   <div class="game-icon-frame">
                     <img :src="game.imageUrl" :alt="game.imageAlt" />
                   </div>
-                  <button class="play-btn" @click="loadGame">PLAY</button>
+                  <button class="play-btn" @click="loadGame">{{ t('gameDetailPage.playButton') }}</button>
                 </div>
 
                 <!-- After Loading -->
@@ -42,12 +42,12 @@
               <div class="game-control-bar">
                 <h1 class="control-title">{{ game.title }}</h1>
                 <div class="control-buttons">
-                  <button class="control-btn" @click="toggleWebFullscreen" title="Web Fullscreen">
+                  <button class="control-btn" @click="toggleWebFullscreen" :title="t('gameDetailPage.controlBar.webFullscreen')">
                     <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
                       <path d="M547.4 197.4v46l200.3 0.1L546.1 444l32.4 32.6 201.9-200.7v200.9h46V197.5zM471.4 584.4l-32.6-32.6L243.6 747V547.9h-46v278.7h279v-46H275z" fill="#ffffff"></path>
                     </svg>
                   </button>
-                  <button class="control-btn" @click="toggleFullscreen" title="Fullscreen">
+                  <button class="control-btn" @click="toggleFullscreen" :title="t('gameDetailPage.controlBar.fullscreen')">
                     <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
                       <path d="M95.500388 368.593511c0 11.905658-9.637914 21.543572-21.543573 21.543572-11.877311 0-21.515225-9.637914-21.515225-21.543572V188.704684c0-37.502824 15.307275-71.575684 39.997343-96.265751s58.762928-39.997342 96.265751-39.997343h179.888827c11.905658 0 21.543572 9.637914 21.543572 21.515225 0 11.905658-9.637914 21.543572-21.543572 21.543573H188.704684c-25.625512 0-48.926586 10.488318-65.821282 27.383014s-27.383014 40.19577-27.383014 65.821282v179.888827z m559.906101-273.093123c-11.877311 0-21.515225-9.637914-21.515226-21.543573 0-11.877311 9.637914-21.515225 21.515226-21.515225h179.917174c37.502824 0 71.547337 15.307275 96.237404 39.997343s40.025689 58.762928 40.02569 96.265751v179.888827c0 11.905658-9.637914 21.543572-21.543572 21.543572-11.877311 0-21.515225-9.637914-21.515226-21.543572V188.704684c0-25.625512-10.488318-48.926586-27.411361-65.821282-16.894696-16.894696-40.19577-27.383014-65.792935-27.383014h-179.917174z m273.12147 559.906101c0-11.877311 9.637914-21.515225 21.515226-21.515226 11.905658 0 21.543572 9.637914 21.543572 21.515226v179.917174c0 37.474477-15.335622 71.547337-40.02569 96.237404s-58.734581 39.997342-96.237404 39.997343h-179.917174c-11.877311 0-21.515225-9.637914-21.515226-21.515225s9.637914-21.543572 21.515226-21.543573h179.917174c25.597165 0 48.898239-10.488318 65.792935-27.383014 16.923043-16.894696 27.411361-40.19577 27.411361-65.792935v-179.917174z m-559.934448 273.093123c11.905658 0 21.543572 9.666261 21.543572 21.543573s-9.637914 21.515225-21.543572 21.515225H188.704684c-37.502824 0-71.575684-15.307275-96.265751-39.997343s-39.997342-58.762928-39.997343-96.237404v-179.917174c0-11.877311 9.637914-21.515225 21.515225-21.515226 11.905658 0 21.543572 9.637914 21.543573 21.515226v179.917174c0 25.597165 10.488318 48.898239 27.383014 65.792935s40.19577 27.383014 65.821282 27.383014h179.888827z" fill="#ffffff"></path>
                     </svg>
@@ -71,7 +71,7 @@
 
             <!-- Comments -->
             <div class="comments">
-              <h3 class="comments-heading">All Reviews</h3>
+              <h3 class="comments-heading">{{ t('gameDetailPage.comments.heading') }}</h3>
               <div class="comment-list" v-if="game.comments && game.comments.length">
                 <div v-for="comment in game.comments" :key="comment.id" class="comment">
                   <div class="comment-avatar">{{ comment.author.charAt(0).toUpperCase() }}</div>
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="no-comments" v-else>
-                <p>No comments yet.</p>
+                <p>{{ t('gameDetailPage.comments.noComments') }}</p>
               </div>
             </div>
           </div>
@@ -99,11 +99,13 @@
 <script setup>
 import { ref, onMounted, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useGameData } from '../composables/useGameData'
 import { useSEO } from '../seo/composables.js'
 import { seoConfig } from '../seo/config.js'
 
 const route = useRoute()
+const { t, locale } = useI18n()
 const { games, loadData, findGameByAddressBar } = useGameData()
 const { setSEO } = useSEO()
 const game = ref(null)
@@ -194,6 +196,24 @@ watch(() => route.params.id, async () => {
   
   // 重置游戏加载状态
   gameLoaded.value = false
+})
+
+// 监听语言变化，重新加载数据
+watch(locale, async () => {
+  await loadData()
+  const id = gameId.value
+  game.value = findGameByAddressBar(id)
+  
+  // 更新 SEO
+  if (game.value && game.value.seo) {
+    setSEO({
+      title: game.value.seo.title || game.value.title,
+      description: game.value.seo.description || game.value.description,
+      keywords: game.value.seo.keywords || seoConfig.defaults.keywords,
+      image: game.value.imageUrl || seoConfig.defaults.image,
+      type: 'website'
+    })
+  }
 })
 </script>
 

@@ -1,6 +1,27 @@
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import i18n from '../i18n'
 import { seoConfig } from './config.js'
+
+// 生成本地化路径的辅助函数（用于 SEO）
+function createLocalizedPath(path, locale = 'en') {
+  if (locale === 'en') {
+    return path
+  }
+  return `/${locale}${path}`
+}
+
+// 提取基础路径（去除语言前缀）
+function extractBasePath(path) {
+  if (path.startsWith('/de/')) {
+    return path.substring(3)
+  }
+  if (path === '/de') {
+    return '/'
+  }
+  return path
+}
 
 // SEO composable
 export function useSEO() {
@@ -59,6 +80,9 @@ export function useSEO() {
 
     // Canonical URL
     updateCanonicalLink()
+    
+    // 添加 hreflang 标签
+    updateHreflangLinks()
   }
 
   // 更新单个meta标签
@@ -89,6 +113,37 @@ export function useSEO() {
       document.head.appendChild(canonical)
     }
     canonical.setAttribute('href', canonicalUrl.value)
+  }
+
+  // 更新 hreflang 链接
+  const updateHreflangLinks = () => {
+    // 移除现有的 hreflang 链接
+    const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]')
+    existingHreflangs.forEach(link => link.remove())
+
+    const basePath = extractBasePath(currentPath.value)
+    
+    // 为所有支持的语言添加 hreflang 链接
+    seoConfig.supportedLocales.forEach(locale => {
+      const localizedPath = createLocalizedPath(basePath, locale)
+      const hreflangUrl = `${seoConfig.fullDomain}${localizedPath}`
+      
+      const link = document.createElement('link')
+      link.setAttribute('rel', 'alternate')
+      link.setAttribute('hreflang', seoConfig.locales[locale].hreflang)
+      link.setAttribute('href', hreflangUrl)
+      document.head.appendChild(link)
+    })
+    
+    // 添加 x-default（指向英文版本）
+    const defaultPath = createLocalizedPath(basePath, 'en')
+    const defaultUrl = `${seoConfig.fullDomain}${defaultPath}`
+    
+    const defaultLink = document.createElement('link')
+    defaultLink.setAttribute('rel', 'alternate')
+    defaultLink.setAttribute('hreflang', 'x-default')
+    defaultLink.setAttribute('href', defaultUrl)
+    document.head.appendChild(defaultLink)
   }
 
   // 生成结构化数据
@@ -171,44 +226,85 @@ export function useSEO() {
   }
 }
 
-// 路由名称到SEO key的映射
+// 路由名称到SEO key的映射（对应 i18n tdk 中的 key）
 const routeToSeoKey = {
-  'home': 'home',
-  'guides': 'guides',
-  'guide-detail': 'guideDetail',
-  'wiki': 'wiki',
-  'wiki-detail': 'wikiDetail',
-  'games': 'games',
-  'game-detail': 'gameDetail',
-  'news': 'news',
-  'news-detail': 'newsDetail'
+  'home': 'homePage',
+  'guides': 'guidesPage',
+  'guide-detail': 'guideDetailPage',
+  'wiki': 'wikiPage',
+  'wiki-detail': 'wikiDetailPage',
+  'symptoms': 'symptomsPage',
+  'games': 'gamesPage',
+  'game-detail': 'gameDetailPage',
+  'news': 'newsPage',
+  'news-detail': 'newsDetailPage',
+  'privacy-policy': 'privacyPolicyPage',
+  'terms-of-service': 'termsOfServicePage',
+  'copyright': 'copyrightPage',
+  'about-us': 'aboutUsPage',
+  'contact-us': 'contactUsPage'
 }
 
 // 自动SEO composable - 监听路由变化自动设置SEO
 export function useAutoSEO() {
   const { setSEO, generateStructuredData, addStructuredData } = useSEO()
   const route = useRoute()
+  const { locale } = useI18n()
   
-  // 处理SEO的函数
-  const handleSEO = async () => {
-    const routeName = route.name
-    
-    // 详情页的 SEO 由页面组件自己从数据中设置，跳过自动 SEO
-    if (routeName === 'guide-detail' || routeName === 'game-detail' || routeName === 'news-detail') {
-      return
-    }
-    
-    const seoKey = routeToSeoKey[routeName]
+     // 处理SEO的函数
+     const handleSEO = async () => {
+       const routeName = route.name
+       
+       // 提取基础路由名称（去除语言后缀，如 'home-de' -> 'home'）
+       let baseRouteName = routeName
+       if (routeName && typeof routeName === 'string') {
+         const parts = routeName.split('-')
+         const lastPart = parts[parts.length - 1]
+         // 如果最后一部分是语言代码，则移除它
+         if (lastPart === 'de' || lastPart === 'en') {
+           baseRouteName = parts.slice(0, -1).join('-')
+         }
+       }
+
+       // 详情页的 SEO 由页面组件自己从数据中设置，跳过自动 SEO
+       if (baseRouteName === 'guide-detail' || baseRouteName === 'game-detail' || baseRouteName === 'news-detail') {
+         return
+       }
+
+       const seoKey = routeToSeoKey[baseRouteName]
 
     let finalSEOData = {
       ...seoConfig.defaults
     }
 
-    // 从路由 meta 中获取 SEO 数据
-    if (route.meta && route.meta.seo) {
-      finalSEOData = {
-        ...finalSEOData,
-        ...route.meta.seo
+    // 从 i18n 获取静态页面的 TDK
+    if (seoKey) {
+      try {
+        // 直接访问 i18n 的 messages，避免警告
+        const messages = i18n.global.messages.value || i18n.global.messages
+        const currentLocale = locale.value || 'en'
+        const localeMessages = messages[currentLocale]
+        
+        if (localeMessages && localeMessages.tdk && localeMessages.tdk[seoKey]) {
+          const tdk = localeMessages.tdk[seoKey]
+          if (tdk && typeof tdk === 'object' && tdk.title) {
+            finalSEOData = {
+              ...finalSEOData,
+              title: tdk.title,
+              description: tdk.description || finalSEOData.description,
+              keywords: tdk.keywords || finalSEOData.keywords
+            }
+          }
+        } else {
+          if (import.meta.env.DEV) {
+            console.warn(`TDK not found for route: ${routeName} (seoKey: ${seoKey}) in locale: ${currentLocale}`)
+          }
+        }
+      } catch (error) {
+        // 如果 i18n 中没有对应的 TDK，输出警告
+        if (import.meta.env.DEV) {
+          console.warn(`Failed to get TDK for route: ${routeName}:`, error)
+        }
       }
     }
 

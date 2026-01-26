@@ -4,8 +4,8 @@
     <section class="page-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">About Us</h1>
-          <p class="page-subtitle">Learn more about Quarantine Zone Guide</p>
+          <h1 class="page-title">{{ t('aboutUsPage.header.title') }}</h1>
+          <p class="page-subtitle">{{ t('aboutUsPage.header.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -16,41 +16,41 @@
         <div class="content-wrapper">
           <div class="legal-text">
             <p>
-              Welcome to Quarantine Zone Guide, your comprehensive resource for everything related to Quarantine Zone: The Last Check.
+              {{ t('aboutUsPage.content.intro') }}
             </p>
 
-            <h2>Our Mission</h2>
+            <h2>{{ t('aboutUsPage.content.section1.title') }}</h2>
             <p>
-              Our mission is to provide players with the most complete and up-to-date information about Quarantine Zone: The Last Check. We strive to create a community hub where players can find guides, strategies, news, and resources to enhance their gaming experience.
+              {{ t('aboutUsPage.content.section1.text') }}
             </p>
 
-            <h2>What We Offer</h2>
+            <h2>{{ t('aboutUsPage.content.section2.title') }}</h2>
             <p>
-              Quarantine Zone Guide offers a wide range of content including detailed game guides, comprehensive wiki information, latest news and updates, and recommendations for similar games. Our content is regularly updated to ensure accuracy and relevance.
+              {{ t('aboutUsPage.content.section2.text') }}
             </p>
 
-            <h2>Our Team</h2>
+            <h2>{{ t('aboutUsPage.content.section3.title') }}</h2>
             <p>
-              We are a team of passionate gamers and content creators dedicated to providing high-quality resources for the Quarantine Zone: The Last Check community. Our team works tirelessly to gather, verify, and present information in an accessible and useful format.
+              {{ t('aboutUsPage.content.section3.text') }}
             </p>
 
-            <h2>Independence</h2>
+            <h2>{{ t('aboutUsPage.content.section4.title') }}</h2>
             <p>
-              This is an independent fan site created for informational purposes only. We are not affiliated with, endorsed by, or sponsored by the developers or publishers of Quarantine Zone: The Last Check. All trademarks and copyrights belong to their respective owners.
+              {{ t('aboutUsPage.content.section4.text') }}
             </p>
 
-            <h2>Community</h2>
+            <h2>{{ t('aboutUsPage.content.section5.title') }}</h2>
             <p>
-              We value our community and are committed to providing a helpful and informative resource for all players. Your feedback and suggestions help us improve our content and services.
+              {{ t('aboutUsPage.content.section5.text') }}
             </p>
 
-            <h2>Contact Us</h2>
+            <h2>{{ t('aboutUsPage.content.section6.title') }}</h2>
             <p>
-              If you have any questions, suggestions, or feedback, please feel free to contact us at wyong@quarantinezonegames.com. We'd love to hear from you!
+              {{ t('aboutUsPage.content.section6.text') }}
             </p>
 
             <p style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(57, 255, 20, 0.2);">
-              <strong>Last updated: December 5, 2025</strong>
+              <strong>{{ t('aboutUsPage.content.lastUpdated') }}</strong>
             </p>
           </div>
         </div>
@@ -60,18 +60,10 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { useSEO } from '../seo/composables.js'
+import { useI18n } from 'vue-i18n'
 
-const { setSEO } = useSEO()
-
-onMounted(() => {
-  setSEO({
-    title: 'About Us | Quarantine Zone Guide',
-    description: 'Learn more about Quarantine Zone Guide, your comprehensive resource for Quarantine Zone: The Last Check.',
-    keywords: 'about us, Quarantine Zone Guide, game community, fan site'
-  })
-})
+const { t } = useI18n()
+// SEO is handled automatically by useAutoSEO from i18n tdk configuration
 </script>
 
 <style scoped>

@@ -1,30 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import i18n from '../i18n'
 import HomeView from '../views/HomeView.vue'
 
-const routes = [
+// 支持的语言列表（英文是默认，不需要前缀）
+const supportedLocales = ['en', 'de']
+
+// 生成路由路径（英文无前缀，其他语言有前缀）
+const createRoutePath = (path, locale = 'en') => {
+  if (locale === 'en') {
+    return path
+  }
+  return `/${locale}${path}`
+}
+
+// 基础路由配置
+const baseRoutes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
-    meta: {
-      seo: {
-        title: 'Quarantine Zone: The Last Check | Wiki, Guides & News',
-        description: 'The ultimate hub for Quarantine Zone: The Last Check. Explore our complete Wiki, survival guides, latest news, and top recommendations for similar games.',
-        keywords: 'Quarantine Zone The Last Check, Quarantine Zone Wiki, Quarantine Zone guides, survival strategy, crafting recipes, games like Quarantine Zone'
-      }
-    }
+    component: HomeView
   },
   {
     path: '/guides',
     name: 'guides',
-    component: () => import('../views/GuidesView.vue'),
-    meta: {
-      seo: {
-        title: 'Quarantine Zone: The Last Check Guides, Tips & Strategy',
-        description: 'Master Quarantine Zone: The Last Check with our expert guides. Includes beginner survival tips, crafting recipes, combat strategies, and full walkthroughs.',
-        keywords: 'Quarantine Zone The Last Check guides, survival tips, beginner guide, walkthrough, combat strategy, crafting guide, how to survive, gameplay tips'
-      }
-    }
+    component: () => import('../views/GuidesView.vue')
   },
   {
     path: '/guides/:id',
@@ -35,38 +34,17 @@ const routes = [
   {
     path: '/wiki',
     name: 'wiki',
-    component: () => import('../views/WikiView.vue'),
-    meta: {
-      seo: {
-        title: 'Quarantine Zone: The Last Check Wiki | Tools & Resources',
-        description: 'Explore the complete Quarantine Zone: The Last Check Wiki. Detailed database for survival tools, crafting resources, and essential gameplay strategies.',
-        keywords: 'Quarantine Zone The Last Check wiki, survival tools, crafting resources, game tools, resource locations, material list, gameplay strategy, QZ database'
-      }
-    }
+    component: () => import('../views/WikiView.vue')
   },
   {
     path: '/wiki/symptoms',
     name: 'symptoms',
-    component: () => import('../views/SymptomsView.vue'),
-    meta: {
-      seo: {
-        title: 'All Symptoms And How To Detect Them | Quarantine Zone: The Last Check Wiki',
-        description: 'Complete guide to all symptoms in Quarantine Zone: The Last Check. Learn how to detect safe symptoms, quarantine symptoms, and infection symptoms using the right tools.',
-        keywords: 'Quarantine Zone symptoms, infection detection, safe symptoms, quarantine symptoms, infection symptoms, symptom guide, detection tools'
-      }
-    }
+    component: () => import('../views/SymptomsView.vue')
   },
   {
     path: '/zombie-games',
     name: 'games',
-    component: () => import('../views/GamesView.vue'),
-    meta: {
-      seo: {
-        title: 'Quarantine Zone: The Last Check | Free H5 Games',
-        description: 'Play free H5 games inspired by Quarantine Zone: The Last Check. No download required. Enjoy the best zombie survival and strategy browser games online.',
-        keywords: 'Quarantine Zone The Last Check games, free H5 games, games like Quarantine Zone, zombie browser games, survival games no download, play free games'
-      }
-    }
+    component: () => import('../views/GamesView.vue')
   },
   {
     path: '/zombie-games/:id',
@@ -77,14 +55,7 @@ const routes = [
   {
     path: '/news',
     name: 'news',
-    component: () => import('../views/NewsView.vue'),
-    meta: {
-      seo: {
-        title: 'Quarantine Zone: The Last Check | News & Patch Notes',
-        description: 'Stay updated with the latest Quarantine Zone: The Last Check news. Read full patch notes, developer announcements, and upcoming feature previews here.',
-        keywords: 'Quarantine Zone The Last Check news, patch notes, game updates, devlog, version history, changelog, release date, upcoming features'
-      }
-    }
+    component: () => import('../views/NewsView.vue')
   },
   {
     path: '/news/:id',
@@ -95,64 +66,58 @@ const routes = [
   {
     path: '/privacy-policy',
     name: 'privacy-policy',
-    component: () => import('../views/PrivacyPolicyView.vue'),
-    meta: {
-      seo: {
-        title: 'Privacy Policy | Quarantine Zone Guide',
-        description: 'Privacy Policy for Quarantine Zone Guide. Learn how we collect, use, and protect your personal information.',
-        keywords: 'privacy policy, data protection, user privacy, Quarantine Zone Guide'
-      }
-    }
+    component: () => import('../views/PrivacyPolicyView.vue')
   },
   {
     path: '/terms-of-service',
     name: 'terms-of-service',
-    component: () => import('../views/TermsOfServiceView.vue'),
-    meta: {
-      seo: {
-        title: 'Terms of Service | Quarantine Zone Guide',
-        description: 'Terms of Service for Quarantine Zone Guide. Read our terms and conditions for using our website.',
-        keywords: 'terms of service, terms and conditions, user agreement, Quarantine Zone Guide'
-      }
-    }
+    component: () => import('../views/TermsOfServiceView.vue')
   },
   {
     path: '/copyright',
     name: 'copyright',
-    component: () => import('../views/CopyrightView.vue'),
-    meta: {
-      seo: {
-        title: 'Copyright | Quarantine Zone Guide',
-        description: 'Copyright information for Quarantine Zone Guide. Learn about our copyright policies and intellectual property rights.',
-        keywords: 'copyright, intellectual property, DMCA, fair use, Quarantine Zone Guide'
-      }
-    }
+    component: () => import('../views/CopyrightView.vue')
   },
   {
     path: '/about-us',
     name: 'about-us',
-    component: () => import('../views/AboutUsView.vue'),
-    meta: {
-      seo: {
-        title: 'About Us | Quarantine Zone Guide',
-        description: 'Learn more about Quarantine Zone Guide, your comprehensive resource for Quarantine Zone: The Last Check.',
-        keywords: 'about us, Quarantine Zone Guide, game community, fan site'
-      }
-    }
+    component: () => import('../views/AboutUsView.vue')
   },
   {
     path: '/contact-us',
     name: 'contact-us',
-    component: () => import('../views/ContactUsView.vue'),
-    meta: {
-      seo: {
-        title: 'Contact Us | Quarantine Zone Guide',
-        description: 'Contact Quarantine Zone Guide. Get in touch with us for questions, feedback, or inquiries.',
-        keywords: 'contact us, get in touch, feedback, inquiries, Quarantine Zone Guide'
-      }
-    }
+    component: () => import('../views/ContactUsView.vue')
   }
 ]
+
+// 生成所有语言的路由
+const routes = []
+baseRoutes.forEach(route => {
+  // 英文路由（无前缀）
+  routes.push({
+    ...route,
+    path: route.path,
+    meta: {
+      ...route.meta,
+      locale: 'en'
+    }
+  })
+  
+  // 其他语言路由（有前缀）
+  supportedLocales.filter(locale => locale !== 'en').forEach(locale => {
+    // 为每个语言创建独立的路由，使用唯一的名称
+    const localizedRoute = {
+      ...route,
+      path: createRoutePath(route.path, locale),
+      name: route.name ? `${route.name}-${locale}` : undefined,
+      meta: {
+        ...route.meta,
+        locale: locale
+      }
+    }
+    routes.push(localizedRoute)
+  })
+})
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -160,6 +125,26 @@ const router = createRouter({
   scrollBehavior() {
     return { top: 0 }
   }
+})
+
+// 路由守卫：从 URL 中提取语言并设置 i18n
+router.beforeEach((to, from, next) => {
+  // 从路径中提取语言
+  const pathSegments = to.path.split('/').filter(Boolean)
+  const firstSegment = pathSegments[0]
+  
+  let locale = 'en' // 默认英文
+  
+  // 检查第一个路径段是否是支持的语言
+  if (supportedLocales.includes(firstSegment)) {
+    locale = firstSegment
+  }
+  
+  // 强制设置 i18n 语言（确保在组件加载前设置）
+  // 无论当前语言是什么，都强制设置为从 URL 中提取的语言
+  i18n.global.locale.value = locale
+  
+  next()
 })
 
 export default router

@@ -1,18 +1,23 @@
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 /**
  * News 数据 composable
  */
 export function useNewsData() {
+  const { locale } = useI18n()
   const newsData = ref([])
   const loading = ref(false)
   const error = ref(null)
 
-  const loadData = async () => {
+  const loadData = async (lang = null) => {
     loading.value = true
     error.value = null
     try {
-      const module = await import('../data/news/news.js')
+      const currentLang = lang || locale.value || 'en'
+      const module = await import(`../data/news/${currentLang}.js`).catch(() =>
+        import('../data/news/en.js')
+      )
       const news = module.news || module.default || []
       newsData.value = Array.isArray(news) ? news : []
     } catch (err) {
@@ -26,11 +31,14 @@ export function useNewsData() {
   /**
    * 仅加载首页需要的新闻数据（isHome: true）
    */
-  const loadHomeNewsOnly = async () => {
+  const loadHomeNewsOnly = async (lang = null) => {
     loading.value = true
     error.value = null
     try {
-      const module = await import('../data/news/news.js')
+      const currentLang = lang || locale.value || 'en'
+      const module = await import(`../data/news/${currentLang}.js`).catch(() =>
+        import('../data/news/en.js')
+      )
       const news = module.news || module.default || []
       const allData = Array.isArray(news) ? news : []
       newsData.value = allData.filter(newsItem => newsItem.isHome === true)

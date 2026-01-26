@@ -4,12 +4,12 @@
     <section class="news-detail-header" v-if="newsItem">
       <div class="container">
         <div class="breadcrumb">
-          <a href="/news" class="breadcrumb-link">
+          <a :href="getLocalizedPath('/news')" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
-            News
+            {{ t('newsDetailPage.breadcrumb.news') }}
           </a>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
@@ -73,14 +73,14 @@
 
             <!-- News navigation -->
             <div class="news-navigation" v-if="previousNews || nextNews">
-              <h4 class="nav-title">Navigation</h4>
+              <h4 class="nav-title">{{ t('newsDetailPage.navigation.title') }}</h4>
               <div class="nav-grid">
                 <a
                   v-if="previousNews"
                   :href="`/news/${previousNews.addressBar}`"
                   class="nav-card nav-card-prev"
                 >
-                  <div class="nav-card-direction">Previous</div>
+                  <div class="nav-card-direction">{{ t('newsDetailPage.navigation.previous') }}</div>
                   <div class="nav-card-title">{{ previousNews.title }}</div>
                   <div class="nav-card-meta">
                     <span>{{ formatDate(previousNews.publishDate) }}</span>
@@ -91,7 +91,7 @@
                   :href="`/news/${nextNews.addressBar}`"
                   class="nav-card nav-card-next"
                 >
-                  <div class="nav-card-direction">Next</div>
+                  <div class="nav-card-direction">{{ t('newsDetailPage.navigation.next') }}</div>
                   <div class="nav-card-title">{{ nextNews.title }}</div>
                   <div class="nav-card-meta">
                     <span>{{ formatDate(nextNews.publishDate) }}</span>
@@ -108,9 +108,9 @@
     <section class="news-content" v-else>
       <div class="container">
         <div class="not-found">
-          <h2>News Not Found</h2>
-          <p>The news you're looking for doesn't exist.</p>
-          <a href="/news" class="btn-secondary">Back to News</a>
+          <h2>{{ t('newsDetailPage.notFound.title') }}</h2>
+          <p>{{ t('newsDetailPage.notFound.message') }}</p>
+          <a href="/news" class="btn-secondary">{{ t('newsDetailPage.notFound.backButton') }}</a>
         </div>
       </div>
     </section>
@@ -120,11 +120,15 @@
 <script setup>
 import { ref, onMounted, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useNewsData } from '../composables/useNewsData'
 import { useSEO } from '../seo/composables.js'
 import { seoConfig } from '../seo/config.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const route = useRoute()
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { news, loadData, findNewsByAddressBar } = useNewsData()
 const { setSEO } = useSEO()
 const newsItem = ref(null)
@@ -156,6 +160,24 @@ onMounted(async () => {
 // 监听路由参数变化，更新当前 news
 watch(() => route.params.id, async () => {
   await nextTick()
+  await loadData()
+  const id = route.params.id
+  newsItem.value = findNewsByAddressBar(id)
+  
+  // 更新 SEO
+  if (newsItem.value && newsItem.value.seo) {
+    setSEO({
+      title: newsItem.value.seo.title || newsItem.value.title,
+      description: newsItem.value.seo.description || newsItem.value.description,
+      keywords: newsItem.value.seo.keywords || seoConfig.defaults.keywords,
+      image: newsItem.value.imageUrl || seoConfig.defaults.image,
+      type: 'article'
+    })
+  }
+})
+
+// 监听语言变化，重新加载数据
+watch(locale, async () => {
   await loadData()
   const id = route.params.id
   newsItem.value = findNewsByAddressBar(id)

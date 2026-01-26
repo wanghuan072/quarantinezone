@@ -4,9 +4,9 @@
     <section class="games-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Zombie Games</h1>
+          <h1 class="page-title">{{ t('gamesPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Discover free browser-based zombie survival games that share similar themes, mechanics, and gameplay styles with Quarantine Zone: The Last Check. Play instantly without downloads, featuring decision-making, resource management, and survival challenges.
+            {{ t('gamesPage.header.subtitle') }}
           </p>
         </div>
       </div>
@@ -17,29 +17,29 @@
       <div class="container">
         <!-- Loading State -->
         <div v-if="loading" class="loading-state">
-          <p>Loading games...</p>
+          <p>{{ t('gamesPage.loading') }}</p>
         </div>
         
         <!-- Error State -->
         <div v-if="error" class="error-state">
-          <p>Error loading games: {{ error }}</p>
+          <p>{{ t('gamesPage.error') }} {{ error }}</p>
         </div>
 
         <!-- Section Title -->
-        <h2 class="section-title" v-if="!loading && !error">Available Games</h2>
+        <h2 class="section-title" v-if="!loading && !error">{{ t('gamesPage.sectionTitle') }}</h2>
 
         <!-- Games Grid -->
         <div class="games-grid" v-if="!loading && !error">
           <a
             v-for="game in allGames"
             :key="game.id"
-            :href="`/zombie-games/${game.addressBar}`"
+            :href="getLocalizedPath(`/zombie-games/${game.addressBar}`)"
             class="game-card"
           >
             <div class="game-image-wrapper">
               <img :src="game.imageUrl" :alt="game.imageAlt" class="game-image" />
               <div class="game-overlay">
-                <span class="play-button">View Details</span>
+                <span class="play-button">{{ t('gamesPage.gameCard.viewDetails') }}</span>
               </div>
             </div>
             <div class="game-info">
@@ -47,7 +47,7 @@
               <p class="game-description">{{ game.description }}</p>
               <div class="game-meta">
                 <span class="game-date">{{ formatDate(game.publishDate) }}</span>
-                <span class="game-link">Play Now →</span>
+                <span class="game-link">{{ t('gamesPage.gameCard.playNow') }}</span>
               </div>
             </div>
           </a>
@@ -59,39 +59,39 @@
     <section class="why-play-section">
       <div class="container">
         <div class="section-intro">
-          <span class="section-tag">Discover</span>
-          <h2 class="section-heading">Why Play These Games?</h2>
+          <span class="section-tag">{{ t('gamesPage.whyPlay.tag') }}</span>
+          <h2 class="section-heading">{{ t('gamesPage.whyPlay.title') }}</h2>
           <p class="section-lead">
-            Explore a curated collection of games that share similar themes, mechanics, or gameplay styles with Quarantine Zone: The Last Check. Each game offers unique experiences while maintaining the tension and decision-making that makes survival games engaging.
+            {{ t('gamesPage.whyPlay.lead') }}
           </p>
         </div>
         <div class="why-play-grid">
           <div class="why-play-card">
-            <div class="why-play-icon">🎮</div>
-            <h3>Similar Gameplay Mechanics</h3>
+            <div class="why-play-icon">{{ t('gamesPage.whyPlay.card1.icon') }}</div>
+            <h3>{{ t('gamesPage.whyPlay.card1.title') }}</h3>
             <p>
-              These games feature decision-making, resource management, and survival elements similar to Quarantine Zone. If you enjoy the strategic thinking and moral choices in Quarantine Zone, you'll find familiar challenges here. Learn more about the core mechanics on our <a href="/" class="inline-link">homepage</a>.
+              {{ t('gamesPage.whyPlay.card1.text') }} <a :href="getLocalizedPath('/')" class="inline-link">{{ t('gamesPage.whyPlay.card1.link1') }}</a>{{ t('gamesPage.whyPlay.card1.text2') }}
             </p>
           </div>
           <div class="why-play-card">
-            <div class="why-play-icon">🎯</div>
-            <h3>No Download Required</h3>
+            <div class="why-play-icon">{{ t('gamesPage.whyPlay.card2.icon') }}</div>
+            <h3>{{ t('gamesPage.whyPlay.card2.title') }}</h3>
             <p>
-              All games featured here are browser-based H5 games that you can play instantly without any downloads or installations. Simply click and play, making it easy to try new games and discover new favorites. Perfect for quick gaming sessions or exploring different genres.
+              {{ t('gamesPage.whyPlay.card2.text') }}
             </p>
           </div>
           <div class="why-play-card">
-            <div class="why-play-icon">📚</div>
-            <h3>Learn and Improve</h3>
+            <div class="why-play-icon">{{ t('gamesPage.whyPlay.card3.icon') }}</div>
+            <h3>{{ t('gamesPage.whyPlay.card3.title') }}</h3>
             <p>
-              Playing similar games can help you improve your skills in Quarantine Zone. Many of these games share common strategies and decision-making patterns. Check out our <a href="/guides" class="inline-link">comprehensive guides</a> to master survival strategies that apply across multiple games. Start with our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> for fundamental strategies.
+              {{ t('gamesPage.whyPlay.card3.text') }} <a :href="getLocalizedPath('/guides')" class="inline-link">{{ t('gamesPage.whyPlay.card3.link1') }}</a>{{ t('gamesPage.whyPlay.card3.text2') }} <a :href="getLocalizedPath('/guides/quarantine-zone-the-last-check-rookie-survival-manual')" class="inline-link">{{ t('gamesPage.whyPlay.card3.link2') }}</a>{{ t('gamesPage.whyPlay.card3.text3') }}
             </p>
           </div>
           <div class="why-play-card">
-            <div class="why-play-icon">🔄</div>
-            <h3>Regularly Updated</h3>
+            <div class="why-play-icon">{{ t('gamesPage.whyPlay.card4.icon') }}</div>
+            <h3>{{ t('gamesPage.whyPlay.card4.title') }}</h3>
             <p>
-              We continuously add new games to our collection based on community recommendations and new releases. Stay updated with the latest additions and game recommendations by following our <a href="/news" class="inline-link">news section</a> for announcements and updates.
+              {{ t('gamesPage.whyPlay.card4.text') }} <a :href="getLocalizedPath('/news')" class="inline-link">{{ t('gamesPage.whyPlay.card4.link1') }}</a>{{ t('gamesPage.whyPlay.card4.text2') }}
             </p>
           </div>
         </div>
@@ -102,32 +102,32 @@
     <section class="faq-section">
       <div class="container">
         <div class="section-intro">
-          <span class="section-tag">FAQ</span>
-          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <span class="section-tag">{{ t('gamesPage.faq.tag') }}</span>
+          <h2 class="section-heading">{{ t('gamesPage.faq.title') }}</h2>
         </div>
         <div class="faq-container">
           <article class="faq-item">
-            <h3>Are these games free to play?</h3>
+            <h3>{{ t('gamesPage.faq.q1.question') }}</h3>
             <p>
-              Yes, all games featured on this page are free-to-play browser games. You don't need to download anything or create an account to start playing. Simply click on any game card to view details and start playing immediately.
+              {{ t('gamesPage.faq.q1.answer') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>How are games selected for this page?</h3>
+            <h3>{{ t('gamesPage.faq.q2.question') }}</h3>
             <p>
-              We carefully curate games that share similar themes, mechanics, or gameplay styles with Quarantine Zone: The Last Check. Games are selected based on their quality, relevance, and community feedback. If you have suggestions for games to add, we'd love to hear from you!
+              {{ t('gamesPage.faq.q2.answer') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Do I need special software to play these games?</h3>
+            <h3>{{ t('gamesPage.faq.q3.question') }}</h3>
             <p>
-              No special software is required. All games run directly in your web browser using HTML5 technology. Just make sure you have a modern browser (Chrome, Firefox, Safari, or Edge) and a stable internet connection. For optimal performance, check our <router-link to="/wiki" class="inline-link">wiki</router-link> for system requirements and recommendations.
+              {{ t('gamesPage.faq.q3.answer') }} <a href="/wiki" class="inline-link">{{ t('gamesPage.faq.q3.link1') }}</a>{{ t('gamesPage.faq.q3.text2') }}
             </p>
           </article>
           <article class="faq-item">
-            <h3>Can I get help if I'm stuck in a game?</h3>
+            <h3>{{ t('gamesPage.faq.q4.question') }}</h3>
             <p>
-              While we don't provide direct support for individual games, our <router-link to="/guides" class="inline-link">guides section</router-link> contains general strategies and tips that can help with survival and decision-making games. Many of the techniques apply across different games in this genre.
+              {{ t('gamesPage.faq.q4.answer') }} <a href="/guides" class="inline-link">{{ t('gamesPage.faq.q4.link1') }}</a>{{ t('gamesPage.faq.q4.text2') }}
             </p>
           </article>
         </div>
@@ -137,13 +137,22 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useGameData } from '../composables/useGameData'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { games, loading, error, loadData } = useGameData()
 
 // 初始化加载数据
 onMounted(() => {
+  loadData()
+})
+
+// 监听语言变化，重新加载数据
+watch(locale, () => {
   loadData()
 })
 

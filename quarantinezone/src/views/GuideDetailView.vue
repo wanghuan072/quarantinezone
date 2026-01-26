@@ -4,12 +4,12 @@
     <section class="guide-detail-header" v-if="guide">
       <div class="container">
         <div class="breadcrumb">
-          <a href="/guides" class="breadcrumb-link">
+          <a :href="getLocalizedPath('/guides')" class="breadcrumb-link">
             <svg class="breadcrumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9,22 9,12 15,12 15,22" />
             </svg>
-            Guides
+            {{ t('guideDetailPage.breadcrumb') }}
           </a>
           <svg class="breadcrumb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="9,18 15,12 9,6" />
@@ -73,14 +73,14 @@
 
             <!-- Guide navigation -->
             <div class="guide-navigation" v-if="previousGuide || nextGuide">
-              <h4 class="nav-title">Navigation</h4>
+              <h4 class="nav-title">{{ t('guideDetailPage.navigation.title') }}</h4>
               <div class="nav-grid">
                 <a
                   v-if="previousGuide"
                   :href="`/guides${previousGuide.addressBar}`"
                   class="nav-card nav-card-prev"
                 >
-                  <div class="nav-card-direction">Previous</div>
+                  <div class="nav-card-direction">{{ t('guideDetailPage.navigation.previous') }}</div>
                   <div class="nav-card-title">{{ previousGuide.title }}</div>
                   <div class="nav-card-meta">
                     <span>{{ formatDate(previousGuide.publishDate) }}</span>
@@ -91,7 +91,7 @@
                   :href="`/guides${nextGuide.addressBar}`"
                   class="nav-card nav-card-next"
                 >
-                  <div class="nav-card-direction">Next</div>
+                  <div class="nav-card-direction">{{ t('guideDetailPage.navigation.next') }}</div>
                   <div class="nav-card-title">{{ nextGuide.title }}</div>
                   <div class="nav-card-meta">
                     <span>{{ formatDate(nextGuide.publishDate) }}</span>
@@ -108,9 +108,9 @@
     <section class="guide-content" v-else>
       <div class="container">
         <div class="not-found">
-          <h2>Guide Not Found</h2>
-          <p>The guide you're looking for doesn't exist.</p>
-          <a href="/guides" class="btn-secondary">Back to Guides</a>
+          <h2>{{ t('guideDetailPage.notFound.title') }}</h2>
+          <p>{{ t('guideDetailPage.notFound.message') }}</p>
+          <a href="/guides" class="btn-secondary">{{ t('guideDetailPage.notFound.back') }}</a>
         </div>
       </div>
     </section>
@@ -120,11 +120,15 @@
 <script setup>
 import { ref, onMounted, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useGuideData } from '../composables/useGuideData'
 import { useSEO } from '../seo/composables.js'
 import { seoConfig } from '../seo/config.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath'
 
 const route = useRoute()
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 const { guides, loadData, findGuideByAddressBar } = useGuideData()
 const { setSEO } = useSEO()
 const guide = ref(null)
@@ -169,6 +173,26 @@ watch(() => route.params.id, async () => {
       image: guide.value.imageUrl || seoConfig.defaults.image,
       type: 'article'
     })
+  }
+})
+
+// 监听语言变化，重新加载数据
+watch(locale, async () => {
+  await loadData()
+  if (route.params.id) {
+    const guideId = route.params.id
+    guide.value = findGuideByAddressBar(`/${guideId}`)
+    
+    // 更新 SEO
+    if (guide.value && guide.value.seo) {
+      setSEO({
+        title: guide.value.seo.title || guide.value.title,
+        description: guide.value.seo.description || guide.value.description,
+        keywords: guide.value.seo.keywords || seoConfig.defaults.keywords,
+        image: guide.value.imageUrl || seoConfig.defaults.image,
+        type: 'article'
+      })
+    }
   }
 })
 

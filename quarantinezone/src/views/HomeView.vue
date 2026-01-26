@@ -7,43 +7,43 @@
         <div class="container">
           <div class="hero-layout">
             <div class="hero-main">
-              <div class="hero-badge">QUARANTINE ZONE: THE LAST CHECK</div>
-              <h1 class="hero-title">QUARANTINE ZONE THE LAST CHECK</h1>
+              <div class="hero-badge">{{ t('homePage.hero.badge') }}</div>
+              <h1 class="hero-title">{{ t('homePage.hero.title') }}</h1>
               <p class="hero-description">
-                Screen survivors, manage scarce resources, and hold back the undead. Every choice matters and one mistake could unleash the plague beyond your walls.
+                {{ t('homePage.hero.description') }}
               </p>
               <div class="hero-cta">
                 <a href="/wiki" class="btn-primary">
-                  View Wiki
+                  {{ t('homePage.hero.btn1') }}
                 </a>
-                <a href="/guides" class="btn-secondary">View Guides</a>
+                <a href="/guides" class="btn-secondary">{{ t('homePage.hero.btn2') }}</a>
               </div>
               <div class="hero-info">
                 <div class="info-item">
-                  <span class="info-label">Developer</span>
-                  <span class="info-value">Brigada Games</span>
+                  <span class="info-label">{{ t('homePage.hero.info.developer') }}</span>
+                  <span class="info-value">{{ t('homePage.hero.info.developerValue') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Publisher</span>
-                  <span class="info-value">Devolver Digital</span>
+                  <span class="info-label">{{ t('homePage.hero.info.publisher') }}</span>
+                  <span class="info-value">{{ t('homePage.hero.info.publisherValue') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Platform</span>
-                  <span class="info-value">Steam (PC)</span>
+                  <span class="info-label">{{ t('homePage.hero.info.platform') }}</span>
+                  <span class="info-value">{{ t('homePage.hero.info.platformValue') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Release</span>
-                  <span class="info-value">Jan 13, 2026</span>
+                  <span class="info-label">{{ t('homePage.hero.info.release') }}</span>
+                  <span class="info-value">{{ t('homePage.hero.info.releaseValue') }}</span>
                 </div>
               </div>
               <div class="hero-stats">
                 <div class="stat-card">
-                  <span class="stat-value">1.3M+</span>
-                  <span class="stat-label">Steam Wishlists</span>
+                  <span class="stat-value">{{ t('homePage.hero.stats.stat1Value') }}</span>
+                  <span class="stat-label">{{ t('homePage.hero.stats.stat1Label') }}</span>
                 </div>
                 <div class="stat-card">
-                  <span class="stat-value">~2M</span>
-                  <span class="stat-label">Demo players since May 2025 reveal</span>
+                  <span class="stat-value">{{ t('homePage.hero.stats.stat2Value') }}</span>
+                  <span class="stat-label">{{ t('homePage.hero.stats.stat2Label') }}</span>
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@
               <div class="video-player">
                 <div class="video-thumbnail" v-if="!isVideoPlaying">
                   <div class="video-mask">
-                    <span>QUARANTINE ZONE: THE LAST CHECK</span>
+                    <span>{{ t('homePage.hero.video.title') }}</span>
                   </div>
                   <div class="play-button" @click="playVideo">▶</div>
                 </div>
@@ -67,7 +67,7 @@
                 </div>
               </div>
               <div class="video-description">
-                <h2><a href="/guides/Quarantine-Zone-The-Last-Check-Ask-Your-Mom-Guide">Quarantine Zone: The Last Check "Ask Your Mom" Guide</a></h2>
+                <h2><a href="/guides/Quarantine-Zone-The-Last-Check-Ask-Your-Mom-Guide">{{ t('homePage.hero.video.guideLink') }}</a></h2>
               </div>
             </div>
           </div>
@@ -78,77 +78,77 @@
       <section class="about-section">
         <div class="container">
           <div class="section-intro">
-            <span class="section-tag">About the Game</span>
-            <h2 class="section-heading">What is Quarantine Zone: The Last Check?</h2>
+            <span class="section-tag">{{ t('homePage.about.tag') }}</span>
+            <h2 class="section-heading">{{ t('homePage.about.title') }}</h2>
             <p class="section-lead">
-              A deep quarantine checkpoint management sim about screening survivors, managing scarce resources, and making hard moral calls under a looming outbreak.
+              {{ t('homePage.about.lead') }}
             </p>
           </div>
 
           <div class="content-blocks">
             <div class="content-block block-large">
               <div class="block-header">
-                <span class="block-number">01</span>
-                <h3>Your Role as the Officer</h3>
+                <span class="block-number">{{ t('homePage.about.block1.num') }}</span>
+                <h3>{{ t('homePage.about.block1.title') }}</h3>
               </div>
               <div class="block-body">
                 <p>
-                  At the heart of Quarantine Zone: The Last Check lies your responsibility to decide who gets in and who doesn't. Each day, new individuals appear—some desperate, some suspicious, and some possibly infected.
+                  {{ t('homePage.about.block1.p1') }}
                 </p>
                 <p>
-                  You are given tools like thermometers, infection detectors, and UV lights to inspect their health. However, not all symptoms are visible, and not every lie is easy to catch. You will have to make judgment calls without full information, knowing that a single wrong decision could allow an outbreak inside the zone. Learn more about these <a href="/wiki" class="inline-link">inspection tools</a> and how to use them effectively.
+                  {{ t('homePage.about.block1.p2') }} <a href="/wiki" class="inline-link">{{ t('homePage.about.block1.link1') }}</a> {{ t('homePage.about.block1.p3') }}
                 </p>
               </div>
             </div>
 
             <div class="content-block">
               <div class="block-header">
-                <span class="block-number">02</span>
-                <h3>Manage the Base</h3>
+                <span class="block-number">{{ t('homePage.about.block2.num') }}</span>
+                <h3>{{ t('homePage.about.block2.title') }}</h3>
               </div>
               <div class="block-body">
                 <p>
-                  Beyond the inspection booth, you are also in charge of maintaining and upgrading the facilities. You'll need to manage food, medical supplies, security forces, and energy. Check out our <a href="/guides" class="inline-link">survival guides</a> for tips on efficient resource management.
+                  {{ t('homePage.about.block2.p1') }} <a href="/guides" class="inline-link">{{ t('homePage.about.block2.link1') }}</a> {{ t('homePage.about.block2.p2') }}
                 </p>
                 <p>
-                  Events like power failures, food shortages, and external attacks will test your ability to keep the base operational.
+                  {{ t('homePage.about.block2.p3') }}
                 </p>
               </div>
             </div>
 
             <div class="content-block block-features">
               <div class="block-header">
-                <span class="block-number">03</span>
-                <h3>Core Features</h3>
+                <span class="block-number">{{ t('homePage.about.block3.num') }}</span>
+                <h3>{{ t('homePage.about.block3.title') }}</h3>
               </div>
               <div class="block-body">
                 <div class="feature-grid">
                   <div class="feature-item">
-                    <div class="feature-icon">🔍</div>
+                    <div class="feature-icon">{{ t('homePage.about.block3.f1.icon') }}</div>
                     <div class="feature-text">
-                      <strong>Inspection Mechanics</strong>
-                      <span>Screen individuals with advanced tools</span>
+                      <strong>{{ t('homePage.about.block3.f1.title') }}</strong>
+                      <span>{{ t('homePage.about.block3.f1.desc') }}</span>
                     </div>
                   </div>
                   <div class="feature-item">
-                    <div class="feature-icon">💬</div>
+                    <div class="feature-icon">{{ t('homePage.about.block3.f2.icon') }}</div>
                     <div class="feature-text">
-                      <strong>Dialogue Choices</strong>
-                      <span>Make critical decisions under pressure</span>
+                      <strong>{{ t('homePage.about.block3.f2.title') }}</strong>
+                      <span>{{ t('homePage.about.block3.f2.desc') }}</span>
                     </div>
                   </div>
                   <div class="feature-item">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon">{{ t('homePage.about.block3.f3.icon') }}</div>
                     <div class="feature-text">
-                      <strong>Dynamic Events</strong>
-                      <span>Respond to emergencies and crises</span>
+                      <strong>{{ t('homePage.about.block3.f3.title') }}</strong>
+                      <span>{{ t('homePage.about.block3.f3.desc') }}</span>
                     </div>
                   </div>
                   <div class="feature-item">
-                    <div class="feature-icon">🏗️</div>
+                    <div class="feature-icon">{{ t('homePage.about.block3.f4.icon') }}</div>
                     <div class="feature-text">
-                      <strong>Base Upgrades</strong>
-                      <span>Build and improve your facilities</span>
+                      <strong>{{ t('homePage.about.block3.f4.title') }}</strong>
+                      <span>{{ t('homePage.about.block3.f4.desc') }}</span>
                     </div>
                   </div>
                 </div>
@@ -162,71 +162,71 @@
       <section class="mechanics-section">
         <div class="container">
           <div class="section-intro">
-            <span class="section-tag">Gameplay</span>
-            <h2 class="section-heading">Core Gameplay Mechanics</h2>
+            <span class="section-tag">{{ t('homePage.mechanics.tag') }}</span>
+            <h2 class="section-heading">{{ t('homePage.mechanics.title') }}</h2>
             <p class="section-lead">
-              Master the three pillars of survival: inspection, resource management, and moral decision-making.
+              {{ t('homePage.mechanics.lead') }}
             </p>
           </div>
 
           <div class="mechanics-grid">
             <div class="mechanic-card">
-              <div class="mechanic-icon">🔍</div>
-              <h3>SEE IT? SORT IT</h3>
+              <div class="mechanic-icon">{{ t('homePage.mechanics.m1.icon') }}</div>
+              <h3>{{ t('homePage.mechanics.m1.title') }}</h3>
               <p>
-                Use high-tech tools to uncover signs of infection among terrified survivors. Identify contraband, forbidden items, and even rare collectables as you work to keep your checkpoint secure. Explore our comprehensive <a href="/wiki" class="inline-link">tools guide</a> to master every inspection instrument.
+                {{ t('homePage.mechanics.m1.p') }} <a href="/wiki" class="inline-link">{{ t('homePage.mechanics.m1.link1') }}</a> {{ t('homePage.mechanics.m1.p2') }}
               </p>
               <ul class="mechanic-list">
-                <li>Send suspicious cases to quarantine for observation</li>
-                <li>Route individuals to the lab for additional screening</li>
-                <li>Save healthy survivors by sending them to the living block</li>
-                <li>Deal with infected individuals decisively</li>
+                <li>{{ t('homePage.mechanics.m1.list1') }}</li>
+                <li>{{ t('homePage.mechanics.m1.list2') }}</li>
+                <li>{{ t('homePage.mechanics.m1.list3') }}</li>
+                <li>{{ t('homePage.mechanics.m1.list4') }}</li>
               </ul>
               <div class="mechanic-tools">
-                <span class="tool-tag">Thermometers</span>
-                <span class="tool-tag">Infection Detectors</span>
-                <span class="tool-tag">UV Lights</span>
-                <span class="tool-tag">Interview Transcripts</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m1.tags.t1') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m1.tags.t2') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m1.tags.t3') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m1.tags.t4') }}</span>
               </div>
             </div>
 
             <div class="mechanic-card">
-              <div class="mechanic-icon">⚡</div>
-              <h3>COMMAND THE CATASTROPHE</h3>
+              <div class="mechanic-icon">{{ t('homePage.mechanics.m2.icon') }}</div>
+              <h3>{{ t('homePage.mechanics.m2.title') }}</h3>
               <p>
-                As the survivor population swells, you'll be relied upon to provide essentials such as power, food, and medicine. When alarms are raised, pilot armed drones to ensure the infected don't breach the compound.
+                {{ t('homePage.mechanics.m2.p') }}
               </p>
               <ul class="mechanic-list">
-                <li>Manage power, food, and medical supplies</li>
-                <li>Pilot armed drones during emergencies</li>
-                <li>Reinforce defenses and upgrade facilities</li>
-                <li>Unlock resources, tools, and weapon upgrades</li>
+                <li>{{ t('homePage.mechanics.m2.list1') }}</li>
+                <li>{{ t('homePage.mechanics.m2.list2') }}</li>
+                <li>{{ t('homePage.mechanics.m2.list3') }}</li>
+                <li>{{ t('homePage.mechanics.m2.list4') }}</li>
               </ul>
               <div class="mechanic-tools">
-                <span class="tool-tag">Resource Management</span>
-                <span class="tool-tag">Drone Control</span>
-                <span class="tool-tag">Base Expansion</span>
-                <span class="tool-tag">Security Forces</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m2.tags.t1') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m2.tags.t2') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m2.tags.t3') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m2.tags.t4') }}</span>
               </div>
             </div>
 
             <div class="mechanic-card">
-              <div class="mechanic-icon">🧬</div>
-              <h3>LEARN. ADAPT. SURVIVE.</h3>
+              <div class="mechanic-icon">{{ t('homePage.mechanics.m3.icon') }}</div>
+              <h3>{{ t('homePage.mechanics.m3.title') }}</h3>
               <p>
-                When a quarantined survivor becomes an undead predator, all is not lost! Keep newly turned zombies confined to harvest and prepare samples in return for new tools, staff XP, and long-term upgrades.
+                {{ t('homePage.mechanics.m3.p') }}
               </p>
               <ul class="mechanic-list">
-                <li>Harvest samples from confined zombies</li>
-                <li>Analyze individuals with unknown symptoms</li>
-                <li>Face fatal testing decisions</li>
-                <li>Choose between preserving life or pursuing knowledge</li>
+                <li>{{ t('homePage.mechanics.m3.list1') }}</li>
+                <li>{{ t('homePage.mechanics.m3.list2') }}</li>
+                <li>{{ t('homePage.mechanics.m3.list3') }}</li>
+                <li>{{ t('homePage.mechanics.m3.list4') }}</li>
               </ul>
               <div class="mechanic-tools">
-                <span class="tool-tag">Sample Harvesting</span>
-                <span class="tool-tag">Staff XP</span>
-                <span class="tool-tag">Moral Choices</span>
-                <span class="tool-tag">Long-term Upgrades</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m3.tags.t1') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m3.tags.t2') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m3.tags.t3') }}</span>
+                <span class="tool-tag">{{ t('homePage.mechanics.m3.tags.t4') }}</span>
               </div>
             </div>
           </div>
@@ -237,76 +237,76 @@
       <section class="requirements-section">
         <div class="container">
           <div class="section-intro">
-            <span class="section-tag">System</span>
-            <h2 class="section-heading">System Requirements</h2>
+            <span class="section-tag">{{ t('homePage.requirements.tag') }}</span>
+            <h2 class="section-heading">{{ t('homePage.requirements.title') }}</h2>
             <p class="section-lead">
-              Ensure your system meets the requirements to experience Quarantine Zone: The Last Check at its best.
+              {{ t('homePage.requirements.lead') }}
             </p>
           </div>
 
           <div class="requirements-grid">
             <div class="requirement-card">
               <div class="requirement-header">
-                <h3>Minimum Requirements</h3>
-                <span class="requirement-badge">Basic</span>
+                <h3>{{ t('homePage.requirements.min.title') }}</h3>
+                <span class="requirement-badge">{{ t('homePage.requirements.min.badge') }}</span>
               </div>
               <div class="requirement-body">
                 <div class="requirement-item">
-                  <span class="req-label">OS</span>
-                  <span class="req-value">Windows 10 (64-bit)</span>
+                  <span class="req-label">{{ t('homePage.requirements.min.os') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.min.osValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Processor</span>
-                  <span class="req-value">Intel i5 10400F</span>
+                  <span class="req-label">{{ t('homePage.requirements.min.processor') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.min.processorValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Memory</span>
-                  <span class="req-value">16 GB RAM</span>
+                  <span class="req-label">{{ t('homePage.requirements.min.memory') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.min.memoryValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Graphics</span>
-                  <span class="req-value">NVIDIA GeForce GTX 1050 Ti</span>
+                  <span class="req-label">{{ t('homePage.requirements.min.graphics') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.min.graphicsValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">DirectX</span>
-                  <span class="req-value">Version 12</span>
+                  <span class="req-label">{{ t('homePage.requirements.min.directx') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.min.directxValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Architecture</span>
-                  <span class="req-value">64-bit processor required</span>
+                  <span class="req-label">{{ t('homePage.requirements.min.architecture') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.min.architectureValue') }}</span>
                 </div>
               </div>
             </div>
 
             <div class="requirement-card requirement-recommended">
               <div class="requirement-header">
-                <h3>Recommended Requirements</h3>
-                <span class="requirement-badge recommended">Optimal</span>
+                <h3>{{ t('homePage.requirements.rec.title') }}</h3>
+                <span class="requirement-badge recommended">{{ t('homePage.requirements.rec.badge') }}</span>
               </div>
               <div class="requirement-body">
                 <div class="requirement-item">
-                  <span class="req-label">OS</span>
-                  <span class="req-value">Windows 11 (64-bit)</span>
+                  <span class="req-label">{{ t('homePage.requirements.rec.os') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.rec.osValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Processor</span>
-                  <span class="req-value">Intel i7 10700F</span>
+                  <span class="req-label">{{ t('homePage.requirements.rec.processor') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.rec.processorValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Memory</span>
-                  <span class="req-value">16 GB RAM</span>
+                  <span class="req-label">{{ t('homePage.requirements.rec.memory') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.rec.memoryValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Graphics</span>
-                  <span class="req-value">NVIDIA GeForce RTX 3060</span>
+                  <span class="req-label">{{ t('homePage.requirements.rec.graphics') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.rec.graphicsValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">DirectX</span>
-                  <span class="req-value">Version 12</span>
+                  <span class="req-label">{{ t('homePage.requirements.rec.directx') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.rec.directxValue') }}</span>
                 </div>
                 <div class="requirement-item">
-                  <span class="req-label">Architecture</span>
-                  <span class="req-value">64-bit processor required</span>
+                  <span class="req-label">{{ t('homePage.requirements.rec.architecture') }}</span>
+                  <span class="req-value">{{ t('homePage.requirements.rec.architectureValue') }}</span>
                 </div>
               </div>
             </div>
@@ -314,10 +314,10 @@
 
           <div class="requirements-note">
             <p>
-              <strong>Platform:</strong> Windows PC (Steam) · Single-player · Partial controller support
+              <strong>{{ t('homePage.requirements.note.platform') }}</strong> {{ t('homePage.requirements.note.platformValue') }}
             </p>
             <p>
-              <strong>Release:</strong> Jan 13, 2026 (Steam)
+              <strong>{{ t('homePage.requirements.note.release') }}</strong> {{ t('homePage.requirements.note.releaseValue') }}
             </p>
           </div>
         </div>
@@ -327,57 +327,57 @@
       <section class="reviews-section">
         <div class="container">
           <div class="section-intro">
-            <span class="section-tag">Community</span>
-            <h2 class="section-heading">Player Reviews</h2>
-            <p class="section-lead">See what players are saying about Quarantine Zone: The Last Check. Stay updated with the latest <a href="/news" class="inline-link">game news and developer updates</a>.</p>
+            <span class="section-tag">{{ t('homePage.reviews.tag') }}</span>
+            <h2 class="section-heading">{{ t('homePage.reviews.title') }}</h2>
+            <p class="section-lead">{{ t('homePage.reviews.lead') }} <a href="/news" class="inline-link">{{ t('homePage.reviews.link1') }}</a>.</p>
           </div>
           <div class="reviews-container">
             <article class="review-card">
               <div class="reviewer">
                 <span class="avatar">S</span>
                 <div>
-                  <h4>Survivor_42</h4>
-                  <p>★★★★★</p>
+                  <h4>{{ t('homePage.reviews.r1.name') }}</h4>
+                  <p>{{ t('homePage.reviews.r1.rating') }}</p>
                 </div>
               </div>
               <p>
-                "This game perfectly captures the tension of making life-or-death decisions. The inspection mechanics are incredibly detailed, and every choice feels meaningful. Highly recommended for fans of Papers, Please and survival games."
+                "{{ t('homePage.reviews.r1.text') }}"
               </p>
             </article>
             <article class="review-card">
               <div class="reviewer">
                 <span class="avatar">C</span>
                 <div>
-                  <span>Checkpoint_Commander</span>
-                  <p>★★★★★</p>
+                  <span>{{ t('homePage.reviews.r2.name') }}</span>
+                  <p>{{ t('homePage.reviews.r2.rating') }}</p>
                 </div>
               </div>
               <p>
-                "The resource management aspect adds so much depth. You're not just checking people—you're running an entire facility. The moral dilemmas are intense, and the multiple endings keep me coming back."
+                "{{ t('homePage.reviews.r2.text') }}"
               </p>
             </article>
             <article class="review-card">
               <div class="reviewer">
                 <span class="avatar">Z</span>
                 <div>
-                  <span>Zone_Guard</span>
-                  <p>★★★★☆</p>
+                  <span>{{ t('homePage.reviews.r3.name') }}</span>
+                  <p>{{ t('homePage.reviews.r3.rating') }}</p>
                 </div>
               </div>
               <p>
-                "Great atmosphere and storytelling. The game makes you feel the weight of every decision. Some UI elements could be improved, but overall it's a solid experience."
+                "{{ t('homePage.reviews.r3.text') }}"
               </p>
             </article>
             <article class="review-card">
               <div class="reviewer">
                 <span class="avatar">M</span>
                 <div>
-                  <span>Moral_Choice</span>
-                  <p>★★★★★</p>
+                  <span>{{ t('homePage.reviews.r4.name') }}</span>
+                  <p>{{ t('homePage.reviews.r4.rating') }}</p>
                 </div>
               </div>
               <p>
-                "A game of responsibility, not action. It challenges you to slow down, observe, and decide with care. The branching narrative based on your choices is excellent."
+                "{{ t('homePage.reviews.r4.text') }}"
               </p>
             </article>
           </div>
@@ -388,8 +388,8 @@
       <section class="screenshots-section">
         <div class="container">
           <div class="section-intro">
-            <span class="section-tag">Gallery</span>
-            <h2 class="section-heading">Game Screenshots</h2>
+            <span class="section-tag">{{ t('homePage.screenshots.tag') }}</span>
+            <h2 class="section-heading">{{ t('homePage.screenshots.title') }}</h2>
           </div>
           <div class="screenshots-grid">
             <div class="screenshot-item">
@@ -460,56 +460,56 @@
       <section class="faq-section">
         <div class="container">
           <div class="section-intro">
-            <span class="section-tag">FAQ</span>
-            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <span class="section-tag">{{ t('homePage.faq.tag') }}</span>
+            <h2 class="section-heading">{{ t('homePage.faq.title') }}</h2>
           </div>
           <div class="faq-container">
             <article class="faq-item">
-              <h3>What is Quarantine Zone: The Last Check?</h3>
+              <h3>{{ t('homePage.faq.q1.q') }}</h3>
               <p>
-                It's a survival simulation game where you run a checkpoint in a post-outbreak world. You inspect civilians and manage a base under constant pressure.
+                {{ t('homePage.faq.q1.a') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>What is the player's role in the game?</h3>
+              <h3>{{ t('homePage.faq.q2.q') }}</h3>
               <p>
-                You act as a military officer responsible for screening refugees and maintaining the quarantine zone. Every day you decide who to let in, who to isolate, and how to use limited resources.
+                {{ t('homePage.faq.q2.a') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>How does the inspection system work?</h3>
+              <h3>{{ t('homePage.faq.q3.q') }}</h3>
               <p>
-                You use tools like scanners, UV lights, and thermometers to evaluate each person. You must also observe behavior and question their story to catch inconsistencies. Our detailed <a href="/guides" class="inline-link">inspection guides</a> cover everything from visual observation to advanced interrogation techniques. Start with our <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</a> for beginners.
+                {{ t('homePage.faq.q3.a1') }} <a href="/guides" class="inline-link">{{ t('homePage.faq.q3.link1') }}</a> {{ t('homePage.faq.q3.a2') }} <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">{{ t('homePage.faq.q3.link2') }}</a> {{ t('homePage.faq.q3.a3') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>Are there consequences for wrong decisions?</h3>
+              <h3>{{ t('homePage.faq.q4.q') }}</h3>
               <p>
-                Yes, mistakes can cause outbreaks, riots, or damage morale. Consequences build over time and change the direction of the game.
+                {{ t('homePage.faq.q4.a') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>Is there a storyline or campaign mode?</h3>
+              <h3>{{ t('homePage.faq.q5.q') }}</h3>
               <p>
-                Yes, the game has a branching narrative with multiple possible outcomes. Your choices shape the events and relationships within the quarantine. Navigate moral dilemmas and special events with our <a href="/guides/campaign-guide-special-events-moral-choices" class="inline-link">Campaign Guide</a>.
+                {{ t('homePage.faq.q5.a1') }} <a href="/guides/campaign-guide-special-events-moral-choices" class="inline-link">{{ t('homePage.faq.q5.link1') }}</a> {{ t('homePage.faq.q5.a2') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>Can you upgrade your base?</h3>
+              <h3>{{ t('homePage.faq.q6.q') }}</h3>
               <p>
-                Yes, you can invest in medical stations, better scanners, defenses, and quarantine cells. Each upgrade affects how efficiently your base runs. Discover the best upgrade strategies in our <a href="/guides" class="inline-link">base management guides</a>. Learn combat and defense strategies in our <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</a>.
+                {{ t('homePage.faq.q6.a1') }} <a href="/guides" class="inline-link">{{ t('homePage.faq.q6.link1') }}</a> {{ t('homePage.faq.q6.a2') }} <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">{{ t('homePage.faq.q6.link2') }}</a> {{ t('homePage.faq.q6.a3') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>Is combat part of the gameplay?</h3>
+              <h3>{{ t('homePage.faq.q7.q') }}</h3>
               <p>
-                No direct combat, but you will manage armed units and make security decisions. The focus is on strategy and command, not action.
+                {{ t('homePage.faq.q7.a') }}
               </p>
             </article>
             <article class="faq-item">
-              <h3>How long is a typical game session?</h3>
+              <h3>{{ t('homePage.faq.q8.q') }}</h3>
               <p>
-                Sessions vary, but a full run through the campaign may take 6–12 hours. Replayability is high due to different choices and outcomes.
+                {{ t('homePage.faq.q8.a') }}
               </p>
             </article>
           </div>
@@ -521,14 +521,14 @@
         <div class="container">
           <div class="steam-cta-content">
             <div class="steam-cta-text">
-              <h2 class="steam-cta-title">Ready to Command the Checkpoint?</h2>
+              <h2 class="steam-cta-title">{{ t('homePage.steam.title') }}</h2>
               <p class="steam-cta-description">
-                Experience the intense decision-making and resource management of Quarantine Zone: The Last Check on Steam.
+                {{ t('homePage.steam.description') }}
               </p>
             </div>
             <div class="steam-cta-button">
               <a href="https://store.steampowered.com/app/" class="btn-primary btn-steam" target="_blank" rel="noreferrer nofollow" >
-                Get on Steam
+                {{ t('homePage.steam.btn') }}
               </a>
             </div>
           </div>
@@ -540,7 +540,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 const isVideoPlaying = ref(false)
 
 const playVideo = () => {

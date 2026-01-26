@@ -4,8 +4,8 @@
     <section class="page-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Terms of Service</h1>
-          <p class="page-subtitle">Last updated: December 5, 2025</p>
+          <h1 class="page-title">{{ t('termsOfServicePage.header.title') }}</h1>
+          <p class="page-subtitle">{{ t('termsOfServicePage.header.lastUpdated') }}</p>
         </div>
       </div>
     </section>
@@ -16,50 +16,50 @@
         <div class="content-wrapper">
           <div class="legal-text">
             <p>
-              Welcome to Quarantine Zone Guide. By accessing and using this website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website.
+              {{ t('termsOfServicePage.content.intro') }}
             </p>
 
-            <h2>Use of Website</h2>
+            <h2>{{ t('termsOfServicePage.content.section1.title') }}</h2>
             <p>
-              You may use our website for personal, non-commercial purposes. You agree not to use the website in any way that violates any applicable laws or regulations, or that could damage, disable, or impair the website.
+              {{ t('termsOfServicePage.content.section1.text') }}
             </p>
 
-            <h2>Content and Intellectual Property</h2>
+            <h2>{{ t('termsOfServicePage.content.section2.title') }}</h2>
             <p>
-              All content on this website, including text, graphics, logos, and images, is the property of Quarantine Zone Guide or its content suppliers and is protected by copyright and other intellectual property laws.
+              {{ t('termsOfServicePage.content.section2.p1') }}
             </p>
             <p>
-              This is an independent fan site created for informational purposes only. All trademarks and copyrights related to "Quarantine Zone: The Last Check" belong to their respective owners.
-            </p>
-
-            <h2>User Conduct</h2>
-            <p>
-              You agree not to engage in any activity that interferes with or disrupts the website or servers and networks connected to the website. You also agree not to attempt to gain unauthorized access to any portion of the website.
+              {{ t('termsOfServicePage.content.section2.p2') }}
             </p>
 
-            <h2>Disclaimer of Warranties</h2>
+            <h2>{{ t('termsOfServicePage.content.section3.title') }}</h2>
             <p>
-              The information on this website is provided on an "as is" basis. We make no warranties, expressed or implied, regarding the accuracy, completeness, or reliability of the information provided.
+              {{ t('termsOfServicePage.content.section3.text') }}
             </p>
 
-            <h2>Limitation of Liability</h2>
+            <h2>{{ t('termsOfServicePage.content.section4.title') }}</h2>
             <p>
-              Quarantine Zone Guide shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of this website.
+              {{ t('termsOfServicePage.content.section4.text') }}
             </p>
 
-            <h2>Links to Third-Party Websites</h2>
+            <h2>{{ t('termsOfServicePage.content.section5.title') }}</h2>
             <p>
-              Our website may contain links to third-party websites. We are not responsible for the content, privacy policies, or practices of these third-party sites.
+              {{ t('termsOfServicePage.content.section5.text') }}
             </p>
 
-            <h2>Modifications to Terms</h2>
+            <h2>{{ t('termsOfServicePage.content.section6.title') }}</h2>
             <p>
-              We reserve the right to modify these Terms of Service at any time. Your continued use of the website after any changes constitutes your acceptance of the new terms.
+              {{ t('termsOfServicePage.content.section6.text') }}
             </p>
 
-            <h2>Contact Information</h2>
+            <h2>{{ t('termsOfServicePage.content.section7.title') }}</h2>
             <p>
-              If you have any questions about these Terms of Service, please contact us at wyong@quarantinezonegames.com.
+              {{ t('termsOfServicePage.content.section7.text') }}
+            </p>
+
+            <h2>{{ t('termsOfServicePage.content.section8.title') }}</h2>
+            <p>
+              {{ t('termsOfServicePage.content.section8.text') }}
             </p>
           </div>
         </div>
@@ -69,18 +69,10 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { useSEO } from '../seo/composables.js'
+import { useI18n } from 'vue-i18n'
 
-const { setSEO } = useSEO()
-
-onMounted(() => {
-  setSEO({
-    title: 'Terms of Service | Quarantine Zone Guide',
-    description: 'Terms of Service for Quarantine Zone Guide. Read our terms and conditions for using our website.',
-    keywords: 'terms of service, terms and conditions, user agreement, Quarantine Zone Guide'
-  })
-})
+const { t } = useI18n()
+// SEO is handled automatically by useAutoSEO from i18n tdk configuration
 </script>
 
 <style scoped>

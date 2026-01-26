@@ -1,18 +1,23 @@
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 /**
  * Game 数据 composable
  */
 export function useGameData() {
+  const { locale } = useI18n()
   const gamesData = ref([])
   const loading = ref(false)
   const error = ref(null)
 
-  const loadData = async () => {
+  const loadData = async (lang = null) => {
     loading.value = true
     error.value = null
     try {
-      const module = await import('../data/game/game.js')
+      const currentLang = lang || locale.value || 'en'
+      const module = await import(`../data/game/${currentLang}.js`).catch(() =>
+        import('../data/game/en.js')
+      )
       const games = module.games || module.default || []
       gamesData.value = Array.isArray(games) ? games : []
     } catch (err) {
@@ -26,11 +31,14 @@ export function useGameData() {
   /**
    * 仅加载首页需要的游戏数据（isHome: true）
    */
-  const loadHomeGamesOnly = async () => {
+  const loadHomeGamesOnly = async (lang = null) => {
     loading.value = true
     error.value = null
     try {
-      const module = await import('../data/game/game.js')
+      const currentLang = lang || locale.value || 'en'
+      const module = await import(`../data/game/${currentLang}.js`).catch(() =>
+        import('../data/game/en.js')
+      )
       const games = module.games || module.default || []
       const allData = Array.isArray(games) ? games : []
       gamesData.value = allData.filter(game => game.isHome === true)
@@ -57,7 +65,7 @@ export function useGameData() {
     loading,
     error,
     loadData,
-    loadHomeGamesOnly,
+    loadHomeGamesOnly: loadHomeGamesOnly,
     findGameByAddressBar,
     findGameById
   }

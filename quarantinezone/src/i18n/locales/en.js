@@ -1,0 +1,1523 @@
+export default {
+  tdk: {
+    homePage: {
+      title: 'Quarantine Zone: The Last Check | Wiki, Guides & News',
+      description: 'The ultimate hub for Quarantine Zone: The Last Check. Explore our complete Wiki, survival guides, latest news, and top recommendations for similar games.',
+      keywords: 'Quarantine Zone The Last Check, Quarantine Zone Wiki, Quarantine Zone guides, survival strategy, crafting recipes, games like Quarantine Zone'
+    },
+    guidesPage: {
+      title: 'Quarantine Zone: The Last Check Guides, Tips & Strategy - quarantinezonegames.com',
+      description: 'Master Quarantine Zone: The Last Check with our expert guides. Includes beginner survival tips, crafting recipes, combat strategies, and full walkthroughs.',
+      keywords: 'Quarantine Zone The Last Check guides, survival tips, beginner guide, walkthrough, combat strategy, crafting guide, how to survive, gameplay tips'
+    },
+    guideDetailPage: {
+      title: 'Guide - quarantinezonegames.com',
+      description: 'Detailed Quarantine Zone: The Last Check guide with tips and strategies.',
+      keywords: 'Quarantine Zone guide, walkthrough, tips, strategy'
+    },
+    wikiPage: {
+      title: 'Quarantine Zone: The Last Check Wiki | Tools & Resources - quarantinezonegames.com',
+      description: 'Explore the complete Quarantine Zone: The Last Check Wiki. Detailed database for survival tools, crafting resources, and essential gameplay strategies.',
+      keywords: 'Quarantine Zone The Last Check wiki, survival tools, crafting resources, game tools, resource locations, material list, gameplay strategy, QZ database'
+    },
+    wikiDetailPage: {
+      title: 'Wiki - quarantinezonegames.com',
+      description: 'Detailed Quarantine Zone: The Last Check wiki article.',
+      keywords: 'Quarantine Zone wiki, game mechanics'
+    },
+    gamesPage: {
+      title: 'Zombie Games | Free Browser Games Like Quarantine Zone - quarantinezonegames.com',
+      description: 'Discover free browser-based zombie survival games similar to Quarantine Zone: The Last Check. Play instantly without downloads, featuring decision-making, resource management, and survival challenges.',
+      keywords: 'zombie games, survival games, browser games, free games, games like Quarantine Zone, decision-making games, resource management games'
+    },
+    gameDetailPage: {
+      title: 'Game - quarantinezonegames.com',
+      description: 'Play this zombie survival game instantly in your browser. No download required.',
+      keywords: 'zombie game, survival game, browser game, free game'
+    },
+    newsPage: {
+      title: 'Quarantine Zone: The Last Check News | Latest Updates & Patch Notes - quarantinezonegames.com',
+      description: 'Stay updated with the latest Quarantine Zone: The Last Check news, patch notes, developer announcements, Discord Q&A sessions, release date updates, and upcoming features.',
+      keywords: 'Quarantine Zone news, patch notes, game updates, developer announcements, Discord Q&A, release date, upcoming features, Brigada Games'
+    },
+    newsDetailPage: {
+      title: 'News - quarantinezonegames.com',
+      description: 'Read the latest Quarantine Zone: The Last Check news article.',
+      keywords: 'Quarantine Zone news, game updates, patch notes'
+    },
+    privacyPolicyPage: {
+      title: 'Privacy Policy | Quarantine Zone Guide - quarantinezonegames.com',
+      description: 'Privacy Policy for Quarantine Zone Guide. Learn how we collect, use, and protect your personal information.',
+      keywords: 'privacy policy, data protection, user privacy, Quarantine Zone Guide'
+    },
+    termsOfServicePage: {
+      title: 'Terms of Service | Quarantine Zone Guide - quarantinezonegames.com',
+      description: 'Terms of Service for Quarantine Zone Guide. Read our terms and conditions for using our website.',
+      keywords: 'terms of service, terms and conditions, user agreement, Quarantine Zone Guide'
+    },
+    copyrightPage: {
+      title: 'Copyright | Quarantine Zone Guide - quarantinezonegames.com',
+      description: 'Copyright information for Quarantine Zone Guide. Learn about our copyright policies and intellectual property rights.',
+      keywords: 'copyright, intellectual property, DMCA, fair use, Quarantine Zone Guide'
+    },
+    aboutUsPage: {
+      title: 'About Us | Quarantine Zone Guide - quarantinezonegames.com',
+      description: 'Learn more about Quarantine Zone Guide, your comprehensive resource for Quarantine Zone: The Last Check.',
+      keywords: 'about us, Quarantine Zone Guide, game community, fan site'
+    },
+    contactUsPage: {
+      title: 'Contact Us | Quarantine Zone Guide - quarantinezonegames.com',
+      description: 'Contact Quarantine Zone Guide. Get in touch with us for questions, feedback, or inquiries.',
+      keywords: 'contact us, get in touch, feedback, inquiries, Quarantine Zone Guide'
+    },
+    symptomsPage: {
+      title: 'All Symptoms And How To Detect Them | Quarantine Zone: The Last Check Wiki - quarantinezonegames.com',
+      description: 'Complete guide to all symptoms in Quarantine Zone: The Last Check. Learn how to detect safe symptoms, quarantine symptoms, and infection symptoms using the right tools.',
+      keywords: 'Quarantine Zone symptoms, infection detection, safe symptoms, quarantine symptoms, infection symptoms, symptom guide, detection tools'
+    }
+  },
+  homePage: {
+    hero: {
+      badge: 'QUARANTINE ZONE: THE LAST CHECK',
+      title: 'QUARANTINE ZONE THE LAST CHECK',
+      description: 'Screen survivors, manage scarce resources, and hold back the undead. Every choice matters and one mistake could unleash the plague beyond your walls.',
+      btn1: 'View Wiki',
+      btn2: 'View Guides',
+      info: {
+        developer: 'Developer',
+        developerValue: 'Brigada Games',
+        publisher: 'Publisher',
+        publisherValue: 'Devolver Digital',
+        platform: 'Platform',
+        platformValue: 'Steam (PC)',
+        release: 'Release',
+        releaseValue: 'Jan 13, 2026'
+      },
+      stats: {
+        stat1Value: '1.3M+',
+        stat1Label: 'Steam Wishlists',
+        stat2Value: '~2M',
+        stat2Label: 'Demo players since May 2025 reveal'
+      },
+      video: {
+        title: 'QUARANTINE ZONE: THE LAST CHECK',
+        guideLink: 'Quarantine Zone: The Last Check "Ask Your Mom" Guide'
+      }
+    },
+    about: {
+      tag: 'About the Game',
+      title: 'What is Quarantine Zone: The Last Check?',
+      lead: 'A deep quarantine checkpoint management sim about screening survivors, managing scarce resources, and making hard moral calls under a looming outbreak.',
+      block1: {
+        num: '01',
+        title: 'Your Role as the Officer',
+        p1: "At the heart of Quarantine Zone: The Last Check lies your responsibility to decide who gets in and who doesn't. Each day, new individuals appear—some desperate, some suspicious, and some possibly infected.",
+        p2: "You are given tools like thermometers, infection detectors, and UV lights to inspect their health. However, not all symptoms are visible, and not every lie is easy to catch. You will have to make judgment calls without full information, knowing that a single wrong decision could allow an outbreak inside the zone. Learn more about these",
+        link1: 'inspection tools',
+        p3: 'and how to use them effectively.'
+      },
+      block2: {
+        num: '02',
+        title: 'Manage the Base',
+        p1: 'Beyond the inspection booth, you are also in charge of maintaining and upgrading the facilities. You\'ll need to manage food, medical supplies, security forces, and energy. Check out our',
+        link1: 'survival guides',
+        p2: 'for tips on efficient resource management.',
+        p3: 'Events like power failures, food shortages, and external attacks will test your ability to keep the base operational.'
+      },
+      block3: {
+        num: '03',
+        title: 'Core Features',
+        f1: {
+          icon: '🔍',
+          title: 'Inspection Mechanics',
+          desc: 'Screen individuals with advanced tools'
+        },
+        f2: {
+          icon: '💬',
+          title: 'Dialogue Choices',
+          desc: 'Make critical decisions under pressure'
+        },
+        f3: {
+          icon: '⚡',
+          title: 'Dynamic Events',
+          desc: 'Respond to emergencies and crises'
+        },
+        f4: {
+          icon: '🏗️',
+          title: 'Base Upgrades',
+          desc: 'Build and improve your facilities'
+        }
+      }
+    },
+    mechanics: {
+      tag: 'Gameplay',
+      title: 'Core Gameplay Mechanics',
+      lead: 'Master the three pillars of survival: inspection, resource management, and moral decision-making.',
+      m1: {
+        icon: '🔍',
+        title: 'SEE IT? SORT IT',
+        p: 'Use high-tech tools to uncover signs of infection among terrified survivors. Identify contraband, forbidden items, and even rare collectables as you work to keep your checkpoint secure. Explore our comprehensive',
+        link1: 'tools guide',
+        p2: 'to master every inspection instrument.',
+        list1: 'Send suspicious cases to quarantine for observation',
+        list2: 'Route individuals to the lab for additional screening',
+        list3: 'Save healthy survivors by sending them to the living block',
+        list4: 'Deal with infected individuals decisively',
+        tags: {
+          t1: 'Thermometers',
+          t2: 'Infection Detectors',
+          t3: 'UV Lights',
+          t4: 'Interview Transcripts'
+        }
+      },
+      m2: {
+        icon: '⚡',
+        title: 'COMMAND THE CATASTROPHE',
+        p: "As the survivor population swells, you'll be relied upon to provide essentials such as power, food, and medicine. When alarms are raised, pilot armed drones to ensure the infected don't breach the compound.",
+        list1: 'Manage power, food, and medical supplies',
+        list2: 'Pilot armed drones during emergencies',
+        list3: 'Reinforce defenses and upgrade facilities',
+        list4: 'Unlock resources, tools, and weapon upgrades',
+        tags: {
+          t1: 'Resource Management',
+          t2: 'Drone Control',
+          t3: 'Base Expansion',
+          t4: 'Security Forces'
+        }
+      },
+      m3: {
+        icon: '🧬',
+        title: 'LEARN. ADAPT. SURVIVE.',
+        p: 'When a quarantined survivor becomes an undead predator, all is not lost! Keep newly turned zombies confined to harvest and prepare samples in return for new tools, staff XP, and long-term upgrades.',
+        list1: 'Harvest samples from confined zombies',
+        list2: 'Analyze individuals with unknown symptoms',
+        list3: 'Face fatal testing decisions',
+        list4: 'Choose between preserving life or pursuing knowledge',
+        tags: {
+          t1: 'Sample Harvesting',
+          t2: 'Staff XP',
+          t3: 'Moral Choices',
+          t4: 'Long-term Upgrades'
+        }
+      }
+    },
+    requirements: {
+      tag: 'System',
+      title: 'System Requirements',
+      lead: 'Ensure your system meets the requirements to experience Quarantine Zone: The Last Check at its best.',
+      min: {
+        title: 'Minimum Requirements',
+        badge: 'Basic',
+        os: 'OS',
+        osValue: 'Windows 10 (64-bit)',
+        processor: 'Processor',
+        processorValue: 'Intel i5 10400F',
+        memory: 'Memory',
+        memoryValue: '16 GB RAM',
+        graphics: 'Graphics',
+        graphicsValue: 'NVIDIA GeForce GTX 1050 Ti',
+        directx: 'DirectX',
+        directxValue: 'Version 12',
+        architecture: 'Architecture',
+        architectureValue: '64-bit processor required'
+      },
+      rec: {
+        title: 'Recommended Requirements',
+        badge: 'Optimal',
+        os: 'OS',
+        osValue: 'Windows 11 (64-bit)',
+        processor: 'Processor',
+        processorValue: 'Intel i7 10700F',
+        memory: 'Memory',
+        memoryValue: '16 GB RAM',
+        graphics: 'Graphics',
+        graphicsValue: 'NVIDIA GeForce RTX 3060',
+        directx: 'DirectX',
+        directxValue: 'Version 12',
+        architecture: 'Architecture',
+        architectureValue: '64-bit processor required'
+      },
+      note: {
+        platform: 'Platform:',
+        platformValue: 'Windows PC (Steam) · Single-player · Partial controller support',
+        release: 'Release:',
+        releaseValue: 'Jan 13, 2026 (Steam)'
+      }
+    },
+    reviews: {
+      tag: 'Community',
+      title: 'Player Reviews',
+      lead: 'See what players are saying about Quarantine Zone: The Last Check. Stay updated with the latest',
+      link1: 'game news and developer updates',
+      r1: {
+        name: 'Survivor_42',
+        rating: '★★★★★',
+        text: '"This game perfectly captures the tension of making life-or-death decisions. The inspection mechanics are incredibly detailed, and every choice feels meaningful. Highly recommended for fans of Papers, Please and survival games."'
+      },
+      r2: {
+        name: 'Checkpoint_Commander',
+        rating: '★★★★★',
+        text: '"The resource management aspect adds so much depth. You\'re not just checking people—you\'re running an entire facility. The moral dilemmas are intense, and the multiple endings keep me coming back."'
+      },
+      r3: {
+        name: 'Zone_Guard',
+        rating: '★★★★☆',
+        text: '"Great atmosphere and storytelling. The game makes you feel the weight of every decision. Some UI elements could be improved, but overall it\'s a solid experience."'
+      },
+      r4: {
+        name: 'Moral_Choice',
+        rating: '★★★★★',
+        text: '"A game of responsibility, not action. It challenges you to slow down, observe, and decide with care. The branching narrative based on your choices is excellent."'
+      }
+    },
+    screenshots: {
+      tag: 'Gallery',
+      title: 'Game Screenshots'
+    },
+    faq: {
+      tag: 'FAQ',
+      title: 'Frequently Asked Questions',
+      q1: {
+        q: 'What is Quarantine Zone: The Last Check?',
+        a: "It's a survival simulation game where you run a checkpoint in a post-outbreak world. You inspect civilians and manage a base under constant pressure."
+      },
+      q2: {
+        q: 'What is the player\'s role in the game?',
+        a: 'You act as a military officer responsible for screening refugees and maintaining the quarantine zone. Every day you decide who to let in, who to isolate, and how to use limited resources.'
+      },
+      q3: {
+        q: 'How does the inspection system work?',
+        a1: 'You use tools like scanners, UV lights, and thermometers to evaluate each person. You must also observe behavior and question their story to catch inconsistencies. Our detailed',
+        link1: 'inspection guides',
+        a2: 'cover everything from visual observation to advanced interrogation techniques. Start with our',
+        link2: 'Rookie Survival Manual',
+        a3: 'for beginners.'
+      },
+      q4: {
+        q: 'Are there consequences for wrong decisions?',
+        a: 'Yes, mistakes can cause outbreaks, riots, or damage morale. Consequences build over time and change the direction of the game.'
+      },
+      q5: {
+        q: 'Is there a storyline or campaign mode?',
+        a1: 'Yes, the game has a branching narrative with multiple possible outcomes. Your choices shape the events and relationships within the quarantine. Navigate moral dilemmas and special events with our',
+        link1: 'Campaign Guide',
+        a2: '.'
+      },
+      q6: {
+        q: 'Can you upgrade your base?',
+        a1: 'Yes, you can invest in medical stations, better scanners, defenses, and quarantine cells. Each upgrade affects how efficiently your base runs. Discover the best upgrade strategies in our',
+        link1: 'base management guides',
+        a2: '. Learn combat and defense strategies in our',
+        link2: 'Combat & Base Defense Guide',
+        a3: '.'
+      },
+      q7: {
+        q: 'Is combat part of the gameplay?',
+        a: 'No direct combat, but you will manage armed units and make security decisions. The focus is on strategy and command, not action.'
+      },
+      q8: {
+        q: 'How long is a typical game session?',
+        a: 'Sessions vary, but a full run through the campaign may take 6–12 hours. Replayability is high due to different choices and outcomes.'
+      }
+    },
+    steam: {
+      title: 'Ready to Command the Checkpoint?',
+      description: 'Experience the intense decision-making and resource management of Quarantine Zone: The Last Check on Steam.',
+      btn: 'Get on Steam'
+    }
+  },
+  guidesPage: {
+    header: {
+      title: 'Quarantine Zone: The Last Check Guides',
+      subtitle: 'Expert survival guides, combat strategies, base management tips, and walkthroughs to help you master every aspect of Quarantine Zone: The Last Check. From beginner basics to advanced tactics, learn how to survive the outbreak and command your checkpoint effectively.'
+    },
+    loading: 'Loading guides...',
+    error: 'Error loading guides:',
+    allGuides: 'All Guides',
+    viewLink: 'View Guide →',
+    whyChoose: {
+      tag: 'Why Choose Us',
+      title: 'Why Choose Our Guide?',
+      subtitle: 'Our comprehensive guides are crafted by experienced players who understand every aspect of Quarantine Zone: The Last Check.',
+      f1: {
+        icon: '📚',
+        title: 'Comprehensive Coverage',
+        content: 'From beginner survival tips to advanced strategies, our guides cover everything you need to master Quarantine Zone: The Last Check. We provide detailed walkthroughs for inspection mechanics, resource management, base upgrades, and moral decision-making. Whether you\'re learning the basics of visual observation or exploring advanced interrogation techniques, our guides have you covered. For complete reference materials, check out our',
+        link1: 'complete wiki',
+        content2: 'with detailed information about all tools, resources, and game mechanics.'
+      },
+      f2: {
+        icon: '✅',
+        title: 'Expertly Written',
+        content: 'All guides are written by experienced players who have mastered every aspect of the game. Our team has spent countless hours perfecting inspection techniques, optimizing resource allocation, and understanding the complex decision-making systems. We\'ve tested every strategy, analyzed every tool, and documented every mechanic to bring you the most accurate and effective guides possible. Learn from players who understand the nuances of infection detection, base management, and crisis handling.'
+      },
+      f3: {
+        icon: '🔄',
+        title: 'Regularly Updated',
+        content: 'We keep our guides up-to-date with the latest game changes, patches, and community-discovered strategies. Our team actively monitors game updates, developer announcements, and player feedback to ensure all information remains accurate and relevant. When new features are added or mechanics change, we update our guides immediately. Stay informed with our',
+        link1: 'latest news',
+        content2: 'section to track game updates and ensure you\'re always using the most current strategies and information.'
+      },
+      f4: {
+        icon: '🎯',
+        title: 'Practical Tips',
+        content: 'Every guide includes actionable tips and strategies you can apply immediately in your gameplay. We focus on practical techniques that will make a real difference, from efficient tool usage patterns to resource management strategies that maximize your survival chances. Our guides break down complex mechanics into easy-to-understand steps, with clear examples and visual explanations. Whether you\'re learning to spot infected individuals or managing your base during emergencies, our practical approach ensures you can implement these strategies right away. Check out our',
+        link1: 'homepage',
+        content2: 'for more game insights and strategies.'
+      }
+    },
+    faq: {
+      tag: 'FAQ',
+      title: 'Frequently Asked Questions',
+      q1: {
+        q: 'How often are the guides updated?',
+        a: 'Our guides are regularly updated to reflect the latest game changes, patches, and community-discovered strategies. We monitor all game updates, developer announcements, and player feedback to ensure accuracy. Major updates typically happen within 24-48 hours of game patches, while minor corrections and improvements are made continuously. We also review and update guides based on community feedback and new discoveries. Check our',
+        link1: 'news section',
+        a2: 'for the latest updates and announcements about guide revisions.'
+      },
+      q2: {
+        q: 'Are these guides suitable for beginners?',
+        a1: 'Absolutely! We have guides specifically designed for beginners, covering everything from basic inspection techniques to resource management fundamentals. Our',
+        link1: 'Rookie Survival Manual',
+        a2: 'is perfect for new players, walking you through visual observation, tool usage, and decision-making basics. We start with the fundamentals and gradually introduce more advanced concepts, making it easy to learn at your own pace. Even experienced players can benefit from reviewing beginner guides to refresh their knowledge or discover new techniques.'
+      },
+      q3: {
+        q: 'Do I need to follow the guides exactly?',
+        a1: 'Not necessarily. Our guides provide proven strategies and tips based on extensive testing and analysis, but every playthrough is unique. Use them as a reference and adapt the strategies to your playstyle, difficulty level, and personal preferences. The guides are designed to be flexible frameworks rather than rigid rules. Experiment with different approaches, combine strategies from multiple guides, and find what works best for you. The',
+        link1: 'wiki',
+        a2: 'also provides detailed information about tools and mechanics to help you make informed decisions.'
+      },
+      q4: {
+        q: 'Can I suggest topics for new guides?',
+        a1: 'Absolutely! We welcome suggestions from the community and actively consider player requests when planning new guides. If you have ideas for guides, want to see coverage of specific topics, or have questions that aren\'t addressed in existing guides, we\'d love to hear from you. Your feedback helps us create content that truly serves the community\'s needs. Visit our',
+        link1: 'homepage',
+        a2: 'to learn more about the game and find contact information to share your suggestions and feedback.'
+      },
+      q5: {
+        q: 'What topics do the guides cover?',
+        a1: 'Our guides cover a wide range of topics essential for mastering Quarantine Zone: The Last Check. This includes inspection techniques and tool usage (see our',
+        link1: 'Rookie Survival Manual',
+        a2: '), resource management and base operations, decision-making strategies and moral choices (check our',
+        link2: 'Campaign Guide',
+        a3: '), crisis handling and emergency management, upgrade paths and optimization strategies, and advanced tactics for experienced players. For combat and defense strategies, explore our',
+        link3: 'Combat & Base Defense Guide',
+        a4: '. Each guide focuses on specific aspects of gameplay, providing detailed explanations, step-by-step instructions, and practical examples to help you improve your skills.'
+      },
+      q6: {
+        q: 'Are there video guides or just written content?',
+        a: 'Currently, our guides are primarily written content with detailed explanations, screenshots, and step-by-step instructions. Written guides allow you to reference specific sections quickly, search for information easily, and learn at your own pace. However, we\'re always exploring new formats and may add video content in the future. For now, our comprehensive written guides provide all the information you need, with clear organization and detailed explanations that make complex mechanics easy to understand.'
+      }
+    }
+  },
+  guideDetailPage: {
+    breadcrumb: 'Guides',
+    navigation: {
+      title: 'Navigation',
+      previous: 'Previous',
+      next: 'Next'
+    },
+    notFound: {
+      title: 'Guide Not Found',
+      message: 'The guide you\'re looking for doesn\'t exist.',
+      back: 'Back to Guides'
+    }
+  },
+  wikiPage: {
+    header: {
+      title: 'Quarantine Zone: The Last Check Wiki',
+      subtitle: 'Comprehensive database covering all tools, resources, upgrades, personnel roles, events, and strategies in Quarantine Zone: The Last Check. Find detailed information about inspection tools, resource management, decision-making scenarios, and survival mechanics.'
+    },
+    toc: {
+      title: 'Table of Contents',
+      tools: 'Inspection Tools Guide',
+      toolThermopulsometer: 'Thermopulsometer',
+      toolReflexHammer: 'Reflex Hammer',
+      toolScanner: 'Scanner',
+      toolStethoscope: 'Stethoscope',
+      toolSyringe: 'Syringe',
+      toolGun: 'Gun',
+      toolXray: 'X-Ray',
+      toolMatioscope: 'Matioscope',
+      resources: 'Resource Management System',
+      decisions: 'Decision-Making Strategies',
+      upgrades: 'Base Upgrade System',
+      personnel: 'Personnel Management',
+      events: 'Event & Crisis Management',
+      zombieFarming: 'Zombie Containment & Farming',
+      strategies: 'Advanced Strategies',
+      moreWiki: 'More Wiki Content'
+    },
+    sections: {
+      tools: {
+        title: 'Inspection Tools Guide',
+        lead: 'Master the use of inspection tools to accurately identify infected individuals and make informed decisions. Each tool provides different information, and combining them is key to success. For detailed walkthroughs on using these tools effectively, check out our comprehensive',
+        link1: 'inspection guides',
+        lead2: ', especially our',
+        link2: 'Rookie Survival Manual',
+        lead3: 'for beginners.',
+        table: {
+          image: 'Image',
+          item: 'Item',
+          day: 'Day',
+          description: 'Description',
+          function: 'Function'
+        },
+        tools: {
+          thermopulsometer: {
+            name: 'Thermopulsometer',
+            day: 'Day two',
+            description: 'Pulse and temperature can be indicators of infection. Use the thermopulsometer to check a survivor\'s vital signs. Sneezing or hiccupping may be signs of an elevated temperature or pulse.',
+            function: 'Measures heart rate and temperature. Higher than 41 degrees and/or a pulse of over 180 indicates infection.'
+          },
+          reflexHammer: {
+            name: 'Reflex Hammer',
+            day: 'Day four',
+            description: 'Slow and dulled reflexes are symptoms of the virus. Use the reflex hammer to test a survivor\'s muscular response. Only use this on the arms or legs. Hitting a survivor on the head or torso will hurt them. A slack jaw may indicate a potential issue with muscular reflexes.',
+            function: 'Non-infected will have no reaction to the hammer, while infected will attack you with the arm that didn\'t get hit. An aggressive reaction with the correct hand points to sickness or infection.'
+          },
+          scanner: {
+            name: 'Scanner',
+            day: 'Day six',
+            description: 'Some symptoms may be hidden under clothing. Use the scanner to examine survivors without undressing them.',
+            function: 'Look for bruises, bite marks, and scars to identify signs of infection.'
+          },
+          stethoscope: {
+            name: 'Stethoscope',
+            day: 'Day nine',
+            description: 'The virus can cause respiratory problems. Use the stethoscope to check a survivor\'s breathing for any irregularities. High amplitude waves are a telltale sign of infection. If no signs of illness or infection are detected, the black zone will disappear.',
+            function: 'Clear lungs mean healthy, while lungs with spots are signs of being sick or infected. Compare breathing on a stethoscope to symptoms list. Always use multiple tools alongside this to determine if the survivor in Quarantine is sick or is turning into a zombie.'
+          },
+          syringe: {
+            name: 'Syringe',
+            day: 'Day 11',
+            description: 'Use the syringe analyzer to extract fluid samples from a survivor to detect and determine an infection. To avoid potential cross-contamination, syringes can only be used once. Supplies are limited. The science division will send you more syringes if you send them survivors during an evacuation.',
+            function: 'Send five survivors onto the Science Truck during an evacuation to get one Syringe. This will be the tool you use the least, but will tell you if the survivor is infected if the fluid turns orange.'
+          },
+          gun: {
+            name: 'Gun',
+            day: 'Day 13',
+            description: '–',
+            function: 'Use on zombies that turn in the Survivor Block or Quarantine (during inspection) so they don\'t kill survivors or attack you. Will result in a game over if you shoot other Checkpoint Alpha staff (resets the day).'
+          },
+          xray: {
+            name: 'X-Ray',
+            day: 'Day 13',
+            description: 'Use the X-ray to inspect a survivor\'s internal organs for signs of infection. As the virus continues to evolve, you will find that not every symptom is skin deep.',
+            function: 'Lesions, dark spots, and unnatural coloring appear on organs, showing signs of infection. Filter through layers in the anatomy to find anomalies.'
+          },
+          matioscope: {
+            name: 'Matioscope',
+            day: 'Day 16',
+            description: 'A powerful ophthalmological tool for observing the virus. Use the matioscope to zoom in and pan across a survivor\'s retina. Certain ocular parasites and anomalies indicate infection. Survivors with drooping eyelids may have potential symptoms that require the matioscope for confirmation.',
+            function: 'Look for clear signs of infection with virus and parasitic imagery inside the retina.'
+          }
+        },
+        laboratory: {
+          title: 'Laboratory Inspection System',
+          newFeature: 'New Feature:',
+          intro: 'The full release introduces a comprehensive laboratory system within your base that allows for in-depth analysis of survivors with unclear symptoms.',
+          deepAnalysis: 'Deep Analysis:',
+          deepAnalysisText: 'Send individuals with unknown or conflicting symptoms to the laboratory for comprehensive testing',
+          advancedDetection: 'Advanced Detection:',
+          advancedDetectionText: 'Laboratory equipment can detect new virus strains and mutations that standard tools might miss',
+          researchBenefits: 'Research Benefits:',
+          researchBenefitsText: 'Laboratory findings contribute to your understanding of the virus and may unlock new detection methods',
+          resourceManagement: 'Resource Management:',
+          resourceManagementText: 'Laboratory operations consume medical supplies but provide valuable intelligence for future inspections',
+          strategy: 'Strategy:',
+          strategyText: 'Use the laboratory for high-priority cases where standard inspection tools show conflicting results. The time investment is worth it for potentially saving lives and preventing outbreaks.'
+        }
+      },
+      resources: {
+        title: 'Resource Management System',
+        lead: 'Effective resource management is crucial for maintaining your checkpoint. Learn how to balance consumption, production, and allocation to keep your base operational. Our detailed',
+        link1: 'resource management guides',
+        lead2: 'provide step-by-step strategies for optimizing your operations. For combat-focused resource management, see our',
+        link2: 'Combat & Base Defense Guide',
+        lead3: '.',
+        birdsEyeView: {
+          title: 'New: Bird\'s Eye View Interface',
+          enhancedManagement: 'Enhanced Management:',
+          intro: 'The full release introduces a revolutionary bird\'s eye view interface that provides a comprehensive overview of your entire base.',
+          unifiedControl: 'Unified Control:',
+          unifiedControlText: 'Manage all resources, facilities, and personnel from a single overhead perspective',
+          visualClarity: 'Visual Clarity:',
+          visualClarityText: 'See resource distribution, facility status, and personnel assignments at a glance',
+          streamlinedOperations: 'Streamlined Operations:',
+          streamlinedOperationsText: 'Simplified workflow reduces time spent navigating between different management screens',
+          strategicPlanning: 'Strategic Planning:',
+          strategicPlanningText: 'The overview helps identify bottlenecks and optimize resource allocation more effectively',
+          tip: 'Tip:',
+          tipText: 'Use the bird\'s eye view to quickly assess your base\'s overall status before making critical decisions. It\'s especially useful during emergencies when time is limited.'
+        },
+        food: {
+          title: 'Food Supplies',
+          dailyConsumption: 'Daily Consumption:',
+          dailyConsumptionValue: '~50 units per 100 survivors',
+          storageCapacity: 'Storage Capacity:',
+          storageCapacityValue: 'Varies by facility level (Base: 500 units)',
+          sources: 'Sources:',
+          sourcesValue: 'Supply drops, trade, scavenging missions',
+          managementTips: 'Management Tips:',
+          monitorConsumption: 'Monitor consumption rates daily',
+          stockpile: 'Stockpile during safe periods',
+          ration: 'Ration during shortages (reduces morale)',
+          upgradeStorage: 'Upgrade storage facilities to prevent spoilage'
+        },
+        medical: {
+          title: 'Medical Supplies',
+          dailyConsumption: 'Daily Consumption:',
+          dailyConsumptionValue: '~20 units per 100 survivors',
+          criticalThreshold: 'Critical Threshold:',
+          criticalThresholdValue: 'Below 30 units triggers emergency protocols',
+          sources: 'Sources:',
+          sourcesValue: 'Medical stations, research labs, emergency supplies',
+          managementTips: 'Management Tips:',
+          prioritizeTreatment: 'Prioritize treatment of infected individuals',
+          maintainReserves: 'Maintain reserves for emergencies',
+          researchUpgrades: 'Research medical upgrades to reduce consumption',
+          tradeExcess: 'Trade excess supplies for other resources'
+        },
+        power: {
+          title: 'Power/Energy',
+          dailyConsumption: 'Daily Consumption:',
+          dailyConsumptionValue: '~100 units (base operations)',
+          generation: 'Generation:',
+          generationValue: 'Generator output varies by upgrade level',
+          criticalSystems: 'Critical Systems:',
+          criticalSystemsValue: 'Lights, scanners, security systems, medical equipment',
+          managementTips: 'Management Tips:',
+          upgradeGenerators: 'Upgrade generators for increased output',
+          implementPowerSaving: 'Implement power-saving measures during shortages',
+          backupGenerators: 'Backup generators prevent total blackouts',
+          monitorFuel: 'Monitor fuel reserves for generators'
+        },
+        security: {
+          title: 'Security Forces',
+          unitTypes: 'Unit Types:',
+          unitTypesValue: 'Guards, medical staff, technicians, administrators',
+          assignment: 'Assignment:',
+          assignmentValue: 'Assign to inspection, security, medical, or maintenance',
+          fatigueSystem: 'Fatigue System:',
+          fatigueSystemValue: 'Overworked staff become less efficient',
+          managementTips: 'Management Tips:',
+          rotateStaff: 'Rotate staff to prevent burnout',
+          trainStaff: 'Train staff to improve efficiency',
+          maintainStaffing: 'Maintain adequate staffing levels',
+          handleSickStaff: 'Handle sick staff immediately to prevent spread'
+        }
+      },
+      decisions: {
+        title: 'Decision-Making Strategies',
+        lead: 'Every decision has consequences. Learn how to evaluate situations, weigh risks, and make informed choices that balance safety, resources, and morality. Understanding the game\'s core mechanics is essential - visit our',
+        link1: 'homepage',
+        lead2: 'to learn more about the decision-making systems in Quarantine Zone: The Last Check.',
+        framework: {
+          title: 'Decision Framework',
+          step1: {
+            number: '1',
+            title: 'Gather Information',
+            text: 'Use all available tools to collect data. Check documents, run scans, observe behavior, and review interview transcripts. More information leads to better decisions.'
+          },
+          step2: {
+            number: '2',
+            title: 'Identify Red Flags',
+            text: 'Look for inconsistencies in stories, suspicious symptoms, forged documents, or unusual behavior patterns. Multiple red flags increase risk.'
+          },
+          step3: {
+            number: '3',
+            title: 'Assess Risk Level',
+            text: 'Evaluate the potential consequences. High-risk individuals require quarantine. Low-risk can proceed. Uncertain cases need additional screening.'
+          },
+          step4: {
+            number: '4',
+            title: 'Consider Resources',
+            text: 'Every decision consumes resources. Quarantine uses beds and medical supplies. Rejection may reduce morale. Balance immediate needs with long-term sustainability.'
+          },
+          step5: {
+            number: '5',
+            title: 'Make the Call',
+            text: 'Sometimes you must decide with incomplete information. Trust your tools, but also trust your instincts. Document your reasoning for future reference.'
+          }
+        },
+        scenarios: {
+          title: 'Common Decision Scenarios',
+          conflicting: {
+            title: 'Scenario: Conflicting Test Results',
+            situation: 'Situation:',
+            situationText: 'Thermometer shows normal, but UV scanner reveals suspicious marks.',
+            recommendation: 'Recommendation:',
+            recommendationText: 'Request additional screening with virus detector. If unavailable, err on the side of caution and quarantine for observation.'
+          },
+          family: {
+            title: 'Scenario: Desperate Family',
+            situation: 'Situation:',
+            situationText: 'Family with sick child, but one member shows symptoms.',
+            recommendation: 'Recommendation:',
+            recommendationText: 'Separate the symptomatic individual. Allow healthy family members through if resources permit. Consider humanitarian exceptions carefully.'
+          },
+          highValue: {
+            title: 'Scenario: High-Value Individual',
+            situation: 'Situation:',
+            situationText: 'Doctor or engineer with valuable skills, but questionable documents.',
+            recommendation: 'Recommendation:',
+            recommendationText: 'Extended screening may be worth the risk. Their skills could benefit the base, but verify identity thoroughly.'
+          }
+        }
+      },
+      upgrades: {
+        title: 'Base Upgrade System',
+        lead: 'Strategic upgrades can significantly improve your checkpoint\'s efficiency and survival chances. Plan your upgrade path carefully based on your playstyle and current challenges. Our',
+        link1: 'upgrade strategy guides',
+        lead2: 'help you prioritize investments and maximize your base\'s potential. Learn about base management in our',
+        link2: 'Rookie Survival Manual',
+        lead3: '.',
+        inspection: {
+          title: 'Inspection Upgrades',
+          scanner: {
+            title: 'Advanced Scanner System',
+            cost: 'Cost:',
+            costValue: '500 resources, 3 days',
+            effect: 'Effect:',
+            effectValue: '+25% accuracy, faster processing time',
+            priority: 'Priority:',
+            priorityText: 'High - Improves decision-making accuracy'
+          },
+          document: {
+            title: 'Automated Document Verification',
+            cost: 'Cost:',
+            costValue: '300 resources, 2 days',
+            effect: 'Effect:',
+            effectValue: 'Instant document checks, reduces false positives',
+            priority: 'Priority:',
+            priorityText: 'Medium - Saves time but requires maintenance'
+          },
+          uv: {
+            title: 'Enhanced UV Lighting',
+            cost: 'Cost:',
+            costValue: '200 resources, 1 day',
+            effect: 'Effect:',
+            effectValue: 'Better visibility, detects hidden symptoms',
+            priority: 'Priority:',
+            priorityText: 'Medium - Useful for thorough inspections'
+          }
+        },
+        infrastructure: {
+          title: 'Infrastructure Upgrades',
+          quarantine: {
+            title: 'Expanded Quarantine Facility',
+            cost: 'Cost:',
+            costValue: '800 resources, 5 days',
+            effect: 'Effect:',
+            effectValue: '+50% quarantine capacity, better isolation',
+            priority: 'Priority:',
+            priorityText: 'High - Essential for managing outbreaks'
+          },
+          generator: {
+            title: 'Backup Power Generator',
+            cost: 'Cost:',
+            costValue: '600 resources, 4 days',
+            effect: 'Effect:',
+            effectValue: 'Prevents blackouts, maintains critical systems',
+            priority: 'Priority:',
+            priorityText: 'High - Prevents catastrophic failures'
+          },
+          walls: {
+            title: 'Reinforced Perimeter Walls',
+            cost: 'Cost:',
+            costValue: '1000 resources, 7 days',
+            effect: 'Effect:',
+            effectValue: '+50% defense, prevents breaches',
+            priority: 'Priority:',
+            priorityText: 'Medium - Important for security'
+          }
+        },
+        resource: {
+          title: 'Resource Upgrades',
+          medical: {
+            title: 'Advanced Medical Station',
+            cost: 'Cost:',
+            costValue: '700 resources, 4 days',
+            effect: 'Effect:',
+            effectValue: '-30% medical supply consumption, faster treatment',
+            priority: 'Priority:',
+            priorityText: 'High - Reduces resource drain'
+          },
+          food: {
+            title: 'Food Storage Expansion',
+            cost: 'Cost:',
+            costValue: '400 resources, 3 days',
+            effect: 'Effect:',
+            effectValue: '+100% storage, reduces spoilage',
+            priority: 'Priority:',
+            priorityText: 'Medium - Allows stockpiling'
+          },
+          recycling: {
+            title: 'Resource Recycling System',
+            cost: 'Cost:',
+            costValue: '500 resources, 3 days',
+            effect: 'Effect:',
+            effectValue: '+10% resource recovery from operations',
+            priority: 'Priority:',
+            priorityText: 'Low - Long-term benefit'
+          }
+        }
+      },
+      personnel: {
+        title: 'Personnel Management',
+        lead: 'Your staff are your most valuable resource. Learn how to assign roles, manage fatigue, handle conflicts, and maintain morale to keep operations running smoothly.',
+        roles: {
+          title: 'Staff Roles & Assignments',
+          inspection: {
+            title: 'Inspection Officers',
+            primaryDuty: 'Primary Duty:',
+            primaryDutyText: 'Screen incoming individuals',
+            skills: 'Skills:',
+            skillsText: 'Tool operation, document verification, behavioral analysis',
+            fatigueRate: 'Fatigue Rate:',
+            fatigueRateText: 'High - mentally demanding work',
+            optimalRatio: 'Optimal Ratio:',
+            optimalRatioText: '1 officer per 20 daily arrivals'
+          },
+          medical: {
+            title: 'Medical Staff',
+            primaryDuty: 'Primary Duty:',
+            primaryDutyText: 'Treat patients, monitor quarantined individuals',
+            skills: 'Skills:',
+            skillsText: 'Medical knowledge, infection control, emergency response',
+            fatigueRate: 'Fatigue Rate:',
+            fatigueRateText: 'Very High - physically and emotionally draining',
+            optimalRatio: 'Optimal Ratio:',
+            optimalRatioText: '1 staff per 10 patients'
+          },
+          security: {
+            title: 'Security Guards',
+            primaryDuty: 'Primary Duty:',
+            primaryDutyText: 'Maintain order, respond to threats, patrol perimeter',
+            skills: 'Skills:',
+            skillsText: 'Combat training, crowd control, threat assessment',
+            fatigueRate: 'Fatigue Rate:',
+            fatigueRateText: 'Medium - physically demanding',
+            optimalRatio: 'Optimal Ratio:',
+            optimalRatioText: '1 guard per 50 residents'
+          },
+          technician: {
+            title: 'Technicians',
+            primaryDuty: 'Primary Duty:',
+            primaryDutyText: 'Maintain equipment, repair systems, manage power',
+            skills: 'Skills:',
+            skillsText: 'Technical knowledge, problem-solving, equipment operation',
+            fatigueRate: 'Fatigue Rate:',
+            fatigueRateText: 'Low - steady work pace',
+            optimalRatio: 'Optimal Ratio:',
+            optimalRatioText: '1 technician per 100 residents'
+          }
+        },
+        morale: {
+          title: 'Morale Management',
+          breaks: 'Regular Breaks:',
+          breaksText: 'Ensure staff get adequate rest. Overworked staff make more mistakes and have lower morale.',
+          fairTreatment: 'Fair Treatment:',
+          fairTreatmentText: 'Treat all staff equally. Favoritism or unfair decisions reduce trust and morale.',
+          communication: 'Clear Communication:',
+          communicationText: 'Explain decisions when possible. Staff who understand the reasoning are more supportive.',
+          recognition: 'Recognition:',
+          recognitionText: 'Acknowledge good work. Positive reinforcement improves performance and morale.'
+        }
+      },
+      events: {
+        title: 'Event & Crisis Management',
+        lead: 'Unexpected events will test your checkpoint. Learn how to respond to emergencies, manage crises, and minimize damage when things go wrong. Stay updated with the latest',
+        link1: 'game news and updates',
+        lead2: 'to learn about new events and how the community handles them.',
+        powerOutage: {
+          title: 'Power Outage',
+          warningSigns: 'Warning Signs:',
+          warningSignsText: 'Generator maintenance overdue, fuel running low, unusual power consumption',
+          immediateActions: 'Immediate Actions:',
+          action1: 'Activate backup generator if available',
+          action2: 'Prioritize critical systems (medical, security)',
+          action3: 'Reduce non-essential power consumption',
+          action4: 'Dispatch technicians to repair primary generator',
+          prevention: 'Prevention:',
+          preventionText: 'Regular maintenance, fuel monitoring, backup systems'
+        },
+        outbreak: {
+          title: 'Outbreak in Quarantine',
+          warningSigns: 'Warning Signs:',
+          warningSignsText: 'Multiple positive tests, rapid symptom progression, staff reports',
+          immediateActions: 'Immediate Actions:',
+          action1: 'Isolate affected area immediately',
+          action2: 'Evacuate non-infected individuals',
+          action3: 'Deploy medical staff with protective equipment',
+          action4: 'Review recent admissions for potential source',
+          prevention: 'Prevention:',
+          preventionText: 'Thorough screening, proper quarantine protocols, regular health checks'
+        },
+        securityBreach: {
+          title: 'Security Breach',
+          warningSigns: 'Warning Signs:',
+          warningSignsText: 'Perimeter alarms, suspicious activity, attempted break-ins',
+          immediateActions: 'Immediate Actions:',
+          action1: 'Deploy security forces to breach location',
+          action2: 'Activate drone surveillance if available',
+          action3: 'Secure critical areas (medical, command center)',
+          action4: 'Assess threat level and respond accordingly',
+          prevention: 'Prevention:',
+          preventionText: 'Strong perimeter defenses, regular patrols, surveillance systems'
+        },
+        roofInfiltration: {
+          title: 'Roof Infiltration (New Threat)',
+          newThreat: 'New Defense Challenge:',
+          intro: 'The full release introduces a new threat where zombies can drop from rooftops, requiring constant vigilance.',
+          warningSigns: 'Warning Signs:',
+          warningSignsText: 'Sounds from above, shadows moving on roofs, structural damage to upper levels',
+          immediateActions: 'Immediate Actions:',
+          action1: 'Always keep your weapon ready - zombies can drop at any moment',
+          action2: 'Scan rooftops regularly during inspections',
+          action3: 'Position security forces to cover overhead angles',
+          action4: 'Upgrade roof defenses and install overhead protection',
+          prevention: 'Prevention:',
+          preventionText: 'Install roof-mounted turrets, reinforce upper structures, maintain constant awareness of vertical threats',
+          strategy: 'Strategy:',
+          strategyText: 'This new mechanic adds vertical dimension to defense. Never focus solely on ground-level threats - always watch the skies.'
+        },
+        resourceShortage: {
+          title: 'Resource Shortage',
+          warningSigns: 'Warning Signs:',
+          warningSignsText: 'Low stock levels, increased consumption, supply delays',
+          immediateActions: 'Immediate Actions:',
+          action1: 'Implement rationing protocols',
+          action2: 'Prioritize essential resources (medical, food)',
+          action3: 'Request emergency supplies if possible',
+          action4: 'Reduce non-essential operations',
+          prevention: 'Prevention:',
+          preventionText: 'Stockpiling, resource monitoring, diversified supply sources'
+        }
+      },
+      zombieFarming: {
+        title: 'Zombie Containment & Farming System',
+        lead: 'New Feature:',
+        leadText: 'The full release introduces a controversial but profitable zombie containment system. Learn how to safely contain and maintain zombies for government research contracts.',
+        mechanics: {
+          title: 'Zombie Containment Mechanics',
+          overview: 'Overview:',
+          overviewText: 'This new system allows you to capture and contain zombies in specialized cages, feeding them with corpses to keep them alive for research purposes.',
+          containment: {
+            title: 'Containment Process',
+            step1: 'Step 1 - Capture:',
+            step1Text: 'Successfully contain infected individuals before they fully transform, or capture zombies during defense events',
+            step2: 'Step 2 - Containment:',
+            step2Text: 'Transfer to specialized containment cages designed to hold zombies safely',
+            step3: 'Step 3 - Maintenance:',
+            step3Text: 'Feed contained zombies with corpses to keep them alive and stable',
+            step4: 'Step 4 - Research:',
+            step4Text: 'Government researchers study the contained zombies, providing you with payment'
+          },
+          economic: {
+            title: 'Economic Benefits',
+            contracts: 'Government Contracts:',
+            contractsText: 'Receive regular payments from government research programs',
+            income: 'Resource Income:',
+            incomeText: 'Provides a steady source of income to fund base operations',
+            data: 'Research Data:',
+            dataText: 'Contained zombies may provide valuable information about virus mutations',
+            riskReward: 'Risk vs Reward:',
+            riskRewardText: 'Balance the moral implications with the economic benefits'
+          }
+        },
+        considerations: {
+          title: 'Strategic Considerations',
+          safety: 'Safety First:',
+          safetyText: 'Containment cages must be properly maintained. A breach could be catastrophic',
+          resourceManagement: 'Resource Management:',
+          resourceManagementText: 'Feeding zombies requires corpses, which must be obtained from liquidations or defense events',
+          moralChoices: 'Moral Choices:',
+          moralChoicesText: 'This system presents ethical dilemmas - decide if the economic benefits justify the practice',
+          upgradePriority: 'Upgrade Priority:',
+          upgradePriorityText: 'Invest in containment facility upgrades to increase capacity and safety',
+          emergencyProtocols: 'Emergency Protocols:',
+          emergencyProtocolsText: 'Have a plan for containment breaches - they can spread infection rapidly'
+        },
+        scenarios: {
+          breach: {
+            title: 'Scenario: Containment Breach',
+            situation: 'Situation:',
+            situationText: 'A containment cage fails, releasing zombies into your base.',
+            recommendation: 'Recommendation:',
+            recommendationText: 'Immediately activate emergency protocols, deploy security forces, and isolate the breach area. Containment facilities should be located away from critical infrastructure.'
+          },
+          shortage: {
+            title: 'Scenario: Corpse Shortage',
+            situation: 'Situation:',
+            situationText: 'You have contained zombies but no corpses to feed them.',
+            recommendation: 'Recommendation:',
+            recommendationText: 'Plan ahead - maintain a supply of corpses from liquidations. Consider the economic viability before expanding containment capacity.'
+          }
+        }
+      },
+      strategies: {
+        title: 'Advanced Strategies',
+        lead: 'Master advanced strategies to optimize your checkpoint operations, maximize efficiency, and achieve better outcomes. Combine these strategies with our comprehensive',
+        link1: 'survival guides',
+        lead2: 'for the best results.',
+        earlyGame: {
+          title: 'Early Game Strategy',
+          focusAreas: 'Focus Areas:',
+          focus1: 'Establish basic inspection protocols',
+          focus2: 'Build essential infrastructure (quarantine, medical)',
+          focus3: 'Stockpile critical resources',
+          focus4: 'Train initial staff on procedures',
+          priorityUpgrades: 'Priority Upgrades:',
+          priorityUpgradesText: 'Basic scanner system, quarantine facility, backup power',
+          commonMistakes: 'Common Mistakes:',
+          commonMistakesText: 'Being too lenient or too strict, ignoring resource management, neglecting staff morale'
+        },
+        midGame: {
+          title: 'Mid Game Strategy',
+          focusAreas: 'Focus Areas:',
+          focus1: 'Optimize inspection efficiency',
+          focus2: 'Expand capacity for larger populations',
+          focus3: 'Diversify resource sources',
+          focus4: 'Develop specialized staff roles',
+          priorityUpgrades: 'Priority Upgrades:',
+          priorityUpgradesText: 'Advanced scanners, expanded facilities, resource systems',
+          commonMistakes: 'Common Mistakes:',
+          commonMistakesText: 'Overextending resources, ignoring warning signs, poor crisis preparation'
+        },
+        lateGame: {
+          title: 'Late Game Strategy',
+          focusAreas: 'Focus Areas:',
+          focus1: 'Maximize efficiency and automation',
+          focus2: 'Prepare for major events and crises',
+          focus3: 'Optimize resource allocation',
+          focus4: 'Balance multiple competing priorities',
+          priorityUpgrades: 'Priority Upgrades:',
+          priorityUpgradesText: 'Automation systems, advanced defenses, research facilities',
+          commonMistakes: 'Common Mistakes:',
+          commonMistakesText: 'Complacency, ignoring long-term consequences, poor crisis response'
+        },
+        proTips: {
+          title: 'Pro Tips',
+          alwaysVerify: 'Always verify:',
+          alwaysVerifyText: 'Never rely on a single tool. Cross-reference multiple sources of information.',
+          documentEverything: 'Document everything:',
+          documentEverythingText: 'Keep notes on suspicious patterns. They may help identify future threats.',
+          planForFailure: 'Plan for failure:',
+          planForFailureText: 'Have backup plans for critical systems. Redundancy saves lives.',
+          trustButVerify: 'Trust but verify:',
+          trustButVerifyText: 'Be compassionate but cautious. Balance humanity with security.',
+          learnFromMistakes: 'Learn from mistakes:',
+          learnFromMistakesText: 'Every failure is a learning opportunity. Adapt your strategies.',
+          resourceEfficiency: 'Resource efficiency:',
+          resourceEfficiencyText: 'Every resource spent is one less for emergencies. Spend wisely.',
+          staffWelfare: 'Staff welfare:',
+          staffWelfareText: 'Happy, rested staff perform better. Don\'t overwork them.',
+          longTermThinking: 'Long-term thinking:',
+          longTermThinkingText: 'Short-term gains may lead to long-term problems. Think ahead.'
+        }
+      },
+      moreWiki: {
+        title: 'More Wiki Content',
+        symptoms: {
+          title: 'All Symptoms And How To Detect Them',
+          description: 'Complete guide to all symptoms in Quarantine Zone: The Last Check, including safe symptoms, quarantine symptoms, and infection symptoms. Learn which tools to use for detection.'
+        }
+      }
+    }
+  },
+  gamesPage: {
+    header: {
+      title: 'Zombie Games',
+      subtitle: 'Discover free browser-based zombie survival games that share similar themes, mechanics, and gameplay styles with Quarantine Zone: The Last Check. Play instantly without downloads, featuring decision-making, resource management, and survival challenges.'
+    },
+    loading: 'Loading games...',
+    error: 'Error loading games:',
+    sectionTitle: 'Available Games',
+    gameCard: {
+      viewDetails: 'View Details',
+      playNow: 'Play Now →'
+    },
+    whyPlay: {
+      tag: 'Discover',
+      title: 'Why Play These Games?',
+      lead: 'Explore a curated collection of games that share similar themes, mechanics, or gameplay styles with Quarantine Zone: The Last Check. Each game offers unique experiences while maintaining the tension and decision-making that makes survival games engaging.',
+      card1: {
+        icon: '🎮',
+        title: 'Similar Gameplay Mechanics',
+        text: 'These games feature decision-making, resource management, and survival elements similar to Quarantine Zone. If you enjoy the strategic thinking and moral choices in Quarantine Zone, you\'ll find familiar challenges here. Learn more about the core mechanics on our',
+        link1: 'homepage',
+        text2: '.'
+      },
+      card2: {
+        icon: '🎯',
+        title: 'No Download Required',
+        text: 'All games featured here are browser-based H5 games that you can play instantly without any downloads or installations. Simply click and play, making it easy to try new games and discover new favorites. Perfect for quick gaming sessions or exploring different genres.'
+      },
+      card3: {
+        icon: '📚',
+        title: 'Learn and Improve',
+        text: 'Playing similar games can help you improve your skills in Quarantine Zone. Many of these games share common strategies and decision-making patterns. Check out our',
+        link1: 'comprehensive guides',
+        text2: 'to master survival strategies that apply across multiple games. Start with our',
+        link2: 'Rookie Survival Manual',
+        text3: 'for fundamental strategies.'
+      },
+      card4: {
+        icon: '🔄',
+        title: 'Regularly Updated',
+        text: 'We continuously add new games to our collection based on community recommendations and new releases. Stay updated with the latest additions and game recommendations by following our',
+        link1: 'news section',
+        text2: 'for announcements and updates.'
+      }
+    },
+    faq: {
+      tag: 'FAQ',
+      title: 'Frequently Asked Questions',
+      q1: {
+        question: 'Are these games free to play?',
+        answer: 'Yes, all games featured on this page are free-to-play browser games. You don\'t need to download anything or create an account to start playing. Simply click on any game card to view details and start playing immediately.'
+      },
+      q2: {
+        question: 'How are games selected for this page?',
+        answer: 'We carefully curate games that share similar themes, mechanics, or gameplay styles with Quarantine Zone: The Last Check. Games are selected based on their quality, relevance, and community feedback. If you have suggestions for games to add, we\'d love to hear from you!'
+      },
+      q3: {
+        question: 'Do I need special software to play these games?',
+        answer: 'No special software is required. All games run directly in your web browser using HTML5 technology. Just make sure you have a modern browser (Chrome, Firefox, Safari, or Edge) and a stable internet connection. For optimal performance, check our',
+        link1: 'wiki',
+        text2: 'for system requirements and recommendations.'
+      },
+      q4: {
+        question: 'Can I get help if I\'m stuck in a game?',
+        answer: 'While we don\'t provide direct support for individual games, our',
+        link1: 'guides section',
+        text2: 'contains general strategies and tips that can help with survival and decision-making games. Many of the techniques apply across different games in this genre.'
+      }
+    }
+  },
+  gameDetailPage: {
+    notFound: {
+      title: 'Game Not Found',
+      message: 'The game you\'re looking for doesn\'t exist or has been removed.',
+      backButton: 'Back to Games'
+    },
+    playButton: 'PLAY',
+    controlBar: {
+      webFullscreen: 'Web Fullscreen',
+      fullscreen: 'Fullscreen'
+    },
+    comments: {
+      heading: 'All Reviews',
+      noComments: 'No comments yet.'
+    }
+  },
+  newsPage: {
+    header: {
+      title: 'Quarantine Zone: The Last Check News',
+      subtitle: 'Stay updated with the latest Quarantine Zone: The Last Check news, patch notes, developer announcements, Discord Q&A sessions, release date updates, and upcoming features. Get all the latest information directly from the development team.'
+    },
+    loading: 'Loading news...',
+    error: 'Error loading news:',
+    sectionTitle: 'All News',
+    newsCard: {
+      readMore: 'Read More →'
+    },
+    stayUpdated: {
+      tag: 'Stay Informed',
+      title: 'Why Follow Our News?',
+      lead: 'Stay ahead of the game with the latest updates, developer insights, and community discussions about Quarantine Zone: The Last Check. Our news section keeps you informed about everything happening in the game\'s development and community.',
+      card1: {
+        icon: '📢',
+        title: 'Latest Updates',
+        text: 'Get the first news about game patches, new features, and content updates. We cover all major announcements from the developers, including patch notes, feature reveals, and release dates. Stay informed about changes that might affect your gameplay strategies. Check our',
+        link1: 'guides section',
+        text2: 'to see how updates impact game strategies. Our',
+        link2: 'Rookie Survival Manual',
+        text3: 'is updated regularly to reflect game changes.'
+      },
+      card2: {
+        icon: '💬',
+        title: 'Developer Insights',
+        text: 'Read exclusive Q&A sessions, developer interviews, and behind-the-scenes content. Learn about the development process, design decisions, and future plans directly from the creators. Understanding the developers\' vision helps you appreciate the game\'s depth and complexity. Visit our',
+        link1: 'homepage',
+        text2: 'to learn more about the game\'s core concepts.'
+      },
+      card3: {
+        icon: '🎮',
+        title: 'Community Discussions',
+        text: 'Discover community strategies, tips, and discussions about gameplay mechanics. Our news includes community highlights, player strategies, and discussions about game mechanics. Learn from other players\' experiences and share your own insights. Explore our',
+        link1: 'wiki',
+        text2: 'for comprehensive information about game mechanics and tools.'
+      },
+      card4: {
+        icon: '🔔',
+        title: 'Never Miss Important News',
+        text: 'We regularly update our news section with the latest information. Whether it\'s a major patch, new feature announcement, or community event, you\'ll find it here first. Bookmark this page and check back regularly to stay up-to-date with all Quarantine Zone developments. Combine news updates with our',
+        link1: 'strategy guides',
+        text2: 'to optimize your gameplay.'
+      }
+    },
+    faq: {
+      tag: 'FAQ',
+      title: 'Frequently Asked Questions',
+      q1: {
+        question: 'How often is the news updated?',
+        answer: 'We update our news section regularly whenever there are new developments, announcements, or community discussions. Major updates like patches and feature releases are posted immediately, while smaller updates may be batched together. Check back frequently or bookmark this page to stay informed about all Quarantine Zone news and updates.'
+      },
+      q2: {
+        question: 'Where does the news come from?',
+        answer: 'Our news comes from official developer announcements, Discord Q&A sessions, community discussions, and verified sources. We compile information from multiple channels to provide comprehensive coverage of all Quarantine Zone developments. All news is verified for accuracy before publication to ensure you receive reliable information.'
+      },
+      q3: {
+        question: 'Can I find older news articles?',
+        answer: 'Yes, all news articles are archived and remain accessible. You can scroll through the news list to find older articles, or use the search function if available. Older articles remain valuable resources for understanding game development history and tracking how the game has evolved. Our',
+        link1: 'wiki',
+        text2: 'also contains historical information about game mechanics and features.'
+      },
+      q4: {
+        question: 'How do news updates affect gameplay?',
+        answer: 'News updates often include information about game changes, new features, or balance adjustments that can impact your strategies. When major updates are announced, we recommend reviewing patch notes carefully and adjusting your approach accordingly. Our',
+        link1: 'guides section',
+        text2: 'is updated to reflect changes and help you adapt to new game mechanics. For combat-related updates, check our',
+        link2: 'Combat & Base Defense Guide',
+        text3: '.'
+      }
+    }
+  },
+  newsDetailPage: {
+    breadcrumb: {
+      news: 'News'
+    },
+    navigation: {
+      title: 'Navigation',
+      previous: 'Previous',
+      next: 'Next'
+    },
+    notFound: {
+      title: 'News Not Found',
+      message: 'The news you\'re looking for doesn\'t exist.',
+      backButton: 'Back to News'
+    }
+  },
+  privacyPolicyPage: {
+    header: {
+      title: 'Privacy Policy',
+      lastUpdated: 'Last updated: December 5, 2025'
+    },
+    content: {
+      intro: 'At Quarantine Zone Guide, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.',
+      section1: {
+        title: 'Information We Collect',
+        p1: 'We may collect information that you provide directly to us, such as when you contact us or subscribe to our newsletter. This may include your name, email address, and any other information you choose to provide.',
+        p2: 'We also automatically collect certain information about your device when you visit our website, including your IP address, browser type, operating system, and browsing behavior.'
+      },
+      section2: {
+        title: 'How We Use Your Information',
+        text: 'We use the information we collect to provide, maintain, and improve our services, respond to your inquiries, send you updates about our content, and analyze how our website is used.'
+      },
+      section3: {
+        title: 'Cookies and Tracking Technologies',
+        text: 'We use cookies and similar tracking technologies to track activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.'
+      },
+      section4: {
+        title: 'Third-Party Services',
+        text: 'Our website may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies.'
+      },
+      section5: {
+        title: 'Data Security',
+        text: 'We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure.'
+      },
+      section6: {
+        title: 'Your Rights',
+        text: 'You have the right to access, update, or delete your personal information at any time. If you wish to exercise these rights, please contact us at wyong@quarantinezonegames.com.'
+      },
+      section7: {
+        title: 'Changes to This Policy',
+        text: 'We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.'
+      },
+      section8: {
+        title: 'Contact Us',
+        text: 'If you have any questions about this Privacy Policy, please contact us at wyong@quarantinezonegames.com.'
+      }
+    }
+  },
+  termsOfServicePage: {
+    header: {
+      title: 'Terms of Service',
+      lastUpdated: 'Last updated: December 5, 2025'
+    },
+    content: {
+      intro: 'Welcome to Quarantine Zone Guide. By accessing and using this website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website.',
+      section1: {
+        title: 'Use of Website',
+        text: 'You may use our website for personal, non-commercial purposes. You agree not to use the website in any way that violates any applicable laws or regulations, or that could damage, disable, or impair the website.'
+      },
+      section2: {
+        title: 'Content and Intellectual Property',
+        p1: 'All content on this website, including text, graphics, logos, and images, is the property of Quarantine Zone Guide or its content suppliers and is protected by copyright and other intellectual property laws.',
+        p2: 'This is an independent fan site created for informational purposes only. All trademarks and copyrights related to "Quarantine Zone: The Last Check" belong to their respective owners.'
+      },
+      section3: {
+        title: 'User Conduct',
+        text: 'You agree not to engage in any activity that interferes with or disrupts the website or servers and networks connected to the website. You also agree not to attempt to gain unauthorized access to any portion of the website.'
+      },
+      section4: {
+        title: 'Disclaimer of Warranties',
+        text: 'The information on this website is provided on an "as is" basis. We make no warranties, expressed or implied, regarding the accuracy, completeness, or reliability of the information provided.'
+      },
+      section5: {
+        title: 'Limitation of Liability',
+        text: 'Quarantine Zone Guide shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of this website.'
+      },
+      section6: {
+        title: 'Links to Third-Party Websites',
+        text: 'Our website may contain links to third-party websites. We are not responsible for the content, privacy policies, or practices of these third-party sites.'
+      },
+      section7: {
+        title: 'Modifications to Terms',
+        text: 'We reserve the right to modify these Terms of Service at any time. Your continued use of the website after any changes constitutes your acceptance of the new terms.'
+      },
+      section8: {
+        title: 'Contact Information',
+        text: 'If you have any questions about these Terms of Service, please contact us at wyong@quarantinezonegames.com.'
+      }
+    }
+  },
+  copyrightPage: {
+    header: {
+      title: 'Copyright',
+      lastUpdated: 'Last updated: December 5, 2025'
+    },
+    content: {
+      intro: '© 2025 Quarantine Zone Guide. All rights reserved.',
+      section1: {
+        title: 'Copyright Notice',
+        text: 'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Quarantine Zone Guide and is protected by international copyright laws.'
+      },
+      section2: {
+        title: 'Fair Use',
+        text: 'This website is an independent fan site created for informational and educational purposes only. We use content related to "Quarantine Zone: The Last Check" under the principles of fair use for commentary, criticism, and educational purposes.'
+      },
+      section3: {
+        title: 'Trademark Notice',
+        p1: '"Quarantine Zone: The Last Check" and all related trademarks, service marks, and trade names are the property of their respective owners. This website is not affiliated with, endorsed by, or sponsored by the game developers or publishers.',
+        p2: 'All trademarks and copyrights belong to their respective owners. We do not claim ownership of any game-related intellectual property.'
+      },
+      section4: {
+        title: 'Content Usage',
+        text: 'You may not reproduce, distribute, modify, or create derivative works from any content on this website without our express written permission. This includes but is not limited to copying text, images, or other materials for commercial purposes.'
+      },
+      section5: {
+        title: 'User-Generated Content',
+        text: 'If you submit content to our website, you retain ownership of that content but grant us a license to use, modify, and display it on our website. You represent that you have the right to grant such a license.'
+      },
+      section6: {
+        title: 'DMCA Policy',
+        text: 'If you believe that any content on our website infringes your copyright, please contact us at wyong@quarantinezonegames.com with the following information:',
+        list1: 'A description of the copyrighted work you claim has been infringed',
+        list2: 'The location of the allegedly infringing material on our website',
+        list3: 'Your contact information',
+        list4: 'A statement that you have a good faith belief that the use is not authorized',
+        list5: 'A statement that the information in your notice is accurate'
+      },
+      section7: {
+        title: 'Contact Information',
+        text: 'For copyright-related inquiries, please contact us at wyong@quarantinezonegames.com.'
+      }
+    }
+  },
+  aboutUsPage: {
+    header: {
+      title: 'About Us',
+      subtitle: 'Learn more about Quarantine Zone Guide'
+    },
+    content: {
+      intro: 'Welcome to Quarantine Zone Guide, your comprehensive resource for everything related to Quarantine Zone: The Last Check.',
+      section1: {
+        title: 'Our Mission',
+        text: 'Our mission is to provide players with the most complete and up-to-date information about Quarantine Zone: The Last Check. We strive to create a community hub where players can find guides, strategies, news, and resources to enhance their gaming experience.'
+      },
+      section2: {
+        title: 'What We Offer',
+        text: 'Quarantine Zone Guide offers a wide range of content including detailed game guides, comprehensive wiki information, latest news and updates, and recommendations for similar games. Our content is regularly updated to ensure accuracy and relevance.'
+      },
+      section3: {
+        title: 'Our Team',
+        text: 'We are a team of passionate gamers and content creators dedicated to providing high-quality resources for the Quarantine Zone: The Last Check community. Our team works tirelessly to gather, verify, and present information in an accessible and useful format.'
+      },
+      section4: {
+        title: 'Independence',
+        text: 'This is an independent fan site created for informational purposes only. We are not affiliated with, endorsed by, or sponsored by the developers or publishers of Quarantine Zone: The Last Check. All trademarks and copyrights belong to their respective owners.'
+      },
+      section5: {
+        title: 'Community',
+        text: 'We value our community and are committed to providing a helpful and informative resource for all players. Your feedback and suggestions help us improve our content and services.'
+      },
+      section6: {
+        title: 'Contact Us',
+        text: 'If you have any questions, suggestions, or feedback, please feel free to contact us at wyong@quarantinezonegames.com. We\'d love to hear from you!'
+      },
+      lastUpdated: 'Last updated: December 5, 2025'
+    }
+  },
+  contactUsPage: {
+    header: {
+      title: 'Contact Us',
+      subtitle: 'Get in touch with us'
+    },
+    content: {
+      intro: 'We\'d love to hear from you! Whether you have questions, suggestions, feedback, or just want to say hello, please don\'t hesitate to reach out to us.',
+      section1: {
+        title: 'Email',
+        p1: 'For general inquiries, feedback, or questions, please contact us at:',
+        email: 'wyong@quarantinezonegames.com'
+      },
+      section2: {
+        title: 'Response Time',
+        text: 'We strive to respond to all inquiries within 48 hours. Please note that during peak times, response times may be slightly longer.'
+      },
+      section3: {
+        title: 'What to Include',
+        text: 'When contacting us, please include:',
+        list1: 'Your name or username',
+        list2: 'A clear subject line',
+        list3: 'A detailed description of your inquiry or feedback',
+        list4: 'Any relevant information that might help us assist you'
+      },
+      section4: {
+        title: 'Feedback and Suggestions',
+        text: 'We welcome your feedback and suggestions! Your input helps us improve our website and content. If you have ideas for new guides, features, or improvements, we\'d love to hear them.'
+      },
+      section5: {
+        title: 'Reporting Issues',
+        text: 'If you encounter any technical issues or errors on our website, please let us know. Include details about the problem, your browser and device information, and any error messages you may have seen.'
+      },
+      section6: {
+        title: 'Content Corrections',
+        text: 'If you notice any inaccuracies in our content, please contact us with the correct information. We appreciate your help in keeping our content accurate and up-to-date.'
+      },
+      section7: {
+        title: 'Partnership Inquiries',
+        text: 'For partnership or collaboration inquiries, please contact us at wyong@quarantinezonegames.com with details about your proposal.'
+      },
+      lastUpdated: 'Last updated: December 5, 2025'
+    }
+  },
+  symptomsPage: {
+    header: {
+      title: 'All Symptoms And How To Detect Them',
+      subtitle1: 'Survivors in Quarantine Zone: The Last Check will attempt to clear the checkpoints and reach the safe area, even if they know they are infected. This makes your job a little harder, as you have to ignore their pleas and go through every check before sending them off to one of three spaces.',
+      subtitle2: 'Before evacuation day, Survivors stay in the safe Survivor Zone, the Quarantine Cell, or the Laboratory. The infectious Survivors are destroyed in liquidation before they can infect anyone else. Here is how to make the right decisions every time by detecting the symptoms first. For a detailed strategy guide with tips and decision-making strategies, check our',
+      guideLink: 'complete symptoms guide',
+      subtitle2End: '.'
+    },
+    intro: {
+      tip: 'Tip:',
+      tipText: 'Use every tool available to you to make sure you have uncovered every single symptom.',
+      lead: 'Each symptom in Quarantine Zone: The Last Check, is detected using a tool or your eyes. In endless mode, all tools are already unlocked, while in campaign mode, they must be unlocked and upgraded as you progress. Below, we have laid out every symptom you will encounter in the game, along with its corresponding infection threat level and the recommended tool for detection. Learn efficient tool usage techniques in our',
+      rookieLink: 'rookie survival manual',
+      leadEnd: '.'
+    },
+    safeSymptoms: {
+      title: 'Safe Symptoms',
+      description1: 'If the survivor shows these symptoms and nothing else, send them straight to the Survivor Zone. If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will be killed in the process. Better to be safe than sorry! For more details on safe symptom identification, see our',
+      guideLink: 'symptoms strategy guide',
+      description1End: '.',
+      table: {
+        header: {
+          symptom: 'Symptom',
+          typeTool: 'Type/Tool'
+        },
+        rows: [
+          { symptom: 'Yellow Eyes', typeTool: 'Appearance' },
+          { symptom: 'Freckles', typeTool: 'Appearance' },
+          { symptom: 'Herpes', typeTool: 'Appearance' },
+          { symptom: 'Red Skin', typeTool: 'Appearance' },
+          { symptom: 'Bruises', typeTool: 'Appearance' },
+          { symptom: 'Nose Bleed', typeTool: 'Appearance' },
+          { symptom: 'Sickly Breath', typeTool: 'Stethoscope' },
+          { symptom: 'Absent Reflex', typeTool: 'Hammer' },
+          { symptom: 'Ocular Spicular Bacterium', typeTool: 'Matioscope' },
+          { symptom: 'Thread Cluster', typeTool: 'Matioscope' },
+          { symptom: 'Ocular Helminth', typeTool: 'Matioscope' },
+          { symptom: 'Adenoviral Body', typeTool: 'Matioscope' },
+          { symptom: 'Internal Bleeding', typeTool: 'X-Ray' },
+          { symptom: 'UV Vapor', typeTool: 'UV' }
+        ]
+      }
+    },
+    quarantineSymptoms: {
+      title: 'Quarantine Symptoms',
+      description1: 'These are borderline symptoms, and the survivor could be either just sick or they could be infected. A day or two in Quarantine will reveal the truth. If they get better, they can be sent to the Survivor Zone; if they get worse or they turn into a zombie, they have to be eliminated.',
+      description2: 'If they show a new sign of infection, you can send them to the lab to undergo more analysis, but they will die (in the name of science!) while they are there. For decision-making strategies when dealing with uncertain symptoms, check our',
+      guideLink: 'symptoms guide',
+      description2End: '.',
+      table: {
+        header: {
+          symptom: 'Symptom',
+          typeTool: 'Type/Tool'
+        },
+        rows: [
+          { symptom: 'Conjunctivitis', typeTool: 'Appearance' },
+          { symptom: 'Skin Rash', typeTool: 'Appearance' },
+          { symptom: 'Pale Skin', typeTool: 'Appearance' },
+          { symptom: 'Red Bruise', typeTool: 'Appearance' },
+          { symptom: 'Skin Cuts', typeTool: 'Appearance' },
+          { symptom: 'Mouth Bleeding', typeTool: 'Appearance' },
+          { symptom: 'Aggression', typeTool: 'Appearance' },
+          { symptom: 'Elevated Temperature 37–41 C', typeTool: 'Thermopulsometer' },
+          { symptom: 'Elevated Pulse 120–180 BPM', typeTool: 'Thermopulsometer' },
+          { symptom: 'Non-Specific Respiration', typeTool: 'Stethoscope' },
+          { symptom: 'Hyper Aggressive Reflex', typeTool: 'Hammer' },
+          { symptom: 'Chromatic Staphylococcus', typeTool: 'Matioscope' },
+          { symptom: 'Phage Complex', typeTool: 'Matioscope' },
+          { symptom: 'Color Difference', typeTool: 'X-Ray' }
+        ]
+      }
+    },
+    infectionSymptoms: {
+      title: 'Infection Symptoms',
+      description1: 'If the survivor shows any of these symptoms, they are highly infectious and must be sent to liquidation immediately. If they show a new sign of infection, you can send them to the lab to undergo more analysis. Learn more about identifying confirmed infections in our',
+      guideLink: 'complete symptoms guide',
+      description1End: '.',
+      table: {
+        header: {
+          symptom: 'Symptom',
+          typeTool: 'Type/Tool'
+        },
+        rows: [
+          { symptom: 'Red Eyes', typeTool: 'Appearance' },
+          { symptom: 'Green Skin', typeTool: 'Appearance' },
+          { symptom: 'Bite Mark', typeTool: 'Appearance' },
+          { symptom: 'Necrosis', typeTool: 'Appearance' },
+          { symptom: 'Nose Pus', typeTool: 'Appearance' },
+          { symptom: 'Eye Pus', typeTool: 'Appearance' },
+          { symptom: 'High Temperature 41–45 C', typeTool: 'Thermopulsometer' },
+          { symptom: 'Extreme Pulse 180–200 BPM', typeTool: 'Thermopulsometer' },
+          { symptom: 'Infected Breath', typeTool: 'Stethoscope' },
+          { symptom: 'Contaminated Body Parts', typeTool: 'Objects/Search' },
+          { symptom: 'Crossed Reflex', typeTool: 'Hammer' },
+          { symptom: 'Necrotic Plume', typeTool: 'Matioscope' },
+          { symptom: 'Corneal Infiltrate', typeTool: 'Matioscope' },
+          { symptom: 'Moldy Organ', typeTool: 'X-Ray' },
+          { symptom: 'Necrotic Organ', typeTool: 'X-Ray' },
+          { symptom: 'UV Contraband', typeTool: 'UV' },
+          { symptom: 'UV Symptom', typeTool: 'UV' }
+        ]
+      }
+    }
+  },
+  common: {
+    nav: {
+      home: 'Home',
+      guides: 'Guides',
+      wiki: 'Wiki',
+      zombieGames: 'Zombie Games',
+      news: 'News'
+    },
+    languageSwitcher: {
+      label: 'Select language'
+    }
+  }
+}

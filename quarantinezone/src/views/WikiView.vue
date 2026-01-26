@@ -4,9 +4,9 @@
     <section class="wiki-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Quarantine Zone: The Last Check Wiki</h1>
+          <h1 class="page-title">{{ t('wikiPage.header.title') }}</h1>
           <p class="page-subtitle">
-            Comprehensive database covering all tools, resources, upgrades, personnel roles, events, and strategies in Quarantine Zone: The Last Check. Find detailed information about inspection tools, resource management, decision-making scenarios, and survival mechanics.
+            {{ t('wikiPage.header.subtitle') }}
           </p>
         </div>
       </div>
@@ -20,32 +20,32 @@
           <aside class="wiki-sidebar">
             <div class="toc-section">
               <div class="toc-header">
-                <h2 class="toc-title">Table of Contents</h2>
+                <h2 class="toc-title">{{ t('wikiPage.toc.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <nav class="toc-nav">
                 <ul class="toc-list">
                   <li>
-                    <a @click.prevent="scrollToSection('tools')" class="toc-link">Inspection Tools Guide</a>
+                    <a @click.prevent="scrollToSection('tools')" class="toc-link">{{ t('wikiPage.toc.tools') }}</a>
                     <ul class="toc-sublist">
-                      <li><a @click.prevent="scrollToSection('tool-thermopulsometer')" class="toc-sublink">Thermopulsometer</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-reflex-hammer')" class="toc-sublink">Reflex Hammer</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-scanner')" class="toc-sublink">Scanner</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-stethoscope')" class="toc-sublink">Stethoscope</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-syringe')" class="toc-sublink">Syringe</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-gun')" class="toc-sublink">Gun</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-xray')" class="toc-sublink">X-Ray</a></li>
-                      <li><a @click.prevent="scrollToSection('tool-matioscope')" class="toc-sublink">Matioscope</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-thermopulsometer')" class="toc-sublink">{{ t('wikiPage.toc.toolThermopulsometer') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-reflex-hammer')" class="toc-sublink">{{ t('wikiPage.toc.toolReflexHammer') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-scanner')" class="toc-sublink">{{ t('wikiPage.toc.toolScanner') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-stethoscope')" class="toc-sublink">{{ t('wikiPage.toc.toolStethoscope') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-syringe')" class="toc-sublink">{{ t('wikiPage.toc.toolSyringe') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-gun')" class="toc-sublink">{{ t('wikiPage.toc.toolGun') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-xray')" class="toc-sublink">{{ t('wikiPage.toc.toolXray') }}</a></li>
+                      <li><a @click.prevent="scrollToSection('tool-matioscope')" class="toc-sublink">{{ t('wikiPage.toc.toolMatioscope') }}</a></li>
                     </ul>
                   </li>
-                  <li><a @click.prevent="scrollToSection('resources')" class="toc-link">Resource Management System</a></li>
-                  <li><a @click.prevent="scrollToSection('decisions')" class="toc-link">Decision-Making Strategies</a></li>
-                  <li><a @click.prevent="scrollToSection('upgrades')" class="toc-link">Base Upgrade System</a></li>
-                  <li><a @click.prevent="scrollToSection('personnel')" class="toc-link">Personnel Management</a></li>
-                  <li><a @click.prevent="scrollToSection('events')" class="toc-link">Event & Crisis Management</a></li>
-                  <li><a @click.prevent="scrollToSection('zombie-farming')" class="toc-link">Zombie Containment & Farming</a></li>
-                  <li><a @click.prevent="scrollToSection('strategies')" class="toc-link">Advanced Strategies</a></li>
-                  <li><a @click.prevent="scrollToSection('more-wiki')" class="toc-link">More Wiki Content</a></li>
+                  <li><a @click.prevent="scrollToSection('resources')" class="toc-link">{{ t('wikiPage.toc.resources') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('decisions')" class="toc-link">{{ t('wikiPage.toc.decisions') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('upgrades')" class="toc-link">{{ t('wikiPage.toc.upgrades') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('personnel')" class="toc-link">{{ t('wikiPage.toc.personnel') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('events')" class="toc-link">{{ t('wikiPage.toc.events') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('zombie-farming')" class="toc-link">{{ t('wikiPage.toc.zombieFarming') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('strategies')" class="toc-link">{{ t('wikiPage.toc.strategies') }}</a></li>
+                  <li><a @click.prevent="scrollToSection('more-wiki')" class="toc-link">{{ t('wikiPage.toc.moreWiki') }}</a></li>
                 </ul>
               </nav>
             </div>
@@ -56,12 +56,12 @@
             <!-- Tools Guide -->
             <section id="tools" class="wiki-section" ref="toolsRef">
               <div class="section-header">
-                <h2 class="section-title">Inspection Tools Guide</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.tools.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Master the use of inspection tools to accurately identify infected individuals and make informed decisions. Each tool provides different information, and combining them is key to success. For detailed walkthroughs on using these tools effectively, check out our comprehensive <router-link to="/guides" class="inline-link">inspection guides</router-link>, especially our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link> for beginners.
+                  {{ t('wikiPage.sections.tools.lead') }} <a href="/guides" class="inline-link">{{ t('wikiPage.sections.tools.link1') }}</a>{{ t('wikiPage.sections.tools.lead2') }} <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">{{ t('wikiPage.sections.tools.link2') }}</a>{{ t('wikiPage.sections.tools.lead3') }}
                 </p>
 
                 <img src="/images/wiki/wiki-01.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
@@ -70,85 +70,85 @@
                   <table class="tools-table">
                     <thead>
                       <tr>
-                        <th class="col-image">Image</th>
-                        <th class="col-item">Item</th>
-                        <th class="col-day">Day</th>
-                        <th class="col-description">Description</th>
-                        <th class="col-function">Function</th>
+                        <th class="col-image">{{ t('wikiPage.sections.tools.table.image') }}</th>
+                        <th class="col-item">{{ t('wikiPage.sections.tools.table.item') }}</th>
+                        <th class="col-day">{{ t('wikiPage.sections.tools.table.day') }}</th>
+                        <th class="col-description">{{ t('wikiPage.sections.tools.table.description') }}</th>
+                        <th class="col-function">{{ t('wikiPage.sections.tools.table.function') }}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr id="tool-thermopulsometer">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-04.webp" alt="Thermopulsometer" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-04.webp" :alt="t('wikiPage.sections.tools.tools.thermopulsometer.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Thermopulsometer</strong></td>
-                        <td class="col-day">Day two</td>
-                        <td class="col-description">Pulse and temperature can be indicators of infection. Use the thermopulsometer to check a survivor's vital signs. Sneezing or hiccupping may be signs of an elevated temperature or pulse.</td>
-                        <td class="col-function">Measures heart rate and temperature. Higher than 41 degrees and/or a pulse of over 180 indicates infection.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.thermopulsometer.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.thermopulsometer.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.thermopulsometer.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.thermopulsometer.function') }}</td>
                       </tr>
                       <tr id="tool-reflex-hammer">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-01.webp" alt="Reflex Hammer" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-01.webp" :alt="t('wikiPage.sections.tools.tools.reflexHammer.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Reflex Hammer</strong></td>
-                        <td class="col-day">Day four</td>
-                        <td class="col-description">Slow and dulled reflexes are symptoms of the virus. Use the reflex hammer to test a survivor's muscular response. Only use this on the arms or legs. Hitting a survivor on the head or torso will hurt them. A slack jaw may indicate a potential issue with muscular reflexes.</td>
-                        <td class="col-function">Non-infected will have no reaction to the hammer, while infected will attack you with the arm that didn't get hit. An aggressive reaction with the correct hand points to sickness or infection.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.reflexHammer.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.reflexHammer.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.reflexHammer.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.reflexHammer.function') }}</td>
                       </tr>
                       <tr id="tool-scanner">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-06.webp" alt="Scanner" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-06.webp" :alt="t('wikiPage.sections.tools.tools.scanner.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Scanner</strong></td>
-                        <td class="col-day">Day six</td>
-                        <td class="col-description">Some symptoms may be hidden under clothing. Use the scanner to examine survivors without undressing them.</td>
-                        <td class="col-function">Look for bruises, bite marks, and scars to identify signs of infection.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.scanner.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.scanner.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.scanner.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.scanner.function') }}</td>
                       </tr>
                       <tr id="tool-stethoscope">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-05.webp" alt="Stethoscope" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-05.webp" :alt="t('wikiPage.sections.tools.tools.stethoscope.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Stethoscope</strong></td>
-                        <td class="col-day">Day nine</td>
-                        <td class="col-description">The virus can cause respiratory problems. Use the stethoscope to check a survivor's breathing for any irregularities. High amplitude waves are a telltale sign of infection. If no signs of illness or infection are detected, the black zone will disappear.</td>
-                        <td class="col-function">Clear lungs mean healthy, while lungs with spots are signs of being sick or infected. Compare breathing on a stethoscope to symptoms list. Always use multiple tools alongside this to determine if the survivor in Quarantine is sick or is turning into a zombie.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.stethoscope.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.stethoscope.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.stethoscope.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.stethoscope.function') }}</td>
                       </tr>
                       <tr id="tool-syringe">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-02.webp" alt="Syringe" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-02.webp" :alt="t('wikiPage.sections.tools.tools.syringe.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Syringe</strong></td>
-                        <td class="col-day">Day 11</td>
-                        <td class="col-description">Use the syringe analyzer to extract fluid samples from a survivor to detect and determine an infection. To avoid potential cross-contamination, syringes can only be used once. Supplies are limited. The science division will send you more syringes if you send them survivors during an evacuation.</td>
-                        <td class="col-function">Send five survivors onto the Science Truck during an evacuation to get one Syringe. This will be the tool you use the least, but will tell you if the survivor is infected if the fluid turns orange.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.syringe.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.syringe.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.syringe.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.syringe.function') }}</td>
                       </tr>
                       <tr id="tool-gun">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-01.webp" alt="Gun" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-01.webp" :alt="t('wikiPage.sections.tools.tools.gun.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Gun</strong></td>
-                        <td class="col-day">Day 13</td>
-                        <td class="col-description">–</td>
-                        <td class="col-function">Use on zombies that turn in the Survivor Block or Quarantine (during inspection) so they don't kill survivors or attack you. Will result in a game over if you shoot other Checkpoint Alpha staff (resets the day).</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.gun.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.gun.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.gun.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.gun.function') }}</td>
                       </tr>
                       <tr id="tool-xray">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-07.webp" alt="X-Ray" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-07.webp" :alt="t('wikiPage.sections.tools.tools.xray.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>X-Ray</strong></td>
-                        <td class="col-day">Day 13</td>
-                        <td class="col-description">Use the X-ray to inspect a survivor's internal organs for signs of infection. As the virus continues to evolve, you will find that not every symptom is skin deep.</td>
-                        <td class="col-function">Lesions, dark spots, and unnatural coloring appear on organs, showing signs of infection. Filter through layers in the anatomy to find anomalies.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.xray.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.xray.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.xray.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.xray.function') }}</td>
                       </tr>
                       <tr id="tool-matioscope">
                         <td class="col-image">
-                          <img src="/images/wiki/wiki-img-03.webp" alt="Matioscope" class="tool-table-image" />
+                          <img src="/images/wiki/wiki-img-03.webp" :alt="t('wikiPage.sections.tools.tools.matioscope.name')" class="tool-table-image" />
                         </td>
-                        <td class="col-item"><strong>Matioscope</strong></td>
-                        <td class="col-day">Day 16</td>
-                        <td class="col-description">A powerful ophthalmological tool for observing the virus. Use the matioscope to zoom in and pan across a survivor's retina. Certain ocular parasites and anomalies indicate infection. Survivors with drooping eyelids may have potential symptoms that require the matioscope for confirmation.</td>
-                        <td class="col-function">Look for clear signs of infection with virus and parasitic imagery inside the retina.</td>
+                        <td class="col-item"><strong>{{ t('wikiPage.sections.tools.tools.matioscope.name') }}</strong></td>
+                        <td class="col-day">{{ t('wikiPage.sections.tools.tools.matioscope.day') }}</td>
+                        <td class="col-description">{{ t('wikiPage.sections.tools.tools.matioscope.description') }}</td>
+                        <td class="col-function">{{ t('wikiPage.sections.tools.tools.matioscope.function') }}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -156,15 +156,15 @@
 
                 <!-- Laboratory Inspection System -->
                 <div class="info-box" style="margin-top: 32px;">
-                  <h3 class="subsection-title">Laboratory Inspection System</h3>
-                  <p><strong>New Feature:</strong> The full release introduces a comprehensive laboratory system within your base that allows for in-depth analysis of survivors with unclear symptoms.</p>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.tools.laboratory.title') }}</h3>
+                  <p><strong>{{ t('wikiPage.sections.tools.laboratory.newFeature') }}</strong> {{ t('wikiPage.sections.tools.laboratory.intro') }}</p>
                   <ul>
-                    <li><strong>Deep Analysis:</strong> Send individuals with unknown or conflicting symptoms to the laboratory for comprehensive testing</li>
-                    <li><strong>Advanced Detection:</strong> Laboratory equipment can detect new virus strains and mutations that standard tools might miss</li>
-                    <li><strong>Research Benefits:</strong> Laboratory findings contribute to your understanding of the virus and may unlock new detection methods</li>
-                    <li><strong>Resource Management:</strong> Laboratory operations consume medical supplies but provide valuable intelligence for future inspections</li>
+                    <li><strong>{{ t('wikiPage.sections.tools.laboratory.deepAnalysis') }}</strong> {{ t('wikiPage.sections.tools.laboratory.deepAnalysisText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.tools.laboratory.advancedDetection') }}</strong> {{ t('wikiPage.sections.tools.laboratory.advancedDetectionText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.tools.laboratory.researchBenefits') }}</strong> {{ t('wikiPage.sections.tools.laboratory.researchBenefitsText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.tools.laboratory.resourceManagement') }}</strong> {{ t('wikiPage.sections.tools.laboratory.resourceManagementText') }}</li>
                   </ul>
-                  <p><strong>Strategy:</strong> Use the laboratory for high-priority cases where standard inspection tools show conflicting results. The time investment is worth it for potentially saving lives and preventing outbreaks.</p>
+                  <p><strong>{{ t('wikiPage.sections.tools.laboratory.strategy') }}</strong> {{ t('wikiPage.sections.tools.laboratory.strategyText') }}</p>
                 </div>
               </div>
             </section>
@@ -172,89 +172,89 @@
             <!-- Resource Management -->
             <section id="resources" class="wiki-section" ref="resourcesRef">
               <div class="section-header">
-                <h2 class="section-title">Resource Management System</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.resources.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Effective resource management is crucial for maintaining your checkpoint. Learn how to balance consumption, production, and allocation to keep your base operational. Our detailed <router-link to="/guides" class="inline-link">resource management guides</router-link> provide step-by-step strategies for optimizing your operations. For combat-focused resource management, see our <router-link to="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">Combat & Base Defense Guide</router-link>.
+                  {{ t('wikiPage.sections.resources.lead') }} <a href="/guides" class="inline-link">{{ t('wikiPage.sections.resources.link1') }}</a>{{ t('wikiPage.sections.resources.lead2') }} <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" class="inline-link">{{ t('wikiPage.sections.resources.link2') }}</a>{{ t('wikiPage.sections.resources.lead3') }}
                 </p>
 
                 <div class="info-box" style="margin-bottom: 24px;">
-                  <h3 class="subsection-title">New: Bird's Eye View Interface</h3>
-                  <p><strong>Enhanced Management:</strong> The full release introduces a revolutionary bird's eye view interface that provides a comprehensive overview of your entire base.</p>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.resources.birdsEyeView.title') }}</h3>
+                  <p><strong>{{ t('wikiPage.sections.resources.birdsEyeView.enhancedManagement') }}</strong> {{ t('wikiPage.sections.resources.birdsEyeView.intro') }}</p>
                   <ul>
-                    <li><strong>Unified Control:</strong> Manage all resources, facilities, and personnel from a single overhead perspective</li>
-                    <li><strong>Visual Clarity:</strong> See resource distribution, facility status, and personnel assignments at a glance</li>
-                    <li><strong>Streamlined Operations:</strong> Simplified workflow reduces time spent navigating between different management screens</li>
-                    <li><strong>Strategic Planning:</strong> The overview helps identify bottlenecks and optimize resource allocation more effectively</li>
+                    <li><strong>{{ t('wikiPage.sections.resources.birdsEyeView.unifiedControl') }}</strong> {{ t('wikiPage.sections.resources.birdsEyeView.unifiedControlText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.resources.birdsEyeView.visualClarity') }}</strong> {{ t('wikiPage.sections.resources.birdsEyeView.visualClarityText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.resources.birdsEyeView.streamlinedOperations') }}</strong> {{ t('wikiPage.sections.resources.birdsEyeView.streamlinedOperationsText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.resources.birdsEyeView.strategicPlanning') }}</strong> {{ t('wikiPage.sections.resources.birdsEyeView.strategicPlanningText') }}</li>
                   </ul>
-                  <p><strong>Tip:</strong> Use the bird's eye view to quickly assess your base's overall status before making critical decisions. It's especially useful during emergencies when time is limited.</p>
+                  <p><strong>{{ t('wikiPage.sections.resources.birdsEyeView.tip') }}</strong> {{ t('wikiPage.sections.resources.birdsEyeView.tipText') }}</p>
                 </div>
 
                 <img src="/images/wiki/wiki-02.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
                 <div class="resource-cards">
                   <div class="resource-card">
-                    <h3 class="resource-title">Food Supplies</h3>
+                    <h3 class="resource-title">{{ t('wikiPage.sections.resources.food.title') }}</h3>
                     <div class="resource-details">
-                      <p><strong>Daily Consumption:</strong> ~50 units per 100 survivors</p>
-                      <p><strong>Storage Capacity:</strong> Varies by facility level (Base: 500 units)</p>
-                      <p><strong>Sources:</strong> Supply drops, trade, scavenging missions</p>
-                      <p><strong>Management Tips:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.resources.food.dailyConsumption') }}</strong> {{ t('wikiPage.sections.resources.food.dailyConsumptionValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.food.storageCapacity') }}</strong> {{ t('wikiPage.sections.resources.food.storageCapacityValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.food.sources') }}</strong> {{ t('wikiPage.sections.resources.food.sourcesValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.food.managementTips') }}</strong></p>
                       <ul>
-                        <li>Monitor consumption rates daily</li>
-                        <li>Stockpile during safe periods</li>
-                        <li>Ration during shortages (reduces morale)</li>
-                        <li>Upgrade storage facilities to prevent spoilage</li>
+                        <li>{{ t('wikiPage.sections.resources.food.monitorConsumption') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.food.stockpile') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.food.ration') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.food.upgradeStorage') }}</li>
                       </ul>
                     </div>
                   </div>
 
                   <div class="resource-card">
-                    <h3 class="resource-title">Medical Supplies</h3>
+                    <h3 class="resource-title">{{ t('wikiPage.sections.resources.medical.title') }}</h3>
                     <div class="resource-details">
-                      <p><strong>Daily Consumption:</strong> ~20 units per 100 survivors</p>
-                      <p><strong>Critical Threshold:</strong> Below 30 units triggers emergency protocols</p>
-                      <p><strong>Sources:</strong> Medical stations, research labs, emergency supplies</p>
-                      <p><strong>Management Tips:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.resources.medical.dailyConsumption') }}</strong> {{ t('wikiPage.sections.resources.medical.dailyConsumptionValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.medical.criticalThreshold') }}</strong> {{ t('wikiPage.sections.resources.medical.criticalThresholdValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.medical.sources') }}</strong> {{ t('wikiPage.sections.resources.medical.sourcesValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.medical.managementTips') }}</strong></p>
                       <ul>
-                        <li>Prioritize treatment of infected individuals</li>
-                        <li>Maintain reserves for emergencies</li>
-                        <li>Research medical upgrades to reduce consumption</li>
-                        <li>Trade excess supplies for other resources</li>
+                        <li>{{ t('wikiPage.sections.resources.medical.prioritizeTreatment') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.medical.maintainReserves') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.medical.researchUpgrades') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.medical.tradeExcess') }}</li>
                       </ul>
                     </div>
                   </div>
 
                   <div class="resource-card">
-                    <h3 class="resource-title">Power/Energy</h3>
+                    <h3 class="resource-title">{{ t('wikiPage.sections.resources.power.title') }}</h3>
                     <div class="resource-details">
-                      <p><strong>Daily Consumption:</strong> ~100 units (base operations)</p>
-                      <p><strong>Generation:</strong> Generator output varies by upgrade level</p>
-                      <p><strong>Critical Systems:</strong> Lights, scanners, security systems, medical equipment</p>
-                      <p><strong>Management Tips:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.resources.power.dailyConsumption') }}</strong> {{ t('wikiPage.sections.resources.power.dailyConsumptionValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.power.generation') }}</strong> {{ t('wikiPage.sections.resources.power.generationValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.power.criticalSystems') }}</strong> {{ t('wikiPage.sections.resources.power.criticalSystemsValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.power.managementTips') }}</strong></p>
                       <ul>
-                        <li>Upgrade generators for increased output</li>
-                        <li>Implement power-saving measures during shortages</li>
-                        <li>Backup generators prevent total blackouts</li>
-                        <li>Monitor fuel reserves for generators</li>
+                        <li>{{ t('wikiPage.sections.resources.power.upgradeGenerators') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.power.implementPowerSaving') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.power.backupGenerators') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.power.monitorFuel') }}</li>
                       </ul>
                     </div>
                   </div>
 
                   <div class="resource-card">
-                    <h3 class="resource-title">Security Forces</h3>
+                    <h3 class="resource-title">{{ t('wikiPage.sections.resources.security.title') }}</h3>
                     <div class="resource-details">
-                      <p><strong>Unit Types:</strong> Guards, medical staff, technicians, administrators</p>
-                      <p><strong>Assignment:</strong> Assign to inspection, security, medical, or maintenance</p>
-                      <p><strong>Fatigue System:</strong> Overworked staff become less efficient</p>
-                      <p><strong>Management Tips:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.resources.security.unitTypes') }}</strong> {{ t('wikiPage.sections.resources.security.unitTypesValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.security.assignment') }}</strong> {{ t('wikiPage.sections.resources.security.assignmentValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.security.fatigueSystem') }}</strong> {{ t('wikiPage.sections.resources.security.fatigueSystemValue') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.resources.security.managementTips') }}</strong></p>
                       <ul>
-                        <li>Rotate staff to prevent burnout</li>
-                        <li>Train staff to improve efficiency</li>
-                        <li>Maintain adequate staffing levels</li>
-                        <li>Handle sick staff immediately to prevent spread</li>
+                        <li>{{ t('wikiPage.sections.resources.security.rotateStaff') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.security.trainStaff') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.security.maintainStaffing') }}</li>
+                        <li>{{ t('wikiPage.sections.resources.security.handleSickStaff') }}</li>
                       </ul>
                     </div>
                   </div>
@@ -265,70 +265,70 @@
             <!-- Decision Making -->
             <section id="decisions" class="wiki-section" ref="decisionsRef">
               <div class="section-header">
-                <h2 class="section-title">Decision-Making Strategies</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.decisions.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Every decision has consequences. Learn how to evaluate situations, weigh risks, and make informed choices that balance safety, resources, and morality. Understanding the game's core mechanics is essential - visit our <router-link to="/" class="inline-link">homepage</router-link> to learn more about the decision-making systems in Quarantine Zone: The Last Check.
+                  {{ t('wikiPage.sections.decisions.lead') }} <a href="/" class="inline-link">{{ t('wikiPage.sections.decisions.link1') }}</a>{{ t('wikiPage.sections.decisions.lead2') }}
                 </p>
 
                 <div class="decision-guide">
-                  <h3 class="subsection-title">Decision Framework</h3>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.decisions.framework.title') }}</h3>
                   <div class="decision-steps">
                     <div class="decision-step">
-                      <span class="step-number">1</span>
+                      <span class="step-number">{{ t('wikiPage.sections.decisions.framework.step1.number') }}</span>
                       <div class="step-content">
-                        <h4>Gather Information</h4>
-                        <p>Use all available tools to collect data. Check documents, run scans, observe behavior, and review interview transcripts. More information leads to better decisions.</p>
+                        <h4>{{ t('wikiPage.sections.decisions.framework.step1.title') }}</h4>
+                        <p>{{ t('wikiPage.sections.decisions.framework.step1.text') }}</p>
                       </div>
                     </div>
                     <div class="decision-step">
-                      <span class="step-number">2</span>
+                      <span class="step-number">{{ t('wikiPage.sections.decisions.framework.step2.number') }}</span>
                       <div class="step-content">
-                        <h4>Identify Red Flags</h4>
-                        <p>Look for inconsistencies in stories, suspicious symptoms, forged documents, or unusual behavior patterns. Multiple red flags increase risk.</p>
+                        <h4>{{ t('wikiPage.sections.decisions.framework.step2.title') }}</h4>
+                        <p>{{ t('wikiPage.sections.decisions.framework.step2.text') }}</p>
                       </div>
                     </div>
                     <div class="decision-step">
-                      <span class="step-number">3</span>
+                      <span class="step-number">{{ t('wikiPage.sections.decisions.framework.step3.number') }}</span>
                       <div class="step-content">
-                        <h4>Assess Risk Level</h4>
-                        <p>Evaluate the potential consequences. High-risk individuals require quarantine. Low-risk can proceed. Uncertain cases need additional screening.</p>
+                        <h4>{{ t('wikiPage.sections.decisions.framework.step3.title') }}</h4>
+                        <p>{{ t('wikiPage.sections.decisions.framework.step3.text') }}</p>
                       </div>
                     </div>
                     <div class="decision-step">
-                      <span class="step-number">4</span>
+                      <span class="step-number">{{ t('wikiPage.sections.decisions.framework.step4.number') }}</span>
                       <div class="step-content">
-                        <h4>Consider Resources</h4>
-                        <p>Every decision consumes resources. Quarantine uses beds and medical supplies. Rejection may reduce morale. Balance immediate needs with long-term sustainability.</p>
+                        <h4>{{ t('wikiPage.sections.decisions.framework.step4.title') }}</h4>
+                        <p>{{ t('wikiPage.sections.decisions.framework.step4.text') }}</p>
                       </div>
                     </div>
                     <div class="decision-step">
-                      <span class="step-number">5</span>
+                      <span class="step-number">{{ t('wikiPage.sections.decisions.framework.step5.number') }}</span>
                       <div class="step-content">
-                        <h4>Make the Call</h4>
-                        <p>Sometimes you must decide with incomplete information. Trust your tools, but also trust your instincts. Document your reasoning for future reference.</p>
+                        <h4>{{ t('wikiPage.sections.decisions.framework.step5.title') }}</h4>
+                        <p>{{ t('wikiPage.sections.decisions.framework.step5.text') }}</p>
                       </div>
                     </div>
                   </div>
 
-                  <h3 class="subsection-title">Common Decision Scenarios</h3>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.decisions.scenarios.title') }}</h3>
                   <div class="scenario-cards">
                     <div class="scenario-card">
-                      <h4>Scenario: Conflicting Test Results</h4>
-                      <p><strong>Situation:</strong> Thermometer shows normal, but UV scanner reveals suspicious marks.</p>
-                      <p><strong>Recommendation:</strong> Request additional screening with virus detector. If unavailable, err on the side of caution and quarantine for observation.</p>
+                      <h4>{{ t('wikiPage.sections.decisions.scenarios.conflicting.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.decisions.scenarios.conflicting.situation') }}</strong> {{ t('wikiPage.sections.decisions.scenarios.conflicting.situationText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.decisions.scenarios.conflicting.recommendation') }}</strong> {{ t('wikiPage.sections.decisions.scenarios.conflicting.recommendationText') }}</p>
                     </div>
                     <div class="scenario-card">
-                      <h4>Scenario: Desperate Family</h4>
-                      <p><strong>Situation:</strong> Family with sick child, but one member shows symptoms.</p>
-                      <p><strong>Recommendation:</strong> Separate the symptomatic individual. Allow healthy family members through if resources permit. Consider humanitarian exceptions carefully.</p>
+                      <h4>{{ t('wikiPage.sections.decisions.scenarios.family.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.decisions.scenarios.family.situation') }}</strong> {{ t('wikiPage.sections.decisions.scenarios.family.situationText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.decisions.scenarios.family.recommendation') }}</strong> {{ t('wikiPage.sections.decisions.scenarios.family.recommendationText') }}</p>
                     </div>
                     <div class="scenario-card">
-                      <h4>Scenario: High-Value Individual</h4>
-                      <p><strong>Situation:</strong> Doctor or engineer with valuable skills, but questionable documents.</p>
-                      <p><strong>Recommendation:</strong> Extended screening may be worth the risk. Their skills could benefit the base, but verify identity thoroughly.</p>
+                      <h4>{{ t('wikiPage.sections.decisions.scenarios.highValue.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.decisions.scenarios.highValue.situation') }}</strong> {{ t('wikiPage.sections.decisions.scenarios.highValue.situationText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.decisions.scenarios.highValue.recommendation') }}</strong> {{ t('wikiPage.sections.decisions.scenarios.highValue.recommendationText') }}</p>
                     </div>
                   </div>
                 </div>
@@ -338,85 +338,85 @@
             <!-- Upgrade System -->
             <section id="upgrades" class="wiki-section" ref="upgradesRef">
               <div class="section-header">
-                <h2 class="section-title">Base Upgrade System</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.upgrades.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Strategic upgrades can significantly improve your checkpoint's efficiency and survival chances. Plan your upgrade path carefully based on your playstyle and current challenges. Our <router-link to="/guides" class="inline-link">upgrade strategy guides</router-link> help you prioritize investments and maximize your base's potential. Learn about base management in our <router-link to="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">Rookie Survival Manual</router-link>.
+                  {{ t('wikiPage.sections.upgrades.lead') }} <a href="/guides" class="inline-link">{{ t('wikiPage.sections.upgrades.link1') }}</a>{{ t('wikiPage.sections.upgrades.lead2') }} <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" class="inline-link">{{ t('wikiPage.sections.upgrades.link2') }}</a>{{ t('wikiPage.sections.upgrades.lead3') }}
                 </p>
 
                 <img src="/images/wiki/wiki-03.webp" alt="A gatekeeper inspecting a survivor in a Quarantine zone, with a focus on visual observation and tool usage." class="wiki-image">
 
                 <div class="upgrade-categories">
                   <div class="upgrade-category">
-                    <h3 class="category-title">Inspection Upgrades</h3>
+                    <h3 class="category-title">{{ t('wikiPage.sections.upgrades.inspection.title') }}</h3>
                     <div class="upgrade-list">
                       <div class="upgrade-item">
-                        <h4>Advanced Scanner System</h4>
-                        <p><strong>Cost:</strong> 500 resources, 3 days</p>
-                        <p><strong>Effect:</strong> +25% accuracy, faster processing time</p>
-                        <p><strong>Priority:</strong> High - Improves decision-making accuracy</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.inspection.scanner.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.scanner.cost') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.scanner.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.scanner.effect') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.scanner.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.scanner.priority') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.scanner.priorityText') }}</p>
                       </div>
                       <div class="upgrade-item">
-                        <h4>Automated Document Verification</h4>
-                        <p><strong>Cost:</strong> 300 resources, 2 days</p>
-                        <p><strong>Effect:</strong> Instant document checks, reduces false positives</p>
-                        <p><strong>Priority:</strong> Medium - Saves time but requires maintenance</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.inspection.document.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.document.cost') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.document.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.document.effect') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.document.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.document.priority') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.document.priorityText') }}</p>
                       </div>
                       <div class="upgrade-item">
-                        <h4>Enhanced UV Lighting</h4>
-                        <p><strong>Cost:</strong> 200 resources, 1 day</p>
-                        <p><strong>Effect:</strong> Better visibility, detects hidden symptoms</p>
-                        <p><strong>Priority:</strong> Medium - Useful for thorough inspections</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.inspection.uv.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.uv.cost') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.uv.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.uv.effect') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.uv.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.inspection.uv.priority') }}</strong> {{ t('wikiPage.sections.upgrades.inspection.uv.priorityText') }}</p>
                       </div>
                     </div>
                   </div>
 
                   <div class="upgrade-category">
-                    <h3 class="category-title">Infrastructure Upgrades</h3>
+                    <h3 class="category-title">{{ t('wikiPage.sections.upgrades.infrastructure.title') }}</h3>
                     <div class="upgrade-list">
                       <div class="upgrade-item">
-                        <h4>Expanded Quarantine Facility</h4>
-                        <p><strong>Cost:</strong> 800 resources, 5 days</p>
-                        <p><strong>Effect:</strong> +50% quarantine capacity, better isolation</p>
-                        <p><strong>Priority:</strong> High - Essential for managing outbreaks</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.infrastructure.quarantine.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.quarantine.cost') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.quarantine.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.quarantine.effect') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.quarantine.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.quarantine.priority') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.quarantine.priorityText') }}</p>
                       </div>
                       <div class="upgrade-item">
-                        <h4>Backup Power Generator</h4>
-                        <p><strong>Cost:</strong> 600 resources, 4 days</p>
-                        <p><strong>Effect:</strong> Prevents blackouts, maintains critical systems</p>
-                        <p><strong>Priority:</strong> High - Prevents catastrophic failures</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.infrastructure.generator.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.generator.cost') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.generator.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.generator.effect') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.generator.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.generator.priority') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.generator.priorityText') }}</p>
                       </div>
                       <div class="upgrade-item">
-                        <h4>Reinforced Perimeter Walls</h4>
-                        <p><strong>Cost:</strong> 1000 resources, 7 days</p>
-                        <p><strong>Effect:</strong> +50% defense, prevents breaches</p>
-                        <p><strong>Priority:</strong> Medium - Important for security</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.infrastructure.walls.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.walls.cost') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.walls.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.walls.effect') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.walls.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.infrastructure.walls.priority') }}</strong> {{ t('wikiPage.sections.upgrades.infrastructure.walls.priorityText') }}</p>
                       </div>
                     </div>
                   </div>
 
                   <div class="upgrade-category">
-                    <h3 class="category-title">Resource Upgrades</h3>
+                    <h3 class="category-title">{{ t('wikiPage.sections.upgrades.resource.title') }}</h3>
                     <div class="upgrade-list">
                       <div class="upgrade-item">
-                        <h4>Advanced Medical Station</h4>
-                        <p><strong>Cost:</strong> 700 resources, 4 days</p>
-                        <p><strong>Effect:</strong> -30% medical supply consumption, faster treatment</p>
-                        <p><strong>Priority:</strong> High - Reduces resource drain</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.resource.medical.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.medical.cost') }}</strong> {{ t('wikiPage.sections.upgrades.resource.medical.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.medical.effect') }}</strong> {{ t('wikiPage.sections.upgrades.resource.medical.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.medical.priority') }}</strong> {{ t('wikiPage.sections.upgrades.resource.medical.priorityText') }}</p>
                       </div>
                       <div class="upgrade-item">
-                        <h4>Food Storage Expansion</h4>
-                        <p><strong>Cost:</strong> 400 resources, 3 days</p>
-                        <p><strong>Effect:</strong> +100% storage, reduces spoilage</p>
-                        <p><strong>Priority:</strong> Medium - Allows stockpiling</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.resource.food.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.food.cost') }}</strong> {{ t('wikiPage.sections.upgrades.resource.food.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.food.effect') }}</strong> {{ t('wikiPage.sections.upgrades.resource.food.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.food.priority') }}</strong> {{ t('wikiPage.sections.upgrades.resource.food.priorityText') }}</p>
                       </div>
                       <div class="upgrade-item">
-                        <h4>Resource Recycling System</h4>
-                        <p><strong>Cost:</strong> 500 resources, 3 days</p>
-                        <p><strong>Effect:</strong> +10% resource recovery from operations</p>
-                        <p><strong>Priority:</strong> Low - Long-term benefit</p>
+                        <h4>{{ t('wikiPage.sections.upgrades.resource.recycling.title') }}</h4>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.recycling.cost') }}</strong> {{ t('wikiPage.sections.upgrades.resource.recycling.costValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.recycling.effect') }}</strong> {{ t('wikiPage.sections.upgrades.resource.recycling.effectValue') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.upgrades.resource.recycling.priority') }}</strong> {{ t('wikiPage.sections.upgrades.resource.recycling.priorityText') }}</p>
                       </div>
                     </div>
                   </div>
@@ -427,60 +427,60 @@
             <!-- Personnel Management -->
             <section id="personnel" class="wiki-section" ref="personnelRef">
               <div class="section-header">
-                <h2 class="section-title">Personnel Management</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.personnel.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Your staff are your most valuable resource. Learn how to assign roles, manage fatigue, handle conflicts, and maintain morale to keep operations running smoothly.
+                  {{ t('wikiPage.sections.personnel.lead') }}
                 </p>
 
                 <div class="personnel-guide">
-                  <h3 class="subsection-title">Staff Roles & Assignments</h3>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.personnel.roles.title') }}</h3>
                   <div class="role-cards">
                     <div class="role-card">
-                      <h4>Inspection Officers</h4>
-                      <p><strong>Primary Duty:</strong> Screen incoming individuals</p>
-                      <p><strong>Skills:</strong> Tool operation, document verification, behavioral analysis</p>
-                      <p><strong>Fatigue Rate:</strong> High - mentally demanding work</p>
-                      <p><strong>Optimal Ratio:</strong> 1 officer per 20 daily arrivals</p>
+                      <h4>{{ t('wikiPage.sections.personnel.roles.inspection.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.inspection.primaryDuty') }}</strong> {{ t('wikiPage.sections.personnel.roles.inspection.primaryDutyText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.inspection.skills') }}</strong> {{ t('wikiPage.sections.personnel.roles.inspection.skillsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.inspection.fatigueRate') }}</strong> {{ t('wikiPage.sections.personnel.roles.inspection.fatigueRateText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.inspection.optimalRatio') }}</strong> {{ t('wikiPage.sections.personnel.roles.inspection.optimalRatioText') }}</p>
                     </div>
                     <div class="role-card">
-                      <h4>Medical Staff</h4>
-                      <p><strong>Primary Duty:</strong> Treat patients, monitor quarantined individuals</p>
-                      <p><strong>Skills:</strong> Medical knowledge, infection control, emergency response</p>
-                      <p><strong>Fatigue Rate:</strong> Very High - physically and emotionally draining</p>
-                      <p><strong>Optimal Ratio:</strong> 1 staff per 10 patients</p>
+                      <h4>{{ t('wikiPage.sections.personnel.roles.medical.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.medical.primaryDuty') }}</strong> {{ t('wikiPage.sections.personnel.roles.medical.primaryDutyText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.medical.skills') }}</strong> {{ t('wikiPage.sections.personnel.roles.medical.skillsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.medical.fatigueRate') }}</strong> {{ t('wikiPage.sections.personnel.roles.medical.fatigueRateText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.medical.optimalRatio') }}</strong> {{ t('wikiPage.sections.personnel.roles.medical.optimalRatioText') }}</p>
                     </div>
                     <div class="role-card">
-                      <h4>Security Guards</h4>
-                      <p><strong>Primary Duty:</strong> Maintain order, respond to threats, patrol perimeter</p>
-                      <p><strong>Skills:</strong> Combat training, crowd control, threat assessment</p>
-                      <p><strong>Fatigue Rate:</strong> Medium - physically demanding</p>
-                      <p><strong>Optimal Ratio:</strong> 1 guard per 50 residents</p>
+                      <h4>{{ t('wikiPage.sections.personnel.roles.security.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.security.primaryDuty') }}</strong> {{ t('wikiPage.sections.personnel.roles.security.primaryDutyText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.security.skills') }}</strong> {{ t('wikiPage.sections.personnel.roles.security.skillsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.security.fatigueRate') }}</strong> {{ t('wikiPage.sections.personnel.roles.security.fatigueRateText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.security.optimalRatio') }}</strong> {{ t('wikiPage.sections.personnel.roles.security.optimalRatioText') }}</p>
                     </div>
                     <div class="role-card">
-                      <h4>Technicians</h4>
-                      <p><strong>Primary Duty:</strong> Maintain equipment, repair systems, manage power</p>
-                      <p><strong>Skills:</strong> Technical knowledge, problem-solving, equipment operation</p>
-                      <p><strong>Fatigue Rate:</strong> Low - steady work pace</p>
-                      <p><strong>Optimal Ratio:</strong> 1 technician per 100 residents</p>
+                      <h4>{{ t('wikiPage.sections.personnel.roles.technician.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.technician.primaryDuty') }}</strong> {{ t('wikiPage.sections.personnel.roles.technician.primaryDutyText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.technician.skills') }}</strong> {{ t('wikiPage.sections.personnel.roles.technician.skillsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.technician.fatigueRate') }}</strong> {{ t('wikiPage.sections.personnel.roles.technician.fatigueRateText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.personnel.roles.technician.optimalRatio') }}</strong> {{ t('wikiPage.sections.personnel.roles.technician.optimalRatioText') }}</p>
                     </div>
                   </div>
 
-                  <h3 class="subsection-title">Morale Management</h3>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.personnel.morale.title') }}</h3>
                   <div class="morale-tips">
                     <div class="tip-item">
-                      <strong>Regular Breaks:</strong> Ensure staff get adequate rest. Overworked staff make more mistakes and have lower morale.
+                      <strong>{{ t('wikiPage.sections.personnel.morale.breaks') }}</strong> {{ t('wikiPage.sections.personnel.morale.breaksText') }}
                     </div>
                     <div class="tip-item">
-                      <strong>Fair Treatment:</strong> Treat all staff equally. Favoritism or unfair decisions reduce trust and morale.
+                      <strong>{{ t('wikiPage.sections.personnel.morale.fairTreatment') }}</strong> {{ t('wikiPage.sections.personnel.morale.fairTreatmentText') }}
                     </div>
                     <div class="tip-item">
-                      <strong>Clear Communication:</strong> Explain decisions when possible. Staff who understand the reasoning are more supportive.
+                      <strong>{{ t('wikiPage.sections.personnel.morale.communication') }}</strong> {{ t('wikiPage.sections.personnel.morale.communicationText') }}
                     </div>
                     <div class="tip-item">
-                      <strong>Recognition:</strong> Acknowledge good work. Positive reinforcement improves performance and morale.
+                      <strong>{{ t('wikiPage.sections.personnel.morale.recognition') }}</strong> {{ t('wikiPage.sections.personnel.morale.recognitionText') }}
                     </div>
                   </div>
                 </div>
@@ -490,89 +490,89 @@
             <!-- Event Handling -->
             <section id="events" class="wiki-section" ref="eventsRef">
               <div class="section-header">
-                <h2 class="section-title">Event & Crisis Management</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.events.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Unexpected events will test your checkpoint. Learn how to respond to emergencies, manage crises, and minimize damage when things go wrong. Stay updated with the latest <router-link to="/news" class="inline-link">game news and updates</router-link> to learn about new events and how the community handles them.
+                  {{ t('wikiPage.sections.events.lead') }} <a href="/news" class="inline-link">{{ t('wikiPage.sections.events.link1') }}</a>{{ t('wikiPage.sections.events.lead2') }}
                 </p>
 
                 <div class="event-types">
                   <div class="event-type">
-                    <h3 class="event-title">Power Outage</h3>
+                    <h3 class="event-title">{{ t('wikiPage.sections.events.powerOutage.title') }}</h3>
                     <div class="event-details">
-                      <p><strong>Warning Signs:</strong> Generator maintenance overdue, fuel running low, unusual power consumption</p>
-                      <p><strong>Immediate Actions:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.events.powerOutage.warningSigns') }}</strong> {{ t('wikiPage.sections.events.powerOutage.warningSignsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.powerOutage.immediateActions') }}</strong></p>
                       <ul>
-                        <li>Activate backup generator if available</li>
-                        <li>Prioritize critical systems (medical, security)</li>
-                        <li>Reduce non-essential power consumption</li>
-                        <li>Dispatch technicians to repair primary generator</li>
+                        <li>{{ t('wikiPage.sections.events.powerOutage.action1') }}</li>
+                        <li>{{ t('wikiPage.sections.events.powerOutage.action2') }}</li>
+                        <li>{{ t('wikiPage.sections.events.powerOutage.action3') }}</li>
+                        <li>{{ t('wikiPage.sections.events.powerOutage.action4') }}</li>
                       </ul>
-                      <p><strong>Prevention:</strong> Regular maintenance, fuel monitoring, backup systems</p>
+                      <p><strong>{{ t('wikiPage.sections.events.powerOutage.prevention') }}</strong> {{ t('wikiPage.sections.events.powerOutage.preventionText') }}</p>
                     </div>
                   </div>
 
                   <div class="event-type">
-                    <h3 class="event-title">Outbreak in Quarantine</h3>
+                    <h3 class="event-title">{{ t('wikiPage.sections.events.outbreak.title') }}</h3>
                     <div class="event-details">
-                      <p><strong>Warning Signs:</strong> Multiple positive tests, rapid symptom progression, staff reports</p>
-                      <p><strong>Immediate Actions:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.events.outbreak.warningSigns') }}</strong> {{ t('wikiPage.sections.events.outbreak.warningSignsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.outbreak.immediateActions') }}</strong></p>
                       <ul>
-                        <li>Isolate affected area immediately</li>
-                        <li>Evacuate non-infected individuals</li>
-                        <li>Deploy medical staff with protective equipment</li>
-                        <li>Review recent admissions for potential source</li>
+                        <li>{{ t('wikiPage.sections.events.outbreak.action1') }}</li>
+                        <li>{{ t('wikiPage.sections.events.outbreak.action2') }}</li>
+                        <li>{{ t('wikiPage.sections.events.outbreak.action3') }}</li>
+                        <li>{{ t('wikiPage.sections.events.outbreak.action4') }}</li>
                       </ul>
-                      <p><strong>Prevention:</strong> Thorough screening, proper quarantine protocols, regular health checks</p>
+                      <p><strong>{{ t('wikiPage.sections.events.outbreak.prevention') }}</strong> {{ t('wikiPage.sections.events.outbreak.preventionText') }}</p>
                     </div>
                   </div>
 
                   <div class="event-type">
-                    <h3 class="event-title">Security Breach</h3>
+                    <h3 class="event-title">{{ t('wikiPage.sections.events.securityBreach.title') }}</h3>
                     <div class="event-details">
-                      <p><strong>Warning Signs:</strong> Perimeter alarms, suspicious activity, attempted break-ins</p>
-                      <p><strong>Immediate Actions:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.events.securityBreach.warningSigns') }}</strong> {{ t('wikiPage.sections.events.securityBreach.warningSignsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.securityBreach.immediateActions') }}</strong></p>
                       <ul>
-                        <li>Deploy security forces to breach location</li>
-                        <li>Activate drone surveillance if available</li>
-                        <li>Secure critical areas (medical, command center)</li>
-                        <li>Assess threat level and respond accordingly</li>
+                        <li>{{ t('wikiPage.sections.events.securityBreach.action1') }}</li>
+                        <li>{{ t('wikiPage.sections.events.securityBreach.action2') }}</li>
+                        <li>{{ t('wikiPage.sections.events.securityBreach.action3') }}</li>
+                        <li>{{ t('wikiPage.sections.events.securityBreach.action4') }}</li>
                       </ul>
-                      <p><strong>Prevention:</strong> Strong perimeter defenses, regular patrols, surveillance systems</p>
+                      <p><strong>{{ t('wikiPage.sections.events.securityBreach.prevention') }}</strong> {{ t('wikiPage.sections.events.securityBreach.preventionText') }}</p>
                     </div>
                   </div>
 
                   <div class="event-type">
-                    <h3 class="event-title">Roof Infiltration (New Threat)</h3>
+                    <h3 class="event-title">{{ t('wikiPage.sections.events.roofInfiltration.title') }}</h3>
                     <div class="event-details">
-                      <p><strong>New Defense Challenge:</strong> The full release introduces a new threat where zombies can drop from rooftops, requiring constant vigilance.</p>
-                      <p><strong>Warning Signs:</strong> Sounds from above, shadows moving on roofs, structural damage to upper levels</p>
-                      <p><strong>Immediate Actions:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.events.roofInfiltration.newThreat') }}</strong> {{ t('wikiPage.sections.events.roofInfiltration.intro') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.roofInfiltration.warningSigns') }}</strong> {{ t('wikiPage.sections.events.roofInfiltration.warningSignsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.roofInfiltration.immediateActions') }}</strong></p>
                       <ul>
-                        <li>Always keep your weapon ready - zombies can drop at any moment</li>
-                        <li>Scan rooftops regularly during inspections</li>
-                        <li>Position security forces to cover overhead angles</li>
-                        <li>Upgrade roof defenses and install overhead protection</li>
+                        <li>{{ t('wikiPage.sections.events.roofInfiltration.action1') }}</li>
+                        <li>{{ t('wikiPage.sections.events.roofInfiltration.action2') }}</li>
+                        <li>{{ t('wikiPage.sections.events.roofInfiltration.action3') }}</li>
+                        <li>{{ t('wikiPage.sections.events.roofInfiltration.action4') }}</li>
                       </ul>
-                      <p><strong>Prevention:</strong> Install roof-mounted turrets, reinforce upper structures, maintain constant awareness of vertical threats</p>
-                      <p><strong>Strategy:</strong> This new mechanic adds vertical dimension to defense. Never focus solely on ground-level threats - always watch the skies.</p>
+                      <p><strong>{{ t('wikiPage.sections.events.roofInfiltration.prevention') }}</strong> {{ t('wikiPage.sections.events.roofInfiltration.preventionText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.roofInfiltration.strategy') }}</strong> {{ t('wikiPage.sections.events.roofInfiltration.strategyText') }}</p>
                     </div>
                   </div>
 
                   <div class="event-type">
-                    <h3 class="event-title">Resource Shortage</h3>
+                    <h3 class="event-title">{{ t('wikiPage.sections.events.resourceShortage.title') }}</h3>
                     <div class="event-details">
-                      <p><strong>Warning Signs:</strong> Low stock levels, increased consumption, supply delays</p>
-                      <p><strong>Immediate Actions:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.events.resourceShortage.warningSigns') }}</strong> {{ t('wikiPage.sections.events.resourceShortage.warningSignsText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.events.resourceShortage.immediateActions') }}</strong></p>
                       <ul>
-                        <li>Implement rationing protocols</li>
-                        <li>Prioritize essential resources (medical, food)</li>
-                        <li>Request emergency supplies if possible</li>
-                        <li>Reduce non-essential operations</li>
+                        <li>{{ t('wikiPage.sections.events.resourceShortage.action1') }}</li>
+                        <li>{{ t('wikiPage.sections.events.resourceShortage.action2') }}</li>
+                        <li>{{ t('wikiPage.sections.events.resourceShortage.action3') }}</li>
+                        <li>{{ t('wikiPage.sections.events.resourceShortage.action4') }}</li>
                       </ul>
-                      <p><strong>Prevention:</strong> Stockpiling, resource monitoring, diversified supply sources</p>
+                      <p><strong>{{ t('wikiPage.sections.events.resourceShortage.prevention') }}</strong> {{ t('wikiPage.sections.events.resourceShortage.preventionText') }}</p>
                     </div>
                   </div>
                 </div>
@@ -582,59 +582,59 @@
             <!-- Zombie Containment & Farming -->
             <section id="zombie-farming" class="wiki-section" ref="zombieFarmingRef">
               <div class="section-header">
-                <h2 class="section-title">Zombie Containment & Farming System</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.zombieFarming.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  <strong>New Feature:</strong> The full release introduces a controversial but profitable zombie containment system. Learn how to safely contain and maintain zombies for government research contracts.
+                  <strong>{{ t('wikiPage.sections.zombieFarming.lead') }}</strong> {{ t('wikiPage.sections.zombieFarming.leadText') }}
                 </p>
 
                 <div class="info-box" style="margin-top: 24px;">
-                  <h3 class="subsection-title">Zombie Containment Mechanics</h3>
-                  <p><strong>Overview:</strong> This new system allows you to capture and contain zombies in specialized cages, feeding them with corpses to keep them alive for research purposes.</p>
+                  <h3 class="subsection-title">{{ t('wikiPage.sections.zombieFarming.mechanics.title') }}</h3>
+                  <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.overview') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.overviewText') }}</p>
                   
                   <div class="resource-cards" style="margin-top: 20px;">
                     <div class="resource-card">
-                      <h3 class="resource-title">Containment Process</h3>
+                      <h3 class="resource-title">{{ t('wikiPage.sections.zombieFarming.mechanics.containment.title') }}</h3>
                       <div class="resource-details">
-                        <p><strong>Step 1 - Capture:</strong> Successfully contain infected individuals before they fully transform, or capture zombies during defense events</p>
-                        <p><strong>Step 2 - Containment:</strong> Transfer to specialized containment cages designed to hold zombies safely</p>
-                        <p><strong>Step 3 - Maintenance:</strong> Feed contained zombies with corpses to keep them alive and stable</p>
-                        <p><strong>Step 4 - Research:</strong> Government researchers study the contained zombies, providing you with payment</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.containment.step1') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.containment.step1Text') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.containment.step2') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.containment.step2Text') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.containment.step3') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.containment.step3Text') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.containment.step4') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.containment.step4Text') }}</p>
                       </div>
                     </div>
 
                     <div class="resource-card">
-                      <h3 class="resource-title">Economic Benefits</h3>
+                      <h3 class="resource-title">{{ t('wikiPage.sections.zombieFarming.mechanics.economic.title') }}</h3>
                       <div class="resource-details">
-                        <p><strong>Government Contracts:</strong> Receive regular payments from government research programs</p>
-                        <p><strong>Resource Income:</strong> Provides a steady source of income to fund base operations</p>
-                        <p><strong>Research Data:</strong> Contained zombies may provide valuable information about virus mutations</p>
-                        <p><strong>Risk vs Reward:</strong> Balance the moral implications with the economic benefits</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.economic.contracts') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.economic.contractsText') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.economic.income') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.economic.incomeText') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.economic.data') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.economic.dataText') }}</p>
+                        <p><strong>{{ t('wikiPage.sections.zombieFarming.mechanics.economic.riskReward') }}</strong> {{ t('wikiPage.sections.zombieFarming.mechanics.economic.riskRewardText') }}</p>
                       </div>
                     </div>
                   </div>
 
-                  <h3 class="subsection-title" style="margin-top: 32px;">Strategic Considerations</h3>
+                  <h3 class="subsection-title" style="margin-top: 32px;">{{ t('wikiPage.sections.zombieFarming.considerations.title') }}</h3>
                   <ul style="margin-top: 16px;">
-                    <li><strong>Safety First:</strong> Containment cages must be properly maintained. A breach could be catastrophic</li>
-                    <li><strong>Resource Management:</strong> Feeding zombies requires corpses, which must be obtained from liquidations or defense events</li>
-                    <li><strong>Moral Choices:</strong> This system presents ethical dilemmas - decide if the economic benefits justify the practice</li>
-                    <li><strong>Upgrade Priority:</strong> Invest in containment facility upgrades to increase capacity and safety</li>
-                    <li><strong>Emergency Protocols:</strong> Have a plan for containment breaches - they can spread infection rapidly</li>
+                    <li><strong>{{ t('wikiPage.sections.zombieFarming.considerations.safety') }}</strong> {{ t('wikiPage.sections.zombieFarming.considerations.safetyText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.zombieFarming.considerations.resourceManagement') }}</strong> {{ t('wikiPage.sections.zombieFarming.considerations.resourceManagementText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.zombieFarming.considerations.moralChoices') }}</strong> {{ t('wikiPage.sections.zombieFarming.considerations.moralChoicesText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.zombieFarming.considerations.upgradePriority') }}</strong> {{ t('wikiPage.sections.zombieFarming.considerations.upgradePriorityText') }}</li>
+                    <li><strong>{{ t('wikiPage.sections.zombieFarming.considerations.emergencyProtocols') }}</strong> {{ t('wikiPage.sections.zombieFarming.considerations.emergencyProtocolsText') }}</li>
                   </ul>
 
                   <div class="scenario-cards" style="margin-top: 24px;">
                     <div class="scenario-card">
-                      <h4>Scenario: Containment Breach</h4>
-                      <p><strong>Situation:</strong> A containment cage fails, releasing zombies into your base.</p>
-                      <p><strong>Recommendation:</strong> Immediately activate emergency protocols, deploy security forces, and isolate the breach area. Containment facilities should be located away from critical infrastructure.</p>
+                      <h4>{{ t('wikiPage.sections.zombieFarming.scenarios.breach.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.zombieFarming.scenarios.breach.situation') }}</strong> {{ t('wikiPage.sections.zombieFarming.scenarios.breach.situationText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.zombieFarming.scenarios.breach.recommendation') }}</strong> {{ t('wikiPage.sections.zombieFarming.scenarios.breach.recommendationText') }}</p>
                     </div>
                     <div class="scenario-card">
-                      <h4>Scenario: Corpse Shortage</h4>
-                      <p><strong>Situation:</strong> You have contained zombies but no corpses to feed them.</p>
-                      <p><strong>Recommendation:</strong> Plan ahead - maintain a supply of corpses from liquidations. Consider the economic viability before expanding containment capacity.</p>
+                      <h4>{{ t('wikiPage.sections.zombieFarming.scenarios.shortage.title') }}</h4>
+                      <p><strong>{{ t('wikiPage.sections.zombieFarming.scenarios.shortage.situation') }}</strong> {{ t('wikiPage.sections.zombieFarming.scenarios.shortage.situationText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.zombieFarming.scenarios.shortage.recommendation') }}</strong> {{ t('wikiPage.sections.zombieFarming.scenarios.shortage.recommendationText') }}</p>
                     </div>
                   </div>
                 </div>
@@ -644,72 +644,72 @@
             <!-- Strategies -->
             <section id="strategies" class="wiki-section" ref="strategiesRef">
               <div class="section-header">
-                <h2 class="section-title">Advanced Strategies</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.strategies.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <p class="lead-text">
-                  Master advanced strategies to optimize your checkpoint operations, maximize efficiency, and achieve better outcomes. Combine these strategies with our comprehensive <router-link to="/guides" class="inline-link">survival guides</router-link> for the best results.
+                  {{ t('wikiPage.sections.strategies.lead') }} <a href="/guides" class="inline-link">{{ t('wikiPage.sections.strategies.link1') }}</a>{{ t('wikiPage.sections.strategies.lead2') }}
                 </p>
 
                 <div class="strategy-sections">
                   <div class="strategy-section">
-                    <h3 class="strategy-title">Early Game Strategy</h3>
+                    <h3 class="strategy-title">{{ t('wikiPage.sections.strategies.earlyGame.title') }}</h3>
                     <div class="strategy-content">
-                      <p><strong>Focus Areas:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.earlyGame.focusAreas') }}</strong></p>
                       <ul>
-                        <li>Establish basic inspection protocols</li>
-                        <li>Build essential infrastructure (quarantine, medical)</li>
-                        <li>Stockpile critical resources</li>
-                        <li>Train initial staff on procedures</li>
+                        <li>{{ t('wikiPage.sections.strategies.earlyGame.focus1') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.earlyGame.focus2') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.earlyGame.focus3') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.earlyGame.focus4') }}</li>
                       </ul>
-                      <p><strong>Priority Upgrades:</strong> Basic scanner system, quarantine facility, backup power</p>
-                      <p><strong>Common Mistakes:</strong> Being too lenient or too strict, ignoring resource management, neglecting staff morale</p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.earlyGame.priorityUpgrades') }}</strong> {{ t('wikiPage.sections.strategies.earlyGame.priorityUpgradesText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.earlyGame.commonMistakes') }}</strong> {{ t('wikiPage.sections.strategies.earlyGame.commonMistakesText') }}</p>
                     </div>
                   </div>
 
                   <div class="strategy-section">
-                    <h3 class="strategy-title">Mid Game Strategy</h3>
+                    <h3 class="strategy-title">{{ t('wikiPage.sections.strategies.midGame.title') }}</h3>
                     <div class="strategy-content">
-                      <p><strong>Focus Areas:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.midGame.focusAreas') }}</strong></p>
                       <ul>
-                        <li>Optimize inspection efficiency</li>
-                        <li>Expand capacity for larger populations</li>
-                        <li>Diversify resource sources</li>
-                        <li>Develop specialized staff roles</li>
+                        <li>{{ t('wikiPage.sections.strategies.midGame.focus1') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.midGame.focus2') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.midGame.focus3') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.midGame.focus4') }}</li>
                       </ul>
-                      <p><strong>Priority Upgrades:</strong> Advanced scanners, expanded facilities, resource systems</p>
-                      <p><strong>Common Mistakes:</strong> Overextending resources, ignoring warning signs, poor crisis preparation</p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.midGame.priorityUpgrades') }}</strong> {{ t('wikiPage.sections.strategies.midGame.priorityUpgradesText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.midGame.commonMistakes') }}</strong> {{ t('wikiPage.sections.strategies.midGame.commonMistakesText') }}</p>
                     </div>
                   </div>
 
                   <div class="strategy-section">
-                    <h3 class="strategy-title">Late Game Strategy</h3>
+                    <h3 class="strategy-title">{{ t('wikiPage.sections.strategies.lateGame.title') }}</h3>
                     <div class="strategy-content">
-                      <p><strong>Focus Areas:</strong></p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.lateGame.focusAreas') }}</strong></p>
                       <ul>
-                        <li>Maximize efficiency and automation</li>
-                        <li>Prepare for major events and crises</li>
-                        <li>Optimize resource allocation</li>
-                        <li>Balance multiple competing priorities</li>
+                        <li>{{ t('wikiPage.sections.strategies.lateGame.focus1') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.lateGame.focus2') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.lateGame.focus3') }}</li>
+                        <li>{{ t('wikiPage.sections.strategies.lateGame.focus4') }}</li>
                       </ul>
-                      <p><strong>Priority Upgrades:</strong> Automation systems, advanced defenses, research facilities</p>
-                      <p><strong>Common Mistakes:</strong> Complacency, ignoring long-term consequences, poor crisis response</p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.lateGame.priorityUpgrades') }}</strong> {{ t('wikiPage.sections.strategies.lateGame.priorityUpgradesText') }}</p>
+                      <p><strong>{{ t('wikiPage.sections.strategies.lateGame.commonMistakes') }}</strong> {{ t('wikiPage.sections.strategies.lateGame.commonMistakesText') }}</p>
                     </div>
                   </div>
 
                   <div class="strategy-section">
-                    <h3 class="strategy-title">Pro Tips</h3>
+                    <h3 class="strategy-title">{{ t('wikiPage.sections.strategies.proTips.title') }}</h3>
                     <div class="strategy-content">
                       <ul class="pro-tips-list">
-                        <li><strong>Always verify:</strong> Never rely on a single tool. Cross-reference multiple sources of information.</li>
-                        <li><strong>Document everything:</strong> Keep notes on suspicious patterns. They may help identify future threats.</li>
-                        <li><strong>Plan for failure:</strong> Have backup plans for critical systems. Redundancy saves lives.</li>
-                        <li><strong>Trust but verify:</strong> Be compassionate but cautious. Balance humanity with security.</li>
-                        <li><strong>Learn from mistakes:</strong> Every failure is a learning opportunity. Adapt your strategies.</li>
-                        <li><strong>Resource efficiency:</strong> Every resource spent is one less for emergencies. Spend wisely.</li>
-                        <li><strong>Staff welfare:</strong> Happy, rested staff perform better. Don't overwork them.</li>
-                        <li><strong>Long-term thinking:</strong> Short-term gains may lead to long-term problems. Think ahead.</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.alwaysVerify') }}</strong> {{ t('wikiPage.sections.strategies.proTips.alwaysVerifyText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.documentEverything') }}</strong> {{ t('wikiPage.sections.strategies.proTips.documentEverythingText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.planForFailure') }}</strong> {{ t('wikiPage.sections.strategies.proTips.planForFailureText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.trustButVerify') }}</strong> {{ t('wikiPage.sections.strategies.proTips.trustButVerifyText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.learnFromMistakes') }}</strong> {{ t('wikiPage.sections.strategies.proTips.learnFromMistakesText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.resourceEfficiency') }}</strong> {{ t('wikiPage.sections.strategies.proTips.resourceEfficiencyText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.staffWelfare') }}</strong> {{ t('wikiPage.sections.strategies.proTips.staffWelfareText') }}</li>
+                        <li><strong>{{ t('wikiPage.sections.strategies.proTips.longTermThinking') }}</strong> {{ t('wikiPage.sections.strategies.proTips.longTermThinkingText') }}</li>
                       </ul>
                     </div>
                   </div>
@@ -720,16 +720,16 @@
             <!-- More Wiki Content -->
             <section id="more-wiki" class="wiki-section more-wiki-section" ref="moreWikiRef">
               <div class="section-header">
-                <h2 class="section-title">More Wiki Content</h2>
+                <h2 class="section-title">{{ t('wikiPage.sections.moreWiki.title') }}</h2>
                 <div class="section-divider"></div>
               </div>
               <div class="section-content">
                 <div class="more-wiki-list">
                   <div class="more-wiki-item">
-                    <router-link to="/wiki/symptoms" class="more-wiki-link">
-                      <h3 class="more-wiki-title">All Symptoms And How To Detect Them</h3>
-                      <p class="more-wiki-description">Complete guide to all symptoms in Quarantine Zone: The Last Check, including safe symptoms, quarantine symptoms, and infection symptoms. Learn which tools to use for detection.</p>
-                    </router-link>
+                    <a href="/wiki/symptoms" class="more-wiki-link">
+                      <h3 class="more-wiki-title">{{ t('wikiPage.sections.moreWiki.symptoms.title') }}</h3>
+                      <p class="more-wiki-description">{{ t('wikiPage.sections.moreWiki.symptoms.description') }}</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -743,6 +743,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const toolsRef = ref(null)
 const resourcesRef = ref(null)
