@@ -1,5 +1,113 @@
 export const guides = [
     {
+      id: 9,
+      title:
+        'Quarantine Zone: The Last Check — Inspection Order & Survivor Routing Protocol',
+      description:
+        'Stop guessing at the window. This guide gives a repeatable tool order, when to wait for passive tells, and exact routing rules for Approve, Quarantine, Lab, Deny, and Liquidation — without tanking your score.',
+      tags: [
+        'inspection workflow',
+        'checkpoint protocol',
+        'routing',
+        'Quarantine Zone',
+        'The Last Check',
+        'tools',
+      ],
+      publishDate: '2026-03-23',
+      imageUrl: '/images/guide/guide01.webp',
+      imageAlt:
+        'Inspector at the Quarantine Zone checkpoint using tools on a survivor',
+      seo: {
+        title:
+          'Quarantine Zone: The Last Check — Inspection Order & Routing Protocol | Guide',
+        description:
+          'Concrete checkpoint workflow for Quarantine Zone: The Last Check: tool sequence, temperature and UV rules, document checks, and survivor routing — Quarantine vs Lab vs Living Block vs Liquidation.',
+        keywords:
+          'Quarantine Zone inspection order, checkpoint workflow, survivor routing, quarantine vs lab, tool sequence, The Last Check guide',
+      },
+      addressBar: '/Quarantine-Zone-The-Last-Check-Inspection-Routing-Protocol',
+      detailsHtml: `
+      <p><strong>Introduction:</strong> The <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Rookie Survival Manual</a> teaches <em>what</em> to look for. This guide locks down <em>when</em> you do each step so you do not double-work survivors, miss contraband, or approve someone because you rushed the UV pass. Pair it with the <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">symptoms guide</a> when a read is ambiguous.</p>
+
+        <h2>Part 1: Default Tool Order (Every Survivor)</h2>
+        <p>Run this sequence unless the UI or a raid timer forces a shortcut. The goal is <strong>cheap information first</strong>, then <strong>confirmatory scans</strong>, then <strong>routing</strong>.</p>
+
+        <ol>
+          <li><strong>360° look + hands:</strong> Gait, face, skin, sweat, visible wounds, nervous clutching. Costs nothing and often decides if you even need the body scanner.</li>
+          <li><strong>Documents:</strong> Name, photo match, stamps, expiry. Flag forgeries before you waste tools on a person you will deny anyway.</li>
+          <li><strong>Thermometer (forehead):</strong> Treat <strong>38°C and above</strong> as a hard yellow flag — pair with UV and behavior; do not approve on “maybe fine” temperature alone.</li>
+          <li><strong>UV light (face, neck, hands):</strong> Slow pan. You are hunting for fluorescence, odd fluids, and early-stage vein traces. If UV is clean but temp is high, you are still not done.</li>
+          <li><strong>Metal detector / pat-down flow:</strong> If the detector chirps, resolve <strong>external pockets → bag → internal scan</strong> before final judgment. For X-ray oddities, see the <a href="/guides/Quarantine-Zone-The-Last-Check-Contraband-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">contraband guide</a>.</li>
+          <li><strong>Body scanner / deep inspection tools:</strong> Only after externals are clear. Use when you suspect internal contraband, implants, or organ-level tells the UV missed.</li>
+          <li><strong>Specialty tools (stethoscope, reflex, eye exam, etc.):</strong> Pull these when the generic pass is inconclusive and the case is high risk (VIP, bleeding “scratch” story, silent carrier vibes).</li>
+        </ol>
+
+        <img src="/images/guide/guide01-01.webp" alt="Visual inspection and tool order at the Quarantine Zone checkpoint" class="guide-image">
+
+        <h2>Part 2: When to Pause (Let the Game Show You More)</h2>
+        <ul>
+          <li><strong>After a stressful question:</strong> Some tells appear in dialogue tone or body language a few seconds later. If you already see one red flag, wait one beat before stamping.</li>
+          <li><strong>“Injured, not bitten” claims:</strong> Zoom wounds with the magnifier. Clean cuts vs discolored tissue matter; if unsure, watch for a temperature climb over a short window before you commit to Approve.</li>
+          <li><strong>Metal hits but no bag:</strong> Do not liquidate for beeps alone — finish the internal scan path or you eat a penalty for wrong deaths and wrong approvals alike.</li>
+        </ul>
+
+        <h2>Part 3: Routing Cheat Sheet</h2>
+        <p>Use this after your tool pass. If two rows conflict, pick the <strong>safer</strong> row for your run (infection control vs authority loss is campaign-dependent).</p>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Condition</th>
+              <th>Route</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Docs valid, all tools green, behavior normal</td>
+              <td><strong>Approve → Living / safe zone</strong></td>
+              <td>Max throughput; preserves beds and food if your day is crowded.</td>
+            </tr>
+            <tr>
+              <td>Fever or soft symptoms, no hard infection proof</td>
+              <td><strong>Quarantine cell</strong></td>
+              <td>Buys time; better than an interior outbreak. Re-check next cycle if your shift allows.</td>
+            </tr>
+            <tr>
+              <td>Needs science you cannot get at the booth (unknown pathogen read)</td>
+              <td><strong>Lab route</strong></td>
+              <td>Unlocks data and upgrades long term; remember lethal tests are a real trade — see <a href="/guides/Quarantine-Zone-The-Last-Check-Laboratory-Upgrades-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">lab &amp; upgrades</a>.</td>
+            </tr>
+            <tr>
+              <td>Forged papers, major contraband, armed threat</td>
+              <td><strong>Deny / security protocols</strong></td>
+              <td>Keep the gate closed; escalate to combat rules if they draw (see <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">combat guide</a>).</td>
+            </tr>
+            <tr>
+              <td>Clear zombie morphology, aggressive UV, parasites, confirmed turn</td>
+              <td><strong>Liquidation</strong></td>
+              <td>Protect the line; verify no civilians in arc before firing.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <img src="/images/guide/guide01-02.webp" alt="Decision routing after inspection at the checkpoint" class="guide-image">
+
+        <h2>Part 4: Split Cases (Contraband + Infection Suspicion)</h2>
+        <ol>
+          <li><strong>Resolve contraband first</strong> so you know if the person is a smuggler, bomber, or both.</li>
+          <li><strong>Then rerun infection tools</strong> — stress and running raise temp; separating the causes avoids false liquidations.</li>
+          <li><strong>If still split:</strong> Quarantine beats Approve; Lab beats guessing when the narrative allows.</li>
+        </ol>
+
+        <h2>Part 5: End-of-Shift Base Checks (30 Seconds)</h2>
+        <p>Before you skip to the next day: generator fuel above the safe band, turret ammo not zero, walls repaired if you took a wave. Details in the <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">defense guide</a> and <a href="/wiki" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">wiki</a>.</p>
+
+        <p><strong>Conclusion:</strong> Treat every survivor with the same <strong>ordered pass</strong>, then route by <strong>worst believable risk</strong>. Speed comes from muscle memory, not skipping UV.</p>
+      `
+    },
+
+    {
       id: 8,
       title: 'Quarantine Zone: The Last Check Laboratory & Upgrades Tier List',
       description:

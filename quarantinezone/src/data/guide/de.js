@@ -1,5 +1,113 @@
 export const guides = [
     {
+        id: 9,
+        title:
+            'Quarantine Zone: The Last Check — Inspektions-Reihenfolge & Routing-Protokoll',
+        description:
+            'Schluss mit Raten am Schalter: feste Werkzeug-Reihenfolge, wann du passive Hinweise abwarten solltest, und klare Regeln für Freigabe, Quarantäne, Labor, Ablehnung und Liquidation — ohne Wertung zu zerstören.',
+        tags: [
+            'Inspektionsablauf',
+            'Kontrollpunkt',
+            'Routing',
+            'Quarantine Zone',
+            'The Last Check',
+            'Werkzeuge',
+        ],
+        publishDate: '2026-03-23',
+        imageUrl: '/images/guide/guide01.webp',
+        imageAlt:
+            'Inspektor am Quarantine-Zone-Kontrollpunkt mit Werkzeugen an einem Überlebenden',
+        seo: {
+            title:
+                'Quarantine Zone: The Last Check — Inspektions-Reihenfolge & Routing | Guide',
+            description:
+                'Konkreter Checkpoint-Workflow für Quarantine Zone: The Last Check: Werkzeug-Sequenz, Temperatur- und UV-Regeln, Dokumente und Routing — Quarantäne vs. Labor vs. Wohnbereich vs. Liquidation.',
+            keywords:
+                'Quarantine Zone Inspektionsreihenfolge, Checkpoint Workflow, Überlebenden-Routing, Quarantäne Labor, Werkzeugablauf, The Last Check Guide',
+        },
+        addressBar: '/Quarantine-Zone-The-Last-Check-Inspection-Routing-Protocol',
+        detailsHtml: `
+      <p><strong>Einführung:</strong> Das <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Rookie Survival Manual</a> erklärt, <em>worauf</em> du achten musst. Dieser Guide legt fest, <em>wann</em> du welchen Schritt machst — damit du keine Doppelarbeit machst, keinen Schmuggel übersiehst und niemanden freigibst, weil du die UV zu hastig abgeschlossen hast. Bei unklaren Reads ergänzt du mit dem <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Symptom-Guide</a>.</p>
+
+        <h2>Teil 1: Standard-Werkzeug-Reihenfolge (jeder Überlebende)</h2>
+        <p>Halte dich an diese Sequenz, solange UI oder Raid-Timer keinen Kurzschluss erzwingen. Ziel: <strong>billige Infos zuerst</strong>, dann <strong>Bestätigungs-Scans</strong>, dann <strong>Routing</strong>.</p>
+
+        <ol>
+          <li><strong>Rundumblick + Hände:</strong> Gang, Gesicht, Haut, Schweiß, sichtbare Wunden, nervöses Klammern. Kostet nichts und entscheidet oft, ob du den Körperscan überhaupt brauchst.</li>
+          <li><strong>Dokumente:</strong> Name, Fototreffer, Stempel, Gültigkeit. Fälschungen markieren, bevor du Werkzeuge an jemanden verschwendest, den du sowieso abweist.</li>
+          <li><strong>Thermometer (Stirn):</strong> Ab <strong>38°C</strong> harte gelbe Flagge — mit UV und Verhalten kombinieren; nicht allein auf „vielleicht okay“ freigeben.</li>
+          <li><strong>UV-Licht (Gesicht, Hals, Hände):</strong> Langsam führen. Du suchst Fluoreszenz, seltsame Flüssigkeiten, frühe Venenzeichnung. UV sauber bei Fieber heißt noch nicht „fertig“.</li>
+          <li><strong>Metalldetektor / Abtast-Flow:</strong> Piept es, klärst du <strong>Außentaschen → Tasche → interner Scan</strong> vor dem Urteil. Bei Röntgen-Auffälligkeiten: <a href="/guides/Quarantine-Zone-The-Last-Check-Contraband-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Schmuggel-Guide</a>.</li>
+          <li><strong>Körperscanner / Tiefeninspektion:</strong> Erst wenn Außen checks klar sind. Bei Verdacht auf interne Schmuggelware, Implantate oder Organtells, die UV nicht sieht.</li>
+          <li><strong>Spezialwerkzeuge (Stethoskop, Reflex, Augen-Check …):</strong> Wenn der Standarddurchlauf unklar bleibt und das Risiko hoch ist (VIP, „nur Kratzer“-Story, stiller Träger).</li>
+        </ol>
+
+        <img src="/images/guide/guide01-01.webp" alt="Sichtprüfung und Werkzeug-Reihenfolge am Quarantine-Zone-Kontrollpunkt" class="guide-image">
+
+        <h2>Teil 2: Wann du innehalten solltest</h2>
+        <ul>
+          <li><strong>Nach einer harten Frage:</strong> Manche Ticks kommen erst Sekunden später in Stimme oder Körpersprache. Siehst du schon eine rote Flagge, warte einen Moment vor dem Stempel.</li>
+          <li><strong>„Verletzt, nicht gebissen“:</strong> Wunden mit Lupe prüfen. Sauberer Schnitt vs. verfärbtes Gewebe; bei Zweifel kurz die Temperatur beobachten, bevor du freigibst.</li>
+          <li><strong>Metallpieps ohne Tasche:</strong> Nicht wegen Piepens liquidieren — internen Scan-Pfad zu Ende gehen, sonst triffst du falsche Tode und falsche Freigaben.</li>
+        </ul>
+
+        <h2>Teil 3: Routing-Spickzettel</h2>
+        <p>Nach dem Werkzeugdurchlauf. Widersprechen sich zwei Zeilen, nimm in deinem Run die <strong>sicherere</strong> Zeile (Infektionsschutz vs. Autoritätsverlust hängt vom Kampagnenkontext ab).</p>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Befund</th>
+              <th>Route</th>
+              <th>Warum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dokumente ok, alle Tools grün, Verhalten normal</td>
+              <td><strong>Freigabe → Wohn-/Sicherbereich</strong></td>
+              <td>Maximaler Durchsatz; schont Betten und Rationen an vollen Tagen.</td>
+            </tr>
+            <tr>
+              <td>Fieber oder weiche Symptome, kein harter Infektionsbeweis</td>
+              <td><strong>Quarantänezelle</strong></td>
+              <td>Zeit gewinnen; besser als Ausbruch innen. Nächste Schicht ggf. nachprüfen.</td>
+            </tr>
+            <tr>
+              <td>Wissenschaft nötig, die du am Schalter nicht bekommst (unklare Pathogen-Lesart)</td>
+              <td><strong>Route Labor</strong></td>
+              <td>Daten und Upgrades langfristig; tödliche Tests sind echter Trade — siehe <a href="/guides/Quarantine-Zone-The-Last-Check-Laboratory-Upgrades-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Labor &amp; Upgrades</a>.</td>
+            </tr>
+            <tr>
+              <td>Gefälschte Papiere, schwerer Schmuggel, bewaffnete Bedrohung</td>
+              <td><strong>Ablehnung / Sicherheitsprotokoll</strong></td>
+              <td>Tor zu; bei Ziehen der Waffe Kampf-Regeln (<a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Kampf-Guide</a>).</td>
+            </tr>
+            <tr>
+              <td>Klare Zombie-Morphologie, aggressives UV, Parasiten, bestätigter Turn</td>
+              <td><strong>Liquidation</strong></td>
+              <td>Linie schützen; vor Schuss Zivilisten im Winkel checken.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <img src="/images/guide/guide01-02.webp" alt="Routing-Entscheidung nach der Inspektion am Kontrollpunkt" class="guide-image">
+
+        <h2>Teil 4: Mischfälle (Schmuggel + Infektionsverdacht)</h2>
+        <ol>
+          <li><strong>Zuerst Schmuggel klären</strong>, damit klar ist: Schmuggler, Bomber oder beides.</li>
+          <li><strong>Dann Infektions-Tools wiederholen</strong> — Stress und Rennen erhöhen Temperatur; Ursachen trennen verhindert falsche Liquidationen.</li>
+          <li><strong>Immer noch gespalten:</strong> Quarantäne schlägt Freigabe; Labor schlägt Raten, wenn die Story es erlaubt.</li>
+        </ol>
+
+        <h2>Teil 5: End-of-Shift Basis-Check (30 Sekunden)</h2>
+        <p>Vor dem Tageswechsel: Generator über Sicherheitsband, Geschütz-Munition nicht null, Mauern repariert wenn Welle kam. Details im <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Verteidigungs-Guide</a> und <a href="/wiki" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Wiki</a>.</p>
+
+        <p><strong>Fazit:</strong> Gleiche <strong>geordnete Passage</strong> für jeden Überlebenden, Routing nach dem <strong>schlimmsten plausiblen Risiko</strong>. Schnelligkeit kommt von Routine, nicht vom Überspringen der UV.</p>
+      `
+    },
+
+    {
         id: 8,
         title: 'Quarantine Zone: The Last Check – Labor & Upgrades Tier-Liste',
         description:
