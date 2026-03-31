@@ -1,5 +1,85 @@
 export const guides = [
     {
+        id: 10,
+        title:
+            'Quarantine Zone: The Last Check — Kernspielschleife & Commander-Briefing',
+        description:
+            'Was du in Quarantine Zone: The Last Check wirklich tust: Evakuierungskontingente, Erste-Person-Inspektion vs. isometrische Basis, Geld für Upgrades und nächtliche Horde-Verteidigung mit einer bewaffneten Drohne — nach offiziellem Setup und verlässlich beschriebenen Mechaniken.',
+        tags: [
+            'Kernspielschleife',
+            'Einsteiger-Briefing',
+            'Kontrollpunkt',
+            'Basismanagement',
+            'Quarantine Zone',
+            'The Last Check',
+        ],
+        publishDate: '2026-03-31',
+        imageUrl: '/images/guide/guide10.webp',
+        imageAlt:
+            'Kommandant am Evakuierungs-Kontrollpunkt in Quarantine Zone bei der Inspektion',
+        seo: {
+            title:
+                'Quarantine Zone: The Last Check — Kernspielschleife & Commander-Briefing | Guide',
+            description:
+                'Spielerorientierter Überblick über Quarantine Zone: The Last Check: Rolle des Kommandanten, Inspektions-Triage, staatliches Evakuierungskontingent, Anlagen-Upgrades und nächtliche Drohnen-Verteidigung — im Einklang mit dem offiziellen Design.',
+            keywords:
+                'Quarantine Zone The Last Check Guide, Kernspielschleife, Checkpoint-Simulation, Evakuierungskontingent, Basismanagement, Drohnen-Verteidigung, Brigada Games, Devolver Digital',
+        },
+        addressBar: '/quarantine-zone-the-last-check-core-game-loop-commander-briefing',
+        detailsHtml: `
+      <p><strong>Einführung:</strong> Dieser Guide fasst zusammen, <em>was für ein Spiel das ist</em> und <em>wie die Hauptschleife zusammenhängt</em> — auf Basis der Prämisse und Mechaniken, wie sie im Spiel und in offiziellen Store-Einträgen dargestellt werden. Für konkrete Inspektionsgewohnheiten: <a href="/guides/quarantine-zone-the-last-check-rookie-survival-manual" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Rookie Survival Manual</a> und <a href="/guides/Quarantine-Zone-The-Last-Check-Inspection-Routing-Protocol" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Inspektions-Reihenfolge &amp; Routing</a>.</p>
+
+        <h2>Teil 1: Was du spielst</h2>
+        <p><strong>Quarantine Zone: The Last Check</strong> ist ein Singleplayer-<strong>Simulations</strong>spiel von <strong>Brigada Games</strong>, veröffentlicht von <strong>Devolver Digital</strong> für <strong>Windows PC</strong> (Unreal Engine 5). Du führst einen <strong>militärischen Evakuierungs-Kontrollpunkt</strong> nach einem Zombie-Virus-Ausbruch: Überlebende prüfen, die Anlage betreiben und Infektionen vom sicheren Wohnbereich fernhalten. Die PC-Version ist auf <strong>Steam</strong> erhältlich; Devolver nennt zusätzlich <strong>PC Game Pass</strong> — Verfügbarkeit bitte in deinem regionalen Store prüfen.</p>
+
+        <h2>Teil 2: Zwei Spielweisen</h2>
+        <p>Das Spiel teilt deine Aufmerksamkeit bewusst:</p>
+        <ul>
+          <li><strong>Erste-Person am Schalter:</strong> Überlebende betreten den Untersuchungsbereich <strong>nacheinander</strong>. Du vergleichst Befunde mit dem <strong>Handbuch</strong>, nutzt <strong>Diagnosewerkzeuge</strong> (z. B. Thermometer, Reflexprüfung, Scanner, Licht) und bewertest die Schwere der <strong>Symptome</strong>. Medien vergleichen diesen Teil oft mit <em>Papers, Please</em>: Regeln, Beweise und moralischer Druck am Fenster.</li>
+          <li><strong>Isometrisches Basismanagement:</strong> Derselbe Kommandant verantwortet <strong>Anlagen und Logistik</strong> — Schlafplätze, Strom, Verteidigung, Generatoren und andere Upgrades, finanziert aus deinen Einnahmen. Du bist nicht nur Stempelbehörde, du hältst den Posten am Laufen.</li>
+        </ul>
+        <img src="/images/guide/guide01-01.webp" alt="Erste-Person-Inspektion und Werkzeuge am Quarantine-Zone-Kontrollpunkt" class="guide-image">
+
+        <h2>Teil 3: Ziele (warum Schichten stressen)</h2>
+        <p>Öffentliche Beschreibungen stimmen in der Spannung überein:</p>
+        <ul>
+          <li>Du musst ein <strong>staatlich vorgegebenes Kontingent gesunder Evakuierten</strong> innerhalb einer <strong>begrenzten Anzahl von Tagen</strong> erfüllen.</li>
+          <li>Gleichzeitig muss die Virenfreiheit des <strong>Wohn- bzw. Sicherbereichs</strong> gewahrt bleiben — ein falscher Durchlass kann die ganze Linie gefährden.</li>
+          <li>Geld aus Inspektionen und zugehörigen Aufgaben zahlt <strong>Wartung und Upgrades</strong>. Fällt die Basis aus (Strom, Verteidigung, Kapazität), werden die Inspektions-Minispiele schwerer „sauber“ zu bestehen.</li>
+        </ul>
+        <p>Exakte Kontingentzahlen und Tageslimits stehen bewusst nur in der Spiel-UI, damit dieser Artikel über Patches hinweg korrekt bleibt.</p>
+
+        <h2>Teil 4: Die Inspektionsentscheidung, klar formuliert</h2>
+        <p>Nach Werkzeugen und Beobachtung routest du jede Person in eine der großen Ergebnislinien des Spiels:</p>
+        <ul>
+          <li><strong>Freigabe in den Wohn-/Sicherbereich</strong>, wenn die Hinweise kein glaubwürdiges Ausbruchsrisiko zeigen.</li>
+          <li><strong>Quarantäne</strong> bei unklaren Zeichen — Zeit gewinnen auf Kosten von Platz und Nachkontrolle.</li>
+          <li><strong>Eliminierung</strong>, wenn der Fall den fiktionalen Kriterien für eine aktive Bedrohung entspricht (Ingame-Begriffe können variieren; die Struktur ist: Bedrohung vor dem Eintritt in die sichere Bevölkerung beseitigen).</li>
+        </ul>
+        <p>Symptom-Details und Werkzeug-Paarung: <a href="/wiki/symptoms" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Symptom-Wiki</a> und <a href="/guides/Quarantine-Zone-The-Last-Check-All-Symptoms-Guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">All-Symptoms-Guide</a>.</p>
+
+        <h2>Teil 5: Progression — Werkzeuge und Eskalation</h2>
+        <p>Berichte beschreiben <strong>einfache Checks zu Beginn</strong> und <strong>fortgeschrittenere Ausrüstung</strong> (tiefere Scans, Bildgebung, audioartige Prüfungen usw.), wenn das Szenario es verlangt. Die Virus-Fiktion treibt dich zudem zu <strong>Forschung</strong> und schwierigeren Lesarten. Jedes neue Werkzeug ist ein neues Fehlerprofil: was es bestätigt, was es nicht sieht, und wann es Sekunden bei klarem Verweigeren oder Freigabe verschwendet.</p>
+
+        <h2>Teil 6: Nächte — Horden und Kampfdrohne</h2>
+        <p>Wenn nachts Zombie-<strong>Horden</strong> angreifen, verlässt du die Schalterroutine und steuerst eine <strong>bewaffnete Verteidigungsdrohne</strong>. Seriöse Zusammenfassungen beschreiben das als <strong>tower-defense-artige</strong> Ebene: Position, Schießen, Perimeter halten, damit die Tageswirtschaft noch eine Basis hat. Loadout und Wellen: <a href="/guides/quarantine-zone-the-last-check-combat-base-defense-guide" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">Kampf- &amp; Verteidigungs-Guide</a>.</p>
+        <img src="/images/guide/guide02-01.webp" alt="Checkpoint-Verteidigung und Nachtkampf in der Quarantine Zone" class="guide-image">
+
+        <h2>Teil 7: Wie die Guides auf dieser Seite zur Schleife passen</h2>
+        <ul>
+          <li><strong>Rookie-Manual + Routing:</strong> Mach die Schleife am Fenster zur wiederholbaren Checkliste.</li>
+          <li><strong>Schmuggel / Symptome / Wiki:</strong> Nachschlagen, wenn das Handbuch allein nicht reicht.</li>
+          <li><strong>Labor &amp; Upgrades:</strong> Ausgabendruck zwischen besseren Tools, Kapazität und Verteidigung.</li>
+          <li><strong>Kampagne &amp; moralische Entscheidungen:</strong> Wenn Story-Events „reine“ Mechanik überlagern.</li>
+        </ul>
+
+        <h2>Teil 8: Genauigkeit bewahren</h2>
+        <p>Balance-Patches, Bugfixes und QoL können Zeiten, Wirtschaft oder Micro-Tasks ändern — auch zwischen Demo und Vollversion. Widerspricht etwas hier deinem Build, gelten zuerst <strong>Tutorialtext und Patchnotes im Spiel</strong>; danach unser <a href="/news" style="color: #39ff14; text-decoration: none; border-bottom: 1px solid rgba(57, 255, 20, 0.3);">News</a>-Bereich nach großen Updates.</p>
+
+        <p><strong>Fazit:</strong> <em>Quarantine Zone: The Last Check</em> ist eine <strong>Checkpoint-Triage-Fantasie</strong> mit einem <strong>Basen-Überleben</strong>-Rückgrat. Lerne die Schleife einmal — <strong>inspektieren → verdienen → upgraden → die Nacht überstehen</strong> — und trainiere dann das Fenster, bis Routing schnell, evidenzbasiert und ehrlich bezüglich Risiko ist.</p>
+      `
+    },
+    {
         id: 9,
         title:
             'Quarantine Zone: The Last Check — Inspektions-Reihenfolge & Routing-Protokoll',
