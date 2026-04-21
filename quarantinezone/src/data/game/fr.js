@@ -1,0 +1,134 @@
+export const games = [
+  {
+    "id": 1,
+    "title": "Zone de quarantaine",
+    "iframeUrl": "https://quarantinezonegame.com/gg/quarantine-zone-unblocked/",
+    "description": "Survivez aux rues infectées dans Quarantine Zone : The Last Check ! Testez vos compétences de conduite dans ce jeu passionnant. Vivez des moments intenses et luttez pour votre survie. Êtes-vous prêt à relever le défi ?",
+    "tags": [
+      "quarantaine",
+      "zone",
+      "jeu de conduite",
+      "jeu de survie",
+      "apocalypse zombie"
+    ],
+    "publishDate": "2025-12-05",
+    "isHome": true,
+    "imageUrl": "/images/game/game01.webp",
+    "imageAlt": "Capture d'écran du jeu Quarantine Zone montrant une voiture traversant une zone infectée.",
+    "seo": {
+      "title": "Zone de quarantaine - Le dernier jeu de contrôle - Une survie passionnante !",
+      "description": "Vivez la survie ultime au volant dans Quarantine Zone: The Last Check. Naviguez dans les zones infectées et testez vos compétences. Préparez-vous à relever le défi !",
+      "keywords": "quarantaine, zone, conduite, survie, jeu, infecté, apocalypse, dernier contrôle, jeu d'action, jeu de voiture"
+    },
+    "comments": [
+      {
+        "id": 1,
+        "author": "Joueur123",
+        "date": "1 janvier 2025",
+        "rating": 5,
+        "text": "Jeu incroyable ! Les mécanismes de prise de décision sont vraiment engageants."
+      }
+    ],
+    "addressBar": "quarantine-zone",
+    "detailsHtml": "<div>\n    <h2>Zone de quarantaine : le dernier contrôle</h2>\n    <p>Plongez dans le monde palpitant de Quarantine Zone : The Last Check, où la survie dépend de vos compétences de conduite ! Parcourez des rues dangereuses et pleines de dangers dans ce jeu plein d'adrénaline. Chaque virage pourrait être le dernier, alors attachez votre ceinture et préparez-vous pour l'aventure de votre vie. Ressentez le grondement du moteur, entendez les cris au loin et voyez la décomposition d'un monde devenu fou. Êtes-vous prêt à relever le défi ?</p>\n  \n    <h3>Vue d'ensemble</h3>\n    <p>Quarantine Zone : The Last Check vous plonge dans une bataille désespérée pour la survie dans les limites d'une quarantaine mortelle. Avec des ressources limitées et des menaces constantes, vous devrez maîtriser vos capacités de conduite pour échapper aux infectés et assurer votre avenir. Le jeu propose un mélange passionnant de poursuites à grande vitesse et de prise de décision stratégique. La clé de la survie ne réside pas seulement dans vos réflexes mais aussi dans votre capacité d'adaptation et de dépassement.</p>\n  \n    <h3>Expérience de jeu</h3>\n    <p>Imaginez le poids de la responsabilité alors que vous naviguez dans les rues étroites, les grognements des personnes infectées résonnant autour de vous. La tension est palpable et chaque décision entraîne des conséquences. Le destin de l’humanité pourrait bien reposer sur vos épaules dans cette expérience palpitante. Les commandes sont intuitives, ce qui le rend facile à prendre en main mais difficile à maîtriser. Attendez-vous à des incidents rapprochés, à des quasi-accidents et à des moments où vous remettrez en question vos choix. Mais n'oubliez pas que l'hésitation peut être mortelle.</p>\n  \n    <h3>Points forts de la zone de quarantaine</h3>\n    <ul>\n      <li><strong>Action de conduite intense</strong> : vivez des poursuites palpitantes et des évasions pleines d'adrénaline en parcourant les zones infectées.</li>\n      <li><strong>Prise de décision stratégique</strong> : chaque choix compte. Planifiez soigneusement vos itinéraires et utilisez judicieusement vos ressources pour survivre.</li>\n      <li><strong>Environnement immersif</strong> : explorez un monde détaillé et atmosphérique, rempli de danger et de désespoir.</li>\n      <li><strong>Testez vos compétences</strong> : testez vos compétences de conduite face à des obstacles insurmontables.</li>\n    </ul>\n  \n    <h3>Comment jouer</h3>\n    <p>Quarantine Zone est un jeu de survie basé sur la conduite automobile dans lequel votre objectif principal est de naviguer dans des zones dangereuses tout en évitant ou en déjouant les personnes infectées. Soyez attentif à votre environnement et gérez efficacement vos ressources. La vitesse et la précision sont essentielles à votre survie. Gardez la main ferme, faites confiance à votre instinct et n'abandonnez jamais !</p>\n  \n    <h3>FAQ</h3>\n    <ol>\n      <li><strong>Quel est l'objectif de Quarantine Zone : The Last Check ?</strong><br>L'objectif principal est de survivre en traversant les zones infectées, en évitant ou en déjouant les infectés et en sécurisant les ressources.</li>\n      <li><strong>Quel genre de jeu est Quarantine Zone : The Last Check ?</strong><br>C'est un jeu de survie basé sur la conduite, dans lequel vos compétences au volant déterminent votre destin.</li>\n      <li><strong>Comment contrôler le véhicule dans la zone de quarantaine : le dernier contrôle ?</strong><br> Le système de contrôle est intuitif, conçu pour une prise en main facile mais avec un plafond de compétences pour maîtriser des manœuvres précises. (La description de l'utilisateur ne fournissait pas de détails de contrôle spécifiques).</li>\n      <li><strong>Qu'est-ce qui rend Quarantine Zone : The Last Check unique ?</strong><br>La combinaison d'une conduite intense, d'une prise de décision stratégique et d'un environnement immersif crée une expérience de survie vraiment unique.</li>\n      <li><strong>Est-ce que Quarantine Zone : The Last Check est difficile ?</strong><br>Le jeu est conçu pour être stimulant, mais enrichissant. La compétence et la stratégie sont tout aussi importantes pour la survie.</li>\n      <li><strong>Où puis-je jouer à Quarantine Zone : The Last Check ?</strong><br>Vous pouvez y jouer sur <a href=\"/\">quarantinezonegames.com</a></li>\n    </ol>\n  \n    <p>Zone de quarantaine : The Last Check n'est pas qu'un jeu ; c'est un test de votre résilience, de votre courage et de vos prouesses de conduite. Êtes-vous prêt à entrer dans la zone de quarantaine et à relever le défi ultime ? Démarrez votre moteur, les infectés attendent !</p>\n  </div>"
+  },
+  {
+    "id": 2,
+    "title": "Resident Zombies : jeu de tir d'horreur",
+    "iframeUrl": "https://quarantinezonegame.com/gg/resident-zombies-horror-shooter/",
+    "description": "Plongez dans Resident Zombies : Horror Shooter, une expérience de survie palpitante à la troisième personne dans une ville envahie par les morts-vivants. Explorez les zones infectées, découvrez la cause de l'épidémie et combattez les menaces incessantes. La survie dépend de votre intelligence et de votre puissance de feu !",
+    "tags": [
+      "résident",
+      "des zombies",
+      "horreur",
+      "tireur",
+      "survie"
+    ],
+    "publishDate": "2025-12-05",
+    "imageUrl": "/images/game/game02.webp",
+    "imageAlt": "Un survivant solitaire se tient au milieu d'une ville infestée de zombies dans Resident Zombies : Horror Shooter.",
+    "seo": {
+      "title": "Resident Zombies : Horror Shooter - Survivez à l'apocalypse zombie !",
+      "description": "Entrez dans une ville en quarantaine dans Resident Zombies: Horror Shooter. Découvrez la cause de l'épidémie de zombies et luttez pour survivre contre des hordes de morts-vivants. Téléchargez maintenant !",
+      "keywords": "zombies résidents, jeu de tir d'horreur, jeu de survie, épidémie de zombies, jeu de tir à la troisième personne, ville infectée, post-apocalyptique, zone de quarantaine"
+    },
+    "isHome": false,
+    "comments": [
+      {
+        "id": 1,
+        "author": "Joueur123",
+        "date": "1 janvier 2025",
+        "rating": 5,
+        "text": "Jeu incroyable ! Les mécanismes de prise de décision sont vraiment engageants."
+      }
+    ],
+    "addressBar": "resident-zombies-horror-shooter",
+    "detailsHtml": "<div>\n    <h2>Zombies résidents : jeu de tir d'horreur</h2>\n    <p>Imaginez vous réveiller dans le silence... un silence glaçant et troublant dans une ville autrefois pleine de vie. Désormais, seules la destruction et les gémissements des morts-vivants résonnent dans les rues. C'est la réalité dans <strong>Resident Zombies : Horror Shooter</strong>, un jeu de tir de survie à la troisième personne qui vous plonge au cœur d'une ville en quarantaine, peuplée de morts-vivants.</p>\n  \n    <h3>Un combat pour la survie commence</h3>\n    <p>Votre voyage commence dans un bâtiment abandonné, un sanctuaire temporaire au milieu du chaos. Armé uniquement de fournitures de base, vous devez vous aventurer dans les zones infectées. Chaque ombre recèle une menace potentielle, chaque recoin pourrait être le dernier. Il ne s’agit pas seulement de tirs insensés ; il s'agit de survie stratégique, de gestion des ressources et de découverte des sombres secrets derrière l'épidémie.</p>\n  \n    <h3>Percer le mystère de l'épidémie</h3>\n    <p>En parcourant le paysage urbain dévasté, vous reconstituerez les événements qui ont conduit à cette horrible transformation. À travers des documents dispersés, des messages énigmatiques et des récits environnementaux, vous plongerez plus profondément dans le mystère et découvrirez la vérité derrière les <strong>zombies résidents</strong> et les forces responsables de leur libération. Attendez-vous à faire face à des dilemmes moraux et à faire des choix difficiles qui auront un impact sur votre survie et le sort de la ville.</p>\n  \n    <h3>Pression constante, menaces incessantes</h3>\n    <p>Le cœur de <strong>Resident Zombies : Horror Shooter</strong> réside dans son mélange d'exploration et d'action incessante. Pendant que vous recherchez des indices et des ressources, les morts-vivants sont constamment à l'affût. Ils peuvent apparaître à tout moment, transformant une exploration tranquille en un combat désespéré pour votre vie. Cette pression constante vous maintient en alerte, vous obligeant à vous adapter et à réagir au danger toujours présent.</p><h3>Principales caractéristiques de Resident Zombies : Horror Shooter</h3>\n    <ul>\n      <li><strong>Perspective à la troisième personne</strong> : offre une vue claire de votre environnement, essentielle pour repérer les menaces qui approchent et planifier vos mouvements.</li>\n      <li><strong>Gameplay de survie intense :</strong> Gérez des ressources limitées, récupérez des fournitures et fabriquez des objets essentiels pour rester en vie.</li>\n      <li><strong>Exploration et découverte :</strong> Découvrez les secrets de l'épidémie en explorant les zones infectées et en trouvant des indices.</li>\n      <li><strong>Rencontres dynamiques de zombies :</strong> Affrontez des hordes de zombies qui peuvent apparaître à tout moment, vous gardant constamment sur vos gardes.</li>\n    </ul>\n  \n    <h3>Conseils pour survivre à l'apocalypse zombie</h3>\n    <ol>\n      <li><strong>Conservez les munitions</strong> : chaque balle compte. Visez les tirs à la tête pour maximiser les dégâts et minimiser les déchets.</li>\n      <li><strong>Récupérer minutieusement :</strong> fouillez tous les coins et recoins à la recherche de fournitures de valeur, notamment de la nourriture, des médicaments et des matériaux de fabrication.</li>\n      <li><strong>Utilisez la furtivité lorsque cela est possible</strong> : évitez les affrontements inutiles en utilisant la furtivité pour naviguer dans les zones infestées de zombies.</li>\n      <li><strong>Fabriquer des objets essentiels</strong> : combinez des matériaux récupérés pour créer des armes, des médicaments et d'autres ressources vitales.</li>\n    </ol>\n  \n    <h3>FAQ</h3>\n    <ol>\n      <li><strong>Quel type de jeu est Resident Zombies : Horror Shooter ?</strong><br>Il s'agit d'un jeu de tir de survie à la troisième personne se déroulant dans une ville en quarantaine envahie par les zombies. Le gameplay principal se concentre sur l'exploration, la gestion des ressources et le combat.</li>\n      <li><strong>Où commence le jeu ?</strong><br>Le jeu commence avec le réveil de votre personnage dans un bâtiment abandonné, entouré par le silence étrange et la destruction de la ville infectée.</li>\n      <li><strong>Quelles sont les ressources dont je dispose au début du jeu ?</strong><br>Vous commencez avec uniquement des fournitures de base. Trouver des ressources supplémentaires est une partie cruciale du gameplay.</li>\n      <li><strong>Quel est le but principal du jeu ?</strong><br>Vos principaux objectifs sont d'explorer les zones infectées, de découvrir la cause de l'épidémie de zombies et de survivre à la menace constante des morts-vivants.</li>\n      <li><strong>Comment le jeu crée-t-il un sentiment d'urgence et de danger ?</strong><br>Le jeu associe l'exploration à la pression constante des ennemis qui peuvent apparaître à tout moment, créant une expérience de survie passionnante et imprévisible.</li>\n    </ol>\n  \n    <p><strong>Resident Zombies : Horror Shooter</strong> offre une expérience de survie captivante et immersive dans un monde dévoré par les morts-vivants. Préparez-vous à affronter vos peurs, à tester vos limites et à lutter pour votre survie dans cette nouvelle réalité terrifiante.</p>\n  </div>"
+  },
+  {
+    "id": 3,
+    "title": "Un parmi les zombies",
+    "iframeUrl": "https://one-among-zombies.game-files.crazygames.com/unity/unity2020/one-among-zombies.html",
+    "description": "Naviguez dans une ville envahie par les infectés dans One Among Zombies. Ce jeu de survie met l'accent sur la tension, la suspicion et la prise de décision cruciale. Récupérez des ressources rares, interagissez prudemment avec d'autres survivants et luttez pour rester en vie dans un monde où la confiance est un luxe.",
+    "tags": [
+      "survie des zombies",
+      "jeu de tension",
+      "prise de décision",
+      "rareté des ressources",
+      "un parmi les zombies"
+    ],
+    "publishDate": "2025-12-05",
+    "imageUrl": "/images/game/game03.webp",
+    "imageAlt": "Un survivant solitaire navigue prudemment dans une rue infestée de zombies dans One Among Zombies.",
+    "seo": {
+      "title": "One Among Zombies - Jeu d'horreur de survie en ligne",
+      "description": "Survivez à l'apocalypse zombie dans One Among Zombies. Faites face à des ressources rares, à des survivants indignes de confiance et à une tension constante. Pouvez-vous faire les bons choix pour vivre ?",
+      "keywords": "un parmi les zombies, jeu de zombies, jeu de survie, jeu d'horreur, gestion des ressources, jeu de prise de décision, jeu en ligne, apocalypse, infecté, survivant"
+    },
+    "isHome": false,
+    "comments": [
+      {
+        "id": 1,
+        "author": "Joueur123",
+        "date": "1 janvier 2025",
+        "rating": 5,
+        "text": "Jeu incroyable ! Les mécanismes de prise de décision sont vraiment engageants."
+      }
+    ],
+    "addressBar": "one-among-zombies",
+    "detailsHtml": "<div>\n    <h2>Un parmi les zombies</h2>\n    <p>Imaginez un monde au bord du gouffre, où les paysages urbains familiers hantent désormais des labyrinthes regorgeant d'infectés. Bienvenue dans One Among Zombies, un jeu de survie captivant qui vous plonge au cœur d'une apocalypse. Contrairement aux jeux de zombies typiques, One Among Zombies se concentre sur la tension brute, la suspicion lancinante et les choix angoissants qui définissent la survie. Chaque ombre peut cacher une menace, chaque rencontre une trahison potentielle.</p>\n    \n    <h3>Pénurie et suspicion : les pierres angulaires de la survie</h3>\n    <p>Les ressources sont extrêmement rares. Chaque balle, chaque pansement, chaque morceau de nourriture est un trésor à garder jalousement. La ville ravagée devient votre terrain de chasse, mais attention : vous n'êtes pas le seul à fouiller. D'autres survivants sont dispersés sur la carte, chacun avec son propre agenda, ses propres secrets et son propre désespoir. La confiance est un luxe dangereux. Sur qui pouvez-vous compter ? Qui a déjà succombé aux ténèbres ?</p>\n    \n    <h3>Rencontres à enjeux élevés</h3>\n    <p>Chaque rencontre avec un autre survivant est un pari. Vont-ils proposer une aide, une alliance temporaire contre les hordes envahissantes ? Ou sont-ils déjà perdus, leur humanité consumée par le besoin primordial de survivre à tout prix ? Les décisions que vous prenez dans ces moments détermineront non seulement votre propre destin, mais potentiellement aussi celui des autres.</p>\n    \n    <h3>Points forts du gameplay</h3>\n    <ul>\n      <li><strong>Atmosphère tendue :</strong> Vivez la peur constante d'être en infériorité numérique et en armement.</li>\n      <li><strong>Prise de décision stratégique</strong> : chaque choix compte. Conservez les ressources, évaluez les risques et choisissez judicieusement vos alliés.</li>\n      <li><strong>Rencontres imprévisibles</strong> : vous ne savez jamais à quoi vous attendre des autres survivants. La confiance est une denrée rare et précieuse.</li>\n      <li><strong>Gestion des ressources :</strong> récupérez les fournitures essentielles et apprenez à faire en sorte que chaque article compte.</li>\n    </ul>\n    \n    <h3>Comment survivre dans One Among Zombies : un guide rapide</h3>\n    <ol>\n      <li><strong>Restez vigilant</strong> : les personnes infectées sont partout. Soyez toujours conscient de votre environnement.</li>\n      <li><strong>Conserver les ressources</strong> : les munitions et les fournitures sont limitées. Utilisez-les à bon escient.</li>\n      <li><strong>Évaluez les risques</strong> : avant de vous engager, évaluez les récompenses potentielles par rapport aux dangers potentiels.</li>\n      <li><strong>Faites confiance avec parcimonie :</strong> Tout le monde n'est pas votre ami. Méfiez-vous des autres survivants.</li>\n      <li><strong>Faire des choix difficiles :</strong> Parfois, la seule façon de survivre est de prendre des décisions difficiles.</li>\n    </ol>\n    \n    <h3>FAQ</h3>\n    <ol>\n      <li><strong>Quel est l'objectif principal de One Among Zombies ?</strong><br>One Among Zombies met l'accent sur la tension, la suspicion et la prise de décision dans un monde infesté de zombies où les ressources sont rares.</li>\n      <li><strong>Y a-t-il d'autres survivants dans le jeu ?</strong><br>Oui, il y a d'autres survivants dispersés sur la carte. Chaque rencontre comporte un risque : certaines peuvent être utiles, d'autres peuvent être hostiles.</li>\n      <li><strong>Qu'est-ce qui différencie ce jeu des autres jeux de zombies ?</strong><br>Contrairement à de nombreux jeux de zombies axés sur un combat constant, One Among Zombies s'appuie sur la tension, la suspicion et l'utilisation stratégique de ressources limitées.</li>\n      <li><strong>La confiance est-elle importante dans le jeu ?</strong><br>La confiance est très difficile à trouver. Vous devez soigneusement évaluer les intentions des autres survivants avant de décider de coopérer.</li>\n      <li><strong>Que dois-je prioriser lorsque je joue à One Among Zombies ?</strong><br>Donner la priorité à la gestion des ressources, à la connaissance de la situation et à une prise de décision minutieuse à chaque rencontre.</li>\n    </ol>\n    \n    <p>One Among Zombies est bien plus qu'un simple jeu de zombies ; c'est un test de votre capacité à survivre dans un monde dépouillé de son humanité. Saurez-vous faire les bons choix ? Pouvez-vous faire confiance aux bonnes personnes ? Votre survie en dépend.</p>\n  </div>"
+  },
+  {
+    "id": 4,
+    "title": "Call of Duty : Zombies (Démake)",
+    "iframeUrl": "https://quarantinezonegame.com/gg/call-of-duty-zombies-demake/",
+    "description": "Plongez dans une version d'inspiration rétro de Call of Duty Zombies ! Ce démake offre une survie de zombie tendue de style arcade dans une gloire pixel-art. Vivez le frisson de la progression des vagues et de la gestion des ressources dans une ambiance nostalgique des années 90. Survivez à la horde !",
+    "tags": [
+      "appel du devoir",
+      "des zombies",
+      "défaire",
+      "jeu rétro",
+      "pixel art"
+    ],
+    "publishDate": "2025-12-05",
+    "imageUrl": "/images/game/game04.webp",
+    "imageAlt": "Capture d'écran pixel-art de Call of Duty Zombies (Demake) mettant en vedette une horde de zombies et un personnage de joueur.",
+    "seo": {
+      "title": "Call of Duty Zombies Demake - Survie des zombies rétro pixel-art",
+      "description": "Découvrez Call of Duty Zombies dans un remake nostalgique et pixel-art. Profitez d'une action d'arcade rapide, d'une progression par vagues et d'un gameplay intense de survie des zombies.",
+      "keywords": "appel du devoir, des morts vivants, démake, rétro, pixel art, survie des zombies, arcade, zone de quarantaine"
+    },
+    "isHome": false,
+    "comments": [
+      {
+        "id": 1,
+        "author": "Joueur123",
+        "date": "1 janvier 2025",
+        "rating": 5,
+        "text": "Jeu incroyable ! Les mécanismes de prise de décision sont vraiment engageants."
+      }
+    ],
+    "addressBar": "call-of-duty-zombies-demake",
+    "detailsHtml": "<div>\n    <h2>Call of Duty : Zombies (Démake)</h2>\n    <p>Remontez le temps avec <em>Call of Duty : Zombies (Demake)</em>, une réimagination amoureuse du mode zombie classique de la franchise Call of Duty. Au lieu de graphismes photoréalistes, préparez-vous à une expérience pixel-art basse résolution qui rappelle l’âge d’or des jeux d’arcade. Les morts-vivants n'ont jamais été aussi... trapus !</p>\n  \n    <h3>Visuels nostalgiques, sensations modernes</h3>\n    <p>Oubliez les graphismes haut de gamme et les cinématiques. Ce démake supprime le fluff visuel et offre une expérience de survie zombie pure et sans faille. Imaginez-vous jouer à cela sur votre vieille console des années 90, en luttant pour votre vie contre des hordes de morts-vivants. L'atmosphère reste tendue et sombre, malgré la présentation au charme rétro. Attendez-vous à un gameplay stimulant où chaque balle pixellisée compte.</p>\n  \n    <h3>Mécaniques de base intactes</h3>\n    <p>Ne vous laissez pas tromper par le déclassement visuel ; le cœur de Call of Duty Zombies demeure. Les mécanismes de base sont méticuleusement préservés, garantissant une expérience familière et addictive pour les vétérans comme pour les nouveaux arrivants. Concentrez-vous sur la survie stratégique, en gérant soigneusement vos ressources et en progressant à travers des vagues de zombies implacables de plus en plus difficiles. Le travail d'équipe et les réflexes rapides sont essentiels pour passer la nuit.</p>\n  \n    <h3>Caractéristiques principales : un renouveau rétro</h3>\n    <ul>\n      <li><strong>Esthétique Pixel Art :</strong> Vivez l'apocalypse zombie dans une charmante basse résolution.</li>\n      <li><strong>Gameplay de style arcade :</strong> Tuez des zombies au rythme rapide et plein d'action à son meilleur.</li>\n      <li><strong>Atmosphère tendue :</strong> Malgré les visuels rétro, l'horreur et la tension sont toujours palpables.</li>\n      <li><strong>Progression des vagues :</strong> Survivez à des vagues de zombies implacables de plus en plus difficiles.</li>\n      <li><strong>Gestion des ressources :</strong> récupérez des armes, des munitions et des améliorations pour rester en vie.</li>\n    </ul>\n  \n    <h3>Conseils pour la survie</h3>\n    <ol>\n      <li><strong>Conservez les munitions :</strong> chaque balle compte, surtout dans les premiers rounds.</li>\n      <li><strong>Donner la priorité aux mises à niveau :</strong> investissez dans des armes et des avantages adaptés à votre style de jeu.</li>\n      <li><strong>Travailler ensemble :</strong> Coordonnez-vous avec vos coéquipiers pour maximiser vos chances de survie.</li>\n      <li><strong>Apprendre la carte</strong> : connaître la disposition peut vous donner un avantage crucial.</li>\n    </ol>\n  \n    <h3>FAQ</h3>\n    <ol>\n      <li><strong>Qu'est-ce qu'un « démake » exactement ?</strong><br>Un démake est un jeu créé pour ressembler à une ancienne génération de jeux vidéo, généralement avec des graphismes de résolution inférieure et un gameplay plus simple. Considérez-le comme un jeu moderne réinventé pour une console classique.</li>\n      <li><strong>Ce démake inclut-il toutes les fonctionnalités du Call of Duty Zombies original ?</strong><br>Bien que les mécanismes de base de survie, de progression des vagues et de gestion des ressources soient préservés, certains éléments graphiques et cinématiques sont simplifiés ou omis pour conserver l'esthétique rétro.</li>\n      <li><strong>Ce jeu est-il gratuit ?</strong><br>Veuillez vous référer au site officiel lié pour plus de détails sur les prix et la disponibilité.</li>\n      <li><strong>Quel genre d'expérience dois-je m'attendre de ce démake ?</strong><br>Attendez-vous à une expérience de survie zombie stimulante de style arcade avec une ambiance nostalgique des années 90. L'accent est mis sur un gameplay rapide, une gestion stratégique des ressources et des combats intenses basés sur les vagues.</li>\n      <li><strong>Le mode multijoueur est-il pris en charge ?</strong><br>Des informations concernant la fonctionnalité multijoueur sont disponibles sur le site officiel du développeur.</li>\n    </ol>\n  \n    <p><em>Call of Duty : Zombies (Demake)</em> offre une version unique et rafraîchissante d'un mode de jeu bien-aimé. En supprimant les cloches et les sifflets graphiques, il se concentre sur les éléments de jeu fondamentaux qui ont rendu Call of Duty Zombies si addictif en premier lieu. Si vous êtes un fan de jeux rétro, de survie des zombies ou si vous recherchez simplement une expérience stimulante et enrichissante, ce démake vaut vraiment le détour. Préparez-vous à revivre l'apocalypse zombie sous une glorieuse forme pixelisée !</p>\n  </div>"
+  }
+]

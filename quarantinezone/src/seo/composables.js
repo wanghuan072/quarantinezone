@@ -14,11 +14,13 @@ function createLocalizedPath(path, locale = 'en') {
 
 // 提取基础路径（去除语言前缀）
 function extractBasePath(path) {
-  if (path.startsWith('/de/')) {
-    return path.substring(3)
-  }
-  if (path === '/de') {
-    return '/'
+  for (const loc of seoConfig.supportedLocales) {
+    if (loc === 'en') continue
+    const prefix = `/${loc}`
+    if (path === prefix) return '/'
+    if (path.startsWith(`${prefix}/`)) {
+      return path.slice(prefix.length) || '/'
+    }
   }
   return path
 }
@@ -261,9 +263,9 @@ export function useAutoSEO() {
          const parts = routeName.split('-')
          const lastPart = parts[parts.length - 1]
          // 如果最后一部分是语言代码，则移除它
-         if (lastPart === 'de' || lastPart === 'en') {
-           baseRouteName = parts.slice(0, -1).join('-')
-         }
+        if (seoConfig.supportedLocales.includes(lastPart)) {
+          baseRouteName = parts.slice(0, -1).join('-')
+        }
        }
 
        // 详情页的 SEO 由页面组件自己从数据中设置，跳过自动 SEO

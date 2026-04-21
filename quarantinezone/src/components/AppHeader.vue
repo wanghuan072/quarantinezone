@@ -55,6 +55,13 @@
             >
               <span class="lang-code">DE</span>
             </button>
+            <button
+              class="lang-option"
+              :class="{ active: currentLocale === 'fr' }"
+              @click="selectLanguage('fr')"
+            >
+              <span class="lang-code">FR</span>
+            </button>
           </div>
         </div>
       </div>
@@ -67,6 +74,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalizedPath } from '../composables/useLocalizedPath'
+import { SUPPORTED_LOCALES } from '../constants/locales.js'
 
 const router = useRouter()
 const route = useRoute()
@@ -108,7 +116,7 @@ const selectLanguage = (newLocale) => {
   const pathSegments = currentPath.split('/').filter(Boolean)
   
   // 如果当前路径有语言前缀，移除它
-  if (pathSegments.length > 0 && ['en', 'de'].includes(pathSegments[0])) {
+  if (pathSegments.length > 0 && SUPPORTED_LOCALES.includes(pathSegments[0])) {
     pathSegments.shift()
     currentPath = '/' + pathSegments.join('/')
   }

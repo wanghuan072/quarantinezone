@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import i18n from '../i18n'
 import HomeView from '../views/HomeView.vue'
+import { SUPPORTED_LOCALES } from '../constants/locales.js'
 
 // 支持的语言列表（英文是默认，不需要前缀）
-const supportedLocales = ['en', 'de']
+const supportedLocales = SUPPORTED_LOCALES
 
 // 生成路由路径（英文无前缀，其他语言有前缀）
 const createRoutePath = (path, locale = 'en') => {

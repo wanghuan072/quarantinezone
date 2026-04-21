@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { SUPPORTED_LOCALES } from '../src/constants/locales.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -11,7 +12,7 @@ const seoConfig = {
 }
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de']
+const supportedLocales = SUPPORTED_LOCALES
 
 // 生成本地化路径
 function createLocalizedPath(path, locale = 'en') {
@@ -170,10 +171,18 @@ async function main() {
     console.log(`✅ Total URLs in sitemap: ${urlCount}`)
     
     // 统计各语言的URL数量
-    const enUrls = (sitemapContent.match(/<loc>https:\/\/quarantinezonegames\.com\/[^<]*<\/loc>/g) || [])
-      .filter(url => !url.includes('/de/'))
-    const deUrls = (sitemapContent.match(/<loc>https:\/\/quarantinezonegames\.com\/[^<]*<\/loc>/g) || [])
-      .filter(url => url.includes('/de/'))
+    const locUrls = {}
+    for (const loc of supportedLocales) {
+      if (loc === 'en') {
+        locUrls[loc] = (sitemapContent.match(/<loc>https:\/\/quarantinezonegames\.com\/[^<]*<\/loc>/g) || []).filter(
+          (url) => !supportedLocales.filter((l) => l !== 'en').some((l) => url.includes(`/${l}/`))
+        )
+      } else {
+        locUrls[loc] = (sitemapContent.match(/<loc>https:\/\/quarantinezonegames\.com\/[^<]*<\/loc>/g) || []).filter(
+          (url) => url.includes(`/${loc}/`)
+        )
+      }
+    }
     
     // 统计各类URL数量
     const guidesCount = (sitemapContent.match(/\/guides\//g) || []).length
@@ -181,8 +190,9 @@ async function main() {
     const newsCount = (sitemapContent.match(/\/news\//g) || []).length
     
     console.log('\n📊 URLs by language:')
-    console.log(`   English (en): ${enUrls.length}`)
-    console.log(`   German (de): ${deUrls.length}`)
+    for (const loc of supportedLocales) {
+      console.log(`   ${loc}: ${(locUrls[loc] || []).length}`)
+    }
     console.log(`   Total: ${urlCount}`)
     
     console.log('\n📊 URLs by category:')

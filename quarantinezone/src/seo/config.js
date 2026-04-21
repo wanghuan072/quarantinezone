@@ -1,3 +1,5 @@
+import { SUPPORTED_LOCALES } from '../constants/locales.js'
+
 // SEO配置文件
 export const seoConfig = {
   // 域名配置
@@ -6,7 +8,7 @@ export const seoConfig = {
   protocol: 'https://',
 
   // 支持的语言列表
-  supportedLocales: ['en', 'de'],
+  supportedLocales: [...SUPPORTED_LOCALES],
   
   // 语言配置
   locales: {
@@ -19,6 +21,11 @@ export const seoConfig = {
       code: 'de',
       name: 'Deutsch',
       hreflang: 'de'
+    },
+    fr: {
+      code: 'fr',
+      name: 'Français',
+      hreflang: 'fr'
     }
   },
 

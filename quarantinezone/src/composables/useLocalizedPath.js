@@ -1,9 +1,10 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+import { SUPPORTED_LOCALES } from '../constants/locales.js'
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de']
+const supportedLocales = SUPPORTED_LOCALES
 
 /**
  * 从路径中提取语言
